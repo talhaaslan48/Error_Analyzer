@@ -63,7 +63,12 @@ namespace Projemiz
         {
             Reed_Solomon form7 = new Reed_Solomon();
             form7.Show();
-            this.Hide();
+            this.Hide();  //yarenyazýyor
         }
-    }
+
+		private void FormAnaSyf_Load_1(object sender, EventArgs e)
+		{
+
+		}
+	}
 }
