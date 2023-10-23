@@ -117,11 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label2.Text" xml:space="preserve">
-    <value>🚨 Hata Algoritmaları Rehberine Hoş Geldiniz! 🛠️ Merak mı ettiniz? Hemen sol taraftaki menüden hataların gizemli dünyasına ulaşabilirsiniz! Ancak hemen içeri dalma öncesinde, hatanın kendisi bir bilgi hazinesidir, ve işte buradan erişebilirsiniz!
-
-🕵️‍♀️ Yandan kolayca ulaşabileceğiniz bu sayfada, hataların derinliklerine inmeden önce bir an için durup, onların dilinden birkaç kelime alalım. Hata algoritmaları, kodun dili üzerinden bize anlatılan bir öyküdür, ve bu sayfada bu öyküleri keşfetmeye hazır olun.
-
-🚀 Hızlı erişim için yan menüyü kullanabilir, istediğiniz hata türünü seçerek sorunları çözme sürecine keyifli bir başlangıç yapabilirsiniz. Hazır mısınız? Hadi başlayalım ve hataların büyülü dünyasını birlikte keşfedelim! 🌌🔍</value>
-  </data>
 </root>
