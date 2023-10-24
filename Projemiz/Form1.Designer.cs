@@ -157,13 +157,14 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1706, 1055);
+            ClientSize = new Size(1902, 1055);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(panel1);
             Margin = new Padding(3, 4, 3, 4);
             Name = "FormAnaSyf";
             Text = "Ana Sayfa";
+            WindowState = FormWindowState.Maximized;
             Load += FormAnaSyf_Load_1;
             panel1.ResumeLayout(false);
             ResumeLayout(false);

@@ -8,7 +8,7 @@ namespace Projemiz
         }
 
 
-     
+
 
         private void FormAnaSyf_Load(object sender, EventArgs e)
         {
