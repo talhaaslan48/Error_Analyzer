@@ -135,6 +135,8 @@ namespace Projemiz
             bool test = false;
             try
             {
+                //NOT: Bir önceki girilen veriyi yedekle , yedeklenen veriyle önceki veriyi karşılaştırarak
+                // Matrixi düzenle
 
                 // TextBox'taki metni al
                 string girilenMetin = textBox1.Text;
@@ -142,11 +144,26 @@ namespace Projemiz
                 string girilenMetin2 = textBox3.Text;
                 string girilenMetin3 = textBox4.Text;
 
+
+
+
+
+
+                //  Karşılaştırmayı burada //
+                string girilenMetin_temp = textBox1.Text;
+                string girilenMetin1_temp = textBox2.Text;
+                string girilenMetin2_temp = textBox3.Text;
+                string girilenMetin3_temp = textBox4.Text;
+
+
+
+
+
                 // Metnin uzunluğunu kontrol et
                 if (!(girilenMetin.Length == 8 && girilenMetin1.Length == 8 && girilenMetin2.Length == 8 && girilenMetin3.Length == 8))
                 {
 
-                    throw new Exception();
+                    return;
                 }
                 test = true;
 
@@ -197,7 +214,6 @@ namespace Projemiz
                 lrcres = lrcres + "-" + textBox2.Text;
                 lrcres = lrcres + "-" + textBox1.Text;
                 label5.Text = lrcres;
-
 
             }
 
