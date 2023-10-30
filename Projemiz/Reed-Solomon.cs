@@ -82,15 +82,14 @@ namespace Projemiz
 
 		private void DecodeButton_Click(object sender, EventArgs e)
 		{
-			// QR kodunu tarayıcıdan oku (örneğin, bir dosya veya kamera ile)
-			// Daha sonra bu örnekte basitçe bir metin olarak kabul edeceğiz.
-			string qrCodeText = QRCodeTextBox.Text;
+			string qrCodeText = QRCodeTextBox.Text; // QR kodunu içeren metinsel giriş
 
-			// QR kodunu doğrula ve veriyi çıkar
 			try
 			{
 				BarcodeReader barcodeReader = new BarcodeReader();
-				ZXing.Result result = barcodeReader.Decode(new Bitmap(qrCodeText));
+				// QR kodunu bir resim olarak çözmek için metni bir Bitmap'e dönüştür
+				Bitmap qrCodeBitmap = new Bitmap(qrCodeText);
+				ZXing.Result result = barcodeReader.Decode(qrCodeBitmap);
 
 				if (result != null)
 				{
@@ -98,12 +97,12 @@ namespace Projemiz
 				}
 				else
 				{
-					MessageBox.Show("QR kodu çözülemedi.");
+					MessageBox.Show("QR kodu çözülemedi veya hatalı formatta.");
 				}
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show("QR kodu çözülemedi: " + ex.Message);
+				MessageBox.Show("QR kodu çözülürken hata oluştu: " + ex.Message);
 			}
 		}
 		private string DecodeBinaryText(string binaryText)

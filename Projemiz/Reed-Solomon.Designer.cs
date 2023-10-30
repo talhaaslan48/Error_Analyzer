@@ -100,9 +100,9 @@
 			this.label5.AutoSize = true;
 			this.label5.Location = new System.Drawing.Point(896, 444);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(184, 15);
+			this.label5.Size = new System.Drawing.Size(187, 15);
 			this.label5.TabIndex = 11;
-			this.label5.Text = "Girdğiniz verinin metinsel karşılığ:";
+			this.label5.Text = "Girdğiniz verinin metinsel karşılığı:";
 			// 
 			// label6
 			// 
