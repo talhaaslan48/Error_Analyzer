@@ -58,10 +58,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label1.Text" xml:space="preserve">
-    <value>Döngüsel artıklık denetimi (CRC: Cyclic Redundancy Check), çoğunlukla sayısal şebekelerde ve depolama cihazlarında kullanılır 
-Ham veride yapılan hatalı değişimleri algılayan, uygulaması kolay ve güvenliği güçlü bir hata bulma yöntemidir.
-CRC'ler, denetim (veri doğrulama) değerinde (enformasyon eklenmeden gönderilen) bir artıklık ve döngüsel kodların temelini oluşturan bir algoritma olduğu için bu adla adlandırılır. 
-İkili donanımlarda uygulaması basit, matematiksel analizi kolay ve bilhassa iletim kanallarında gürültünün neden olduğu genel hataları algılamada iyi olduğu için CRC'lerin kullanımı yaygındır. 
-Çünkü denetim değeri sabit bir uzunluğa sahiptir. Bunu oluşturan fonksiyon nadiren bir hash fonksiyonu olarak kullanılır.</value>
+    <value>Solomon algoritması, bir tür veri düzeltilmesi veya veri kurtarma algoritmasıdır. Bu algoritma, hata düzeltme veya hata tespit etme amacıyla kullanılır. 
+Özellikle QR (Quick Response) kodları gibi veri matrislerinin hata düzeltmesinde kullanılan bir tekniktir. 
+Solomon algoritması, Reed-Solomon kodları adı verilen belirli bir hata düzeltme kodlama yöntemini temel alır.
+
+Reed-Solomon kodları, veriye eklenen ekstra belirli sayıda düzeltme paritesi ile çalışır. Bu düzeltme pariteleri, veride oluşabilecek hataları algılamak ve düzeltmek için kullanılır. 
+Solomon algoritması, Reed-Solomon kodlarını oluşturan ve çözen bir dizi matematiksel işlemi içerir.
+Solomon algoritması nasıl çalışır:
+Veri Kodlama: Öncelikle, veri bir veri matrisine dönüştürülür. Bu matris, hata düzeltme paritelerini de içerecek şekilde oluşturulur.
+Hata Ekleme: Matrise, veriyi hata algılama ve düzeltme yeteneği ekleyecek hata düzeltme pariteleri eklenir. Bu pariteler matrisin belirli bölgelerine yerleştirilir ve özel bir hesaplama ile oluşturulur.
+Veri Aktarımı: Hazırlanan bu matris, iletişim veya depolama amacıyla kullanılır.
+Hata Algılama ve Düzeltme: Veri iletilirken veya depolandığı sırada hatalar oluşabilir. Solomon algoritması, bu hataları algılar ve düzeltir. Hataların türüne ve yoğunluğuna bağlı olarak, verinin orijinal hâlini geri getirebilir veya hataları düzeltebilir.
+</value>
   </data>
 </root>
