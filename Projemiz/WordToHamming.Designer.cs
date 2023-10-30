@@ -29,8 +29,12 @@
         private void InitializeComponent()
         {
 			this.label2 = new System.Windows.Forms.Label();
-			this.InputTextBox = new System.Windows.Forms.TextBox();
-			this.ResultTextBox = new System.Windows.Forms.TextBox();
+			this.GirdiMetnitxt = new System.Windows.Forms.TextBox();
+			this.HammingKodutxt = new System.Windows.Forms.TextBox();
+			this.btnCalculate = new System.Windows.Forms.Button();
+			this.label1 = new System.Windows.Forms.Label();
+			this.dataGridView = new System.Windows.Forms.DataGridView();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label2
@@ -44,30 +48,62 @@
 			this.label2.Text = "Word To Hamming";
 			this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
-			// InputTextBox
+			// GirdiMetnitxt
 			// 
-			this.InputTextBox.Location = new System.Drawing.Point(370, 329);
-			this.InputTextBox.Name = "InputTextBox";
-			this.InputTextBox.Size = new System.Drawing.Size(166, 23);
-			this.InputTextBox.TabIndex = 8;
+			this.GirdiMetnitxt.Location = new System.Drawing.Point(353, 291);
+			this.GirdiMetnitxt.Name = "GirdiMetnitxt";
+			this.GirdiMetnitxt.Size = new System.Drawing.Size(169, 23);
+			this.GirdiMetnitxt.TabIndex = 8;
 			// 
-			// ResultTextBox
+			// HammingKodutxt
 			// 
-			this.ResultTextBox.Location = new System.Drawing.Point(793, 329);
-			this.ResultTextBox.Name = "ResultTextBox";
-			this.ResultTextBox.Size = new System.Drawing.Size(165, 23);
-			this.ResultTextBox.TabIndex = 9;
+			this.HammingKodutxt.Location = new System.Drawing.Point(731, 291);
+			this.HammingKodutxt.Name = "HammingKodutxt";
+			this.HammingKodutxt.Size = new System.Drawing.Size(204, 23);
+			this.HammingKodutxt.TabIndex = 9;
+			// 
+			// btnCalculate
+			// 
+			this.btnCalculate.Location = new System.Drawing.Point(571, 291);
+			this.btnCalculate.Name = "btnCalculate";
+			this.btnCalculate.Size = new System.Drawing.Size(91, 23);
+			this.btnCalculate.TabIndex = 10;
+			this.btnCalculate.Text = "Calculate";
+			this.btnCalculate.UseVisualStyleBackColor = true;
+			this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(274, 295);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(38, 15);
+			this.label1.TabIndex = 11;
+			this.label1.Text = "Input:";
+			// 
+			// dataGridView
+			// 
+			this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dataGridView.Location = new System.Drawing.Point(991, 291);
+			this.dataGridView.Name = "dataGridView";
+			this.dataGridView.RowTemplate.Height = 25;
+			this.dataGridView.Size = new System.Drawing.Size(529, 171);
+			this.dataGridView.TabIndex = 12;
 			// 
 			// WordToHamming
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1664, 775);
-			this.Controls.Add(this.ResultTextBox);
-			this.Controls.Add(this.InputTextBox);
+			this.Controls.Add(this.dataGridView);
+			this.Controls.Add(this.label1);
+			this.Controls.Add(this.btnCalculate);
+			this.Controls.Add(this.HammingKodutxt);
+			this.Controls.Add(this.GirdiMetnitxt);
 			this.Controls.Add(this.label2);
 			this.Name = "WordToHamming";
 			this.Text = "WordToHamming";
+			((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -76,7 +112,10 @@
 		#endregion
 
 		private Label label2;
-		private TextBox InputTextBox;
-		private TextBox ResultTextBox;
+		private TextBox GirdiMetnitxt;
+		private TextBox HammingKodutxt;
+		private Button btnCalculate;
+		private Label label1;
+		private DataGridView dataGridView;
 	}
 }
