@@ -57,16 +57,27 @@ namespace Projemiz
 			// Kullanıcı tarafından girilen veriyi al
 			string inputText = InputTextBox.Text;
 
+			// Bit verisi ise metinsel temsile çevir
+			if (IsBinary(inputText))
+			{
+				inputText = ConvertBinaryToText(inputText);
+			}
+
 			// QR kodunu oluştur
 			QRCodeGenerator qrGenerator = new QRCodeGenerator();
 			QRCodeData qrCodeData = qrGenerator.CreateQrCode(inputText, QRCodeGenerator.ECCLevel.M);
 			QRCode qrCode = new QRCode(qrCodeData);
 
-			// QR kodunu görüntülemek için bir resim oluştur
-			Bitmap qrCodeImage = qrCode.GetGraphic(20);
+			// QR kodunun boyutunu ayarla (örneğin, 200x200 piksel)
+			Bitmap qrCodeImage = qrCode.GetGraphic(8);
 
 			// PictureBox bileşenine görüntüyü yerleştir
+			QRCodePictureBox.Width = qrCodeImage.Width;
+			QRCodePictureBox.Height = qrCodeImage.Height;
 			QRCodePictureBox.Image = qrCodeImage;
+
+			// QR kodunun metinsel temsilini QRCodeTextBox'a yerleştir
+			QRCodeTextBox.Text = inputText;
 		}
 
 		private void DecodeButton_Click(object sender, EventArgs e)
@@ -111,6 +122,43 @@ namespace Projemiz
 			}
 
 			return decodedText;
+		}
+		private string ConvertBinaryToText(string binaryText)
+		{
+			string decodedText = "";
+
+			// 8 karakterlik bit dizilerini alıp metin haline çevir
+			for (int i = 0; i < binaryText.Length; i += 8)
+			{
+				if (i + 8 <= binaryText.Length)
+				{
+					string binaryChar = binaryText.Substring(i, 8);
+					byte characterByte = Convert.ToByte(binaryChar, 2);
+					decodedText += (char)characterByte;
+				}
+				else
+				{
+					// Hata durumunda burada uygun bir işlem yapabilirsiniz.
+					// Örneğin, eksik bitler nedeniyle hata mesajı gösterebilirsiniz.
+					MessageBox.Show("Eksik bitler nedeniyle metin dönüştürme hatası.(8 bitlik veri giriniz.)");
+					break;
+				}
+			}
+
+			return decodedText;
+		}
+
+		private bool IsBinary(string input)
+		{
+			// Girdi metni bit dizisi mi yoksa metin mi olduğunu kontrol et
+			foreach (char c in input)
+			{
+				if (c != '0' && c != '1')
+				{
+					return false; // Bit dizisi değil, metin
+				}
+			}
+			return true; // Bit dizisi
 		}
 	}
 }

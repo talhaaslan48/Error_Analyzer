@@ -43,6 +43,7 @@
 			this.DecodeButton = new System.Windows.Forms.Button();
 			this.QRCodePictureBox = new System.Windows.Forms.PictureBox();
 			this.button2 = new System.Windows.Forms.Button();
+			this.label7 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.QRCodePictureBox)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -88,7 +89,7 @@
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(579, 406);
+			this.label4.Location = new System.Drawing.Point(539, 400);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(188, 15);
 			this.label4.TabIndex = 10;
@@ -97,16 +98,16 @@
 			// label5
 			// 
 			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(578, 447);
+			this.label5.Location = new System.Drawing.Point(896, 444);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(222, 15);
+			this.label5.Size = new System.Drawing.Size(184, 15);
 			this.label5.TabIndex = 11;
-			this.label5.Text = "QR kodunu girebilir ya da tarayabilirsiniz.";
+			this.label5.Text = "Girdğiniz verinin metinsel karşılığ:";
 			// 
 			// label6
 			// 
 			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(1059, 444);
+			this.label6.Location = new System.Drawing.Point(1185, 429);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(337, 15);
 			this.label6.TabIndex = 12;
@@ -121,21 +122,21 @@
 			// 
 			// QRCodeTextBox
 			// 
-			this.QRCodeTextBox.Location = new System.Drawing.Point(398, 444);
+			this.QRCodeTextBox.Location = new System.Drawing.Point(745, 441);
 			this.QRCodeTextBox.Name = "QRCodeTextBox";
 			this.QRCodeTextBox.Size = new System.Drawing.Size(135, 23);
 			this.QRCodeTextBox.TabIndex = 14;
 			// 
 			// DecodedTextBox
 			// 
-			this.DecodedTextBox.Location = new System.Drawing.Point(1059, 397);
+			this.DecodedTextBox.Location = new System.Drawing.Point(1185, 391);
 			this.DecodedTextBox.Name = "DecodedTextBox";
 			this.DecodedTextBox.Size = new System.Drawing.Size(195, 23);
 			this.DecodedTextBox.TabIndex = 15;
 			// 
 			// EncodeButton
 			// 
-			this.EncodeButton.Location = new System.Drawing.Point(855, 402);
+			this.EncodeButton.Location = new System.Drawing.Point(745, 393);
 			this.EncodeButton.Name = "EncodeButton";
 			this.EncodeButton.Size = new System.Drawing.Size(100, 27);
 			this.EncodeButton.TabIndex = 16;
@@ -145,7 +146,7 @@
 			// 
 			// DecodeButton
 			// 
-			this.DecodeButton.Location = new System.Drawing.Point(855, 447);
+			this.DecodeButton.Location = new System.Drawing.Point(1026, 393);
 			this.DecodeButton.Name = "DecodeButton";
 			this.DecodeButton.Size = new System.Drawing.Size(100, 28);
 			this.DecodeButton.TabIndex = 17;
@@ -155,7 +156,7 @@
 			// 
 			// QRCodePictureBox
 			// 
-			this.QRCodePictureBox.Location = new System.Drawing.Point(816, 530);
+			this.QRCodePictureBox.Location = new System.Drawing.Point(820, 470);
 			this.QRCodePictureBox.Name = "QRCodePictureBox";
 			this.QRCodePictureBox.Size = new System.Drawing.Size(226, 142);
 			this.QRCodePictureBox.TabIndex = 18;
@@ -170,11 +171,21 @@
 			this.button2.Text = "Geri Dönmek İçin Basınız";
 			this.button2.UseVisualStyleBackColor = true;
 			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.Location = new System.Drawing.Point(745, 470);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(69, 15);
+			this.label7.TabIndex = 20;
+			this.label7.Text = "QR karşılığı:";
+			// 
 			// Reed_Solomon
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1664, 775);
+			this.Controls.Add(this.label7);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.QRCodePictureBox);
 			this.Controls.Add(this.DecodeButton);
@@ -213,5 +224,6 @@
 		private Button DecodeButton;
 		private PictureBox QRCodePictureBox;
 		private Button button2;
+		private Label label7;
 	}
 }
