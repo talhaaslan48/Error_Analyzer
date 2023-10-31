@@ -21,7 +21,7 @@ namespace Projemiz
         private string CalculateHammingCode(string input)
         {
             StringBuilder hammingCode = new StringBuilder();
-            int blockSize = 4; // Her blok 4 karakter uzunluğunda
+            int blockSize = 4; // Her blok 4 karakter uzunluğunda   deneme123123123yaren
             int dataIndex = 0;
 
             while (dataIndex < input.Length)
