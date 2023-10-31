@@ -73,41 +73,74 @@ namespace Projemiz
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-			string data = dividendTextBox.Text;
-			string divisor = divisorTextBox.Text;
+            string data = dividendTextBox.Text;
+            string divisor = divisorTextBox.Text;
 
-			// CRC işlemi
-			string crcResult = CalculateCRC(data, divisor);
+            // CRC işlemi
+            string crcResult = CalculateCRC(data, divisor);
 
-			// Sonucu ekranda göster
-			label6.Text = "Data: " + data + "\nCRC: " + crcResult;
-		}
-		private string CalculateCRC(string data, string divisor)
+            // CRC bitlerini verinin sonuna ekle
+            string dataWithCRC = data + crcResult;
+
+            // Alıcı tarafından doğrulama
+            string receivedData = dataWithCRC; // Alıcı veriyi aldıktan sonra
+
+            string receivedCRCResult = CalculateCRC(receivedData, divisor);
+
+            // Sonucu ekranda göster
+            label6.Text = crcResult;
+            label7.Text = dataWithCRC;
+
+			if (IsCRCValid(receivedCRCResult))
+            {
+                label8.Text += "\nHata Kontrolü: Hatasız";
+            }
+            else
+            {
+                label8.Text += "\nHata Kontrolü: Hatalı";
+            }
+        }
+		private bool IsCRCValid(string crc)
 		{
-			int dataLength = data.Length;
-			int divisorLength = divisor.Length;
-
-			// Data'yı uzat
-			string extendedData = data.PadRight(dataLength + divisorLength - 1, '0');
-
-			char[] dataArray = extendedData.ToCharArray();
-			char[] divisorArray = divisor.ToCharArray();
-
-			for (int i = 0; i < dataLength; i++)
+			// CRC sonucunun tüm bitlerini kontrol et
+			foreach (char bit in crc)
 			{
-				if (dataArray[i] == '1')
+				if (bit != '0')
 				{
-					for (int j = 0; j < divisorLength; j++)
-					{
-						dataArray[i + j] = dataArray[i + j] == divisorArray[j] ? '0' : '1';
-					}
+					return false;
 				}
 			}
-
-			// CRC bitlerini al
-			string crcBits = new string(dataArray, dataLength, divisorLength - 1);
-
-			return crcBits;
+			return true;
 		}
-	}
+		private string CalculateCRC(string data, string divisor)
+        {
+            int dataLength = data.Length;
+            int divisorLength = divisor.Length;
+
+            // Data'yı uzat
+            string extendedData = data.PadRight(dataLength + divisorLength - 1, '0');
+
+            char[] dataArray = extendedData.ToCharArray();
+            char[] divisorArray = divisor.ToCharArray();
+
+            for (int i = 0; i < dataLength; i++)
+            {
+                if (dataArray[i] == '1')
+                {
+                    for (int j = 0; j < divisorLength; j++)
+                    {
+                        dataArray[i + j] = dataArray[i + j] == divisorArray[j] ? '0' : '1';
+                    }
+                }
+            }
+
+            // CRC bitlerini al
+            string crcBits = new string(dataArray, dataLength, divisorLength - 1);
+
+            return crcBits;
+
+        }
+    }
 }
+
+
