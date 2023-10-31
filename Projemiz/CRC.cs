@@ -76,46 +76,34 @@ namespace Projemiz
             string data = dividendTextBox.Text;
             string divisor = divisorTextBox.Text;
 
-            // CRC işlemi
-            string crcResult = CalculateCRC(data, divisor);
-
-            // CRC bitlerini verinin sonuna ekle
-            string dataWithCRC = data + crcResult;
-
-            // Alıcı tarafından doğrulama
-            string receivedData = dataWithCRC; // Alıcı veriyi aldıktan sonra
-
-            string receivedCRCResult = CalculateCRC(receivedData, divisor);
-
-            // Sonucu ekranda göster
-            label6.Text = crcResult;
-            label7.Text = dataWithCRC;
-
-            if (IsCRCValid(receivedCRCResult))
+            // Append 0 at the end
+            StringBuilder temp = new StringBuilder(msg);
+            for (int i = 0; i < key_len - 1; i++)
             {
-                label8.Text = "\nHata Kontrolü: Hatasız";
+                temp.Append('0');
             }
             else
             {
-                label8.Text = "\nHata Kontrolü: Hatalı";
-            }
-        }
-        private bool IsCRCValid(string crc)
-        {
-            // CRC sonucunun tüm bitlerini kontrol et
-            foreach (char bit in crc)
-            {
-                if (bit != '0')
+                if (temp[j] != '0')
                 {
-                    return false;
+                    for (int k = 0; k < key_len; k++)
+                    {
+                        rem.Append(temp[j + k] = (temp[j + k] == key[k]) ? '0' : '1');
+                    }
                 }
             }
-            return true;
-        }
-        private string CalculateCRC(string data, string divisor)
-        {
-            int dataLength = data.Length;
-            int divisorLength = divisor.Length;
+
+            // Reduce remainder
+            for (int k = 0; k < key_len; k++)
+            {
+                rem.Remove(0, 1);
+            }
+
+            // CRC bitini bölme işlemlerinden sonra kalan son 3 biti al
+            string last3Bits = rem.ToString().Substring(rem.Length - 3);
+
+            // Sonucu ekrana yazdır
+            label6.Text = "Last 3 Bits: " + last3Bits;
 
             // Data'yı uzat
             string extendedData = data.PadRight(dataLength + divisorLength - 1, '0');
@@ -142,3 +130,5 @@ namespace Projemiz
         }
     }
 }
+
+
