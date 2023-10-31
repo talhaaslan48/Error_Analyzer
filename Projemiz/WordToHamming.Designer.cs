@@ -35,6 +35,9 @@
             button3 = new Button();
             txtInput = new TextBox();
             btnCalculate = new Button();
+            dataGridViewOutput = new DataGridView();
+            label3 = new Label();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewOutput).BeginInit();
             SuspendLayout();
             // 
             // label2
@@ -65,19 +68,21 @@
             button1.TabIndex = 9;
             button1.Text = "PDF İndir";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button3
             // 
-            button3.Location = new Point(78, 954);
+            button3.Location = new Point(99, 893);
             button3.Name = "button3";
             button3.Size = new Size(182, 54);
             button3.TabIndex = 13;
             button3.Text = "Geri Dönmek İçin Basınız";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // txtInput
             // 
-            txtInput.Location = new Point(365, 343);
+            txtInput.Location = new Point(489, 384);
             txtInput.MaxLength = 8;
             txtInput.Name = "txtInput";
             txtInput.Size = new Size(125, 27);
@@ -85,18 +90,40 @@
             // 
             // btnCalculate
             // 
-            btnCalculate.Location = new Point(661, 441);
+            btnCalculate.Location = new Point(450, 486);
             btnCalculate.Name = "btnCalculate";
             btnCalculate.Size = new Size(206, 39);
             btnCalculate.TabIndex = 15;
-            btnCalculate.Text = "LRC Hesapla";
+            btnCalculate.Text = "Hesapla";
             btnCalculate.UseVisualStyleBackColor = true;
+            btnCalculate.Click += btnCalculate_Click_1;
+            // 
+            // dataGridViewOutput
+            // 
+            dataGridViewOutput.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewOutput.Location = new Point(965, 383);
+            dataGridViewOutput.Name = "dataGridViewOutput";
+            dataGridViewOutput.RowHeadersWidth = 51;
+            dataGridViewOutput.RowTemplate.Height = 29;
+            dataGridViewOutput.Size = new Size(454, 142);
+            dataGridViewOutput.TabIndex = 16;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(319, 387);
+            label3.Name = "label3";
+            label3.Size = new Size(132, 20);
+            label3.TabIndex = 17;
+            label3.Text = "Lütfen Veri Giriniz :";
             // 
             // WordToHamming
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1902, 1033);
+            Controls.Add(label3);
+            Controls.Add(dataGridViewOutput);
             Controls.Add(btnCalculate);
             Controls.Add(txtInput);
             Controls.Add(button3);
@@ -106,6 +133,8 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "WordToHamming";
             Text = "WordToHamming";
+            Load += WordToHamming_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridViewOutput).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -118,5 +147,7 @@
         private Button button3;
         private TextBox txtInput;
         private Button btnCalculate;
+        private DataGridView dataGridViewOutput;
+        private Label label3;
     }
 }
