@@ -44,9 +44,7 @@ namespace Projemiz
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            CRC form4 = new CRC();
-            form4.Show();
-            this.Hide();
+            
         }
 
         private void button5_Click_1(object sender, EventArgs e)
