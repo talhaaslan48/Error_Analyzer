@@ -28,94 +28,95 @@
         /// </summary>
         private void InitializeComponent()
         {
-			this.label2 = new System.Windows.Forms.Label();
-			this.GirdiMetnitxt = new System.Windows.Forms.TextBox();
-			this.HammingKodutxt = new System.Windows.Forms.TextBox();
-			this.btnCalculate = new System.Windows.Forms.Button();
-			this.label1 = new System.Windows.Forms.Label();
-			this.dataGridView = new System.Windows.Forms.DataGridView();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Rockwell", 48F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-			this.label2.Location = new System.Drawing.Point(558, 9);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(575, 72);
-			this.label2.TabIndex = 7;
-			this.label2.Text = "Word To Hamming";
-			this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			// 
-			// GirdiMetnitxt
-			// 
-			this.GirdiMetnitxt.Location = new System.Drawing.Point(353, 291);
-			this.GirdiMetnitxt.Name = "GirdiMetnitxt";
-			this.GirdiMetnitxt.Size = new System.Drawing.Size(169, 23);
-			this.GirdiMetnitxt.TabIndex = 8;
-			// 
-			// HammingKodutxt
-			// 
-			this.HammingKodutxt.Location = new System.Drawing.Point(731, 291);
-			this.HammingKodutxt.Name = "HammingKodutxt";
-			this.HammingKodutxt.Size = new System.Drawing.Size(204, 23);
-			this.HammingKodutxt.TabIndex = 9;
-			// 
-			// btnCalculate
-			// 
-			this.btnCalculate.Location = new System.Drawing.Point(571, 291);
-			this.btnCalculate.Name = "btnCalculate";
-			this.btnCalculate.Size = new System.Drawing.Size(91, 23);
-			this.btnCalculate.TabIndex = 10;
-			this.btnCalculate.Text = "Calculate";
-			this.btnCalculate.UseVisualStyleBackColor = true;
-			this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(274, 295);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(38, 15);
-			this.label1.TabIndex = 11;
-			this.label1.Text = "Input:";
-			// 
-			// dataGridView
-			// 
-			this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView.Location = new System.Drawing.Point(991, 291);
-			this.dataGridView.Name = "dataGridView";
-			this.dataGridView.RowTemplate.Height = 25;
-			this.dataGridView.Size = new System.Drawing.Size(529, 171);
-			this.dataGridView.TabIndex = 12;
-			// 
-			// WordToHamming
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1664, 775);
-			this.Controls.Add(this.dataGridView);
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this.btnCalculate);
-			this.Controls.Add(this.HammingKodutxt);
-			this.Controls.Add(this.GirdiMetnitxt);
-			this.Controls.Add(this.label2);
-			this.Name = "WordToHamming";
-			this.Text = "WordToHamming";
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
-			this.ResumeLayout(false);
-			this.PerformLayout();
-
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WordToHamming));
+            label2 = new Label();
+            label1 = new Label();
+            button1 = new Button();
+            button3 = new Button();
+            txtInput = new TextBox();
+            btnCalculate = new Button();
+            SuspendLayout();
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Rockwell", 48F, FontStyle.Italic, GraphicsUnit.Point);
+            label2.Location = new Point(638, 12);
+            label2.Name = "label2";
+            label2.Size = new Size(720, 89);
+            label2.TabIndex = 7;
+            label2.Text = "Word To Hamming";
+            label2.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(242, 143);
+            label1.Name = "label1";
+            label1.Size = new Size(1139, 60);
+            label1.TabIndex = 8;
+            label1.Text = resources.GetString("label1.Text");
+            // 
+            // button1
+            // 
+            button1.Location = new Point(1508, 143);
+            button1.Name = "button1";
+            button1.Size = new Size(295, 68);
+            button1.TabIndex = 9;
+            button1.Text = "PDF İndir";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(78, 954);
+            button3.Name = "button3";
+            button3.Size = new Size(182, 54);
+            button3.TabIndex = 13;
+            button3.Text = "Geri Dönmek İçin Basınız";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // txtInput
+            // 
+            txtInput.Location = new Point(365, 343);
+            txtInput.MaxLength = 8;
+            txtInput.Name = "txtInput";
+            txtInput.Size = new Size(125, 27);
+            txtInput.TabIndex = 14;
+            // 
+            // btnCalculate
+            // 
+            btnCalculate.Location = new Point(661, 441);
+            btnCalculate.Name = "btnCalculate";
+            btnCalculate.Size = new Size(206, 39);
+            btnCalculate.TabIndex = 15;
+            btnCalculate.Text = "LRC Hesapla";
+            btnCalculate.UseVisualStyleBackColor = true;
+            // 
+            // WordToHamming
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1902, 1033);
+            Controls.Add(btnCalculate);
+            Controls.Add(txtInput);
+            Controls.Add(button3);
+            Controls.Add(button1);
+            Controls.Add(label1);
+            Controls.Add(label2);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "WordToHamming";
+            Text = "WordToHamming";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
-		#endregion
+        #endregion
 
-		private Label label2;
-		private TextBox GirdiMetnitxt;
-		private TextBox HammingKodutxt;
-		private Button btnCalculate;
-		private Label label1;
-		private DataGridView dataGridView;
-	}
+        private Label label2;
+        private Label label1;
+        private Button button1;
+        private Button button3;
+        private TextBox txtInput;
+        private Button btnCalculate;
+    }
 }

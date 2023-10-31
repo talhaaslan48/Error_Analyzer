@@ -70,15 +70,15 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(215, 132);
+            label1.Location = new Point(-128, 143);
             label1.Name = "label1";
-            label1.Size = new Size(1216, 100);
+            label1.Size = new Size(1465, 140);
             label1.TabIndex = 5;
             label1.Text = resources.GetString("label1.Text");
             // 
             // dividendTextBox
             // 
-            dividendTextBox.Location = new Point(415, 422);
+            dividendTextBox.Location = new Point(415, 415);
             dividendTextBox.Name = "dividendTextBox";
             dividendTextBox.Size = new Size(152, 27);
             dividendTextBox.TabIndex = 6;
@@ -86,7 +86,7 @@
             // 
             // divisorTextBox
             // 
-            divisorTextBox.Location = new Point(415, 525);
+            divisorTextBox.Location = new Point(415, 522);
             divisorTextBox.Name = "divisorTextBox";
             divisorTextBox.Size = new Size(152, 27);
             divisorTextBox.TabIndex = 7;
@@ -106,9 +106,9 @@
             label4.AutoSize = true;
             label4.Location = new Point(286, 525);
             label4.Name = "label4";
-            label4.Size = new Size(55, 20);
+            label4.Size = new Size(58, 20);
             label4.TabIndex = 9;
-            label4.Text = "Divisor";
+            label4.Text = "Divisor:";
             // 
             // button2
             // 
@@ -123,7 +123,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(1056, 373);
+            label5.Location = new Point(1091, 544);
             label5.Name = "label5";
             label5.Size = new Size(69, 20);
             label5.TabIndex = 11;
@@ -132,7 +132,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(1272, 373);
+            label6.Location = new Point(1247, 544);
             label6.Name = "label6";
             label6.Size = new Size(184, 20);
             label6.TabIndex = 12;
@@ -141,7 +141,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(1272, 447);
+            label7.Location = new Point(1247, 617);
             label7.Name = "label7";
             label7.Size = new Size(184, 20);
             label7.TabIndex = 13;
@@ -150,7 +150,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(1272, 525);
+            label8.Location = new Point(1247, 708);
             label8.Name = "label8";
             label8.Size = new Size(184, 20);
             label8.TabIndex = 14;
@@ -159,20 +159,20 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(978, 451);
+            label9.Location = new Point(925, 617);
             label9.Name = "label9";
-            label9.Size = new Size(228, 20);
+            label9.Size = new Size(235, 20);
             label9.TabIndex = 15;
-            label9.Text = "CodeWord CRC ile Data Birleşimi";
+            label9.Text = "CodeWord CRC ile Data Birleşimi :";
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(1021, 525);
+            label10.Location = new Point(1007, 708);
             label10.Name = "label10";
-            label10.Size = new Size(146, 20);
+            label10.Size = new Size(153, 20);
             label10.TabIndex = 16;
-            label10.Text = "Hata Kontrol Sonucu";
+            label10.Text = "Hata Kontrol Sonucu :";
             // 
             // button3
             // 

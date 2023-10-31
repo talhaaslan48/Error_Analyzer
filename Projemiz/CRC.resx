@@ -119,9 +119,11 @@
   </resheader>
   <data name="label1.Text" xml:space="preserve">
     <value>
-LRC (Longitudinal Redundancy Check) algoritması, bir veri bloğu üzerinde uzunlamasına (bit düzeyinde) bir kontrol sağlayan basit bir hata algılama mekanizmasıdır.
-LRC, bloktaki her byte'ın belirli bir konumundaki bitleri toplar ve bu toplamı belirli bir bit uzunluğunda bir veri paketinin sonuna ekler. 
-Bu toplamın belirli bir değere eşit olup olmadığı kontrol edilerek veri bütünlüğü sınanır.
-LRC Sonucu şu şekilde hesaplanır : Yukarıdan aşağıya baktığımızda 1'lerin sayısı çift ise 0 değilse 1 yazılır.Ardından LRC kodu ile başlayarak en alt satırdan itibaren bitler yanyana yazılır.</value>
+Döngüsel artıklık denetimi (CRC: Cyclic Redundancy Check), çoğunlukla sayısal şebekelerde ve depolama cihazlarında kullanılan ve ham veride yapılan hatalı değişimleri algılayangüvenliği güçlü bir hata bulma yöntemidir.
+CRC'ler, denetim (veri doğrulama) değerinde (enformasyon eklenmeden gönderilen) bir artıklık ve döngüsel kodların temelini oluşturan bir algoritma olduğu için bu adla adlandırılır. 
+İkili donanımlarda uygulaması basit, matematiksel analizi kolay ve bilhassa iletim kanallarında gürültünün neden olduğu genel hataları algılamada iyi olduğu için CRC'lerbitler yanyana yazılır.
+CRC'ler ileri hata düzeltme yöntemindeki döngüsel kodun temelini oluştururlar.
+ Sabit uzunlukta bir denetleme değeri ekleyerek mesajların kodunu çözen sistematik döngüsel kodları kullanarak, telekomünikasyon şebekelerinde hata düzeltme ilk olarak 1961'de W. Wesley Peterson tarafından yapılmıştır
+. Döngüsel kodların yalnızca uygulaması kolay değil, aynı zamanda özellikle patlama hatasının düzeltilmesi için çok idealdir.</value>
   </data>
 </root>
