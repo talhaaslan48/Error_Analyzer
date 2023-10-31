@@ -67,6 +67,8 @@ namespace Projemiz
                     tableLayoutPanel1.Controls.Add(a, i, 0);
                 }
             }
+            // Yenile butonunu etkinleştir
+            buttonYenile.Enabled = true;
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -81,6 +83,8 @@ namespace Projemiz
                     tableLayoutPanel1.Controls.Add(a, i, 1);
                 }
             }
+            // Yenile butonunu etkinleştir
+            buttonYenile.Enabled = true;
         }
 
 
@@ -95,6 +99,8 @@ namespace Projemiz
                     tableLayoutPanel1.Controls.Add(a, i, 2);
                 }
             }
+            // Yenile butonunu etkinleştir
+            buttonYenile.Enabled = true;
         }
 
 
@@ -109,8 +115,12 @@ namespace Projemiz
                     tableLayoutPanel1.Controls.Add(a, i, 3);
                 }
             }
+            // Yenile butonunu etkinleştir
+            buttonYenile.Enabled = true;
 
         }
+
+
         private void LRCcs_KeyPress(object sender, KeyPressEventArgs e)
         {
             // Gelen karakterin '0' veya '1' olup olmadığını kontrol et
@@ -131,6 +141,7 @@ namespace Projemiz
         List<string> list = new List<string>();
         private void button2_Click(object sender, EventArgs e)
         {
+
             list.Clear();
             bool test = false;
             try
@@ -227,7 +238,22 @@ namespace Projemiz
             this.Hide();
         }
 
+        private void LRCcs_Load(object sender, EventArgs e)
+        {
 
+        }
+
+        private void buttonYenile_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            label5.Text = "";
+
+            tableLayoutPanel1.Controls.Clear();
+
+        }
     }
 }
 

@@ -73,82 +73,72 @@ namespace Projemiz
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            StringBuilder rem = new StringBuilder();
-            string msg = dividendTextBox.Text;
-            string key = divisorTextBox.Text;
-            int msg_len = msg.Length;
-            int key_len = key.Length;
+            string data = dividendTextBox.Text;
+            string divisor = divisorTextBox.Text;
 
-            // Append 0 at the end
-            StringBuilder temp = new StringBuilder(msg);
-            for (int i = 0; i < key_len - 1; i++)
+            // CRC işlemi
+            string crcResult = CalculateCRC(data, divisor);
+
+            // CRC bitlerini verinin sonuna ekle
+            string dataWithCRC = data + crcResult;
+
+            // Alıcı tarafından doğrulama
+            string receivedData = dataWithCRC; // Alıcı veriyi aldıktan sonra
+
+            string receivedCRCResult = CalculateCRC(receivedData, divisor);
+
+            // Sonucu ekranda göster
+            label6.Text = crcResult;
+            label7.Text = dataWithCRC;
+
+            if (IsCRCValid(receivedCRCResult))
             {
-                temp.Append('0');
-            }
-
-            // XOR operation
-            for (int j = 0; j <= msg_len - key_len; j++)
-            {
-                if (temp[j] != '0')
-                {
-                    for (int k = 0; k < key_len; k++)
-                    {
-                        rem.Append(temp[j + k] = (temp[j + k] == key[k]) ? '0' : '1');
-                    }
-                }
-            }
-
-            // Reduce remainder
-            for (int k = 0; k < key_len; k++)
-            {
-                rem.Remove(0, 1);
-            }
-
-            // CRC bitini bölme işlemlerinden sonra kalan son 3 biti al
-            string last3Bits = rem.ToString().Substring(rem.Length - 3);
-
-            // Sonucu ekrana yazdır
-            label6.Text = "Last 3 Bits: " + last3Bits;
-
-            // CRC bitini dividend'in sonuna ekle
-            string result = msg + last3Bits;
-
-            // Hata kontrolü
-            StringBuilder tempResult = new StringBuilder(result);
-            temp.Clear();
-
-            // XOR operation
-            for (int j = 0; j <= msg_len - key_len; j++)
-            {
-                if (tempResult[j] != '0')
-                {
-                    for (int k = 0; k < key_len; k++)
-                    {
-                        temp.Append(tempResult[j + k] = (tempResult[j + k] == key[k]) ? '0' : '1');
-                    }
-                }
-            }
-
-            // Reduce remainder
-            for (int k = 0; k < key_len; k++)
-            {
-                temp.Remove(0, 1);
-            }
-
-            // CRC kontrolü
-            string crcCheck = temp.ToString().Substring(temp.Length - 3);
-
-            if (crcCheck == "000")
-            {
-                label8.Text = "Status: Hatasız Gönderildi";
+                label8.Text = "\nHata Kontrolü: Hatasız";
             }
             else
             {
-                label8.Text = "Status: Hatalı Gönderildi";
+                label8.Text = "\nHata Kontrolü: Hatalı";
+            }
+        }
+        private bool IsCRCValid(string crc)
+        {
+            // CRC sonucunun tüm bitlerini kontrol et
+            foreach (char bit in crc)
+            {
+                if (bit != '0')
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        private string CalculateCRC(string data, string divisor)
+        {
+            int dataLength = data.Length;
+            int divisorLength = divisor.Length;
+
+            // Data'yı uzat
+            string extendedData = data.PadRight(dataLength + divisorLength - 1, '0');
+
+            char[] dataArray = extendedData.ToCharArray();
+            char[] divisorArray = divisor.ToCharArray();
+
+            for (int i = 0; i < dataLength; i++)
+            {
+                if (dataArray[i] == '1')
+                {
+                    for (int j = 0; j < divisorLength; j++)
+                    {
+                        dataArray[i + j] = dataArray[i + j] == divisorArray[j] ? '0' : '1';
+                    }
+                }
             }
 
-            // Tüm sonuçları göster
-            label7.Text = "Data Transmitted: " + result;
+            // CRC bitlerini al
+            string crcBits = new string(dataArray, dataLength, divisorLength - 1);
+
+            return crcBits;
+
         }
     }
 }

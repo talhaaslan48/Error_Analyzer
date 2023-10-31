@@ -42,6 +42,7 @@
             button3 = new Button();
             tableLayoutPanel1 = new TableLayoutPanel();
             label5 = new Label();
+            buttonYenile = new Button();
             SuspendLayout();
             // 
             // label1
@@ -125,7 +126,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(384, 404);
+            button2.Location = new Point(389, 407);
             button2.Name = "button2";
             button2.Size = new Size(206, 39);
             button2.TabIndex = 9;
@@ -187,11 +188,22 @@
             label5.Size = new Size(0, 38);
             label5.TabIndex = 13;
             // 
+            // buttonYenile
+            // 
+            buttonYenile.Location = new Point(163, 769);
+            buttonYenile.Name = "buttonYenile";
+            buttonYenile.Size = new Size(206, 60);
+            buttonYenile.TabIndex = 14;
+            buttonYenile.Text = "Tekrar İşlem Yapmak İçin Basınız";
+            buttonYenile.UseVisualStyleBackColor = true;
+            buttonYenile.Click += buttonYenile_Click;
+            // 
             // LRCcs
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1902, 1033);
+            Controls.Add(buttonYenile);
             Controls.Add(label5);
             Controls.Add(tableLayoutPanel1);
             Controls.Add(button3);
@@ -208,6 +220,7 @@
             Name = "LRCcs";
             Text = "LRCcs";
             TopMost = true;
+            Load += LRCcs_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -227,5 +240,6 @@
         private Button button3;
         private TableLayoutPanel tableLayoutPanel1;
         private Label label5;
+        private Button buttonYenile;
     }
 }
