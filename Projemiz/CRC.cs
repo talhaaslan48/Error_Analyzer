@@ -92,32 +92,7 @@ namespace Projemiz
 
         private void button2_Click_2(object sender, EventArgs e)
         {
-            string data = dividendTextBox.Text;
-            string divisor = divisorTextBox.Text;
-
-            // CRC işlemi
-            string crcResult = CalculateCRC(data, divisor);
-
-            // CRC bitlerini verinin sonuna ekle
-            string dataWithCRC = data + crcResult;
-
-            // Alıcı tarafından doğrulama
-            string receivedData = dataWithCRC; // Alıcı veriyi aldıktan sonra
-
-            string receivedCRCResult = CalculateCRC(receivedData, divisor);
-
-            // Sonucu ekranda göster
-            label6.Text = crcResult;
-            label7.Text = dataWithCRC;
-
-            if (IsCRCValid(receivedCRCResult))
-            {
-                label8.Text += "\nHata Kontrolü: Hatasız";
-            }
-            else
-            {
-                label8.Text += "\nHata Kontrolü: Hatalı";
-            }
+            
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -157,5 +132,65 @@ namespace Projemiz
             formAnaSyf.Show();
             this.Hide();
         }
-    }
+
+			private void TestEtButton_Click(object sender, EventArgs e)
+			{
+			
+				string data = dividendTextBox.Text;
+				string divisor = divisorTextBox.Text;
+
+				// CRC işlemi
+				string crcResult = CalculateCRC(data, divisor);
+
+				// CRC bitlerini verinin sonuna ekle
+				string dataWithCRC = data + crcResult;
+
+				
+				string testdata = TestTextBox.Text;
+
+
+				string receivedCRCResult = CalculateCRC(testdata, divisor);
+
+
+				if (IsCRCValid(receivedCRCResult))
+				{
+					label13.Text = "\nHata Kontrolü: Hatasız";
+				}
+				else
+				{
+					label13.Text = "\nHata Kontrolü: Hatalı";
+				}
+		}
+
+		private void button2_Click_3(object sender, EventArgs e)
+		{
+			string data = dividendTextBox.Text;
+			string divisor = divisorTextBox.Text;
+
+			// CRC işlemi
+			string crcResult = CalculateCRC(data, divisor);
+
+			// CRC bitlerini verinin sonuna ekle
+			string dataWithCRC = data + crcResult;
+
+			// Alıcı tarafından doğrulama
+			string receivedData = dataWithCRC; // Alıcı veriyi aldıktan sonra
+
+			string receivedCRCResult = CalculateCRC(receivedData, divisor);
+
+			// Sonucu ekranda göster
+			label6.Text = crcResult;
+			label7.Text = dataWithCRC;
+			TestTextBox.Text = dataWithCRC;
+
+			if (IsCRCValid(receivedCRCResult))
+			{
+				label8.Text = "\nHata Kontrolü: Hatasız";
+			}
+			else
+			{
+				label8.Text = "\nHata Kontrolü: Hatalı";
+			}
+		}
+	}
 }
