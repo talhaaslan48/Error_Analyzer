@@ -142,6 +142,7 @@ namespace Projemiz
 
             if (test)
             {
+                fillTable();
                 for (int col = 0; col < tableLayoutPanel1.ColumnCount; col++)
                 {
                     int birSayisi = 0;
