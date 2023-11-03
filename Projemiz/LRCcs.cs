@@ -61,29 +61,47 @@ namespace Projemiz
             }
         }
 
+        private void fillTable()
+        {
+            if(
+                (textBox1.Text.Length == 8 || textBox1.Text.Length == 0) &&
+                (textBox2.Text.Length == 8 || textBox2.Text.Length == 0) &&
+                (textBox3.Text.Length == 8 || textBox3.Text.Length == 0) &&
+                (textBox4.Text.Length == 8 || textBox4.Text.Length == 0)
+                )
+            {
+                tableLayoutPanel1.Controls.Clear();
+                AddLabelsToTableLayoutPanel(textBox1, 0);
+                AddLabelsToTableLayoutPanel(textBox2, 1);
+                AddLabelsToTableLayoutPanel(textBox3, 2);
+                AddLabelsToTableLayoutPanel(textBox4, 3);
+            }
+
+        }
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            AddLabelsToTableLayoutPanel(textBox1, 0);
+            fillTable();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            AddLabelsToTableLayoutPanel(textBox2, 1);
+            fillTable();
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            AddLabelsToTableLayoutPanel(textBox3, 2);
+            fillTable();
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
-            AddLabelsToTableLayoutPanel(textBox4, 3);
+            fillTable();
         }
 
         private void LRCcs_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar != '0' && e.KeyChar != '1')
+            if (e.KeyChar != '0' && e.KeyChar != '1' && e.KeyChar != (char)Keys.Back && e.KeyChar != (char)Keys.Delete)
             {
                 e.Handled = true;
             }
