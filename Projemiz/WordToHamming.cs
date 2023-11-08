@@ -124,7 +124,7 @@ namespace Projemiz
 
         private void button3_Click(object sender, EventArgs e)
         {
-            FormAnaSyf formAnaSyf = new FormAnaSyf();
+            FormAnaSayfa formAnaSyf = new FormAnaSayfa();
             formAnaSyf.Show();
             this.Hide();
         }

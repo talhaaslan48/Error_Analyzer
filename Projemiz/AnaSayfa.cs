@@ -1,8 +1,8 @@
 namespace Projemiz
 {
-    public partial class FormAnaSyf : Form
+    public partial class FormAnaSayfa : Form
     {
-        public FormAnaSyf()
+        public FormAnaSayfa()
         {
             InitializeComponent();
         }
@@ -10,13 +10,13 @@ namespace Projemiz
 
 
 
-        private void FormAnaSyf_Load(object sender, EventArgs e)
+        private void FormAnaSayfa_Load(object sender, EventArgs e)
         {
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
         }
 
 
-        private void FormAnaSyf_Load_1(object sender, EventArgs e)
+        private void FormAnaSayfa_Load_1(object sender, EventArgs e)
         {
 
         }

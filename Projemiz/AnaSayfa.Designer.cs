@@ -1,6 +1,6 @@
 ﻿namespace Projemiz
 {
-    partial class FormAnaSyf
+    partial class FormAnaSayfa
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAnaSyf));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAnaSayfa));
             panel1 = new Panel();
             button7 = new Button();
             button4 = new Button();
@@ -153,7 +153,7 @@
             label2.TabIndex = 2;
             label2.Text = resources.GetString("label2.Text");
             // 
-            // FormAnaSyf
+            // FormAnaSayfa
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -162,10 +162,10 @@
             Controls.Add(label1);
             Controls.Add(panel1);
             Margin = new Padding(3, 4, 3, 4);
-            Name = "FormAnaSyf";
+            Name = "FormAnaSayfa";
             Text = "Ana Sayfa";
             WindowState = FormWindowState.Maximized;
-            Load += FormAnaSyf_Load_1;
+            Load += FormAnaSayfa_Load_1;
             panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
