@@ -28,12 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FEC";
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FEC));
+            label2 = new Label();
+            button1 = new Button();
+            label1 = new Label();
+            button3 = new Button();
+            SuspendLayout();
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Rockwell", 48F, FontStyle.Italic, GraphicsUnit.Point);
+            label2.Location = new Point(554, 29);
+            label2.Name = "label2";
+            label2.Size = new Size(614, 89);
+            label2.TabIndex = 4;
+            label2.Text = "FEC Algoritması\r\n";
+            label2.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(1532, 143);
+            button1.Name = "button1";
+            button1.Size = new Size(295, 68);
+            button1.TabIndex = 5;
+            button1.Text = "PDF İndir";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(39, 143);
+            label1.Name = "label1";
+            label1.Size = new Size(1469, 100);
+            label1.TabIndex = 6;
+            label1.Text = resources.GetString("label1.Text");
+            // 
+            // button3
+            // 
+            button3.Location = new Point(66, 919);
+            button3.Name = "button3";
+            button3.Size = new Size(178, 73);
+            button3.TabIndex = 18;
+            button3.Text = "Geri Dönmek İçin Lütfen Butona Basınız";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // FEC
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1902, 1033);
+            Controls.Add(button3);
+            Controls.Add(label1);
+            Controls.Add(button1);
+            Controls.Add(label2);
+            Name = "FEC";
+            Text = "FEC";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label2;
+        private Button button1;
+        private Label label1;
+        private Button button3;
     }
 }
