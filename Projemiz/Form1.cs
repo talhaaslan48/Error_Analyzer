@@ -23,7 +23,7 @@ namespace Projemiz
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Hamming form1 = new Hamming();
+            SingleCharacterForm form1 = new SingleCharacterForm();
             form1.Show();
             this.Hide();
         }
