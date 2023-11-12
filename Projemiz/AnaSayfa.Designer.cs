@@ -97,7 +97,7 @@
             button6.Name = "button6";
             button6.Size = new Size(375, 48);
             button6.TabIndex = 3;
-            button6.Text = "BCH Algoritması";
+            button6.Text = "VRC Algoritması";
             button6.UseVisualStyleBackColor = true;
             button6.Click += button6_Click_1;
             // 

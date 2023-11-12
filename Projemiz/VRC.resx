@@ -118,11 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label1.Text" xml:space="preserve">
-    <value>Berlekamp-Massey algoritması, belirli bir ikili çıkış dizisi için en kısa doğrusal geri besleme kaydırmalı yazmacı (LFSR) bulan bir algoritmadır .
- Algoritma ayrıca rastgele bir alanda lineer olarak yinelenen bir dizinin minimum polinomunu da bulacaktır. 
-Alan gereksinimi, Berlekamp-Massey algoritmasının sıfır olmayan tüm öğelerin çarpımsal bir tersi olmasını gerektirdiği anlamına gelir. Reeds ve Sloane, bir yüzüğü işlemek için bir uzantı sunar
-Elwyn Berlekamp, Bose–Chaudhuri–Hocquenghem (BCH) kodlarını çözmek için bir algoritma icat etti.
- James Massey, lineer geri besleme kaydırmalı yazmaçlara uygulanmasını fark etti ve algoritmayı basitleştirdi.
- Massey, algoritmayı LFSR Sentez Algoritması (Berlekamp Yinelemeli Algoritma) olarak adlandırıldı ancak şimdi Berlekamp-Massey algoritması olarak biliniyor.</value>
+    <value>"VRC algoritması" ifadesi, kullanılan bağlam ve sektöre bağlı olarak farklı anlamlar taşıyabilir. Ancak genel olarak, "VRC" terimi, "Vertical Redundancy Check" anlamına gelir.
+ Veri bütünlüğünü kontrol etmek için kullanılan bir hata denetleme yöntemini ifade eder.
+Bir VRC algoritması, verilerin iletimi sırasında olası hata veya bozulmalara karşı koruma sağlamak amacıyla kullanılır. 
+Tipik olarak, iletilen verilerin belirli bir yapıdaki toplamları veya kontrolleri alıcı tarafından doğrulandığında, verilerin bütünlüğü sağlanmış olur.
+ Eğer bir hata tespit edilirse, iletim hatası olabileceğinden veri yeniden gönderilebilir.</value>
   </data>
 </root>

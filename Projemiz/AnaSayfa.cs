@@ -58,7 +58,7 @@ namespace Projemiz
 
         private void button6_Click_1(object sender, EventArgs e)
         {
-            BCH form6 = new BCH();
+            VRC form6 = new VRC();
             form6.Show();
             this.Hide();
         }
