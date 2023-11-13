@@ -28,12 +28,6 @@ namespace Projemiz
             this.Hide();
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            WordToHamming form2 = new WordToHamming();
-            form2.Show();
-            this.Hide();
-        }
 
         private void button3_Click_1(object sender, EventArgs e)
         {

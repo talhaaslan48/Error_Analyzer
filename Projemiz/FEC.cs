@@ -13,8 +13,7 @@ namespace Projemiz
 {
     public partial class FEC : Form
     {
-        private string veri1;
-        private string veri2;
+
         public FEC()
         {
             InitializeComponent();
