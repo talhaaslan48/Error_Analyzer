@@ -47,35 +47,63 @@ namespace Projemiz
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void AddLabelsToTableLayoutPanel(TextBox textBox, int rowIndex)
         {
-            // Textbox'tan veriyi al
-            string input = textBox1.Text;
-
-            // Girilen veriyi kontrol et
-            if (IsValidBinary(input))
+            if (textBox.Text.Length == 8)
             {
-                // 1'leri say
-                int oneCount = CountOnes(input);
+                for (int i = 0; i < 8; i++)
+                {
+                    Label label = new Label();
+                    label.Text = textBox.Text[i].ToString();
+                    label.ForeColor = Color.Black;
+                    label.Font = new Font(label.Font.FontFamily, 12);
+                    tableLayoutPanel1.Controls.Add(label, columnIndex, i);
+                }
 
-                // Çift mi tek mi kontrol et
-                int result = (oneCount % 2 == 0) ? 0 : 1;
-
-                // Sonucu label'a yaz
-                label6.Text = result.ToString();
-
-                // Sonucu giriş verisi ile birleştirip diğer label'a yaz
-                label7.Text = result.ToString() + input;
-            }
-            else
-            {
-                MessageBox.Show("Geçersiz binary girişi! Lütfen sadece 0 ve 1 içeren bir sayı girin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return; // Hata durumunda metodu burada sonlandır
+                // Yenile butonunu etkinleştir
+                buttonYenile.Enabled = true;
             }
         }
 
+        // ColumnCount'u 5 olarak güncelle
+        private void fillTable()
+        {
+            if (
+        (textBox1.Text.Length == 8 || textBox1.Text.Length == 0) &&
+        (textBox2.Text.Length == 8 || textBox2.Text.Length == 0) &&
+        (textBox3.Text.Length == 8 || textBox3.Text.Length == 0) &&
+        (textBox4.Text.Length == 8 || textBox4.Text.Length == 0)
+    )
+            {
+                tableLayoutPanel1.ColumnCount = 5;
+                tableLayoutPanel1.Controls.Clear();
+                columnIndex = 0; // columnIndex'ı sıfırla
+                AddLabelsToTableLayoutPanel(textBox1, 0);
+                AddLabelsToTableLayoutPanel(textBox2, 1);
+                AddLabelsToTableLayoutPanel(textBox3, 2);
+                AddLabelsToTableLayoutPanel(textBox4, 3);
+            }
+        }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            fillTable();
+        }
 
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            fillTable();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            fillTable();
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            fillTable();
+        }
 
         private void VRCcs_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -85,40 +113,97 @@ namespace Projemiz
             }
         }
 
-        private bool IsValidBinary(string input)
+        private void button3_Click(object sender, EventArgs e)
         {
-            return input.All(c => c == '0' || c == '1');
+
+            FormAnaSayfa formAnaSyf = new FormAnaSayfa();
+            formAnaSyf.Show();
+            this.Hide();
         }
 
-        private int CountOnes(string binaryString)
-        {
-            return binaryString.Count(c => c == '1');
-        }
 
-        private string GenerateRandomBinary(int length)
-        {
-            Random random = new Random();
-            return new string(Enumerable.Range(0, length).Select(_ => random.Next(2).ToString()[0]).ToArray());
-        }
+        List<string> list = new List<string>();
+        private int columnIndex;
 
-        private void button3_Click_1(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            // TextBox2'deki veriyi al
-            string input2 = textBox2.Text;
 
-            // Label7'den alınan veri ile TextBox2'deki verinin uzunluğunu karşılaştır
-            if (!string.IsNullOrEmpty(input2) && input2.Length == label7.Text.Length)
+            list.Clear();
+            bool test = false;
+
+            try
             {
-                // TextBox2'deki 1'leri say
-                int generatedOneCount = CountOnes(input2);
+                string[] girilenMetinler = { textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text };
 
-                // Çift mi tek mi kontrol et
-                label10.Text = (generatedOneCount % 2 == 0) ? "Hatasız" : "Hatalı";
+                foreach (string girilenMetin in girilenMetinler)
+                {
+                    if (girilenMetin.Length != 8)
+                    {
+                        return;
+                    }
+                }
+
+                test = true;
             }
-            else
+            catch
             {
-                MessageBox.Show("Üretilen sayı uzunluğu giriş verisi ile aynı değil!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lütfen her kutucağa 8 karakter uzunluğunda bir sayı girin.");
             }
+
+            if (test)
+            {
+                fillTable();
+                for (int col = 0; col < tableLayoutPanel1.ColumnCount; col++)
+                {
+                    int birSayisi = 0;
+
+                    for (int satir = 0; satir < tableLayoutPanel1.RowCount; satir++)
+                    {
+                        Control control = tableLayoutPanel1.GetControlFromPosition(col, satir);
+
+                        if (control is Label label)
+                        {
+                            if (label.Text == "1")
+                            {
+                                birSayisi++;
+                            }
+                        }
+                    }
+
+                    string sonuc = (birSayisi % 2 == 0) ? "0" : "1";
+                    Label sonucLabel = new Label();
+                    sonucLabel.Text = sonuc;
+                    sonucLabel.ForeColor = Color.Black;
+                    sonucLabel.Font = new Font(sonucLabel.Font.FontFamily, 12);
+                    list.Add(sonuc);
+                    tableLayoutPanel1.Controls.Add(sonucLabel, col, 4);
+                }
+
+                string lrcres = "";
+
+                for (int i = 0; i < list.Count; i++)
+                {
+                    lrcres += list[i].ToString();
+                }
+
+                lrcres = lrcres + "-" + textBox4.Text;
+                lrcres = lrcres + "-" + textBox3.Text;
+                lrcres = lrcres + "-" + textBox2.Text;
+                lrcres = lrcres + "-" + textBox1.Text;
+                label5.Text = lrcres;
+            }
+        }
+
+        private void buttonYenile_Click(object sender, EventArgs e)
+        {
+
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            label5.Text = "";
+
+            tableLayoutPanel1.Controls.Clear();
         }
     }
 }
