@@ -60,7 +60,7 @@ namespace Projemiz
                     tableLayoutPanel1.Controls.Add(label, columnIndex, i);
                 }
 
-                // Yenile butonunu etkinleştir
+                columnIndex++; // Bir sonraki sütun için columnIndex'ı artır
                 buttonYenile.Enabled = true;
             }
         }
@@ -127,7 +127,6 @@ namespace Projemiz
 
         private void button2_Click(object sender, EventArgs e)
         {
-
             list.Clear();
             bool test = false;
 
@@ -139,6 +138,7 @@ namespace Projemiz
                 {
                     if (girilenMetin.Length != 8)
                     {
+                        MessageBox.Show("Lütfen her kutucağa 8 karakter uzunluğunda bir sayı girin.");
                         return;
                     }
                 }
@@ -147,17 +147,33 @@ namespace Projemiz
             }
             catch
             {
-                MessageBox.Show("Lütfen her kutucağa 8 karakter uzunluğunda bir sayı girin.");
+                MessageBox.Show("Bir hata oluştu. Lütfen geçerli bir giriş yapın.");
+                return;
             }
 
             if (test)
             {
-                fillTable();
-                for (int col = 0; col < tableLayoutPanel1.ColumnCount; col++)
+               
+
+                tableLayoutPanel1.RowCount = 8; // Sabit satır sayısı
+                tableLayoutPanel1.ColumnCount = 5; // Sabit sütun sayısı
+
+                // Hücreleri temizle
+                tableLayoutPanel1.Controls.Clear();
+
+                for (int i = 0; i < 4; i++)
+                {
+                    AddLabelsToTableLayoutPanel(textBox1, i);
+                    AddLabelsToTableLayoutPanel(textBox2, i);
+                    AddLabelsToTableLayoutPanel(textBox3, i);
+                    AddLabelsToTableLayoutPanel(textBox4, i);
+                }
+
+                for (int col = 0; col < 8; col++)
                 {
                     int birSayisi = 0;
 
-                    for (int satir = 0; satir < tableLayoutPanel1.RowCount; satir++)
+                    for (int satir = 0; satir < 8; satir++)
                     {
                         Control control = tableLayoutPanel1.GetControlFromPosition(col, satir);
 
@@ -176,8 +192,11 @@ namespace Projemiz
                     sonucLabel.ForeColor = Color.Black;
                     sonucLabel.Font = new Font(sonucLabel.Font.FontFamily, 12);
                     list.Add(sonuc);
-                    tableLayoutPanel1.Controls.Add(sonucLabel, col, 4);
+                    tableLayoutPanel1.Controls.Add(sonucLabel, col, 8);
                 }
+
+                // Paneli boyutlandırma
+
 
                 string lrcres = "";
 
