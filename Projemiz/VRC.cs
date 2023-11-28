@@ -47,71 +47,7 @@ namespace Projemiz
             }
         }
 
-        private void AddLabelsToTableLayoutPanel(TextBox textBox, int rowIndex)
-        {
-            if (textBox.Text.Length == 8)
-            {
-                for (int i = 0; i < 8; i++)
-                {
-                    Label label = new Label();
-                    label.Text = textBox.Text[i].ToString();
-                    label.ForeColor = Color.Black;
-                    label.Font = new Font(label.Font.FontFamily, 12);
-                    tableLayoutPanel1.Controls.Add(label, columnIndex, i);
-                }
 
-                columnIndex++; // Bir sonraki sütun için columnIndex'ı artır
-                buttonYenile.Enabled = true;
-            }
-        }
-
-        // ColumnCount'u 5 olarak güncelle
-        private void fillTable()
-        {
-            if (
-        (textBox1.Text.Length == 8 || textBox1.Text.Length == 0) &&
-        (textBox2.Text.Length == 8 || textBox2.Text.Length == 0) &&
-        (textBox3.Text.Length == 8 || textBox3.Text.Length == 0) &&
-        (textBox4.Text.Length == 8 || textBox4.Text.Length == 0)
-    )
-            {
-                tableLayoutPanel1.ColumnCount = 5;
-                tableLayoutPanel1.Controls.Clear();
-                columnIndex = 0; // columnIndex'ı sıfırla
-                AddLabelsToTableLayoutPanel(textBox1, 0);
-                AddLabelsToTableLayoutPanel(textBox2, 1);
-                AddLabelsToTableLayoutPanel(textBox3, 2);
-                AddLabelsToTableLayoutPanel(textBox4, 3);
-            }
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            fillTable();
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            fillTable();
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-            fillTable();
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-            fillTable();
-        }
-
-        private void VRCcs_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar != '0' && e.KeyChar != '1' && e.KeyChar != (char)Keys.Back && e.KeyChar != (char)Keys.Delete)
-            {
-                e.Handled = true;
-            }
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -122,107 +58,150 @@ namespace Projemiz
         }
 
 
-        List<string> list = new List<string>();
-        private int columnIndex;
-
         private void button2_Click(object sender, EventArgs e)
         {
-            list.Clear();
-            bool test = false;
+            // Toplam 1 sayısı
+            int toplamBirSayisi = 0;
 
-            try
+            // Her bir TextBox'ten 1'leri say
+            foreach (Control control in Controls)
             {
-                string[] girilenMetinler = { textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text };
-
-                foreach (string girilenMetin in girilenMetinler)
+                if (control is TextBox textBox)
                 {
-                    if (girilenMetin.Length != 8)
-                    {
-                        MessageBox.Show("Lütfen her kutucağa 8 karakter uzunluğunda bir sayı girin.");
-                        return;
-                    }
-                }
+                    // TextBox'ten 1'leri say
+                    int sayiBirSayisi = textBox.Text.Count(c => c == '1');
 
-                test = true;
-            }
-            catch
-            {
-                MessageBox.Show("Bir hata oluştu. Lütfen geçerli bir giriş yapın.");
-                return;
+                    // Toplam 1 sayısını güncelle
+                    toplamBirSayisi += sayiBirSayisi;
+                }
             }
 
-            if (test)
+            // Label'a sonucu yazdır
+            label26.Text = toplamBirSayisi % 2 == 1 ? "1" : "0";
+
+            textBox15.Text = textBox23.Text;
+            textBox14.Text = textBox1.Text;
+            textBox13.Text = textBox2.Text;
+            textBox12.Text = textBox3.Text;
+            textBox11.Text = textBox4.Text;
+            textBox10.Text = textBox5.Text;
+            textBox9.Text = textBox6.Text;
+            textBox8.Text = textBox7.Text;
+
+            // Eğer labelSonuc'un Text özelliği null değilse ve boş değilse
+            if (!string.IsNullOrEmpty(label26.Text))
             {
-               
+                // labelSonuc'un Text'ini textBoxSonuc'a kopyala
+                textBox24.Text = label26.Text;
+            }
 
-                tableLayoutPanel1.RowCount = 8; // Sabit satır sayısı
-                tableLayoutPanel1.ColumnCount = 5; // Sabit sütun sayısı
-
-                // Hücreleri temizle
-                tableLayoutPanel1.Controls.Clear();
-
-                for (int i = 0; i < 4; i++)
-                {
-                    AddLabelsToTableLayoutPanel(textBox1, i);
-                    AddLabelsToTableLayoutPanel(textBox2, i);
-                    AddLabelsToTableLayoutPanel(textBox3, i);
-                    AddLabelsToTableLayoutPanel(textBox4, i);
-                }
-
-                for (int col = 0; col < 8; col++)
-                {
-                    int birSayisi = 0;
-
-                    for (int satir = 0; satir < 8; satir++)
-                    {
-                        Control control = tableLayoutPanel1.GetControlFromPosition(col, satir);
-
-                        if (control is Label label)
-                        {
-                            if (label.Text == "1")
-                            {
-                                birSayisi++;
-                            }
-                        }
-                    }
-
-                    string sonuc = (birSayisi % 2 == 0) ? "0" : "1";
-                    Label sonucLabel = new Label();
-                    sonucLabel.Text = sonuc;
-                    sonucLabel.ForeColor = Color.Black;
-                    sonucLabel.Font = new Font(sonucLabel.Font.FontFamily, 12);
-                    list.Add(sonuc);
-                    tableLayoutPanel1.Controls.Add(sonucLabel, col, 8);
-                }
-
-                // Paneli boyutlandırma
+        }
 
 
-                string lrcres = "";
+        private int sure = 5; // İlerleme süresi (saniye)
+        private int adimSayisi = 100; // Toplam adım sayısı
+        private int adimSuresi; // Her adımın süresi (milisaniye)
 
-                for (int i = 0; i < list.Count; i++)
-                {
-                    lrcres += list[i].ToString();
-                }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            button5.Enabled = false;
+            // Adım süresini hesapla
+            adimSuresi = sure * 1000 / adimSayisi;
 
-                lrcres = lrcres + "-" + textBox4.Text;
-                lrcres = lrcres + "-" + textBox3.Text;
-                lrcres = lrcres + "-" + textBox2.Text;
-                lrcres = lrcres + "-" + textBox1.Text;
-                label5.Text = lrcres;
+            // Timer'ı başlat
+            timerProgress.Start();
+
+
+
+
+
+
+        }
+
+        private void VRC_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void timerProgress_Tick(object sender, EventArgs e)
+        {
+
+            // ProgressBar henüz dolmadıysa
+            if (progressBar1.Value < adimSayisi)
+            {
+                // Progress Bar'ın değerini artır
+                progressBar1.Value += 1;
+            }
+            else
+            {
+                button5.Enabled = true;
+                // ProgressBar dolunca Timer'ı durdur
+                timerProgress.Stop();
+
+                // TextBox'a veriyi yaz
+                txtD8.Text = textBox15.Text;
+                textBox16.Text = textBox14.Text;
+                textBox17.Text = textBox13.Text;
+                textBox18.Text = textBox12.Text;
+                textBox19.Text = textBox11.Text;
+                textBox20.Text = textBox10.Text;
+                textBox21.Text = textBox9.Text;
+                textBox22.Text = textBox8.Text;
+                textBox25.Text = textBox24.Text;
+
+
             }
         }
 
         private void buttonYenile_Click(object sender, EventArgs e)
         {
 
-            textBox1.Clear();
-            textBox2.Clear();
-            textBox3.Clear();
-            textBox4.Clear();
-            label5.Text = "";
+            label26.Text = string.Empty;
+            label27.Text = string.Empty;
 
-            tableLayoutPanel1.Controls.Clear();
+            // Belirli TextBox'ların isimlerini ayarla
+            string[] textBoxIsimleri = { "textBox1", "textBox2", "textBox3", "textBox4", "textBox5", "textBox6", "textBox7", "textBox8", "textBox9", "textBox10", "textBox11", "textBox12", "textBox13", "textBox14", "textBox15", "textBox16", "textBox17", "textBox18", "textBox19", "textBox20", "textBox21", "textBox22", "textBox23", "textBox24", "textBox25", "txtD8", }; // Örnek isimler, senin uygulamandaki isimlere uygun şekilde güncelle
+
+            foreach (string textBoxIsim in textBoxIsimleri)
+            {
+                TextBox textBox = Controls.Find(textBoxIsim, true).FirstOrDefault() as TextBox;
+
+                if (textBox != null)
+                {
+                    // TextBox'ın içeriğini sil
+                    textBox.Text = string.Empty;
+                }
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            int toplamBirSayisi = 0;
+
+            // Belirli TextBox'ların isimlerini ve sayılarını ayarla
+            string[] textBoxIsimleri = { "textBox15", "textBox14", "textBox13", "textBox12", "textBox11", "textBox10", "textBox9", "textBox8", "textBox24" }; // Örnek isimler, senin uygulamandaki isimlere uygun şekilde güncelle
+
+            foreach (string textBoxIsim in textBoxIsimleri)
+            {
+                TextBox textBox = Controls.Find(textBoxIsim, true).FirstOrDefault() as TextBox;
+
+                if (textBox != null)
+                {
+                    int sayiBirSayisi = textBox.Text.Count(c => c == '1');
+                    toplamBirSayisi += sayiBirSayisi;
+                }
+            }
+
+            // Çift veya tek sayıda 1 olduğuna göre "Hatasız" veya "Hatalı" yazdır
+            if (toplamBirSayisi % 2 == 0)
+            {
+                label27.Text = "Kabul Edilir Data";
+            }
+            else
+            {
+                label27.Text = "Red Edilir Data";
+            }
         }
     }
 }
