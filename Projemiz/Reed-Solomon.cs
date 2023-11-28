@@ -220,7 +220,47 @@ namespace Projemiz
 
         private void button4_Click(object sender, EventArgs e)
         {
-            textBox37.Text = textBox12.Text + textBox11.Text + textBox21.Text + textBox29.Text;
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textBox60.Text = textBox16.Text;
+            textBox59.Text = textBox5.Text;
+            textBox58.Text = textBox6.Text;
+            textBox57.Text = textBox7.Text;
+            textBox56.Text = textBox8.Text;
+            textBox55.Text = textBox9.Text;
+            textBox54.Text = textBox10.Text;
+            textBox53.Text = textBox11.Text;
+
+            textBox100.Text = textBox20.Text;
+            textBox99.Text = textBox19.Text;
+            textBox98.Text = textBox18.Text;
+            textBox97.Text = textBox17.Text;
+            textBox96.Text = textBox15.Text;
+            textBox95.Text = textBox14.Text;
+            textBox94.Text = textBox13.Text;
+            textBox93.Text = textBox12.Text;
+
+            textBox92.Text = textBox28.Text;
+            textBox91.Text = textBox27.Text;
+            textBox90.Text = textBox26.Text;
+            textBox89.Text = textBox25.Text;
+            textBox88.Text = textBox24.Text;
+            textBox87.Text = textBox23.Text;
+            textBox86.Text = textBox22.Text;
+            textBox85.Text = textBox21.Text;
+
+            textBox84.Text = textBox36.Text;
+            textBox83.Text = textBox35.Text;
+            textBox82.Text = textBox34.Text;
+            textBox81.Text = textBox33.Text;
+            textBox80.Text = textBox32.Text;
+            textBox79.Text = textBox31.Text;
+            textBox78.Text = textBox30.Text;
+            textBox77.Text = textBox29.Text;
+
         }
     }
 }

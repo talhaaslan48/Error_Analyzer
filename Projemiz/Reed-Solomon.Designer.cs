@@ -184,6 +184,8 @@
             textBox122 = new TextBox();
             textBox123 = new TextBox();
             textBox124 = new TextBox();
+            label28 = new Label();
+            label29 = new Label();
             SuspendLayout();
             // 
             // label2
@@ -1829,7 +1831,7 @@
             // label17
             // 
             label17.AutoSize = true;
-            label17.Location = new Point(229, 837);
+            label17.Location = new Point(229, 923);
             label17.Name = "label17";
             label17.Size = new Size(25, 20);
             label17.TabIndex = 183;
@@ -1852,6 +1854,7 @@
             button3.TabIndex = 185;
             button3.Text = "Veri Kontrolüne Gönder";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // label19
             // 
@@ -2296,11 +2299,31 @@
             textBox124.TabIndex = 214;
             textBox124.TextAlign = HorizontalAlignment.Center;
             // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Location = new Point(235, 765);
+            label28.Name = "label28";
+            label28.Size = new Size(19, 20);
+            label28.TabIndex = 222;
+            label28.Text = "+";
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Location = new Point(1201, 765);
+            label29.Name = "label29";
+            label29.Size = new Size(19, 20);
+            label29.TabIndex = 223;
+            label29.Text = "+";
+            // 
             // Reed_Solomon
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1902, 1055);
+            Controls.Add(label29);
+            Controls.Add(label28);
             Controls.Add(textBox117);
             Controls.Add(textBox118);
             Controls.Add(textBox119);
@@ -2620,5 +2643,7 @@
         private TextBox textBox122;
         private TextBox textBox123;
         private TextBox textBox124;
+        private Label label28;
+        private Label label29;
     }
 }
