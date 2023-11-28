@@ -17,147 +17,212 @@ namespace Projemiz
 {
     public partial class Reed_Solomon : Form
     {
+
+        private List<List<TextBox>> inputGroups; // Her bir basamak için TextBox gruplarını tutacak liste
+
         public Reed_Solomon()
         {
             InitializeComponent();
+
         }
 
-		private void button1_Click(object sender, EventArgs e)
-		{
-			// PDF dosyasının yolunu belirtin
-			string pdfDosyaYolu = "C:\\Users\\talha\\Downloads\\9.10.2023 Siber - 1.pdf"; // Gerçek dosya yolunu belirtin
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // PDF dosyasının yolunu belirtin
+            string pdfDosyaYolu = "C:\\Users\\talha\\Downloads\\9.10.2023 Siber - 1.pdf"; // Gerçek dosya yolunu belirtin
 
-			// Dosyanın varlığını kontrol etmek isterseniz:
-			if (File.Exists(pdfDosyaYolu))
-			{
-				// Dosyayı MemoryStream'e yükle
-				byte[] pdfBytes = File.ReadAllBytes(pdfDosyaYolu);
-				MemoryStream memoryStream = new MemoryStream(pdfBytes);
+            // Dosyanın varlığını kontrol etmek isterseniz:
+            if (File.Exists(pdfDosyaYolu))
+            {
+                // Dosyayı MemoryStream'e yükle
+                byte[] pdfBytes = File.ReadAllBytes(pdfDosyaYolu);
+                MemoryStream memoryStream = new MemoryStream(pdfBytes);
 
-				// SaveFileDialog ile kullanıcıya nereye kaydetmek istediğini sorma
-				SaveFileDialog saveFileDialog = new SaveFileDialog();
-				saveFileDialog.Filter = "PDF Dosyaları (*.pdf)|*.pdf";
-				saveFileDialog.FileName = "YeniDosyaAdi.pdf"; // İndirilen dosyanın adını belirleyin
+                // SaveFileDialog ile kullanıcıya nereye kaydetmek istediğini sorma
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Filter = "PDF Dosyaları (*.pdf)|*.pdf";
+                saveFileDialog.FileName = "YeniDosyaAdi.pdf"; // İndirilen dosyanın adını belirleyin
 
-				if (saveFileDialog.ShowDialog() == DialogResult.OK)
-				{
-					// Dosyayı kullanıcının belirttiği yere kaydet
-					File.WriteAllBytes(saveFileDialog.FileName, memoryStream.ToArray());
-					MessageBox.Show("PDF İndirme Başarılı!", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
-				}
-			}
-			else
-			{
-				MessageBox.Show("Belirtilen PDF dosyası bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
-			}
-		}
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    // Dosyayı kullanıcının belirttiği yere kaydet
+                    File.WriteAllBytes(saveFileDialog.FileName, memoryStream.ToArray());
+                    MessageBox.Show("PDF İndirme Başarılı!", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Belirtilen PDF dosyası bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
-		private void EncodeButton_Click(object sender, EventArgs e)
-		{
-			// Kullanıcı tarafından girilen veriyi al
-			string inputText = InputTextBox.Text;
 
-			// Bit verisi ise metinsel temsile çevir
-			if (IsBinary(inputText))
-			{
-				inputText = ConvertBinaryToText(inputText);
-			}
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != '0' && e.KeyChar != '1' && e.KeyChar != (char)Keys.Back && e.KeyChar != (char)Keys.Delete)
+            {
+                e.Handled = true;
+            }
+        }
 
-			// QR kodunu oluştur
-			QRCodeGenerator qrGenerator = new QRCodeGenerator();
-			QRCodeData qrCodeData = qrGenerator.CreateQrCode(inputText, QRCodeGenerator.ECCLevel.M);
-			QRCode qrCode = new QRCode(qrCodeData);
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != '0' && e.KeyChar != '1' && e.KeyChar != (char)Keys.Back && e.KeyChar != (char)Keys.Delete)
+            {
+                e.Handled = true;
+            }
+        }
 
-			// QR kodunun boyutunu ayarla (örneğin, 200x200 piksel)
-			Bitmap qrCodeImage = qrCode.GetGraphic(8);
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != '0' && e.KeyChar != '1' && e.KeyChar != (char)Keys.Back && e.KeyChar != (char)Keys.Delete)
+            {
+                e.Handled = true;
+            }
+        }
 
-			// PictureBox bileşenine görüntüyü yerleştir
-			QRCodePictureBox.Width = qrCodeImage.Width;
-			QRCodePictureBox.Height = qrCodeImage.Height;
-			QRCodePictureBox.Image = qrCodeImage;
+        private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != '0' && e.KeyChar != '1' && e.KeyChar != (char)Keys.Back && e.KeyChar != (char)Keys.Delete)
+            {
+                e.Handled = true;
+            }
+        }
 
-			// QR kodunun metinsel temsilini QRCodeTextBox'a yerleştir
-			QRCodeTextBox.Text = inputText;
-		}
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            // TextBox'a girilen metni kontrol et
+            string input = textBox1.Text;
 
-		private void DecodeButton_Click(object sender, EventArgs e)
-		{
-			string qrCodeText = QRCodeTextBox.Text; // QR kodunu içeren metinsel giriş
+            // Girilen metnin uzunluğunu kontrol et
+            if (input.Length == 8)
+            {
+                // Her bir basamağı ayrı TextBox'lara yazdır
+                textBox36.Text = input[0].ToString();
+                textBox35.Text = input[1].ToString();
+                textBox34.Text = input[2].ToString();
+                textBox33.Text = input[3].ToString();
+                textBox32.Text = input[4].ToString();
+                textBox31.Text = input[5].ToString();
+                textBox30.Text = input[6].ToString();
+                textBox29.Text = input[7].ToString();
+            }
+            else
+            {
+                // Eğer 8 hane girilmediyse, diğer TextBox'ları temizle
+                textBox36.Text = "";
+                textBox35.Text = "";
+                textBox34.Text = "";
+                textBox33.Text = "";
+                textBox32.Text = "";
+                textBox31.Text = "";
+                textBox30.Text = "";
+                textBox29.Text = "";
+            }
+        }
 
-			try
-			{
-				BarcodeReader barcodeReader = new BarcodeReader();
-				// QR kodunu bir resim olarak çözmek için metni bir Bitmap'e dönüştür
-				Bitmap qrCodeBitmap = new Bitmap(qrCodeText);
-				ZXing.Result result = barcodeReader.Decode(qrCodeBitmap);
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            // TextBox'a girilen metni kontrol et
+            string input = textBox2.Text;
 
-				if (result != null)
-				{
-					DecodedTextBox.Text = result.Text;
-				}
-				else
-				{
-					MessageBox.Show("QR kodu çözülemedi veya hatalı formatta.");
-				}
-			}
-			catch (Exception ex)
-			{
-				MessageBox.Show("QR kodu çözülürken hata oluştu: " + ex.Message);
-			}
-		}
-		private string DecodeBinaryText(string binaryText)
-		{
-			// Burada binaryText'i istediğiniz gibi işleyebilirsiniz.
-			// QR kodundan çıkan veriyi bu metot içinde işleyebilirsiniz.
+            // Girilen metnin uzunluğunu kontrol et
+            if (input.Length == 8)
+            {
+                // Her bir basamağı ayrı TextBox'lara yazdır
+                textBox28.Text = input[0].ToString();
+                textBox27.Text = input[1].ToString();
+                textBox26.Text = input[2].ToString();
+                textBox25.Text = input[3].ToString();
+                textBox24.Text = input[4].ToString();
+                textBox23.Text = input[5].ToString();
+                textBox22.Text = input[6].ToString();
+                textBox21.Text = input[7].ToString();
+            }
+            else
+            {
+                // Eğer 8 hane girilmediyse, diğer TextBox'ları temizle
+                textBox28.Text = "";
+                textBox27.Text = "";
+                textBox26.Text = "";
+                textBox25.Text = "";
+                textBox24.Text = "";
+                textBox23.Text = "";
+                textBox22.Text = "";
+                textBox21.Text = "";
+            }
+        }
 
-			// Örnek olarak, metni ASCII karakterlere dönüştürelim:
-			string decodedText = "";
-			for (int i = 0; i < binaryText.Length; i += 8)
-			{
-				string binaryChar = binaryText.Substring(i, 8);
-				int charCode = Convert.ToInt32(binaryChar, 2);
-				char character = (char)charCode;
-				decodedText += character;
-			}
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            // TextBox'a girilen metni kontrol et
+            string input = textBox3.Text;
 
-			return decodedText;
-		}
-		private string ConvertBinaryToText(string binaryText)
-		{
-			string decodedText = "";
+            // Girilen metnin uzunluğunu kontrol et
+            if (input.Length == 8)
+            {
+                // Her bir basamağı ayrı TextBox'lara yazdır
+                textBox20.Text = input[0].ToString();
+                textBox19.Text = input[1].ToString();
+                textBox18.Text = input[2].ToString();
+                textBox17.Text = input[3].ToString();
+                textBox15.Text = input[4].ToString();
+                textBox14.Text = input[5].ToString();
+                textBox13.Text = input[6].ToString();
+                textBox12.Text = input[7].ToString();
+            }
+            else
+            {
+                // Eğer 8 hane girilmediyse, diğer TextBox'ları temizle
+                textBox20.Text = "";
+                textBox19.Text = "";
+                textBox18.Text = "";
+                textBox17.Text = "";
+                textBox15.Text = "";
+                textBox14.Text = "";
+                textBox13.Text = "";
+                textBox12.Text = "";
+            }
+        }
 
-			// 8 karakterlik bit dizilerini alıp metin haline çevir
-			for (int i = 0; i < binaryText.Length; i += 8)
-			{
-				if (i + 8 <= binaryText.Length)
-				{
-					string binaryChar = binaryText.Substring(i, 8);
-					byte characterByte = Convert.ToByte(binaryChar, 2);
-					decodedText += (char)characterByte;
-				}
-				else
-				{
-					// Hata durumunda burada uygun bir işlem yapabilirsiniz.
-					// Örneğin, eksik bitler nedeniyle hata mesajı gösterebilirsiniz.
-					MessageBox.Show("Eksik bitler nedeniyle metin dönüştürme hatası.(8 bitlik veri giriniz.)");
-					break;
-				}
-			}
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
 
-			return decodedText;
-		}
+            // TextBox'a girilen metni kontrol et
+            string input = textBox4.Text;
 
-		private bool IsBinary(string input)
-		{
-			// Girdi metni bit dizisi mi yoksa metin mi olduğunu kontrol et
-			foreach (char c in input)
-			{
-				if (c != '0' && c != '1')
-				{
-					return false; // Bit dizisi değil, metin
-				}
-			}
-			return true; // Bit dizisi
-		}
-	}
+            // Girilen metnin uzunluğunu kontrol et
+            if (input.Length == 8)
+            {
+                // Her bir basamağı ayrı TextBox'lara yazdır
+                textBox16.Text = input[0].ToString();
+                textBox5.Text = input[1].ToString();
+                textBox6.Text = input[2].ToString();
+                textBox7.Text = input[3].ToString();
+                textBox8.Text = input[4].ToString();
+                textBox9.Text = input[5].ToString();
+                textBox10.Text = input[6].ToString();
+                textBox11.Text = input[7].ToString();
+            }
+            else
+            {
+                // Eğer 8 hane girilmediyse, diğer TextBox'ları temizle
+                textBox16.Text = "";
+                textBox5.Text = "";
+                textBox6.Text = "";
+                textBox7.Text = "";
+                textBox8.Text = "";
+                textBox9.Text = "";
+                textBox10.Text = "";
+                textBox11.Text = "";
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            textBox37.Text = textBox12.Text + textBox11.Text + textBox21.Text + textBox29.Text;
+        }
+    }
 }
+
+
