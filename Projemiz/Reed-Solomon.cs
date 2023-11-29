@@ -372,23 +372,37 @@ namespace Projemiz
 
             double Toplam = D1 + D2 + D3 + D4;
 
-            // Zaten bir decimal sayıya sahipsen burada kullanabilirsin
-            int decimalSayi = (int)Toplam; // Burada kendi decimal sayını kullan
+            // Sabit bir decimal sayı kullan
+            int decimalSayi = (int)Toplam; // Örneğin, 42 kullanıldı
 
             // Decimal sayıyı binary stringe çevir
             string binaryStr = Convert.ToString(decimalSayi, 2).PadLeft(10, '0');
 
-            // Her bir TextBox'a değeri yerleştir
-            for (int i = 0; i < 10; i++)
+            char[] binaryChars = binaryStr.ToCharArray();
+            Array.Reverse(binaryChars);
+            binaryStr = new string(binaryChars);
+
+            // Her bir basamağı ayrı TextBox'a at
+            for (int i = 0; i < binaryStr.Length; i++)
             {
-                string textBoxName = (i < 8) ? $"textBox{37 + i}" : $"textBox{101 + i - 8}";
+                char basamak = binaryStr[i];                // TextBox'ın adını oluştur
+                string textBoxName = $"textBox{37 + i}";
+
+                // Eğer 9. veya 10. basamağa gelindiyse ismi düzelt
+                if (i >= 8)
+                {
+                    textBoxName = $"textBox{101 + i - 8}";
+                }
+
+                // TextBox'ı bul
                 TextBox textBox = (TextBox)Controls.Find(textBoxName, true)[0];
 
-                // Kontrol et, eğer stringin uzunluğu bu indeksi geçiyorsa atanacak değer '0' olmalı
-                char basamak = (i < binaryStr.Length) ? binaryStr[i] : '1';
-
+                // Basamağı TextBox'a ata
                 textBox.Text = basamak.ToString();
             }
+
+            textBox104.Text = textBox101.Text;
+            textBox103.Text = textBox102.Text;
         }
 
         private void button3_Click(object sender, EventArgs e)
