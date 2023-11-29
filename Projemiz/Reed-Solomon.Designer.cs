@@ -915,6 +915,7 @@
             textBox44.Size = new Size(35, 34);
             textBox44.TabIndex = 111;
             textBox44.TextAlign = HorizontalAlignment.Center;
+            textBox44.TextChanged += textBox44_TextChanged;
             // 
             // label9
             // 

@@ -221,6 +221,174 @@ namespace Projemiz
         private void button4_Click(object sender, EventArgs e)
         {
 
+            //D4
+            string textboxdeger = textBox11.Text;
+            string textboxdeger1 = textBox10.Text;
+            string textboxdeger2 = textBox9.Text;
+            string textboxdeger3 = textBox8.Text;
+            string textboxdeger4 = textBox7.Text;
+            string textboxdeger5 = textBox6.Text;
+            string textboxdeger6 = textBox5.Text;
+            string textboxdeger7 = textBox16.Text;
+
+
+
+            double sayi = double.Parse(textboxdeger);
+            double sayi1 = double.Parse(textboxdeger1);
+            double sayi2 = double.Parse(textboxdeger2);
+            double sayi3 = double.Parse(textboxdeger3);
+            double sayi4 = double.Parse(textboxdeger4);
+            double sayi5 = double.Parse(textboxdeger5);
+            double sayi6 = double.Parse(textboxdeger6);
+            double sayi7 = double.Parse(textboxdeger7);
+
+
+
+
+            double sonuc = sayi * Math.Pow(2, 0);
+            double sonuc1 = sayi1 * Math.Pow(2, 1);
+            double sonuc2 = sayi2 * Math.Pow(2, 2);
+            double sonuc3 = sayi3 * Math.Pow(2, 3);
+            double sonuc4 = sayi4 * Math.Pow(2, 4);
+            double sonuc5 = sayi5 * Math.Pow(2, 5);
+            double sonuc6 = sayi6 * Math.Pow(2, 6);
+            double sonuc7 = sayi7 * Math.Pow(2, 7);
+
+
+            double D4 = sonuc + sonuc1 + sonuc2 + sonuc3 + sonuc4 + sonuc5 + sonuc6 + sonuc7;
+
+
+            // D3 
+
+            string textboxdeger8 = textBox12.Text;
+            string textboxdeger9 = textBox13.Text;
+            string textboxdeger10 = textBox14.Text;
+            string textboxdeger11 = textBox15.Text;
+            string textboxdeger12 = textBox17.Text;
+            string textboxdeger13 = textBox18.Text;
+            string textboxdeger14 = textBox19.Text;
+            string textboxdeger15 = textBox20.Text;
+
+
+
+            double sayi8 = double.Parse(textboxdeger8);
+            double sayi9 = double.Parse(textboxdeger9);
+            double sayi10 = double.Parse(textboxdeger10);
+            double sayi11 = double.Parse(textboxdeger11);
+            double sayi12 = double.Parse(textboxdeger12);
+            double sayi13 = double.Parse(textboxdeger13);
+            double sayi14 = double.Parse(textboxdeger14);
+            double sayi15 = double.Parse(textboxdeger15);
+
+
+
+
+            double sonuc8 = sayi8 * Math.Pow(2, 0);
+            double sonuc9 = sayi9 * Math.Pow(2, 1);
+            double sonuc10 = sayi10 * Math.Pow(2, 2);
+            double sonuc11 = sayi11 * Math.Pow(2, 3);
+            double sonuc12 = sayi12 * Math.Pow(2, 4);
+            double sonuc13 = sayi13 * Math.Pow(2, 5);
+            double sonuc14 = sayi14 * Math.Pow(2, 6);
+            double sonuc15 = sayi15 * Math.Pow(2, 7);
+
+
+            double D3 = sonuc8 + sonuc9 + sonuc10 + sonuc11 + sonuc12 + sonuc13 + sonuc14 + sonuc15;
+
+            //D2
+
+            string textboxdeger16 = textBox21.Text;
+            string textboxdeger17 = textBox22.Text;
+            string textboxdeger18 = textBox23.Text;
+            string textboxdeger19 = textBox24.Text;
+            string textboxdeger20 = textBox25.Text;
+            string textboxdeger21 = textBox26.Text;
+            string textboxdeger22 = textBox27.Text;
+            string textboxdeger23 = textBox28.Text;
+
+
+
+            double sayi16 = double.Parse(textboxdeger16);
+            double sayi17 = double.Parse(textboxdeger17);
+            double sayi18 = double.Parse(textboxdeger18);
+            double sayi19 = double.Parse(textboxdeger19);
+            double sayi20 = double.Parse(textboxdeger20);
+            double sayi21 = double.Parse(textboxdeger21);
+            double sayi22 = double.Parse(textboxdeger22);
+            double sayi23 = double.Parse(textboxdeger23);
+
+
+
+
+            double sonuc16 = sayi16 * Math.Pow(2, 0);
+            double sonuc17 = sayi17 * Math.Pow(2, 1);
+            double sonuc18 = sayi18 * Math.Pow(2, 2);
+            double sonuc19 = sayi19 * Math.Pow(2, 3);
+            double sonuc20 = sayi20 * Math.Pow(2, 4);
+            double sonuc21 = sayi21 * Math.Pow(2, 5);
+            double sonuc22 = sayi22 * Math.Pow(2, 6);
+            double sonuc23 = sayi23 * Math.Pow(2, 7);
+
+
+            double D2 = sonuc16 + sonuc17 + sonuc18 + sonuc19 + sonuc20 + sonuc21 + sonuc22 + sonuc23;
+
+
+            //D1
+
+            string textboxdeger32 = textBox29.Text;
+            string textboxdeger33 = textBox30.Text;
+            string textboxdeger34 = textBox31.Text;
+            string textboxdeger35 = textBox32.Text;
+            string textboxdeger36 = textBox33.Text;
+            string textboxdeger37 = textBox34.Text;
+            string textboxdeger38 = textBox35.Text;
+            string textboxdeger39 = textBox36.Text;
+
+
+
+            double sayi24 = double.Parse(textboxdeger32);
+            double sayi25 = double.Parse(textboxdeger33);
+            double sayi26 = double.Parse(textboxdeger34);
+            double sayi27 = double.Parse(textboxdeger35);
+            double sayi28 = double.Parse(textboxdeger36);
+            double sayi29 = double.Parse(textboxdeger37);
+            double sayi30 = double.Parse(textboxdeger38);
+            double sayi31 = double.Parse(textboxdeger39);
+
+
+
+
+            double sonuc24 = sayi24 * Math.Pow(2, 0);
+            double sonuc25 = sayi25 * Math.Pow(2, 1);
+            double sonuc26 = sayi26 * Math.Pow(2, 2);
+            double sonuc27 = sayi27 * Math.Pow(2, 3);
+            double sonuc28 = sayi28 * Math.Pow(2, 4);
+            double sonuc29 = sayi29 * Math.Pow(2, 5);
+            double sonuc30 = sayi30 * Math.Pow(2, 6);
+            double sonuc31 = sayi31 * Math.Pow(2, 7);
+
+
+            double D1 = sonuc24 + sonuc25 + sonuc26 + sonuc27 + sonuc28 + sonuc29 + sonuc30 + sonuc31;
+
+            double Toplam = D1 + D2 + D3 + D4;
+
+            // Zaten bir decimal sayıya sahipsen burada kullanabilirsin
+            int decimalSayi = (int)Toplam; // Burada kendi decimal sayını kullan
+
+            // Decimal sayıyı binary stringe çevir
+            string binaryStr = Convert.ToString(decimalSayi, 2).PadLeft(10, '0');
+
+            // Her bir TextBox'a değeri yerleştir
+            for (int i = 0; i < 10; i++)
+            {
+                string textBoxName = (i < 8) ? $"textBox{37 + i}" : $"textBox{101 + i - 8}";
+                TextBox textBox = (TextBox)Controls.Find(textBoxName, true)[0];
+
+                // Kontrol et, eğer stringin uzunluğu bu indeksi geçiyorsa atanacak değer '0' olmalı
+                char basamak = (i < binaryStr.Length) ? binaryStr[i] : '1';
+
+                textBox.Text = basamak.ToString();
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -260,6 +428,11 @@ namespace Projemiz
             textBox79.Text = textBox31.Text;
             textBox78.Text = textBox30.Text;
             textBox77.Text = textBox29.Text;
+
+        }
+
+        private void textBox44_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
