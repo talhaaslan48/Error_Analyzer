@@ -18,9 +18,6 @@ namespace Projemiz
 	public partial class Reed_Solomon : Form
 	{
 
-
-		List<string> binaries = new();
-
 		string tumleyen;
 		public Reed_Solomon()
 		{
@@ -194,6 +191,7 @@ namespace Projemiz
 			textBox103.Text = txtResultBit0.Text;
 
 
+			List<string> binaries = new();
 
 			// Her bir TextBox'tan binary veriyi al
 			binaries.Add(textBox1.Text);
@@ -207,6 +205,8 @@ namespace Projemiz
 
 			// Toplamı binary'ye çevirip her bir biti ayrı TextBox'a yazdır
 			string binaryResult = Convert.ToString(decimalResult, 2);
+
+			binaryResult = ControlBit(binaryResult, 10);
 
 			WriteTextBoxes("txtResultBit", binaryResult);
 
@@ -224,6 +224,8 @@ namespace Projemiz
 			// Toplamı binary'ye çevirip her bir biti ayrı TextBox'a yazdır
 			string binaryFinalResult = Convert.ToString(SumOfBinaries(x), 2);
 
+			binaryFinalResult = ControlBit(binaryFinalResult, 8);
+
 			WriteTextBoxes("txtFinalBit", binaryFinalResult);
 
 
@@ -232,6 +234,19 @@ namespace Projemiz
 			WriteTextBoxes("txtCompBit", tumleyen);
 
 
+		}
+
+		private string ControlBit(string text, int bit)
+		{
+			if (text.Length < bit)
+			{
+				text = "0" + text;
+				return ControlBit(text, bit);
+			}
+			else
+			{
+				return text;
+			}
 		}
 
 		private int SumOfBinaries(List<string> binaries)
@@ -244,11 +259,11 @@ namespace Projemiz
 			return sumOfBinaries;
 		}
 
-		private void WriteTextBoxes(string textBoxNameString, string binary,int incress=0)
+		private void WriteTextBoxes(string textBoxNameString, string binary, int incress = 0)
 		{
 			for (int i = 0; i < binary.Length; i++)
 			{
-				var textbox = GetTextBox(i+incress, textBoxNameString);
+				var textbox = GetTextBox(i + incress, textBoxNameString);
 				textbox.Text = binary[i].ToString();
 			}
 		}
@@ -315,14 +330,33 @@ namespace Projemiz
 			textBox78.Text = textBox30.Text;
 			textBox77.Text = textBox29.Text;
 
-			WriteTextBoxes("textBox", tumleyen,69);
+			WriteTextBoxes("textBox", tumleyen, 69);
 
+			string d1Data = textBox84.Text + textBox83.Text +
+							textBox82.Text + textBox81.Text +
+							textBox80.Text + textBox79.Text +
+							textBox78.Text + textBox77.Text;
+			string d2Data = textBox92.Text + textBox91.Text +
+							textBox90.Text + textBox89.Text +
+							textBox88.Text + textBox87.Text +
+							textBox86.Text + textBox85.Text;
+			string d3Data = textBox100.Text + textBox99.Text +
+							textBox98.Text + textBox97.Text +
+							textBox96.Text + textBox95.Text +
+							textBox94.Text + textBox93.Text;
+			string d4Data = textBox60.Text + textBox59.Text +
+							textBox58.Text + textBox57.Text +
+							textBox56.Text + textBox55.Text +
+							textBox54.Text + textBox53.Text;
 
-			binaries.Add(tumleyen);
+			List<string> binaries = new List<string>(){ d1Data,
+				d2Data, d3Data, d4Data, tumleyen };
 
 			int compFinalSum = SumOfBinaries(binaries);
 
 			string compFinalSumResult = Convert.ToString(compFinalSum, 2);
+
+			compFinalSumResult = ControlBit(compFinalSumResult, 10);
 
 			WriteTextBoxes("txtCompFinalBit", compFinalSumResult);
 
@@ -337,9 +371,11 @@ namespace Projemiz
 
 			string reedSolomonResult = Convert.ToString(SumOfBinaries(x), 2);
 
+			reedSolomonResult = ControlBit(reedSolomonResult, 8);
+
 			WriteTextBoxes("txtReedSolomonResultBox", reedSolomonResult);
 
-			if(reedSolomonResult == "11111111")
+			if (reedSolomonResult == "11111111")
 			{
 				MessageBox.Show("Veri Hatasız bir şekilde iletilmiştir", "Okey", MessageBoxButtons.OK, MessageBoxIcon.Information);
 			}
@@ -347,7 +383,7 @@ namespace Projemiz
 			{
 				MessageBox.Show("Veri Hatalıdır", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
-			
+
 
 
 		}

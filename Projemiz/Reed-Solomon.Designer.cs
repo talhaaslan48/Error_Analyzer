@@ -115,14 +115,14 @@
 			label14 = new Label();
 			label15 = new Label();
 			label16 = new Label();
-			textBox69 = new TextBox();
-			textBox70 = new TextBox();
-			textBox71 = new TextBox();
-			textBox72 = new TextBox();
-			textBox73 = new TextBox();
-			textBox74 = new TextBox();
-			textBox75 = new TextBox();
 			textBox76 = new TextBox();
+			textBox75 = new TextBox();
+			textBox74 = new TextBox();
+			textBox73 = new TextBox();
+			textBox72 = new TextBox();
+			textBox71 = new TextBox();
+			textBox70 = new TextBox();
+			textBox69 = new TextBox();
 			textBox77 = new TextBox();
 			textBox78 = new TextBox();
 			textBox79 = new TextBox();
@@ -1352,125 +1352,125 @@
 			label16.TabIndex = 160;
 			label16.Text = "D4";
 			// 
-			// textBox69
-			// 
-			textBox69.BackColor = SystemColors.ButtonFace;
-			textBox69.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox69.ForeColor = Color.Blue;
-			textBox69.Location = new Point(1405, 455);
-			textBox69.Margin = new Padding(4, 3, 4, 3);
-			textBox69.MaxLength = 1;
-			textBox69.Multiline = true;
-			textBox69.Name = "textBox69";
-			textBox69.ReadOnly = true;
-			textBox69.Size = new Size(31, 26);
-			textBox69.TabIndex = 159;
-			textBox69.TextAlign = HorizontalAlignment.Center;
-			// 
-			// textBox70
-			// 
-			textBox70.BackColor = SystemColors.ButtonFace;
-			textBox70.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox70.ForeColor = Color.Blue;
-			textBox70.Location = new Point(1366, 455);
-			textBox70.Margin = new Padding(4, 3, 4, 3);
-			textBox70.MaxLength = 1;
-			textBox70.Multiline = true;
-			textBox70.Name = "textBox70";
-			textBox70.ReadOnly = true;
-			textBox70.Size = new Size(31, 26);
-			textBox70.TabIndex = 158;
-			textBox70.TextAlign = HorizontalAlignment.Center;
-			// 
-			// textBox71
-			// 
-			textBox71.BackColor = SystemColors.ButtonFace;
-			textBox71.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox71.ForeColor = Color.Blue;
-			textBox71.Location = new Point(1326, 455);
-			textBox71.Margin = new Padding(4, 3, 4, 3);
-			textBox71.MaxLength = 1;
-			textBox71.Multiline = true;
-			textBox71.Name = "textBox71";
-			textBox71.ReadOnly = true;
-			textBox71.Size = new Size(31, 26);
-			textBox71.TabIndex = 157;
-			textBox71.TextAlign = HorizontalAlignment.Center;
-			// 
-			// textBox72
-			// 
-			textBox72.BackColor = SystemColors.ButtonFace;
-			textBox72.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox72.ForeColor = Color.Blue;
-			textBox72.Location = new Point(1287, 455);
-			textBox72.Margin = new Padding(4, 3, 4, 3);
-			textBox72.MaxLength = 1;
-			textBox72.Multiline = true;
-			textBox72.Name = "textBox72";
-			textBox72.ReadOnly = true;
-			textBox72.Size = new Size(31, 26);
-			textBox72.TabIndex = 156;
-			textBox72.TextAlign = HorizontalAlignment.Center;
-			// 
-			// textBox73
-			// 
-			textBox73.BackColor = SystemColors.ButtonFace;
-			textBox73.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox73.ForeColor = Color.Blue;
-			textBox73.Location = new Point(1248, 455);
-			textBox73.Margin = new Padding(4, 3, 4, 3);
-			textBox73.MaxLength = 1;
-			textBox73.Multiline = true;
-			textBox73.Name = "textBox73";
-			textBox73.ReadOnly = true;
-			textBox73.Size = new Size(31, 26);
-			textBox73.TabIndex = 155;
-			textBox73.TextAlign = HorizontalAlignment.Center;
-			// 
-			// textBox74
-			// 
-			textBox74.BackColor = SystemColors.ButtonFace;
-			textBox74.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox74.ForeColor = Color.Blue;
-			textBox74.Location = new Point(1208, 455);
-			textBox74.Margin = new Padding(4, 3, 4, 3);
-			textBox74.MaxLength = 1;
-			textBox74.Multiline = true;
-			textBox74.Name = "textBox74";
-			textBox74.ReadOnly = true;
-			textBox74.Size = new Size(31, 26);
-			textBox74.TabIndex = 154;
-			textBox74.TextAlign = HorizontalAlignment.Center;
-			// 
-			// textBox75
-			// 
-			textBox75.BackColor = SystemColors.ButtonFace;
-			textBox75.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox75.ForeColor = Color.Blue;
-			textBox75.Location = new Point(1169, 455);
-			textBox75.Margin = new Padding(4, 3, 4, 3);
-			textBox75.MaxLength = 1;
-			textBox75.Multiline = true;
-			textBox75.Name = "textBox75";
-			textBox75.ReadOnly = true;
-			textBox75.Size = new Size(31, 26);
-			textBox75.TabIndex = 153;
-			textBox75.TextAlign = HorizontalAlignment.Center;
-			// 
 			// textBox76
 			// 
 			textBox76.BackColor = SystemColors.ButtonFace;
 			textBox76.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox76.ForeColor = Color.Blue;
-			textBox76.Location = new Point(1130, 455);
+			textBox76.Location = new Point(1405, 455);
 			textBox76.Margin = new Padding(4, 3, 4, 3);
 			textBox76.MaxLength = 1;
 			textBox76.Multiline = true;
 			textBox76.Name = "textBox76";
 			textBox76.ReadOnly = true;
 			textBox76.Size = new Size(31, 26);
-			textBox76.TabIndex = 152;
+			textBox76.TabIndex = 159;
 			textBox76.TextAlign = HorizontalAlignment.Center;
+			// 
+			// textBox75
+			// 
+			textBox75.BackColor = SystemColors.ButtonFace;
+			textBox75.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
+			textBox75.ForeColor = Color.Blue;
+			textBox75.Location = new Point(1366, 455);
+			textBox75.Margin = new Padding(4, 3, 4, 3);
+			textBox75.MaxLength = 1;
+			textBox75.Multiline = true;
+			textBox75.Name = "textBox75";
+			textBox75.ReadOnly = true;
+			textBox75.Size = new Size(31, 26);
+			textBox75.TabIndex = 158;
+			textBox75.TextAlign = HorizontalAlignment.Center;
+			// 
+			// textBox74
+			// 
+			textBox74.BackColor = SystemColors.ButtonFace;
+			textBox74.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
+			textBox74.ForeColor = Color.Blue;
+			textBox74.Location = new Point(1326, 455);
+			textBox74.Margin = new Padding(4, 3, 4, 3);
+			textBox74.MaxLength = 1;
+			textBox74.Multiline = true;
+			textBox74.Name = "textBox74";
+			textBox74.ReadOnly = true;
+			textBox74.Size = new Size(31, 26);
+			textBox74.TabIndex = 157;
+			textBox74.TextAlign = HorizontalAlignment.Center;
+			// 
+			// textBox73
+			// 
+			textBox73.BackColor = SystemColors.ButtonFace;
+			textBox73.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
+			textBox73.ForeColor = Color.Blue;
+			textBox73.Location = new Point(1287, 455);
+			textBox73.Margin = new Padding(4, 3, 4, 3);
+			textBox73.MaxLength = 1;
+			textBox73.Multiline = true;
+			textBox73.Name = "textBox73";
+			textBox73.ReadOnly = true;
+			textBox73.Size = new Size(31, 26);
+			textBox73.TabIndex = 156;
+			textBox73.TextAlign = HorizontalAlignment.Center;
+			// 
+			// textBox72
+			// 
+			textBox72.BackColor = SystemColors.ButtonFace;
+			textBox72.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
+			textBox72.ForeColor = Color.Blue;
+			textBox72.Location = new Point(1248, 455);
+			textBox72.Margin = new Padding(4, 3, 4, 3);
+			textBox72.MaxLength = 1;
+			textBox72.Multiline = true;
+			textBox72.Name = "textBox72";
+			textBox72.ReadOnly = true;
+			textBox72.Size = new Size(31, 26);
+			textBox72.TabIndex = 155;
+			textBox72.TextAlign = HorizontalAlignment.Center;
+			// 
+			// textBox71
+			// 
+			textBox71.BackColor = SystemColors.ButtonFace;
+			textBox71.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
+			textBox71.ForeColor = Color.Blue;
+			textBox71.Location = new Point(1208, 455);
+			textBox71.Margin = new Padding(4, 3, 4, 3);
+			textBox71.MaxLength = 1;
+			textBox71.Multiline = true;
+			textBox71.Name = "textBox71";
+			textBox71.ReadOnly = true;
+			textBox71.Size = new Size(31, 26);
+			textBox71.TabIndex = 154;
+			textBox71.TextAlign = HorizontalAlignment.Center;
+			// 
+			// textBox70
+			// 
+			textBox70.BackColor = SystemColors.ButtonFace;
+			textBox70.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
+			textBox70.ForeColor = Color.Blue;
+			textBox70.Location = new Point(1169, 455);
+			textBox70.Margin = new Padding(4, 3, 4, 3);
+			textBox70.MaxLength = 1;
+			textBox70.Multiline = true;
+			textBox70.Name = "textBox70";
+			textBox70.ReadOnly = true;
+			textBox70.Size = new Size(31, 26);
+			textBox70.TabIndex = 153;
+			textBox70.TextAlign = HorizontalAlignment.Center;
+			// 
+			// textBox69
+			// 
+			textBox69.BackColor = SystemColors.ButtonFace;
+			textBox69.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
+			textBox69.ForeColor = Color.Blue;
+			textBox69.Location = new Point(1130, 455);
+			textBox69.Margin = new Padding(4, 3, 4, 3);
+			textBox69.MaxLength = 1;
+			textBox69.Multiline = true;
+			textBox69.Name = "textBox69";
+			textBox69.ReadOnly = true;
+			textBox69.Size = new Size(31, 26);
+			textBox69.TabIndex = 152;
+			textBox69.TextAlign = HorizontalAlignment.Center;
 			// 
 			// textBox77
 			// 
@@ -2400,14 +2400,14 @@
 			Controls.Add(label14);
 			Controls.Add(label15);
 			Controls.Add(label16);
-			Controls.Add(textBox69);
-			Controls.Add(textBox70);
-			Controls.Add(textBox71);
-			Controls.Add(textBox72);
-			Controls.Add(textBox73);
-			Controls.Add(textBox74);
-			Controls.Add(textBox75);
 			Controls.Add(textBox76);
+			Controls.Add(textBox75);
+			Controls.Add(textBox74);
+			Controls.Add(textBox73);
+			Controls.Add(textBox72);
+			Controls.Add(textBox71);
+			Controls.Add(textBox70);
+			Controls.Add(textBox69);
 			Controls.Add(textBox77);
 			Controls.Add(textBox78);
 			Controls.Add(textBox79);
@@ -2589,14 +2589,14 @@
         private Label label14;
         private Label label15;
         private Label label16;
-        private TextBox textBox69;
-        private TextBox textBox70;
-        private TextBox textBox71;
-        private TextBox textBox72;
-        private TextBox textBox73;
-        private TextBox textBox74;
-        private TextBox textBox75;
         private TextBox textBox76;
+        private TextBox textBox75;
+        private TextBox textBox74;
+        private TextBox textBox73;
+        private TextBox textBox72;
+        private TextBox textBox71;
+        private TextBox textBox70;
+        private TextBox textBox69;
         private TextBox textBox77;
         private TextBox textBox78;
         private TextBox textBox79;
