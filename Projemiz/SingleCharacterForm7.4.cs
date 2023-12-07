@@ -61,7 +61,6 @@ namespace Projemiz
 			lblP3a.Text = "";
 			lblP3b.Text = "";
 			lblP4a.Text = "";
-			lblP4b.Text = "";
 			//P1----------------------------------------
 			lblP1a.Text = "P1 = D1 + D2 + D4";
 			lblP1b.Text = " =  " + txtD1.Text + " + " + txtD2.Text + " + " + txtD4.Text;
@@ -98,7 +97,6 @@ namespace Projemiz
 			lblP2d.Text = "";
 			lblP3c.Text = "";
 			lblP3d.Text = "";
-			lblP4d.Text = "";
 			//P1----------------------------------------
 			lblP1c.Text = "P1 = D1 + D2 + D4 + D5 + D7";
 			lblP1d.Text = " =  " + txtD1r.Text + " + " + txtD2r.Text + " + " + txtD4r.Text;
