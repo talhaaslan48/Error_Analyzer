@@ -66,6 +66,13 @@ namespace Projemiz
 			else
 				return false;
 		}
+		public bool IsFourDigit(string t)
+		{
+			if (t.Length == 4)
+				return true;
+			else
+				return false;
+		}
 		public bool IsHex(string t)
 		{
 			bool control = true;
@@ -95,6 +102,32 @@ namespace Projemiz
 			else
 				s = "1";
 			return s;
+		}
+		public string XorOperator(string p1, string p2, string p3)
+		{
+
+			string s1, s2, s3;
+
+			// İlk XOR işlemi
+			if (p1 == p2)
+				s1 = "0";
+			else
+				s1 = "1";
+
+			// İkinci XOR işlemi
+			if (s1 == p3)
+				s2 = "0";
+			else
+				s2 = "1";
+
+			// Üçüncü XOR işlemi
+			if (s2 == "0")
+				s3 = "1";
+			else
+				s3 = "0";
+
+			return s3;
+
 		}
 		public string XorOperator(string p1, string p2, string p3, string p4)
 		{
