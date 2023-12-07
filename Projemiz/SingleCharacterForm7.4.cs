@@ -98,17 +98,17 @@ namespace Projemiz
 			lblP3c.Text = "";
 			lblP3d.Text = "";
 			//P1----------------------------------------
-			lblP1c.Text = "P1 = D1 + D2 + D4 + D5 + D7";
+			lblP1c.Text = "P1 = D1 + D2 + D4";
 			lblP1d.Text = " =  " + txtD1r.Text + " + " + txtD2r.Text + " + " + txtD4r.Text;
 			P1b = h.XorOperator(txtD1r.Text, txtD2r.Text, txtD4r.Text);
 			lblP1d.Text = lblP1d.Text + "  =   " + P1b;
 			//P2----------------------------------------
-			lblP2c.Text = "P2 = D1 + D3 + D4 + D6 + D7";
+			lblP2c.Text = "P2 = D1 + D3 + D4";
 			lblP2d.Text = " =  " + txtD1r.Text + " + " + txtD3r.Text + " + " + txtD4r.Text;
 			P2b = h.XorOperator(txtD1r.Text, txtD3r.Text, txtD4r.Text);
 			lblP2d.Text = lblP2d.Text + "  =   " + P2b;
 			//P3----------------------------------------
-			lblP3c.Text = "P3 = D2 + D3 + D4 + D8";
+			lblP3c.Text = "P3 = D2 + D3 + D4";
 			lblP3d.Text = " =  " + txtD2r.Text + " + " + txtD3r.Text + " + " + txtD4r.Text;
 			P3b = h.XorOperator(txtD2r.Text, txtD3r.Text, txtD4r.Text);
 			lblP3d.Text = lblP3d.Text + "  =   " + P3b;
