@@ -66,5 +66,35 @@ namespace Projemiz
 			form7.Show();
 			this.Hide();
 		}
+
+		private void button10_Click(object sender, EventArgs e)
+		{
+			this.Close();
+		}
+
+		private void button8_Click(object sender, EventArgs e)
+		{
+			KullanýmKýlavuzu form = new KullanýmKýlavuzu();
+			form.Show();
+			this.Hide();
+		}
+
+		private void button9_Click(object sender, EventArgs e)
+		{
+			BizKimizForm form = new BizKimizForm();
+			form.Show();
+			this.Hide();
+		}
+
+		private void btnGoogleForm_Click(object sender, EventArgs e)
+		{
+			string googleFormUrl = "https://docs.google.com/forms/d/1WyDjwQgvjOUPXpTsu0kuYI-0ZsrbD7zHEUkKrDF46dU/edit?hl=tr";
+			// Varsayýlan web tarayýcýsýný baþlat
+			System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+			{
+				FileName = googleFormUrl,
+				UseShellExecute = true
+			});
+		}
 	}
 }

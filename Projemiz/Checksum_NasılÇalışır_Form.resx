@@ -117,25 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="button4.Text" xml:space="preserve">
-    <value>LRC (Longitudinal Redundancy Check), veri bütünlüğünü sağlamak ve hataları tespit etmek amacıyla kullanılan bir hata denetim algoritmasıdır. Bu algoritma, özellikle seri veri iletiminde sıklıkla kullanılır. 
-LRC Nedir?
-LRC, bir iletişim hattında veya depolama ortamında meydana gelen hataları algılamak ve düzeltmek için kullanılan basit ancak etkili bir hata denetim yöntemidir. Veri paketlerinin üzerine ek bir "kontrol toplamı" ekleyerek gerçekleşir.</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button10.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        4wAAAOMBD+bfpwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFsSURBVFhH7dU9
-        KEVhHMfxK29FJgMli2wyeMlIBqNMlMXCLBmNBmHwNrAbFEpSkpSJQUhZTMogZTKQSF6+P51/Pem657n3
-        np7p/OoznKee8/+ft//JpEmTIy3YxzLKtRAy9bjHd6QfwVKBE1jxDzQjWNZgxWUawTIGt7jsYsvTBpYw
-        jrzvWiPe8LeBYpyiG16pxi2ynahYcyhFbFrxAtv4hUkMehrGBLbxCreJdXhlCCpsGw9RgnzTgB24Tehi
-        vDILd2MvCokaX4Wd5xl1iI2e1wG06ROdKDRluIQ1MQOvVGIUPb9HxUWT1Bq40ULoaLrq9lsTtQiea1gD
-        +tqC5wrWQJsWQkYv9ROsAa8vIcnoM7bid1oIGc2CY1gDKwiaKVjxdzQhSPRzW4QVF03YRFODdnREujCA
-        eTzALX4ETcXEomHyCLfIfzZRhUSjq81WzKU3fgSF/E1jo5Mu4BwXkTPsQc++DxrBadLkSCbzA96GpxRA
-        no78AAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -1441,54 +1423,47 @@ LRC, bir iletişim hattında veya depolama ortamında meydana gelen hataları al
         gg==
 </value>
   </data>
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="label1.Text" xml:space="preserve">
+    <value>Checksum, veri bütünlüğünü sağlamak amacıyla kullanılan bir hata kontrol algoritmasıdır. 
+Verilerin iletilirken veya depolanırken bozulup bozulmadığını kontrol etmek için kullanılır. 
+Temel amacı, bir veri kümesi üzerinde yapılan değişiklikleri tespit etmektir.
+
+Veriyi Parçalara Ayırma:
+İlk adım, kontrol etmek istediğiniz veriyi belirli bir birimde parçalara ayırmaktır. Bu birim genellikle byte'tır. 
+Örneğin, "Hello" kelimesi ASCII karakterlerine dönüştürülerek "72 101 108 108 111" gibi bir veri kümesine dönüşebilir.
+
+Parçaları Toplama veya İşlem Uygulama:
+Bu adımda, belirlediğiniz veri parçalarını toplama veya başka bir matematiksel işlem uygulama işlemi gerçekleştirilir. Bu işlem, veri kümesindeki her bir parçanın toplamını 
+almak veya farklı bir matematiksel operasyonu içerebilir. Örneğin, "72 + 101 + 108 + 108 + 111" gibi.
+
+Modüler Aritmetik Uygulama:
+Toplanan değeri belirli bir sayıya bölüp kalanı almak amacıyla modüler aritmetik işlemi uygulanır. Bu sayı genellikle 256'dır. Yani, toplamın 256'ya bölünüp kalan alınır. 
+Bu adım, checksum değerini oluşturur.
+
+Checksum Değerini Kullanma:
+Elde edilen checksum değeri, orijinal veriyle birleştirilir. Bu, veriyi kontrol etmek üzere oluşturulan bir bütün veri kümesini elde etmenizi sağlar.
+Örnek bir senaryo üzerinden düşünelim: "Hello" kelimesinin ASCII değerleri üzerinden checksum hesaplama.
+
+ASCII: 72 101 108 108 111
+Toplam: 72 + 101 + 108 + 108 + 111 = 600
+Checksum: 600 mod 256 = 88
+Sonuç: Orijinal veri "Hello" ile birleştirilir ve tam veri kümesi: "Hello\88"
+Checksum değeri, bu tam veri kümesinin sonunda yer alır. Alıcı tarafında, bu checksum değeri kullanılarak verinin bütünlüğü kontrol edilir
+ve eğer bir değişiklik yapılmışsa, bu değişiklik tespit edilir.
+
+Başarılar dileriz!</value>
+  </data>
+  <data name="button10.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        4wAAAOMBD+bfpwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAO6SURBVFhHvZdp
-        qJRVGICntKzMJbIwIwVx137Z6j8VKxEVRcUfarmCgqbYBpJiZpu2KbgEuUDhFqjoD0sxUtH2RSpJySxN
-        qSzFX/lHfJ5z7pk797tz78xcx/vAA+fMMHPOfOd93/NOLkNfPIL/4J+4AwdjszEKj2F7vB2H47f4FjYb
-        i/Awtg2zXO4W3Iczw+w60AefiMM8C9FNtAmzXO4ePIM3h1mV+QZ/wWfDrJbXcWUcBoyHIXFYXf7DO/Ar
-        fM4XauiEP8Zh4F2cFIfV5W9shW7ia3wJO+ILuAkTH6JBmeUmNHgfxxt8oVL24GNxmGuHa9FM2IL3YsK0
-        7BmHedz057gVP8ENWDHD8AssFWCz8QccgJ+iT8QnlmKnBZ5F07diVqFP4u4wa5ileBnH46v4K6YF+6Hv
-        ncc12BLLxrN7Gv0FRrsB9wGaerNQeuBvOCLMIi/jQXwIT6HvufBOnIAVYzBaE55EA643HsXFmF08sQSv
-        4JgwiyxHC1pV8FjO4Zwwi4zFrnEYMHOsllZNN25qG8gGZlWK1yX0yxOW5d+xW5hFPDar50lM2WIaGy/X
-        xG1obBTSHS/gH2jx6o9T0FQ1VhKb8TucFmZN5BE8EId5xuFH2Bkt2b7v4pMxsQBNb2PKWjEUm8QufCoO
-        A63Ru8NAK2Q+bsQOaGC6qIVN3kDrSMXMw/1YWGIfQGvA91gYmGaQ+X8Rv8S0+Eg0Lu4KswqYiD/jnWFW
-        H39pdhPyPqaUTIsbM2VjSbWIHMf7fKER3IRBZhFLpK5qNVopy17ci8VgMoeNcAOsHIpt4kF8BX/C+3E0
-        TkfvnVuxHqkfeB5NO4vKm1guHpObmBtmtcxAS/R6fA1NS1P6GczHlcHirVbYjLiJveiHGsOMeBi7oN3z
-        /5jdRBaf2G58L8zA/u+dOKyDj2pqHBbF4mMhMku8Lz5Dr+ZiTyKLTYztf2hwLB5+SdGzAc/N8yzE28/F
-        B4VZXbzATsdhwEDejmbDOvS4xf7SFiCchU/gYyy2CV/zUnk7zOIjd3Ebk2KYgoWd0Tb0ibjwi+j/DGPG
-        u+UvDJS7CbsgF38UG8LG1WNNWEts6xMWt7SJf30h4Sb8lS7U0CZsPkqVVL/nxjgMrMBlcZjHTZxAK2Y9
-        /BtWbBMWKKPXClkKF7StF1u2Q2jPUIgxkG1y82Q34eK2aOax41JYdGxc0+f9h+XT85IqGwuRtcCzcnGb
-        i0oaTX+EXbSl2Vrj91iirYplYy/oX3XrekVdbg0D0b7B5tY/QJb6XlhDLncVht+/BGaPrWMAAAAASUVO
-        RK5CYII=
-</value>
-  </data>
-  <data name="button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        qAAAAKgBefSzxgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHMSURBVEhL7dTL
-        K6VxHMfxo2lMTHIZJKXIpUwklGYWihKFmtlMSZlobCbkFjYKmzErIgvKgnIv0YyaEIkxyWJ2spJQ/goL
-        74/Tt855zuURZqP51Kuec87T+f4u39/P8z+OvEIdCu4+/YNMYxCbKNcXT5m3uEIOGtCGJ80iRnGJcyTD
-        L9Goxzh+YA8L+Ib3iEACmjGFLWxjFSNYxi+0Yxh++YR9dCEPMdAfpqAUGtlf7OALcvECSiJ+owWTOMAb
-        +EUbU+Z9DBnNLN/76JdCzEEbqwEOISCPKbCGVkzgBOkIiBXIgK2tUespVkD0/RhKMAstXTdukIqAPHQG
-        G+iA9kj78BNhC2gGKw4aqeI7gyVo7a9xjB70YR6uM4h3eA3FCqi7YqHu0vKpTS+g91wLJKEXGo1R3ytW
-        IA3q9Vqs4w/UtoprAY2iwuEdFCsQB71bA+2BZmlxLaDbsNjBRmcFNAjnO9lQXAvoRx3z7z7UfooVyITv
-        7/IVyr02OVSsQLi4FngJHZ4PaEQ1bPpWQMuoffmIz6iEnd6wBXTZ6bCo7zvRhH7M4Ain2IXe08HSAVOH
-        DUC37iHOELRAFoq8j0ETiSropg2VKGjGdss+i3g8t5k+aetEzOQsAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="button5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        rgAAAK4B+ff3XQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGJSURBVEhL1dW/
-        K0VhHMfx42d+DchgYKGUQdmkLBYGA6UrGQwUJRnkRxGDQRaTlEFSBpFFtwwIkR9hx2z0T3h/zjlX7rnn
-        OZwfBp96dZ/nlud7PM/3PNf6L2lCozNMJlpsFHu4wy7OMIFYmccztPAIGpBJIVZwhGp9ESXNuMaQPfNP
-        J+7RYc8ipAQf2EG5vvBJDU6waM9Cpg4H6MUtWqGoWDfWcIVTzOErXTj8wTbasAmlHlro0v1cxgxWkZNz
-        1KIqgJ4yH8cYhKJ5sTO0M4t+Z5gdPcVvU4p1qDUn0YMBbCCNMuTEVCAP+mMt6k0l9J8sYBrtUKf5xlSg
-        CO9Q642786AYdyKogA5Q+zyGB/ezAH6JVEB7nUkFlnADtao3sQso6qgtPMJ7NrEKqE11H+kFS0EN4E2k
-        AtqOKeigh6HeNyV0AR3mC3QVf3+hTAldIGyM61xAd3rc6DrPyit0iNpf3YIaR6X77Mkdv6EF1j50xao7
-        kqLfAT2w3cLqEt3jaruk9EHvyl/Hsj4BY/pnSk90bNIAAAAASUVORK5CYII=
+        4wAAAOMBD+bfpwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFsSURBVFhH7dU9
+        KEVhHMfxK29FJgMli2wyeMlIBqNMlMXCLBmNBmHwNrAbFEpSkpSJQUhZTMogZTKQSF6+P51/Pem657n3
+        np7p/OoznKee8/+ft//JpEmTIy3YxzLKtRAy9bjHd6QfwVKBE1jxDzQjWNZgxWUawTIGt7jsYsvTBpYw
+        jrzvWiPe8LeBYpyiG16pxi2ynahYcyhFbFrxAtv4hUkMehrGBLbxCreJdXhlCCpsGw9RgnzTgB24Tehi
+        vDILd2MvCokaX4Wd5xl1iI2e1wG06ROdKDRluIQ1MQOvVGIUPb9HxUWT1Bq40ULoaLrq9lsTtQiea1gD
+        +tqC5wrWQJsWQkYv9ROsAa8vIcnoM7bid1oIGc2CY1gDKwiaKVjxdzQhSPRzW4QVF03YRFODdnREujCA
+        eTzALX4ETcXEomHyCLfIfzZRhUSjq81WzKU3fgSF/E1jo5Mu4BwXkTPsQc++DxrBadLkSCbzA96GpxRA
+        no78AAAAAElFTkSuQmCC
 </value>
   </data>
 </root>
