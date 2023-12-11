@@ -413,6 +413,7 @@
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = SystemColors.ControlLight;
+			BackgroundImageLayout = ImageLayout.Stretch;
 			ClientSize = new Size(1723, 898);
 			Controls.Add(label2);
 			Controls.Add(btnGoogleForm);
@@ -425,6 +426,7 @@
 			Controls.Add(panel3);
 			Controls.Add(panel2);
 			Controls.Add(panel1);
+			DoubleBuffered = true;
 			FormBorderStyle = FormBorderStyle.None;
 			Name = "FormAnaSayfa";
 			StartPosition = FormStartPosition.CenterScreen;

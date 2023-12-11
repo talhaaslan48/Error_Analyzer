@@ -634,5 +634,42 @@ namespace Projemiz
 			devam = true;
 			timer1.Start();
 		}
+
+		private void label1_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void button10_Click(object sender, EventArgs e)
+		{
+			FormAnaSayfa form = new FormAnaSayfa();
+			form.Show();
+			this.Hide();
+		}
+
+		private void button6_Click(object sender, EventArgs e)
+		{
+			string pdfDosyaYolu = "C:\\Users\\talha\\Downloads\\9.10.2023 Siber - 1.pdf";
+
+			if (File.Exists(pdfDosyaYolu))
+			{
+				byte[] pdfBytes = File.ReadAllBytes(pdfDosyaYolu);
+				MemoryStream memoryStream = new MemoryStream(pdfBytes);
+
+				SaveFileDialog saveFileDialog = new SaveFileDialog();
+				saveFileDialog.Filter = "PDF Dosyaları (*.pdf)|*.pdf";
+				saveFileDialog.FileName = "YeniDosyaAdi.pdf";
+
+				if (saveFileDialog.ShowDialog() == DialogResult.OK)
+				{
+					File.WriteAllBytes(saveFileDialog.FileName, memoryStream.ToArray());
+					MessageBox.Show("PDF İndirme Başarılı!", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				}
+			}
+			else
+			{
+				MessageBox.Show("Belirtilen PDF dosyası bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+		}
 	}
 }
