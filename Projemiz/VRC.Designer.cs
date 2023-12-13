@@ -93,19 +93,25 @@
 			button6 = new Button();
 			button10 = new Button();
 			panel2 = new Panel();
-			button7 = new Button();
 			label1 = new Label();
 			panel3 = new Panel();
 			pictureBox1 = new PictureBox();
+			groupBox1 = new GroupBox();
+			groupBox2 = new GroupBox();
+			groupBox3 = new GroupBox();
+			label2 = new Label();
 			panel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+			groupBox1.SuspendLayout();
+			groupBox2.SuspendLayout();
+			groupBox3.SuspendLayout();
 			SuspendLayout();
 			// 
 			// buttonYenile
 			// 
 			buttonYenile.FlatStyle = FlatStyle.Flat;
 			buttonYenile.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			buttonYenile.Location = new Point(49, 735);
+			buttonYenile.Location = new Point(1449, 524);
 			buttonYenile.Margin = new Padding(3, 2, 3, 2);
 			buttonYenile.Name = "buttonYenile";
 			buttonYenile.Size = new Size(219, 66);
@@ -118,7 +124,7 @@
 			// 
 			label5.AutoSize = true;
 			label5.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point);
-			label5.Location = new Point(297, 518);
+			label5.Location = new Point(357, 148);
 			label5.Name = "label5";
 			label5.Size = new Size(0, 30);
 			label5.TabIndex = 32;
@@ -126,9 +132,9 @@
 			// label3
 			// 
 			label3.AutoSize = true;
-			label3.BackColor = Color.DarkSalmon;
+			label3.BackColor = Color.LightCoral;
 			label3.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			label3.Location = new Point(26, 423);
+			label3.Location = new Point(86, 48);
 			label3.Name = "label3";
 			label3.Size = new Size(161, 21);
 			label3.TabIndex = 42;
@@ -138,7 +144,7 @@
 			// 
 			label6.AutoSize = true;
 			label6.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			label6.Location = new Point(717, 549);
+			label6.Location = new Point(309, 42);
 			label6.Name = "label6";
 			label6.Size = new Size(174, 21);
 			label6.TabIndex = 51;
@@ -148,7 +154,7 @@
 			// 
 			label7.AutoSize = true;
 			label7.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label7.Location = new Point(626, 588);
+			label7.Location = new Point(218, 81);
 			label7.Name = "label7";
 			label7.Size = new Size(28, 20);
 			label7.TabIndex = 52;
@@ -158,7 +164,7 @@
 			// 
 			label8.AutoSize = true;
 			label8.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label8.Location = new Point(664, 588);
+			label8.Location = new Point(256, 81);
 			label8.Name = "label8";
 			label8.Size = new Size(28, 20);
 			label8.TabIndex = 53;
@@ -168,7 +174,7 @@
 			// 
 			label9.AutoSize = true;
 			label9.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label9.Location = new Point(706, 588);
+			label9.Location = new Point(298, 81);
 			label9.Name = "label9";
 			label9.Size = new Size(28, 20);
 			label9.TabIndex = 54;
@@ -178,7 +184,7 @@
 			// 
 			label10.AutoSize = true;
 			label10.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label10.Location = new Point(746, 588);
+			label10.Location = new Point(338, 81);
 			label10.Name = "label10";
 			label10.Size = new Size(28, 20);
 			label10.TabIndex = 55;
@@ -188,7 +194,7 @@
 			// 
 			label11.AutoSize = true;
 			label11.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label11.Location = new Point(785, 588);
+			label11.Location = new Point(377, 81);
 			label11.Name = "label11";
 			label11.Size = new Size(28, 20);
 			label11.TabIndex = 56;
@@ -198,7 +204,7 @@
 			// 
 			label12.AutoSize = true;
 			label12.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label12.Location = new Point(821, 588);
+			label12.Location = new Point(413, 81);
 			label12.Name = "label12";
 			label12.Size = new Size(28, 20);
 			label12.TabIndex = 57;
@@ -208,7 +214,7 @@
 			// 
 			label13.AutoSize = true;
 			label13.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label13.Location = new Point(860, 588);
+			label13.Location = new Point(452, 81);
 			label13.Name = "label13";
 			label13.Size = new Size(28, 20);
 			label13.TabIndex = 58;
@@ -218,7 +224,7 @@
 			// 
 			label14.AutoSize = true;
 			label14.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label14.Location = new Point(899, 588);
+			label14.Location = new Point(491, 81);
 			label14.Name = "label14";
 			label14.Size = new Size(28, 20);
 			label14.TabIndex = 59;
@@ -228,7 +234,7 @@
 			// 
 			label15.AutoSize = true;
 			label15.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			label15.Location = new Point(463, 395);
+			label15.Location = new Point(523, 25);
 			label15.Name = "label15";
 			label15.Size = new Size(31, 21);
 			label15.TabIndex = 67;
@@ -238,7 +244,7 @@
 			// 
 			label16.AutoSize = true;
 			label16.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			label16.Location = new Point(424, 395);
+			label16.Location = new Point(484, 25);
 			label16.Name = "label16";
 			label16.Size = new Size(31, 21);
 			label16.TabIndex = 66;
@@ -248,7 +254,7 @@
 			// 
 			label17.AutoSize = true;
 			label17.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			label17.Location = new Point(386, 395);
+			label17.Location = new Point(446, 25);
 			label17.Name = "label17";
 			label17.Size = new Size(31, 21);
 			label17.TabIndex = 65;
@@ -258,7 +264,7 @@
 			// 
 			label18.AutoSize = true;
 			label18.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			label18.Location = new Point(347, 395);
+			label18.Location = new Point(407, 25);
 			label18.Name = "label18";
 			label18.Size = new Size(31, 21);
 			label18.TabIndex = 64;
@@ -268,7 +274,7 @@
 			// 
 			label19.AutoSize = true;
 			label19.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			label19.Location = new Point(309, 395);
+			label19.Location = new Point(369, 25);
 			label19.Name = "label19";
 			label19.Size = new Size(31, 21);
 			label19.TabIndex = 63;
@@ -278,7 +284,7 @@
 			// 
 			label20.AutoSize = true;
 			label20.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			label20.Location = new Point(270, 395);
+			label20.Location = new Point(330, 25);
 			label20.Name = "label20";
 			label20.Size = new Size(31, 21);
 			label20.TabIndex = 62;
@@ -288,7 +294,7 @@
 			// 
 			label21.AutoSize = true;
 			label21.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			label21.Location = new Point(232, 395);
+			label21.Location = new Point(292, 25);
 			label21.Name = "label21";
 			label21.Size = new Size(31, 21);
 			label21.TabIndex = 61;
@@ -298,7 +304,7 @@
 			// 
 			label22.AutoSize = true;
 			label22.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			label22.Location = new Point(193, 395);
+			label22.Location = new Point(253, 25);
 			label22.Name = "label22";
 			label22.Size = new Size(31, 21);
 			label22.TabIndex = 60;
@@ -308,7 +314,7 @@
 			// 
 			label23.AutoSize = true;
 			label23.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label23.Location = new Point(1229, 598);
+			label23.Location = new Point(53, 197);
 			label23.Name = "label23";
 			label23.Size = new Size(216, 20);
 			label23.TabIndex = 68;
@@ -317,9 +323,9 @@
 			// label25
 			// 
 			label25.AutoSize = true;
-			label25.BackColor = Color.DarkSalmon;
+			label25.BackColor = Color.LightCoral;
 			label25.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			label25.Location = new Point(1090, 418);
+			label25.Location = new Point(53, 36);
 			label25.Name = "label25";
 			label25.Size = new Size(119, 21);
 			label25.TabIndex = 70;
@@ -330,7 +336,7 @@
 			txtD8.BackColor = SystemColors.ButtonHighlight;
 			txtD8.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtD8.ForeColor = Color.Blue;
-			txtD8.Location = new Point(1229, 418);
+			txtD8.Location = new Point(192, 36);
 			txtD8.Margin = new Padding(4, 3, 4, 3);
 			txtD8.MaxLength = 1;
 			txtD8.Multiline = true;
@@ -345,7 +351,7 @@
 			textBox16.BackColor = SystemColors.ButtonHighlight;
 			textBox16.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox16.ForeColor = Color.Blue;
-			textBox16.Location = new Point(1268, 418);
+			textBox16.Location = new Point(231, 36);
 			textBox16.Margin = new Padding(4, 3, 4, 3);
 			textBox16.MaxLength = 1;
 			textBox16.Multiline = true;
@@ -360,7 +366,7 @@
 			textBox17.BackColor = SystemColors.ButtonHighlight;
 			textBox17.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox17.ForeColor = Color.Blue;
-			textBox17.Location = new Point(1308, 418);
+			textBox17.Location = new Point(271, 36);
 			textBox17.Margin = new Padding(4, 3, 4, 3);
 			textBox17.MaxLength = 1;
 			textBox17.Multiline = true;
@@ -375,7 +381,7 @@
 			textBox18.BackColor = SystemColors.ButtonHighlight;
 			textBox18.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox18.ForeColor = Color.Blue;
-			textBox18.Location = new Point(1347, 418);
+			textBox18.Location = new Point(310, 36);
 			textBox18.Margin = new Padding(4, 3, 4, 3);
 			textBox18.MaxLength = 1;
 			textBox18.Multiline = true;
@@ -390,7 +396,7 @@
 			textBox19.BackColor = SystemColors.ButtonHighlight;
 			textBox19.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox19.ForeColor = Color.Blue;
-			textBox19.Location = new Point(1386, 418);
+			textBox19.Location = new Point(349, 36);
 			textBox19.Margin = new Padding(4, 3, 4, 3);
 			textBox19.MaxLength = 1;
 			textBox19.Multiline = true;
@@ -405,7 +411,7 @@
 			textBox20.BackColor = SystemColors.ButtonHighlight;
 			textBox20.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox20.ForeColor = Color.Blue;
-			textBox20.Location = new Point(1426, 418);
+			textBox20.Location = new Point(389, 36);
 			textBox20.Margin = new Padding(4, 3, 4, 3);
 			textBox20.MaxLength = 1;
 			textBox20.Multiline = true;
@@ -420,7 +426,7 @@
 			textBox21.BackColor = SystemColors.ButtonHighlight;
 			textBox21.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox21.ForeColor = Color.Blue;
-			textBox21.Location = new Point(1465, 418);
+			textBox21.Location = new Point(428, 36);
 			textBox21.Margin = new Padding(4, 3, 4, 3);
 			textBox21.MaxLength = 1;
 			textBox21.Multiline = true;
@@ -435,7 +441,7 @@
 			textBox22.BackColor = SystemColors.ButtonHighlight;
 			textBox22.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox22.ForeColor = Color.Blue;
-			textBox22.Location = new Point(1504, 418);
+			textBox22.Location = new Point(467, 36);
 			textBox22.Margin = new Padding(4, 3, 4, 3);
 			textBox22.MaxLength = 1;
 			textBox22.Multiline = true;
@@ -448,7 +454,7 @@
 			// textBox23
 			// 
 			textBox23.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox23.Location = new Point(193, 418);
+			textBox23.Location = new Point(253, 48);
 			textBox23.Margin = new Padding(3, 2, 3, 2);
 			textBox23.MaxLength = 1;
 			textBox23.Multiline = true;
@@ -460,7 +466,7 @@
 			// textBox1
 			// 
 			textBox1.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox1.Location = new Point(232, 418);
+			textBox1.Location = new Point(292, 48);
 			textBox1.Margin = new Padding(3, 2, 3, 2);
 			textBox1.MaxLength = 1;
 			textBox1.Multiline = true;
@@ -472,7 +478,7 @@
 			// textBox2
 			// 
 			textBox2.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox2.Location = new Point(270, 418);
+			textBox2.Location = new Point(330, 48);
 			textBox2.Margin = new Padding(3, 2, 3, 2);
 			textBox2.MaxLength = 1;
 			textBox2.Multiline = true;
@@ -484,7 +490,7 @@
 			// textBox3
 			// 
 			textBox3.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox3.Location = new Point(309, 418);
+			textBox3.Location = new Point(369, 48);
 			textBox3.Margin = new Padding(3, 2, 3, 2);
 			textBox3.MaxLength = 1;
 			textBox3.Multiline = true;
@@ -496,7 +502,7 @@
 			// textBox4
 			// 
 			textBox4.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox4.Location = new Point(347, 418);
+			textBox4.Location = new Point(407, 48);
 			textBox4.Margin = new Padding(3, 2, 3, 2);
 			textBox4.MaxLength = 1;
 			textBox4.Multiline = true;
@@ -508,7 +514,7 @@
 			// textBox5
 			// 
 			textBox5.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox5.Location = new Point(386, 418);
+			textBox5.Location = new Point(446, 48);
 			textBox5.Margin = new Padding(3, 2, 3, 2);
 			textBox5.MaxLength = 1;
 			textBox5.Multiline = true;
@@ -520,7 +526,7 @@
 			// textBox6
 			// 
 			textBox6.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox6.Location = new Point(424, 418);
+			textBox6.Location = new Point(484, 48);
 			textBox6.Margin = new Padding(3, 2, 3, 2);
 			textBox6.MaxLength = 1;
 			textBox6.Multiline = true;
@@ -532,7 +538,7 @@
 			// textBox7
 			// 
 			textBox7.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox7.Location = new Point(463, 418);
+			textBox7.Location = new Point(523, 48);
 			textBox7.Margin = new Padding(3, 2, 3, 2);
 			textBox7.MaxLength = 1;
 			textBox7.Multiline = true;
@@ -544,7 +550,7 @@
 			// textBox8
 			// 
 			textBox8.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox8.Location = new Point(899, 610);
+			textBox8.Location = new Point(491, 103);
 			textBox8.Margin = new Padding(3, 2, 3, 2);
 			textBox8.MaxLength = 1;
 			textBox8.Multiline = true;
@@ -556,7 +562,7 @@
 			// textBox9
 			// 
 			textBox9.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox9.Location = new Point(860, 610);
+			textBox9.Location = new Point(452, 103);
 			textBox9.Margin = new Padding(3, 2, 3, 2);
 			textBox9.MaxLength = 1;
 			textBox9.Multiline = true;
@@ -568,7 +574,7 @@
 			// textBox10
 			// 
 			textBox10.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox10.Location = new Point(821, 610);
+			textBox10.Location = new Point(413, 103);
 			textBox10.Margin = new Padding(3, 2, 3, 2);
 			textBox10.MaxLength = 1;
 			textBox10.Multiline = true;
@@ -580,7 +586,7 @@
 			// textBox11
 			// 
 			textBox11.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox11.Location = new Point(782, 610);
+			textBox11.Location = new Point(374, 103);
 			textBox11.Margin = new Padding(3, 2, 3, 2);
 			textBox11.MaxLength = 1;
 			textBox11.Multiline = true;
@@ -592,7 +598,7 @@
 			// textBox12
 			// 
 			textBox12.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox12.Location = new Point(743, 610);
+			textBox12.Location = new Point(335, 103);
 			textBox12.Margin = new Padding(3, 2, 3, 2);
 			textBox12.MaxLength = 1;
 			textBox12.Multiline = true;
@@ -604,7 +610,7 @@
 			// textBox13
 			// 
 			textBox13.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox13.Location = new Point(704, 610);
+			textBox13.Location = new Point(296, 103);
 			textBox13.Margin = new Padding(3, 2, 3, 2);
 			textBox13.MaxLength = 1;
 			textBox13.Multiline = true;
@@ -616,7 +622,7 @@
 			// textBox14
 			// 
 			textBox14.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox14.Location = new Point(665, 610);
+			textBox14.Location = new Point(257, 103);
 			textBox14.Margin = new Padding(3, 2, 3, 2);
 			textBox14.MaxLength = 1;
 			textBox14.Multiline = true;
@@ -628,7 +634,7 @@
 			// textBox15
 			// 
 			textBox15.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox15.Location = new Point(626, 610);
+			textBox15.Location = new Point(218, 103);
 			textBox15.Margin = new Padding(3, 2, 3, 2);
 			textBox15.MaxLength = 1;
 			textBox15.Multiline = true;
@@ -641,7 +647,7 @@
 			// 
 			label24.AutoSize = true;
 			label24.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label24.Location = new Point(933, 588);
+			label24.Location = new Point(525, 81);
 			label24.Name = "label24";
 			label24.Size = new Size(49, 20);
 			label24.TabIndex = 96;
@@ -649,22 +655,23 @@
 			// 
 			// button2
 			// 
+			button2.BackColor = Color.IndianRed;
 			button2.FlatStyle = FlatStyle.Flat;
-			button2.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-			button2.Location = new Point(239, 496);
+			button2.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+			button2.Location = new Point(292, 107);
 			button2.Margin = new Padding(3, 2, 3, 2);
 			button2.Name = "button2";
 			button2.Size = new Size(200, 52);
 			button2.TabIndex = 97;
 			button2.Text = "HESAPLA";
-			button2.UseVisualStyleBackColor = true;
+			button2.UseVisualStyleBackColor = false;
 			button2.Click += button2_Click;
 			// 
 			// label4
 			// 
 			label4.AutoSize = true;
 			label4.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label4.Location = new Point(1229, 654);
+			label4.Location = new Point(53, 253);
 			label4.Name = "label4";
 			label4.Size = new Size(167, 20);
 			label4.TabIndex = 98;
@@ -674,7 +681,7 @@
 			// 
 			label26.AutoSize = true;
 			label26.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label26.Location = new Point(1468, 598);
+			label26.Location = new Point(292, 197);
 			label26.Name = "label26";
 			label26.Size = new Size(0, 20);
 			label26.TabIndex = 99;
@@ -682,7 +689,7 @@
 			// textBox24
 			// 
 			textBox24.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox24.Location = new Point(938, 610);
+			textBox24.Location = new Point(530, 103);
 			textBox24.Margin = new Padding(3, 2, 3, 2);
 			textBox24.MaxLength = 1;
 			textBox24.Multiline = true;
@@ -693,21 +700,22 @@
 			// 
 			// button4
 			// 
+			button4.BackColor = Color.IndianRed;
 			button4.FlatStyle = FlatStyle.Flat;
-			button4.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-			button4.Location = new Point(675, 674);
+			button4.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+			button4.Location = new Point(267, 167);
 			button4.Margin = new Padding(3, 2, 3, 2);
 			button4.Name = "button4";
 			button4.Size = new Size(241, 35);
 			button4.TabIndex = 101;
 			button4.Text = "VERİYİ GÖNDER";
-			button4.UseVisualStyleBackColor = true;
+			button4.UseVisualStyleBackColor = false;
 			button4.Click += button4_Click;
 			// 
 			// progressBar1
 			// 
 			progressBar1.BackColor = SystemColors.ControlLight;
-			progressBar1.Location = new Point(433, 735);
+			progressBar1.Location = new Point(25, 228);
 			progressBar1.Margin = new Padding(3, 2, 3, 2);
 			progressBar1.Name = "progressBar1";
 			progressBar1.Size = new Size(730, 22);
@@ -718,7 +726,7 @@
 			textBox25.BackColor = SystemColors.ButtonHighlight;
 			textBox25.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox25.ForeColor = Color.Blue;
-			textBox25.Location = new Point(1544, 418);
+			textBox25.Location = new Point(507, 36);
 			textBox25.Margin = new Padding(4, 3, 4, 3);
 			textBox25.MaxLength = 1;
 			textBox25.Multiline = true;
@@ -736,22 +744,23 @@
 			// 
 			label27.AutoSize = true;
 			label27.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label27.Location = new Point(1406, 654);
+			label27.Location = new Point(230, 253);
 			label27.Name = "label27";
 			label27.Size = new Size(0, 20);
 			label27.TabIndex = 104;
 			// 
 			// button5
 			// 
+			button5.BackColor = Color.IndianRed;
 			button5.FlatStyle = FlatStyle.Flat;
-			button5.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-			button5.Location = new Point(1308, 485);
+			button5.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+			button5.Location = new Point(239, 89);
 			button5.Margin = new Padding(3, 2, 3, 2);
 			button5.Name = "button5";
 			button5.Size = new Size(161, 63);
 			button5.TabIndex = 105;
 			button5.Text = "SONUCU GÖRÜNTÜLE";
-			button5.UseVisualStyleBackColor = true;
+			button5.UseVisualStyleBackColor = false;
 			button5.Click += button5_Click;
 			// 
 			// panel1
@@ -760,7 +769,7 @@
 			panel1.Dock = DockStyle.Top;
 			panel1.Location = new Point(0, 0);
 			panel1.Name = "panel1";
-			panel1.Size = new Size(1707, 21);
+			panel1.Size = new Size(1805, 21);
 			panel1.TabIndex = 106;
 			// 
 			// button1
@@ -770,7 +779,7 @@
 			button1.ForeColor = Color.Black;
 			button1.Image = (Image)resources.GetObject("button1.Image");
 			button1.ImageAlign = ContentAlignment.MiddleLeft;
-			button1.Location = new Point(1152, 218);
+			button1.Location = new Point(1155, 239);
 			button1.Name = "button1";
 			button1.Size = new Size(264, 61);
 			button1.TabIndex = 114;
@@ -785,7 +794,7 @@
 			button3.ForeColor = Color.Black;
 			button3.Image = (Image)resources.GetObject("button3.Image");
 			button3.ImageAlign = ContentAlignment.MiddleLeft;
-			button3.Location = new Point(1449, 218);
+			button3.Location = new Point(1449, 239);
 			button3.Name = "button3";
 			button3.Size = new Size(160, 61);
 			button3.TabIndex = 113;
@@ -801,7 +810,7 @@
 			button6.ForeColor = Color.Black;
 			button6.Image = (Image)resources.GetObject("button6.Image");
 			button6.ImageAlign = ContentAlignment.MiddleLeft;
-			button6.Location = new Point(55, 218);
+			button6.Location = new Point(55, 239);
 			button6.Name = "button6";
 			button6.Size = new Size(166, 61);
 			button6.TabIndex = 112;
@@ -835,21 +844,6 @@
 			panel2.Size = new Size(10, 67);
 			panel2.TabIndex = 109;
 			// 
-			// button7
-			// 
-			button7.FlatAppearance.BorderSize = 0;
-			button7.FlatStyle = FlatStyle.Flat;
-			button7.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-			button7.ForeColor = Color.Black;
-			button7.ImageAlign = ContentAlignment.MiddleLeft;
-			button7.Location = new Point(55, 113);
-			button7.Name = "button7";
-			button7.Size = new Size(1199, 99);
-			button7.TabIndex = 108;
-			button7.Text = resources.GetString("button7.Text");
-			button7.TextAlign = ContentAlignment.MiddleLeft;
-			button7.UseVisualStyleBackColor = true;
-			// 
 			// label1
 			// 
 			label1.AutoSize = true;
@@ -866,7 +860,7 @@
 			panel3.Controls.Add(pictureBox1);
 			panel3.Location = new Point(1449, 12);
 			panel3.Name = "panel3";
-			panel3.Size = new Size(160, 186);
+			panel3.Size = new Size(160, 207);
 			panel3.TabIndex = 115;
 			// 
 			// pictureBox1
@@ -874,82 +868,128 @@
 			pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
 			pictureBox1.Location = new Point(13, 20);
 			pictureBox1.Name = "pictureBox1";
-			pictureBox1.Size = new Size(133, 147);
+			pictureBox1.Size = new Size(133, 171);
 			pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 			pictureBox1.TabIndex = 0;
 			pictureBox1.TabStop = false;
+			// 
+			// groupBox1
+			// 
+			groupBox1.BackColor = Color.Silver;
+			groupBox1.Controls.Add(textBox3);
+			groupBox1.Controls.Add(label5);
+			groupBox1.Controls.Add(label3);
+			groupBox1.Controls.Add(label22);
+			groupBox1.Controls.Add(label21);
+			groupBox1.Controls.Add(label20);
+			groupBox1.Controls.Add(label19);
+			groupBox1.Controls.Add(label18);
+			groupBox1.Controls.Add(label17);
+			groupBox1.Controls.Add(label16);
+			groupBox1.Controls.Add(label15);
+			groupBox1.Controls.Add(textBox23);
+			groupBox1.Controls.Add(textBox1);
+			groupBox1.Controls.Add(textBox2);
+			groupBox1.Controls.Add(textBox4);
+			groupBox1.Controls.Add(textBox5);
+			groupBox1.Controls.Add(textBox6);
+			groupBox1.Controls.Add(textBox7);
+			groupBox1.Controls.Add(button2);
+			groupBox1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			groupBox1.Location = new Point(568, 392);
+			groupBox1.Name = "groupBox1";
+			groupBox1.Size = new Size(691, 185);
+			groupBox1.TabIndex = 116;
+			groupBox1.TabStop = false;
+			groupBox1.Text = "1- Girdi alınması";
+			// 
+			// groupBox2
+			// 
+			groupBox2.BackColor = Color.Silver;
+			groupBox2.Controls.Add(label6);
+			groupBox2.Controls.Add(label7);
+			groupBox2.Controls.Add(label8);
+			groupBox2.Controls.Add(label9);
+			groupBox2.Controls.Add(label10);
+			groupBox2.Controls.Add(label11);
+			groupBox2.Controls.Add(label12);
+			groupBox2.Controls.Add(label13);
+			groupBox2.Controls.Add(label14);
+			groupBox2.Controls.Add(textBox15);
+			groupBox2.Controls.Add(textBox14);
+			groupBox2.Controls.Add(textBox13);
+			groupBox2.Controls.Add(textBox12);
+			groupBox2.Controls.Add(textBox11);
+			groupBox2.Controls.Add(progressBar1);
+			groupBox2.Controls.Add(textBox10);
+			groupBox2.Controls.Add(button4);
+			groupBox2.Controls.Add(textBox9);
+			groupBox2.Controls.Add(textBox24);
+			groupBox2.Controls.Add(textBox8);
+			groupBox2.Controls.Add(label24);
+			groupBox2.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			groupBox2.Location = new Point(55, 619);
+			groupBox2.Name = "groupBox2";
+			groupBox2.Size = new Size(775, 314);
+			groupBox2.TabIndex = 117;
+			groupBox2.TabStop = false;
+			groupBox2.Text = "2-Verinin iletilmesi";
+			// 
+			// groupBox3
+			// 
+			groupBox3.BackColor = Color.Silver;
+			groupBox3.Controls.Add(label25);
+			groupBox3.Controls.Add(txtD8);
+			groupBox3.Controls.Add(textBox16);
+			groupBox3.Controls.Add(textBox17);
+			groupBox3.Controls.Add(textBox18);
+			groupBox3.Controls.Add(textBox19);
+			groupBox3.Controls.Add(textBox20);
+			groupBox3.Controls.Add(textBox21);
+			groupBox3.Controls.Add(textBox22);
+			groupBox3.Controls.Add(textBox25);
+			groupBox3.Controls.Add(button5);
+			groupBox3.Controls.Add(label23);
+			groupBox3.Controls.Add(label27);
+			groupBox3.Controls.Add(label4);
+			groupBox3.Controls.Add(label26);
+			groupBox3.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			groupBox3.Location = new Point(1039, 619);
+			groupBox3.Name = "groupBox3";
+			groupBox3.Size = new Size(629, 314);
+			groupBox3.TabIndex = 118;
+			groupBox3.TabStop = false;
+			groupBox3.Text = "3- Durum kontrolü";
+			// 
+			// label2
+			// 
+			label2.AutoSize = true;
+			label2.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+			label2.Location = new Point(55, 138);
+			label2.Name = "label2";
+			label2.Size = new Size(1159, 51);
+			label2.TabIndex = 119;
+			label2.Text = resources.GetString("label2.Text");
 			// 
 			// VRC
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = SystemColors.ControlLight;
-			ClientSize = new Size(1707, 859);
+			ClientSize = new Size(1805, 991);
+			Controls.Add(label2);
+			Controls.Add(groupBox3);
+			Controls.Add(groupBox2);
+			Controls.Add(groupBox1);
 			Controls.Add(panel3);
 			Controls.Add(button1);
 			Controls.Add(button3);
 			Controls.Add(button6);
 			Controls.Add(button10);
 			Controls.Add(panel2);
-			Controls.Add(button7);
 			Controls.Add(label1);
 			Controls.Add(panel1);
-			Controls.Add(button5);
-			Controls.Add(label27);
-			Controls.Add(textBox25);
-			Controls.Add(progressBar1);
-			Controls.Add(button4);
-			Controls.Add(textBox24);
-			Controls.Add(label26);
-			Controls.Add(label4);
-			Controls.Add(button2);
-			Controls.Add(label24);
-			Controls.Add(textBox8);
-			Controls.Add(textBox9);
-			Controls.Add(textBox10);
-			Controls.Add(textBox11);
-			Controls.Add(textBox12);
-			Controls.Add(textBox13);
-			Controls.Add(textBox14);
-			Controls.Add(textBox15);
-			Controls.Add(textBox7);
-			Controls.Add(textBox6);
-			Controls.Add(textBox5);
-			Controls.Add(textBox4);
-			Controls.Add(textBox3);
-			Controls.Add(textBox2);
-			Controls.Add(textBox1);
-			Controls.Add(textBox23);
-			Controls.Add(textBox22);
-			Controls.Add(textBox21);
-			Controls.Add(textBox20);
-			Controls.Add(textBox19);
-			Controls.Add(textBox18);
-			Controls.Add(textBox17);
-			Controls.Add(textBox16);
-			Controls.Add(txtD8);
-			Controls.Add(label25);
-			Controls.Add(label23);
-			Controls.Add(label15);
-			Controls.Add(label16);
-			Controls.Add(label17);
-			Controls.Add(label18);
-			Controls.Add(label19);
-			Controls.Add(label20);
-			Controls.Add(label21);
-			Controls.Add(label22);
-			Controls.Add(label14);
-			Controls.Add(label13);
-			Controls.Add(label12);
-			Controls.Add(label11);
-			Controls.Add(label10);
-			Controls.Add(label9);
-			Controls.Add(label8);
-			Controls.Add(label7);
-			Controls.Add(label6);
-			Controls.Add(label3);
 			Controls.Add(buttonYenile);
-			Controls.Add(label5);
 			FormBorderStyle = FormBorderStyle.None;
 			Margin = new Padding(3, 2, 3, 2);
 			Name = "VRC";
@@ -957,6 +997,12 @@
 			Load += VRC_Load;
 			panel3.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+			groupBox1.ResumeLayout(false);
+			groupBox1.PerformLayout();
+			groupBox2.ResumeLayout(false);
+			groupBox2.PerformLayout();
+			groupBox3.ResumeLayout(false);
+			groupBox3.PerformLayout();
 			ResumeLayout(false);
 			PerformLayout();
 		}
@@ -1026,9 +1072,12 @@
 		private Button button6;
 		private Button button10;
 		private Panel panel2;
-		private Button button7;
 		private Label label1;
 		private Panel panel3;
 		private PictureBox pictureBox1;
+		private GroupBox groupBox1;
+		private GroupBox groupBox2;
+		private GroupBox groupBox3;
+		private Label label2;
 	}
 }

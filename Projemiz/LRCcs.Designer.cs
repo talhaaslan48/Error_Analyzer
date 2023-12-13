@@ -43,7 +43,6 @@
 			label7 = new Label();
 			label8 = new Label();
 			label9 = new Label();
-			button4 = new Button();
 			panel1 = new Panel();
 			panel2 = new Panel();
 			button10 = new Button();
@@ -53,6 +52,7 @@
 			button3 = new Button();
 			button5 = new Button();
 			label1 = new Label();
+			label2 = new Label();
 			panel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			SuspendLayout();
@@ -224,21 +224,6 @@
 			label9.TabIndex = 18;
 			label9.Text = "-";
 			// 
-			// button4
-			// 
-			button4.FlatAppearance.BorderSize = 0;
-			button4.FlatStyle = FlatStyle.Flat;
-			button4.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-			button4.ForeColor = Color.Black;
-			button4.ImageAlign = ContentAlignment.MiddleLeft;
-			button4.Location = new Point(50, 127);
-			button4.Name = "button4";
-			button4.Size = new Size(1199, 99);
-			button4.TabIndex = 26;
-			button4.Text = resources.GetString("button4.Text");
-			button4.TextAlign = ContentAlignment.MiddleLeft;
-			button4.UseVisualStyleBackColor = true;
-			// 
 			// panel1
 			// 
 			panel1.BackColor = Color.DarkCyan;
@@ -349,12 +334,23 @@
 			label1.TabIndex = 49;
 			label1.Text = "Lütfen her kutuya 8 bitlik binary sayınızı yazınız . ( 0 ve 1 )\r\n";
 			// 
+			// label2
+			// 
+			label2.AutoSize = true;
+			label2.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+			label2.Location = new Point(50, 157);
+			label2.Name = "label2";
+			label2.Size = new Size(1369, 51);
+			label2.TabIndex = 50;
+			label2.Text = resources.GetString("label2.Text");
+			// 
 			// LRCcs
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = SystemColors.ControlLight;
 			ClientSize = new Size(1707, 859);
+			Controls.Add(label2);
 			Controls.Add(label1);
 			Controls.Add(button5);
 			Controls.Add(button3);
@@ -363,7 +359,6 @@
 			Controls.Add(button10);
 			Controls.Add(panel2);
 			Controls.Add(panel1);
-			Controls.Add(button4);
 			Controls.Add(label9);
 			Controls.Add(label8);
 			Controls.Add(label7);
@@ -406,7 +401,6 @@
         private Label label7;
         private Label label8;
         private Label label9;
-		private Button button4;
 		private Panel panel1;
 		private Panel panel2;
 		private Button button10;
@@ -416,5 +410,6 @@
 		private Button button3;
 		private Button button5;
 		private Label label1;
+		private Label label2;
 	}
 }

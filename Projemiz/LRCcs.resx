@@ -117,11 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="button4.Text" xml:space="preserve">
-    <value>LRC (Longitudinal Redundancy Check), veri bütünlüğünü sağlamak ve hataları tespit etmek amacıyla kullanılan bir hata denetim algoritmasıdır. Bu algoritma, özellikle seri veri iletiminde sıklıkla kullanılır. 
-LRC Nedir?
-LRC, bir iletişim hattında veya depolama ortamında meydana gelen hataları algılamak ve düzeltmek için kullanılan basit ancak etkili bir hata denetim yöntemidir. Veri paketlerinin üzerine ek bir "kontrol toplamı" ekleyerek gerçekleşir.</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button10.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1481,7 +1476,7 @@ LRC, bir iletişim hattında veya depolama ortamında meydana gelen hataları al
   <data name="button5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        rgAAAK4B+ff3XQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGJSURBVEhL1dW/
+        rQAAAK0BVE7WMAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGJSURBVEhL1dW/
         K0VhHMfx42d+DchgYKGUQdmkLBYGA6UrGQwUJRnkRxGDQRaTlEFSBpFFtwwIkR9hx2z0T3h/zjlX7rnn
         OZwfBp96dZ/nlud7PM/3PNf6L2lCozNMJlpsFHu4wy7OMIFYmccztPAIGpBJIVZwhGp9ESXNuMaQPfNP
         J+7RYc8ipAQf2EG5vvBJDU6waM9Cpg4H6MUtWqGoWDfWcIVTzOErXTj8wTbasAmlHlro0v1cxgxWkZNz
@@ -1489,6 +1484,12 @@ LRC, bir iletişim hattında veya depolama ortamında meydana gelen hataları al
         CO9Q642786AYdyKogA5Q+zyGB/ezAH6JVEB7nUkFlnADtao3sQso6qgtPMJ7NrEKqE11H+kFS0EN4E2k
         AtqOKeigh6HeNyV0AR3mC3QVf3+hTAldIGyM61xAd3rc6DrPyit0iNpf3YIaR6X77Mkdv6EF1j50xao7
         kqLfAT2w3cLqEt3jaruk9EHvyl/Hsj4BY/pnSk90bNIAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>LRC (Longitudinal Redundancy Check), veri bütünlüğünü sağlamak ve hataları tespit etmek amacıyla kullanılan bir hata denetim algoritmasıdır. Bu algoritma, özellikle seri veri iletiminde sıklıkla kullanılır. 
+LRC Nedir?
+LRC, bir iletişim hattında veya depolama ortamında meydana gelen hataları algılamak ve düzeltmek için kullanılan basit ancak etkili bir hata denetim yöntemidir. Veri paketlerinin üzerine ek bir "kontrol toplamı" ekleyerek gerçekleşir.
 </value>
   </data>
 </root>

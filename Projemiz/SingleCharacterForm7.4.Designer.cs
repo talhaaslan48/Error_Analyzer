@@ -233,7 +233,7 @@
 			// 
 			button1.BackColor = Color.IndianRed;
 			button1.FlatStyle = FlatStyle.Flat;
-			button1.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+			button1.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
 			button1.Location = new Point(294, 315);
 			button1.Margin = new Padding(4, 3, 4, 3);
 			button1.Name = "button1";
@@ -698,7 +698,7 @@
 			// 
 			button2.BackColor = Color.IndianRed;
 			button2.FlatStyle = FlatStyle.Flat;
-			button2.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			button2.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
 			button2.Location = new Point(128, 77);
 			button2.Margin = new Padding(4, 3, 4, 3);
 			button2.Name = "button2";
@@ -777,11 +777,11 @@
 			// 
 			button3.BackColor = Color.IndianRed;
 			button3.FlatStyle = FlatStyle.Flat;
-			button3.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			button3.Location = new Point(415, 41);
+			button3.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+			button3.Location = new Point(415, 36);
 			button3.Margin = new Padding(4, 3, 4, 3);
 			button3.Name = "button3";
-			button3.Size = new Size(113, 27);
+			button3.Size = new Size(113, 32);
 			button3.TabIndex = 5;
 			button3.Text = "Devam...";
 			button3.UseVisualStyleBackColor = false;

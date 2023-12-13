@@ -192,6 +192,9 @@
 			button1 = new Button();
 			button5 = new Button();
 			button2 = new Button();
+			label30 = new Label();
+			label31 = new Label();
+			label32 = new Label();
 			panel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			SuspendLayout();
@@ -211,7 +214,7 @@
 			// 
 			label1.AutoSize = true;
 			label1.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
-			label1.Location = new Point(88, 128);
+			label1.Location = new Point(88, 137);
 			label1.Name = "label1";
 			label1.Size = new Size(1054, 34);
 			label1.TabIndex = 7;
@@ -221,7 +224,7 @@
 			// textBox1
 			// 
 			textBox1.ImeMode = ImeMode.NoControl;
-			textBox1.Location = new Point(160, 326);
+			textBox1.Location = new Point(162, 400);
 			textBox1.Margin = new Padding(3, 2, 3, 2);
 			textBox1.MaxLength = 8;
 			textBox1.Name = "textBox1";
@@ -232,7 +235,7 @@
 			// 
 			// textBox2
 			// 
-			textBox2.Location = new Point(294, 323);
+			textBox2.Location = new Point(296, 397);
 			textBox2.Margin = new Padding(3, 2, 3, 2);
 			textBox2.MaxLength = 8;
 			textBox2.Name = "textBox2";
@@ -243,7 +246,7 @@
 			// 
 			// textBox3
 			// 
-			textBox3.Location = new Point(427, 323);
+			textBox3.Location = new Point(429, 397);
 			textBox3.Margin = new Padding(3, 2, 3, 2);
 			textBox3.MaxLength = 8;
 			textBox3.Name = "textBox3";
@@ -254,7 +257,7 @@
 			// 
 			// textBox4
 			// 
-			textBox4.Location = new Point(560, 323);
+			textBox4.Location = new Point(562, 397);
 			textBox4.Margin = new Padding(3, 2, 3, 2);
 			textBox4.MaxLength = 8;
 			textBox4.Name = "textBox4";
@@ -268,7 +271,7 @@
 			textBox16.BackColor = SystemColors.ButtonFace;
 			textBox16.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox16.ForeColor = Color.Blue;
-			textBox16.Location = new Point(285, 375);
+			textBox16.Location = new Point(287, 449);
 			textBox16.Margin = new Padding(4, 3, 4, 3);
 			textBox16.MaxLength = 1;
 			textBox16.Multiline = true;
@@ -283,7 +286,7 @@
 			textBox5.BackColor = SystemColors.ButtonFace;
 			textBox5.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox5.ForeColor = Color.Blue;
-			textBox5.Location = new Point(324, 375);
+			textBox5.Location = new Point(326, 449);
 			textBox5.Margin = new Padding(4, 3, 4, 3);
 			textBox5.MaxLength = 1;
 			textBox5.Multiline = true;
@@ -298,7 +301,7 @@
 			textBox6.BackColor = SystemColors.ButtonFace;
 			textBox6.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox6.ForeColor = Color.Blue;
-			textBox6.Location = new Point(363, 375);
+			textBox6.Location = new Point(365, 449);
 			textBox6.Margin = new Padding(4, 3, 4, 3);
 			textBox6.MaxLength = 1;
 			textBox6.Multiline = true;
@@ -313,7 +316,7 @@
 			textBox7.BackColor = SystemColors.ButtonFace;
 			textBox7.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox7.ForeColor = Color.Blue;
-			textBox7.Location = new Point(403, 375);
+			textBox7.Location = new Point(405, 449);
 			textBox7.Margin = new Padding(4, 3, 4, 3);
 			textBox7.MaxLength = 1;
 			textBox7.Multiline = true;
@@ -328,7 +331,7 @@
 			textBox8.BackColor = SystemColors.ButtonFace;
 			textBox8.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox8.ForeColor = Color.Blue;
-			textBox8.Location = new Point(442, 375);
+			textBox8.Location = new Point(444, 449);
 			textBox8.Margin = new Padding(4, 3, 4, 3);
 			textBox8.MaxLength = 1;
 			textBox8.Multiline = true;
@@ -343,7 +346,7 @@
 			textBox9.BackColor = SystemColors.ButtonFace;
 			textBox9.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox9.ForeColor = Color.Blue;
-			textBox9.Location = new Point(482, 375);
+			textBox9.Location = new Point(484, 449);
 			textBox9.Margin = new Padding(4, 3, 4, 3);
 			textBox9.MaxLength = 1;
 			textBox9.Multiline = true;
@@ -358,7 +361,7 @@
 			textBox10.BackColor = SystemColors.ButtonFace;
 			textBox10.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox10.ForeColor = Color.Blue;
-			textBox10.Location = new Point(521, 375);
+			textBox10.Location = new Point(523, 449);
 			textBox10.Margin = new Padding(4, 3, 4, 3);
 			textBox10.MaxLength = 1;
 			textBox10.Multiline = true;
@@ -373,7 +376,7 @@
 			textBox11.BackColor = SystemColors.ButtonFace;
 			textBox11.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox11.ForeColor = Color.Blue;
-			textBox11.Location = new Point(560, 375);
+			textBox11.Location = new Point(562, 449);
 			textBox11.Margin = new Padding(4, 3, 4, 3);
 			textBox11.MaxLength = 1;
 			textBox11.Multiline = true;
@@ -388,7 +391,7 @@
 			textBox12.BackColor = SystemColors.ButtonFace;
 			textBox12.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox12.ForeColor = Color.Blue;
-			textBox12.Location = new Point(560, 413);
+			textBox12.Location = new Point(562, 487);
 			textBox12.Margin = new Padding(4, 3, 4, 3);
 			textBox12.MaxLength = 1;
 			textBox12.Multiline = true;
@@ -403,7 +406,7 @@
 			textBox13.BackColor = SystemColors.ButtonFace;
 			textBox13.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox13.ForeColor = Color.Blue;
-			textBox13.Location = new Point(521, 413);
+			textBox13.Location = new Point(523, 487);
 			textBox13.Margin = new Padding(4, 3, 4, 3);
 			textBox13.MaxLength = 1;
 			textBox13.Multiline = true;
@@ -418,7 +421,7 @@
 			textBox14.BackColor = SystemColors.ButtonFace;
 			textBox14.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox14.ForeColor = Color.Blue;
-			textBox14.Location = new Point(482, 413);
+			textBox14.Location = new Point(484, 487);
 			textBox14.Margin = new Padding(4, 3, 4, 3);
 			textBox14.MaxLength = 1;
 			textBox14.Multiline = true;
@@ -433,7 +436,7 @@
 			textBox15.BackColor = SystemColors.ButtonFace;
 			textBox15.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox15.ForeColor = Color.Blue;
-			textBox15.Location = new Point(442, 413);
+			textBox15.Location = new Point(444, 487);
 			textBox15.Margin = new Padding(4, 3, 4, 3);
 			textBox15.MaxLength = 1;
 			textBox15.Multiline = true;
@@ -448,7 +451,7 @@
 			textBox17.BackColor = SystemColors.ButtonFace;
 			textBox17.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox17.ForeColor = Color.Blue;
-			textBox17.Location = new Point(403, 413);
+			textBox17.Location = new Point(405, 487);
 			textBox17.Margin = new Padding(4, 3, 4, 3);
 			textBox17.MaxLength = 1;
 			textBox17.Multiline = true;
@@ -463,7 +466,7 @@
 			textBox18.BackColor = SystemColors.ButtonFace;
 			textBox18.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox18.ForeColor = Color.Blue;
-			textBox18.Location = new Point(363, 413);
+			textBox18.Location = new Point(365, 487);
 			textBox18.Margin = new Padding(4, 3, 4, 3);
 			textBox18.MaxLength = 1;
 			textBox18.Multiline = true;
@@ -478,7 +481,7 @@
 			textBox19.BackColor = SystemColors.ButtonFace;
 			textBox19.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox19.ForeColor = Color.Blue;
-			textBox19.Location = new Point(324, 413);
+			textBox19.Location = new Point(326, 487);
 			textBox19.Margin = new Padding(4, 3, 4, 3);
 			textBox19.MaxLength = 1;
 			textBox19.Multiline = true;
@@ -493,7 +496,7 @@
 			textBox20.BackColor = SystemColors.ButtonFace;
 			textBox20.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox20.ForeColor = Color.Blue;
-			textBox20.Location = new Point(285, 413);
+			textBox20.Location = new Point(287, 487);
 			textBox20.Margin = new Padding(4, 3, 4, 3);
 			textBox20.MaxLength = 1;
 			textBox20.Multiline = true;
@@ -508,7 +511,7 @@
 			textBox21.BackColor = SystemColors.ButtonFace;
 			textBox21.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox21.ForeColor = Color.Blue;
-			textBox21.Location = new Point(560, 456);
+			textBox21.Location = new Point(562, 530);
 			textBox21.Margin = new Padding(4, 3, 4, 3);
 			textBox21.MaxLength = 1;
 			textBox21.Multiline = true;
@@ -523,7 +526,7 @@
 			textBox22.BackColor = SystemColors.ButtonFace;
 			textBox22.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox22.ForeColor = Color.Blue;
-			textBox22.Location = new Point(521, 456);
+			textBox22.Location = new Point(523, 530);
 			textBox22.Margin = new Padding(4, 3, 4, 3);
 			textBox22.MaxLength = 1;
 			textBox22.Multiline = true;
@@ -538,7 +541,7 @@
 			textBox23.BackColor = SystemColors.ButtonFace;
 			textBox23.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox23.ForeColor = Color.Blue;
-			textBox23.Location = new Point(482, 456);
+			textBox23.Location = new Point(484, 530);
 			textBox23.Margin = new Padding(4, 3, 4, 3);
 			textBox23.MaxLength = 1;
 			textBox23.Multiline = true;
@@ -553,7 +556,7 @@
 			textBox24.BackColor = SystemColors.ButtonFace;
 			textBox24.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox24.ForeColor = Color.Blue;
-			textBox24.Location = new Point(442, 456);
+			textBox24.Location = new Point(444, 530);
 			textBox24.Margin = new Padding(4, 3, 4, 3);
 			textBox24.MaxLength = 1;
 			textBox24.Multiline = true;
@@ -568,7 +571,7 @@
 			textBox25.BackColor = SystemColors.ButtonFace;
 			textBox25.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox25.ForeColor = Color.Blue;
-			textBox25.Location = new Point(403, 456);
+			textBox25.Location = new Point(405, 530);
 			textBox25.Margin = new Padding(4, 3, 4, 3);
 			textBox25.MaxLength = 1;
 			textBox25.Multiline = true;
@@ -583,7 +586,7 @@
 			textBox26.BackColor = SystemColors.ButtonFace;
 			textBox26.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox26.ForeColor = Color.Blue;
-			textBox26.Location = new Point(363, 456);
+			textBox26.Location = new Point(365, 530);
 			textBox26.Margin = new Padding(4, 3, 4, 3);
 			textBox26.MaxLength = 1;
 			textBox26.Multiline = true;
@@ -598,7 +601,7 @@
 			textBox27.BackColor = SystemColors.ButtonFace;
 			textBox27.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox27.ForeColor = Color.Blue;
-			textBox27.Location = new Point(324, 456);
+			textBox27.Location = new Point(326, 530);
 			textBox27.Margin = new Padding(4, 3, 4, 3);
 			textBox27.MaxLength = 1;
 			textBox27.Multiline = true;
@@ -613,7 +616,7 @@
 			textBox28.BackColor = SystemColors.ButtonFace;
 			textBox28.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox28.ForeColor = Color.Blue;
-			textBox28.Location = new Point(285, 456);
+			textBox28.Location = new Point(287, 530);
 			textBox28.Margin = new Padding(4, 3, 4, 3);
 			textBox28.MaxLength = 1;
 			textBox28.Multiline = true;
@@ -628,7 +631,7 @@
 			textBox29.BackColor = SystemColors.ButtonFace;
 			textBox29.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox29.ForeColor = Color.Blue;
-			textBox29.Location = new Point(560, 496);
+			textBox29.Location = new Point(562, 570);
 			textBox29.Margin = new Padding(4, 3, 4, 3);
 			textBox29.MaxLength = 1;
 			textBox29.Multiline = true;
@@ -643,7 +646,7 @@
 			textBox30.BackColor = SystemColors.ButtonFace;
 			textBox30.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox30.ForeColor = Color.Blue;
-			textBox30.Location = new Point(521, 496);
+			textBox30.Location = new Point(523, 570);
 			textBox30.Margin = new Padding(4, 3, 4, 3);
 			textBox30.MaxLength = 1;
 			textBox30.Multiline = true;
@@ -658,7 +661,7 @@
 			textBox31.BackColor = SystemColors.ButtonFace;
 			textBox31.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox31.ForeColor = Color.Blue;
-			textBox31.Location = new Point(482, 496);
+			textBox31.Location = new Point(484, 570);
 			textBox31.Margin = new Padding(4, 3, 4, 3);
 			textBox31.MaxLength = 1;
 			textBox31.Multiline = true;
@@ -673,7 +676,7 @@
 			textBox32.BackColor = SystemColors.ButtonFace;
 			textBox32.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox32.ForeColor = Color.Blue;
-			textBox32.Location = new Point(442, 496);
+			textBox32.Location = new Point(444, 570);
 			textBox32.Margin = new Padding(4, 3, 4, 3);
 			textBox32.MaxLength = 1;
 			textBox32.Multiline = true;
@@ -688,7 +691,7 @@
 			textBox33.BackColor = SystemColors.ButtonFace;
 			textBox33.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox33.ForeColor = Color.Blue;
-			textBox33.Location = new Point(403, 496);
+			textBox33.Location = new Point(405, 570);
 			textBox33.Margin = new Padding(4, 3, 4, 3);
 			textBox33.MaxLength = 1;
 			textBox33.Multiline = true;
@@ -703,7 +706,7 @@
 			textBox34.BackColor = SystemColors.ButtonFace;
 			textBox34.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox34.ForeColor = Color.Blue;
-			textBox34.Location = new Point(363, 496);
+			textBox34.Location = new Point(365, 570);
 			textBox34.Margin = new Padding(4, 3, 4, 3);
 			textBox34.MaxLength = 1;
 			textBox34.Multiline = true;
@@ -718,7 +721,7 @@
 			textBox35.BackColor = SystemColors.ButtonFace;
 			textBox35.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox35.ForeColor = Color.Blue;
-			textBox35.Location = new Point(324, 496);
+			textBox35.Location = new Point(326, 570);
 			textBox35.Margin = new Padding(4, 3, 4, 3);
 			textBox35.MaxLength = 1;
 			textBox35.Multiline = true;
@@ -733,7 +736,7 @@
 			textBox36.BackColor = SystemColors.ButtonFace;
 			textBox36.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox36.ForeColor = Color.Blue;
-			textBox36.Location = new Point(285, 496);
+			textBox36.Location = new Point(287, 570);
 			textBox36.Margin = new Padding(4, 3, 4, 3);
 			textBox36.MaxLength = 1;
 			textBox36.Multiline = true;
@@ -746,47 +749,51 @@
 			// label3
 			// 
 			label3.AutoSize = true;
-			label3.BackColor = Color.DarkSalmon;
-			label3.Location = new Point(219, 382);
+			label3.BackColor = Color.LightCoral;
+			label3.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+			label3.Location = new Point(221, 456);
 			label3.Name = "label3";
-			label3.Size = new Size(21, 15);
+			label3.Size = new Size(25, 17);
 			label3.TabIndex = 105;
 			label3.Text = "D4";
 			// 
 			// label4
 			// 
 			label4.AutoSize = true;
-			label4.BackColor = Color.DarkSalmon;
-			label4.Location = new Point(219, 420);
+			label4.BackColor = Color.LightCoral;
+			label4.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+			label4.Location = new Point(221, 494);
 			label4.Name = "label4";
-			label4.Size = new Size(21, 15);
+			label4.Size = new Size(25, 17);
 			label4.TabIndex = 106;
 			label4.Text = "D3";
 			// 
 			// label5
 			// 
 			label5.AutoSize = true;
-			label5.BackColor = Color.DarkSalmon;
-			label5.Location = new Point(219, 463);
+			label5.BackColor = Color.LightCoral;
+			label5.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+			label5.Location = new Point(221, 537);
 			label5.Name = "label5";
-			label5.Size = new Size(21, 15);
+			label5.Size = new Size(25, 17);
 			label5.TabIndex = 107;
 			label5.Text = "D2";
 			// 
 			// label6
 			// 
 			label6.AutoSize = true;
-			label6.BackColor = Color.DarkSalmon;
-			label6.Location = new Point(219, 504);
+			label6.BackColor = Color.LightCoral;
+			label6.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+			label6.Location = new Point(221, 577);
 			label6.Name = "label6";
-			label6.Size = new Size(21, 15);
+			label6.Size = new Size(25, 17);
 			label6.TabIndex = 108;
 			label6.Text = "D1";
 			// 
 			// label7
 			// 
 			label7.AutoSize = true;
-			label7.Location = new Point(228, 537);
+			label7.Location = new Point(230, 611);
 			label7.Name = "label7";
 			label7.Size = new Size(362, 15);
 			label7.TabIndex = 109;
@@ -795,7 +802,7 @@
 			// label8
 			// 
 			label8.AutoSize = true;
-			label8.Location = new Point(250, 522);
+			label8.Location = new Point(252, 596);
 			label8.Name = "label8";
 			label8.Size = new Size(15, 15);
 			label8.TabIndex = 110;
@@ -806,7 +813,7 @@
 			txtResultBit9.BackColor = SystemColors.ButtonFace;
 			txtResultBit9.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtResultBit9.ForeColor = Color.Blue;
-			txtResultBit9.Location = new Point(560, 555);
+			txtResultBit9.Location = new Point(562, 629);
 			txtResultBit9.Margin = new Padding(4, 3, 4, 3);
 			txtResultBit9.MaxLength = 1;
 			txtResultBit9.Multiline = true;
@@ -820,7 +827,7 @@
 			txtResultBit8.BackColor = SystemColors.ButtonFace;
 			txtResultBit8.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtResultBit8.ForeColor = Color.Blue;
-			txtResultBit8.Location = new Point(521, 555);
+			txtResultBit8.Location = new Point(523, 629);
 			txtResultBit8.Margin = new Padding(4, 3, 4, 3);
 			txtResultBit8.MaxLength = 1;
 			txtResultBit8.Multiline = true;
@@ -834,7 +841,7 @@
 			txtResultBit7.BackColor = SystemColors.ButtonFace;
 			txtResultBit7.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtResultBit7.ForeColor = Color.Blue;
-			txtResultBit7.Location = new Point(482, 555);
+			txtResultBit7.Location = new Point(484, 629);
 			txtResultBit7.Margin = new Padding(4, 3, 4, 3);
 			txtResultBit7.MaxLength = 1;
 			txtResultBit7.Multiline = true;
@@ -848,7 +855,7 @@
 			txtResultBit6.BackColor = SystemColors.ButtonFace;
 			txtResultBit6.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtResultBit6.ForeColor = Color.Blue;
-			txtResultBit6.Location = new Point(442, 555);
+			txtResultBit6.Location = new Point(444, 629);
 			txtResultBit6.Margin = new Padding(4, 3, 4, 3);
 			txtResultBit6.MaxLength = 1;
 			txtResultBit6.Multiline = true;
@@ -862,7 +869,7 @@
 			txtResultBit5.BackColor = SystemColors.ButtonFace;
 			txtResultBit5.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtResultBit5.ForeColor = Color.Blue;
-			txtResultBit5.Location = new Point(403, 555);
+			txtResultBit5.Location = new Point(405, 629);
 			txtResultBit5.Margin = new Padding(4, 3, 4, 3);
 			txtResultBit5.MaxLength = 1;
 			txtResultBit5.Multiline = true;
@@ -876,7 +883,7 @@
 			txtResultBit4.BackColor = SystemColors.ButtonFace;
 			txtResultBit4.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtResultBit4.ForeColor = Color.Blue;
-			txtResultBit4.Location = new Point(363, 555);
+			txtResultBit4.Location = new Point(365, 629);
 			txtResultBit4.Margin = new Padding(4, 3, 4, 3);
 			txtResultBit4.MaxLength = 1;
 			txtResultBit4.Multiline = true;
@@ -890,7 +897,7 @@
 			txtResultBit3.BackColor = SystemColors.ButtonFace;
 			txtResultBit3.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtResultBit3.ForeColor = Color.Blue;
-			txtResultBit3.Location = new Point(324, 555);
+			txtResultBit3.Location = new Point(326, 629);
 			txtResultBit3.Margin = new Padding(4, 3, 4, 3);
 			txtResultBit3.MaxLength = 1;
 			txtResultBit3.Multiline = true;
@@ -904,7 +911,7 @@
 			txtResultBit2.BackColor = SystemColors.ButtonFace;
 			txtResultBit2.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtResultBit2.ForeColor = Color.Blue;
-			txtResultBit2.Location = new Point(285, 555);
+			txtResultBit2.Location = new Point(287, 629);
 			txtResultBit2.Margin = new Padding(4, 3, 4, 3);
 			txtResultBit2.MaxLength = 1;
 			txtResultBit2.Multiline = true;
@@ -917,7 +924,7 @@
 			// label9
 			// 
 			label9.AutoSize = true;
-			label9.Location = new Point(230, 627);
+			label9.Location = new Point(232, 701);
 			label9.Name = "label9";
 			label9.Size = new Size(362, 15);
 			label9.TabIndex = 119;
@@ -928,7 +935,7 @@
 			txtFinalBit7.BackColor = SystemColors.ButtonFace;
 			txtFinalBit7.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtFinalBit7.ForeColor = Color.Blue;
-			txtFinalBit7.Location = new Point(569, 658);
+			txtFinalBit7.Location = new Point(561, 732);
 			txtFinalBit7.Margin = new Padding(4, 3, 4, 3);
 			txtFinalBit7.MaxLength = 1;
 			txtFinalBit7.Multiline = true;
@@ -943,7 +950,7 @@
 			txtFinalBit6.BackColor = SystemColors.ButtonFace;
 			txtFinalBit6.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtFinalBit6.ForeColor = Color.Blue;
-			txtFinalBit6.Location = new Point(530, 658);
+			txtFinalBit6.Location = new Point(522, 732);
 			txtFinalBit6.Margin = new Padding(4, 3, 4, 3);
 			txtFinalBit6.MaxLength = 1;
 			txtFinalBit6.Multiline = true;
@@ -958,7 +965,7 @@
 			txtFinalBit5.BackColor = SystemColors.ButtonFace;
 			txtFinalBit5.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtFinalBit5.ForeColor = Color.Blue;
-			txtFinalBit5.Location = new Point(490, 658);
+			txtFinalBit5.Location = new Point(482, 732);
 			txtFinalBit5.Margin = new Padding(4, 3, 4, 3);
 			txtFinalBit5.MaxLength = 1;
 			txtFinalBit5.Multiline = true;
@@ -973,7 +980,7 @@
 			txtFinalBit4.BackColor = SystemColors.ButtonFace;
 			txtFinalBit4.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtFinalBit4.ForeColor = Color.Blue;
-			txtFinalBit4.Location = new Point(451, 658);
+			txtFinalBit4.Location = new Point(443, 732);
 			txtFinalBit4.Margin = new Padding(4, 3, 4, 3);
 			txtFinalBit4.MaxLength = 1;
 			txtFinalBit4.Multiline = true;
@@ -988,7 +995,7 @@
 			txtFinalBit3.BackColor = SystemColors.ButtonFace;
 			txtFinalBit3.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtFinalBit3.ForeColor = Color.Blue;
-			txtFinalBit3.Location = new Point(412, 658);
+			txtFinalBit3.Location = new Point(404, 732);
 			txtFinalBit3.Margin = new Padding(4, 3, 4, 3);
 			txtFinalBit3.MaxLength = 1;
 			txtFinalBit3.Multiline = true;
@@ -1003,7 +1010,7 @@
 			txtFinalBit2.BackColor = SystemColors.ButtonFace;
 			txtFinalBit2.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtFinalBit2.ForeColor = Color.Blue;
-			txtFinalBit2.Location = new Point(372, 658);
+			txtFinalBit2.Location = new Point(364, 732);
 			txtFinalBit2.Margin = new Padding(4, 3, 4, 3);
 			txtFinalBit2.MaxLength = 1;
 			txtFinalBit2.Multiline = true;
@@ -1018,7 +1025,7 @@
 			txtFinalBit1.BackColor = SystemColors.ButtonFace;
 			txtFinalBit1.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtFinalBit1.ForeColor = Color.Blue;
-			txtFinalBit1.Location = new Point(333, 658);
+			txtFinalBit1.Location = new Point(325, 732);
 			txtFinalBit1.Margin = new Padding(4, 3, 4, 3);
 			txtFinalBit1.MaxLength = 1;
 			txtFinalBit1.Multiline = true;
@@ -1033,7 +1040,7 @@
 			txtFinalBit0.BackColor = SystemColors.ButtonFace;
 			txtFinalBit0.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtFinalBit0.ForeColor = Color.Blue;
-			txtFinalBit0.Location = new Point(293, 658);
+			txtFinalBit0.Location = new Point(285, 732);
 			txtFinalBit0.Margin = new Padding(4, 3, 4, 3);
 			txtFinalBit0.MaxLength = 1;
 			txtFinalBit0.Multiline = true;
@@ -1048,7 +1055,7 @@
 			textBox53.BackColor = SystemColors.ButtonFace;
 			textBox53.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox53.ForeColor = Color.Blue;
-			textBox53.Location = new Point(1471, 369);
+			textBox53.Location = new Point(1567, 412);
 			textBox53.Margin = new Padding(4, 3, 4, 3);
 			textBox53.MaxLength = 1;
 			textBox53.Multiline = true;
@@ -1063,7 +1070,7 @@
 			textBox54.BackColor = SystemColors.ButtonFace;
 			textBox54.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox54.ForeColor = Color.Blue;
-			textBox54.Location = new Point(1432, 369);
+			textBox54.Location = new Point(1528, 412);
 			textBox54.Margin = new Padding(4, 3, 4, 3);
 			textBox54.MaxLength = 1;
 			textBox54.Multiline = true;
@@ -1078,7 +1085,7 @@
 			textBox55.BackColor = SystemColors.ButtonFace;
 			textBox55.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox55.ForeColor = Color.Blue;
-			textBox55.Location = new Point(1392, 369);
+			textBox55.Location = new Point(1488, 412);
 			textBox55.Margin = new Padding(4, 3, 4, 3);
 			textBox55.MaxLength = 1;
 			textBox55.Multiline = true;
@@ -1093,7 +1100,7 @@
 			textBox56.BackColor = SystemColors.ButtonFace;
 			textBox56.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox56.ForeColor = Color.Blue;
-			textBox56.Location = new Point(1353, 369);
+			textBox56.Location = new Point(1449, 412);
 			textBox56.Margin = new Padding(4, 3, 4, 3);
 			textBox56.MaxLength = 1;
 			textBox56.Multiline = true;
@@ -1108,7 +1115,7 @@
 			textBox57.BackColor = SystemColors.ButtonFace;
 			textBox57.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox57.ForeColor = Color.Blue;
-			textBox57.Location = new Point(1314, 369);
+			textBox57.Location = new Point(1410, 412);
 			textBox57.Margin = new Padding(4, 3, 4, 3);
 			textBox57.MaxLength = 1;
 			textBox57.Multiline = true;
@@ -1123,7 +1130,7 @@
 			textBox58.BackColor = SystemColors.ButtonFace;
 			textBox58.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox58.ForeColor = Color.Blue;
-			textBox58.Location = new Point(1274, 369);
+			textBox58.Location = new Point(1370, 412);
 			textBox58.Margin = new Padding(4, 3, 4, 3);
 			textBox58.MaxLength = 1;
 			textBox58.Multiline = true;
@@ -1138,7 +1145,7 @@
 			textBox59.BackColor = SystemColors.ButtonFace;
 			textBox59.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox59.ForeColor = Color.Blue;
-			textBox59.Location = new Point(1235, 369);
+			textBox59.Location = new Point(1331, 412);
 			textBox59.Margin = new Padding(4, 3, 4, 3);
 			textBox59.MaxLength = 1;
 			textBox59.Multiline = true;
@@ -1153,7 +1160,7 @@
 			textBox60.BackColor = SystemColors.ButtonFace;
 			textBox60.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox60.ForeColor = Color.Blue;
-			textBox60.Location = new Point(1196, 369);
+			textBox60.Location = new Point(1292, 412);
 			textBox60.Margin = new Padding(4, 3, 4, 3);
 			textBox60.MaxLength = 1;
 			textBox60.Multiline = true;
@@ -1166,7 +1173,7 @@
 			// label10
 			// 
 			label10.AutoSize = true;
-			label10.Location = new Point(1121, 671);
+			label10.Location = new Point(1217, 714);
 			label10.Name = "label10";
 			label10.Size = new Size(362, 15);
 			label10.TabIndex = 174;
@@ -1177,7 +1184,7 @@
 			txtCompFinalBit9.BackColor = SystemColors.ButtonFace;
 			txtCompFinalBit9.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtCompFinalBit9.ForeColor = Color.Blue;
-			txtCompFinalBit9.Location = new Point(1471, 596);
+			txtCompFinalBit9.Location = new Point(1567, 639);
 			txtCompFinalBit9.Margin = new Padding(4, 3, 4, 3);
 			txtCompFinalBit9.MaxLength = 1;
 			txtCompFinalBit9.Multiline = true;
@@ -1192,7 +1199,7 @@
 			txtCompFinalBit8.BackColor = SystemColors.ButtonFace;
 			txtCompFinalBit8.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtCompFinalBit8.ForeColor = Color.Blue;
-			txtCompFinalBit8.Location = new Point(1432, 596);
+			txtCompFinalBit8.Location = new Point(1528, 639);
 			txtCompFinalBit8.Margin = new Padding(4, 3, 4, 3);
 			txtCompFinalBit8.MaxLength = 1;
 			txtCompFinalBit8.Multiline = true;
@@ -1207,7 +1214,7 @@
 			txtCompFinalBit7.BackColor = SystemColors.ButtonFace;
 			txtCompFinalBit7.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtCompFinalBit7.ForeColor = Color.Blue;
-			txtCompFinalBit7.Location = new Point(1392, 596);
+			txtCompFinalBit7.Location = new Point(1488, 639);
 			txtCompFinalBit7.Margin = new Padding(4, 3, 4, 3);
 			txtCompFinalBit7.MaxLength = 1;
 			txtCompFinalBit7.Multiline = true;
@@ -1222,7 +1229,7 @@
 			txtCompFinalBit6.BackColor = SystemColors.ButtonFace;
 			txtCompFinalBit6.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtCompFinalBit6.ForeColor = Color.Blue;
-			txtCompFinalBit6.Location = new Point(1353, 596);
+			txtCompFinalBit6.Location = new Point(1449, 639);
 			txtCompFinalBit6.Margin = new Padding(4, 3, 4, 3);
 			txtCompFinalBit6.MaxLength = 1;
 			txtCompFinalBit6.Multiline = true;
@@ -1237,7 +1244,7 @@
 			txtCompFinalBit5.BackColor = SystemColors.ButtonFace;
 			txtCompFinalBit5.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtCompFinalBit5.ForeColor = Color.Blue;
-			txtCompFinalBit5.Location = new Point(1314, 596);
+			txtCompFinalBit5.Location = new Point(1410, 639);
 			txtCompFinalBit5.Margin = new Padding(4, 3, 4, 3);
 			txtCompFinalBit5.MaxLength = 1;
 			txtCompFinalBit5.Multiline = true;
@@ -1252,7 +1259,7 @@
 			txtCompFinalBit4.BackColor = SystemColors.ButtonFace;
 			txtCompFinalBit4.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtCompFinalBit4.ForeColor = Color.Blue;
-			txtCompFinalBit4.Location = new Point(1274, 596);
+			txtCompFinalBit4.Location = new Point(1370, 639);
 			txtCompFinalBit4.Margin = new Padding(4, 3, 4, 3);
 			txtCompFinalBit4.MaxLength = 1;
 			txtCompFinalBit4.Multiline = true;
@@ -1267,7 +1274,7 @@
 			txtCompFinalBit3.BackColor = SystemColors.ButtonFace;
 			txtCompFinalBit3.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtCompFinalBit3.ForeColor = Color.Blue;
-			txtCompFinalBit3.Location = new Point(1235, 596);
+			txtCompFinalBit3.Location = new Point(1331, 639);
 			txtCompFinalBit3.Margin = new Padding(4, 3, 4, 3);
 			txtCompFinalBit3.MaxLength = 1;
 			txtCompFinalBit3.Multiline = true;
@@ -1282,7 +1289,7 @@
 			txtCompFinalBit2.BackColor = SystemColors.ButtonFace;
 			txtCompFinalBit2.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtCompFinalBit2.ForeColor = Color.Blue;
-			txtCompFinalBit2.Location = new Point(1196, 596);
+			txtCompFinalBit2.Location = new Point(1292, 639);
 			txtCompFinalBit2.Margin = new Padding(4, 3, 4, 3);
 			txtCompFinalBit2.MaxLength = 1;
 			txtCompFinalBit2.Multiline = true;
@@ -1295,7 +1302,7 @@
 			// label11
 			// 
 			label11.AutoSize = true;
-			label11.Location = new Point(1161, 563);
+			label11.Location = new Point(1257, 606);
 			label11.Name = "label11";
 			label11.Size = new Size(15, 15);
 			label11.TabIndex = 165;
@@ -1304,7 +1311,7 @@
 			// label12
 			// 
 			label12.AutoSize = true;
-			label12.Location = new Point(1139, 578);
+			label12.Location = new Point(1235, 621);
 			label12.Name = "label12";
 			label12.Size = new Size(362, 15);
 			label12.TabIndex = 164;
@@ -1313,40 +1320,44 @@
 			// label13
 			// 
 			label13.AutoSize = true;
-			label13.BackColor = Color.DarkSalmon;
-			label13.Location = new Point(1133, 507);
+			label13.BackColor = Color.LightCoral;
+			label13.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label13.Location = new Point(1219, 546);
 			label13.Name = "label13";
-			label13.Size = new Size(21, 15);
+			label13.Size = new Size(28, 20);
 			label13.TabIndex = 163;
 			label13.Text = "D1";
 			// 
 			// label14
 			// 
 			label14.AutoSize = true;
-			label14.BackColor = Color.DarkSalmon;
-			label14.Location = new Point(1133, 464);
+			label14.BackColor = Color.LightCoral;
+			label14.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label14.Location = new Point(1219, 503);
 			label14.Name = "label14";
-			label14.Size = new Size(21, 15);
+			label14.Size = new Size(28, 20);
 			label14.TabIndex = 162;
 			label14.Text = "D2";
 			// 
 			// label15
 			// 
 			label15.AutoSize = true;
-			label15.BackColor = Color.DarkSalmon;
-			label15.Location = new Point(1133, 426);
+			label15.BackColor = Color.LightCoral;
+			label15.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label15.Location = new Point(1219, 458);
 			label15.Name = "label15";
-			label15.Size = new Size(21, 15);
+			label15.Size = new Size(28, 20);
 			label15.TabIndex = 161;
 			label15.Text = "D3";
 			// 
 			// label16
 			// 
 			label16.AutoSize = true;
-			label16.BackColor = Color.DarkSalmon;
-			label16.Location = new Point(1133, 380);
+			label16.BackColor = Color.LightCoral;
+			label16.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label16.Location = new Point(1219, 412);
 			label16.Name = "label16";
-			label16.Size = new Size(21, 15);
+			label16.Size = new Size(28, 20);
 			label16.TabIndex = 160;
 			label16.Text = "D4";
 			// 
@@ -1355,7 +1366,7 @@
 			textBox76.BackColor = SystemColors.ButtonFace;
 			textBox76.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox76.ForeColor = Color.Blue;
-			textBox76.Location = new Point(1471, 537);
+			textBox76.Location = new Point(1567, 580);
 			textBox76.Margin = new Padding(4, 3, 4, 3);
 			textBox76.MaxLength = 1;
 			textBox76.Multiline = true;
@@ -1370,7 +1381,7 @@
 			textBox75.BackColor = SystemColors.ButtonFace;
 			textBox75.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox75.ForeColor = Color.Blue;
-			textBox75.Location = new Point(1432, 537);
+			textBox75.Location = new Point(1528, 580);
 			textBox75.Margin = new Padding(4, 3, 4, 3);
 			textBox75.MaxLength = 1;
 			textBox75.Multiline = true;
@@ -1385,7 +1396,7 @@
 			textBox74.BackColor = SystemColors.ButtonFace;
 			textBox74.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox74.ForeColor = Color.Blue;
-			textBox74.Location = new Point(1392, 537);
+			textBox74.Location = new Point(1488, 580);
 			textBox74.Margin = new Padding(4, 3, 4, 3);
 			textBox74.MaxLength = 1;
 			textBox74.Multiline = true;
@@ -1400,7 +1411,7 @@
 			textBox73.BackColor = SystemColors.ButtonFace;
 			textBox73.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox73.ForeColor = Color.Blue;
-			textBox73.Location = new Point(1353, 537);
+			textBox73.Location = new Point(1449, 580);
 			textBox73.Margin = new Padding(4, 3, 4, 3);
 			textBox73.MaxLength = 1;
 			textBox73.Multiline = true;
@@ -1415,7 +1426,7 @@
 			textBox72.BackColor = SystemColors.ButtonFace;
 			textBox72.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox72.ForeColor = Color.Blue;
-			textBox72.Location = new Point(1314, 537);
+			textBox72.Location = new Point(1410, 580);
 			textBox72.Margin = new Padding(4, 3, 4, 3);
 			textBox72.MaxLength = 1;
 			textBox72.Multiline = true;
@@ -1430,7 +1441,7 @@
 			textBox71.BackColor = SystemColors.ButtonFace;
 			textBox71.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox71.ForeColor = Color.Blue;
-			textBox71.Location = new Point(1274, 537);
+			textBox71.Location = new Point(1370, 580);
 			textBox71.Margin = new Padding(4, 3, 4, 3);
 			textBox71.MaxLength = 1;
 			textBox71.Multiline = true;
@@ -1445,7 +1456,7 @@
 			textBox70.BackColor = SystemColors.ButtonFace;
 			textBox70.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox70.ForeColor = Color.Blue;
-			textBox70.Location = new Point(1235, 537);
+			textBox70.Location = new Point(1331, 580);
 			textBox70.Margin = new Padding(4, 3, 4, 3);
 			textBox70.MaxLength = 1;
 			textBox70.Multiline = true;
@@ -1460,7 +1471,7 @@
 			textBox69.BackColor = SystemColors.ButtonFace;
 			textBox69.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox69.ForeColor = Color.Blue;
-			textBox69.Location = new Point(1196, 537);
+			textBox69.Location = new Point(1292, 580);
 			textBox69.Margin = new Padding(4, 3, 4, 3);
 			textBox69.MaxLength = 1;
 			textBox69.Multiline = true;
@@ -1475,7 +1486,7 @@
 			textBox77.BackColor = SystemColors.ButtonFace;
 			textBox77.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox77.ForeColor = Color.Blue;
-			textBox77.Location = new Point(1471, 497);
+			textBox77.Location = new Point(1567, 540);
 			textBox77.Margin = new Padding(4, 3, 4, 3);
 			textBox77.MaxLength = 1;
 			textBox77.Multiline = true;
@@ -1490,7 +1501,7 @@
 			textBox78.BackColor = SystemColors.ButtonFace;
 			textBox78.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox78.ForeColor = Color.Blue;
-			textBox78.Location = new Point(1432, 497);
+			textBox78.Location = new Point(1528, 540);
 			textBox78.Margin = new Padding(4, 3, 4, 3);
 			textBox78.MaxLength = 1;
 			textBox78.Multiline = true;
@@ -1505,7 +1516,7 @@
 			textBox79.BackColor = SystemColors.ButtonFace;
 			textBox79.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox79.ForeColor = Color.Blue;
-			textBox79.Location = new Point(1392, 497);
+			textBox79.Location = new Point(1488, 540);
 			textBox79.Margin = new Padding(4, 3, 4, 3);
 			textBox79.MaxLength = 1;
 			textBox79.Multiline = true;
@@ -1520,7 +1531,7 @@
 			textBox80.BackColor = SystemColors.ButtonFace;
 			textBox80.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox80.ForeColor = Color.Blue;
-			textBox80.Location = new Point(1353, 497);
+			textBox80.Location = new Point(1449, 540);
 			textBox80.Margin = new Padding(4, 3, 4, 3);
 			textBox80.MaxLength = 1;
 			textBox80.Multiline = true;
@@ -1535,7 +1546,7 @@
 			textBox81.BackColor = SystemColors.ButtonFace;
 			textBox81.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox81.ForeColor = Color.Blue;
-			textBox81.Location = new Point(1314, 497);
+			textBox81.Location = new Point(1410, 540);
 			textBox81.Margin = new Padding(4, 3, 4, 3);
 			textBox81.MaxLength = 1;
 			textBox81.Multiline = true;
@@ -1550,7 +1561,7 @@
 			textBox82.BackColor = SystemColors.ButtonFace;
 			textBox82.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox82.ForeColor = Color.Blue;
-			textBox82.Location = new Point(1274, 497);
+			textBox82.Location = new Point(1370, 540);
 			textBox82.Margin = new Padding(4, 3, 4, 3);
 			textBox82.MaxLength = 1;
 			textBox82.Multiline = true;
@@ -1565,7 +1576,7 @@
 			textBox83.BackColor = SystemColors.ButtonFace;
 			textBox83.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox83.ForeColor = Color.Blue;
-			textBox83.Location = new Point(1235, 497);
+			textBox83.Location = new Point(1331, 540);
 			textBox83.Margin = new Padding(4, 3, 4, 3);
 			textBox83.MaxLength = 1;
 			textBox83.Multiline = true;
@@ -1580,7 +1591,7 @@
 			textBox84.BackColor = SystemColors.ButtonFace;
 			textBox84.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox84.ForeColor = Color.Blue;
-			textBox84.Location = new Point(1196, 497);
+			textBox84.Location = new Point(1292, 540);
 			textBox84.Margin = new Padding(4, 3, 4, 3);
 			textBox84.MaxLength = 1;
 			textBox84.Multiline = true;
@@ -1595,7 +1606,7 @@
 			textBox85.BackColor = SystemColors.ButtonFace;
 			textBox85.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox85.ForeColor = Color.Blue;
-			textBox85.Location = new Point(1471, 454);
+			textBox85.Location = new Point(1567, 497);
 			textBox85.Margin = new Padding(4, 3, 4, 3);
 			textBox85.MaxLength = 1;
 			textBox85.Multiline = true;
@@ -1610,7 +1621,7 @@
 			textBox86.BackColor = SystemColors.ButtonFace;
 			textBox86.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox86.ForeColor = Color.Blue;
-			textBox86.Location = new Point(1432, 454);
+			textBox86.Location = new Point(1528, 497);
 			textBox86.Margin = new Padding(4, 3, 4, 3);
 			textBox86.MaxLength = 1;
 			textBox86.Multiline = true;
@@ -1625,7 +1636,7 @@
 			textBox87.BackColor = SystemColors.ButtonFace;
 			textBox87.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox87.ForeColor = Color.Blue;
-			textBox87.Location = new Point(1392, 454);
+			textBox87.Location = new Point(1488, 497);
 			textBox87.Margin = new Padding(4, 3, 4, 3);
 			textBox87.MaxLength = 1;
 			textBox87.Multiline = true;
@@ -1640,7 +1651,7 @@
 			textBox88.BackColor = SystemColors.ButtonFace;
 			textBox88.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox88.ForeColor = Color.Blue;
-			textBox88.Location = new Point(1353, 454);
+			textBox88.Location = new Point(1449, 497);
 			textBox88.Margin = new Padding(4, 3, 4, 3);
 			textBox88.MaxLength = 1;
 			textBox88.Multiline = true;
@@ -1655,7 +1666,7 @@
 			textBox89.BackColor = SystemColors.ButtonFace;
 			textBox89.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox89.ForeColor = Color.Blue;
-			textBox89.Location = new Point(1314, 454);
+			textBox89.Location = new Point(1410, 497);
 			textBox89.Margin = new Padding(4, 3, 4, 3);
 			textBox89.MaxLength = 1;
 			textBox89.Multiline = true;
@@ -1670,7 +1681,7 @@
 			textBox90.BackColor = SystemColors.ButtonFace;
 			textBox90.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox90.ForeColor = Color.Blue;
-			textBox90.Location = new Point(1274, 454);
+			textBox90.Location = new Point(1370, 497);
 			textBox90.Margin = new Padding(4, 3, 4, 3);
 			textBox90.MaxLength = 1;
 			textBox90.Multiline = true;
@@ -1685,7 +1696,7 @@
 			textBox91.BackColor = SystemColors.ButtonFace;
 			textBox91.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox91.ForeColor = Color.Blue;
-			textBox91.Location = new Point(1235, 454);
+			textBox91.Location = new Point(1331, 497);
 			textBox91.Margin = new Padding(4, 3, 4, 3);
 			textBox91.MaxLength = 1;
 			textBox91.Multiline = true;
@@ -1700,7 +1711,7 @@
 			textBox92.BackColor = SystemColors.ButtonFace;
 			textBox92.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox92.ForeColor = Color.Blue;
-			textBox92.Location = new Point(1196, 454);
+			textBox92.Location = new Point(1292, 497);
 			textBox92.Margin = new Padding(4, 3, 4, 3);
 			textBox92.MaxLength = 1;
 			textBox92.Multiline = true;
@@ -1715,7 +1726,7 @@
 			textBox93.BackColor = SystemColors.ButtonFace;
 			textBox93.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox93.ForeColor = Color.Blue;
-			textBox93.Location = new Point(1471, 416);
+			textBox93.Location = new Point(1567, 459);
 			textBox93.Margin = new Padding(4, 3, 4, 3);
 			textBox93.MaxLength = 1;
 			textBox93.Multiline = true;
@@ -1730,7 +1741,7 @@
 			textBox94.BackColor = SystemColors.ButtonFace;
 			textBox94.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox94.ForeColor = Color.Blue;
-			textBox94.Location = new Point(1432, 416);
+			textBox94.Location = new Point(1528, 459);
 			textBox94.Margin = new Padding(4, 3, 4, 3);
 			textBox94.MaxLength = 1;
 			textBox94.Multiline = true;
@@ -1745,7 +1756,7 @@
 			textBox95.BackColor = SystemColors.ButtonFace;
 			textBox95.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox95.ForeColor = Color.Blue;
-			textBox95.Location = new Point(1392, 416);
+			textBox95.Location = new Point(1488, 459);
 			textBox95.Margin = new Padding(4, 3, 4, 3);
 			textBox95.MaxLength = 1;
 			textBox95.Multiline = true;
@@ -1760,7 +1771,7 @@
 			textBox96.BackColor = SystemColors.ButtonFace;
 			textBox96.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox96.ForeColor = Color.Blue;
-			textBox96.Location = new Point(1353, 416);
+			textBox96.Location = new Point(1449, 459);
 			textBox96.Margin = new Padding(4, 3, 4, 3);
 			textBox96.MaxLength = 1;
 			textBox96.Multiline = true;
@@ -1775,7 +1786,7 @@
 			textBox97.BackColor = SystemColors.ButtonFace;
 			textBox97.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox97.ForeColor = Color.Blue;
-			textBox97.Location = new Point(1314, 416);
+			textBox97.Location = new Point(1410, 459);
 			textBox97.Margin = new Padding(4, 3, 4, 3);
 			textBox97.MaxLength = 1;
 			textBox97.Multiline = true;
@@ -1790,7 +1801,7 @@
 			textBox98.BackColor = SystemColors.ButtonFace;
 			textBox98.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox98.ForeColor = Color.Blue;
-			textBox98.Location = new Point(1274, 416);
+			textBox98.Location = new Point(1370, 459);
 			textBox98.Margin = new Padding(4, 3, 4, 3);
 			textBox98.MaxLength = 1;
 			textBox98.Multiline = true;
@@ -1805,7 +1816,7 @@
 			textBox99.BackColor = SystemColors.ButtonFace;
 			textBox99.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox99.ForeColor = Color.Blue;
-			textBox99.Location = new Point(1235, 416);
+			textBox99.Location = new Point(1331, 459);
 			textBox99.Margin = new Padding(4, 3, 4, 3);
 			textBox99.MaxLength = 1;
 			textBox99.Multiline = true;
@@ -1820,7 +1831,7 @@
 			textBox100.BackColor = SystemColors.ButtonFace;
 			textBox100.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox100.ForeColor = Color.Blue;
-			textBox100.Location = new Point(1196, 416);
+			textBox100.Location = new Point(1292, 459);
 			textBox100.Margin = new Padding(4, 3, 4, 3);
 			textBox100.MaxLength = 1;
 			textBox100.Multiline = true;
@@ -1833,40 +1844,43 @@
 			// label17
 			// 
 			label17.AutoSize = true;
-			label17.BackColor = Color.DarkSalmon;
-			label17.Location = new Point(230, 730);
+			label17.BackColor = Color.LightCoral;
+			label17.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+			label17.Location = new Point(221, 805);
 			label17.Name = "label17";
-			label17.Size = new Size(20, 15);
+			label17.Size = new Size(23, 17);
 			label17.TabIndex = 183;
 			label17.Text = "P1";
 			// 
 			// label18
 			// 
 			label18.AutoSize = true;
-			label18.BackColor = Color.DarkSalmon;
-			label18.Location = new Point(1133, 545);
+			label18.BackColor = Color.LightCoral;
+			label18.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label18.Location = new Point(1221, 586);
 			label18.Name = "label18";
-			label18.Size = new Size(20, 15);
+			label18.Size = new Size(26, 20);
 			label18.TabIndex = 184;
 			label18.Text = "P1";
 			// 
 			// button3
 			// 
+			button3.BackColor = Color.IndianRed;
 			button3.FlatStyle = FlatStyle.Flat;
-			button3.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			button3.Location = new Point(773, 552);
+			button3.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+			button3.Location = new Point(626, 831);
 			button3.Margin = new Padding(3, 2, 3, 2);
 			button3.Name = "button3";
-			button3.Size = new Size(184, 90);
+			button3.Size = new Size(197, 90);
 			button3.TabIndex = 185;
 			button3.Text = "Veri Kontrolüne Gönder";
-			button3.UseVisualStyleBackColor = true;
+			button3.UseVisualStyleBackColor = false;
 			button3.Click += button3_Click;
 			// 
 			// label19
 			// 
 			label19.AutoSize = true;
-			label19.Location = new Point(276, 326);
+			label19.Location = new Point(278, 400);
 			label19.Name = "label19";
 			label19.Size = new Size(12, 15);
 			label19.TabIndex = 186;
@@ -1875,7 +1889,7 @@
 			// label20
 			// 
 			label20.AutoSize = true;
-			label20.Location = new Point(409, 323);
+			label20.Location = new Point(411, 397);
 			label20.Name = "label20";
 			label20.Size = new Size(12, 15);
 			label20.TabIndex = 187;
@@ -1884,7 +1898,7 @@
 			// label21
 			// 
 			label21.AutoSize = true;
-			label21.Location = new Point(542, 323);
+			label21.Location = new Point(544, 397);
 			label21.Name = "label21";
 			label21.Size = new Size(12, 15);
 			label21.TabIndex = 188;
@@ -1893,73 +1907,78 @@
 			// label22
 			// 
 			label22.AutoSize = true;
-			label22.BackColor = Color.DarkSalmon;
-			label22.Location = new Point(600, 293);
+			label22.BackColor = Color.LightCoral;
+			label22.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+			label22.Location = new Point(602, 367);
 			label22.Name = "label22";
-			label22.Size = new Size(21, 15);
+			label22.Size = new Size(25, 17);
 			label22.TabIndex = 189;
 			label22.Text = "D4";
 			// 
 			// label23
 			// 
 			label23.AutoSize = true;
-			label23.BackColor = Color.DarkSalmon;
-			label23.Location = new Point(468, 293);
+			label23.BackColor = Color.LightCoral;
+			label23.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+			label23.Location = new Point(470, 367);
 			label23.Name = "label23";
-			label23.Size = new Size(21, 15);
+			label23.Size = new Size(25, 17);
 			label23.TabIndex = 190;
 			label23.Text = "D3";
 			// 
 			// label24
 			// 
 			label24.AutoSize = true;
-			label24.BackColor = Color.DarkSalmon;
-			label24.Location = new Point(339, 293);
+			label24.BackColor = Color.LightCoral;
+			label24.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+			label24.Location = new Point(341, 367);
 			label24.Name = "label24";
-			label24.Size = new Size(21, 15);
+			label24.Size = new Size(25, 17);
 			label24.TabIndex = 191;
 			label24.Text = "D2";
 			// 
 			// label25
 			// 
 			label25.AutoSize = true;
-			label25.BackColor = Color.DarkSalmon;
-			label25.Location = new Point(208, 293);
+			label25.BackColor = Color.LightCoral;
+			label25.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+			label25.Location = new Point(210, 367);
 			label25.Name = "label25";
-			label25.Size = new Size(21, 15);
+			label25.Size = new Size(25, 17);
 			label25.TabIndex = 192;
 			label25.Text = "D1";
 			// 
 			// button4
 			// 
+			button4.BackColor = Color.IndianRed;
 			button4.FlatStyle = FlatStyle.Flat;
-			button4.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			button4.Location = new Point(403, 767);
+			button4.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+			button4.Location = new Point(626, 537);
 			button4.Margin = new Padding(3, 2, 3, 2);
 			button4.Name = "button4";
 			button4.Size = new Size(197, 58);
 			button4.TabIndex = 193;
 			button4.Text = "Hesaplama Yap";
-			button4.UseVisualStyleBackColor = true;
+			button4.UseVisualStyleBackColor = false;
 			button4.Click += button4_Click;
 			// 
 			// label26
 			// 
 			label26.AutoSize = true;
 			label26.BackColor = SystemColors.ControlLight;
-			label26.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-			label26.Location = new Point(80, 705);
+			label26.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			label26.Location = new Point(43, 779);
 			label26.Name = "label26";
-			label26.Size = new Size(125, 17);
+			label26.Size = new Size(156, 21);
 			label26.TabIndex = 194;
-			label26.Text = "Tümleyenini Alalım";
+			label26.Text = "Tümleyenini Alalım:";
 			// 
 			// txtResultBit1
 			// 
 			txtResultBit1.BackColor = SystemColors.ButtonFace;
 			txtResultBit1.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtResultBit1.ForeColor = Color.Blue;
-			txtResultBit1.Location = new Point(245, 555);
+			txtResultBit1.Location = new Point(247, 629);
 			txtResultBit1.Margin = new Padding(4, 3, 4, 3);
 			txtResultBit1.MaxLength = 1;
 			txtResultBit1.Multiline = true;
@@ -1973,7 +1992,7 @@
 			txtResultBit0.BackColor = SystemColors.ButtonFace;
 			txtResultBit0.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtResultBit0.ForeColor = Color.Blue;
-			txtResultBit0.Location = new Point(206, 555);
+			txtResultBit0.Location = new Point(208, 629);
 			txtResultBit0.Margin = new Padding(4, 3, 4, 3);
 			txtResultBit0.MaxLength = 1;
 			txtResultBit0.Multiline = true;
@@ -1987,7 +2006,7 @@
 			txtCompFinalBit0.BackColor = SystemColors.ButtonFace;
 			txtCompFinalBit0.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtCompFinalBit0.ForeColor = Color.Blue;
-			txtCompFinalBit0.Location = new Point(1117, 596);
+			txtCompFinalBit0.Location = new Point(1213, 639);
 			txtCompFinalBit0.Margin = new Padding(4, 3, 4, 3);
 			txtCompFinalBit0.MaxLength = 1;
 			txtCompFinalBit0.Multiline = true;
@@ -2001,7 +2020,7 @@
 			txtCompFinalBit1.BackColor = SystemColors.ButtonFace;
 			txtCompFinalBit1.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtCompFinalBit1.ForeColor = Color.Blue;
-			txtCompFinalBit1.Location = new Point(1156, 596);
+			txtCompFinalBit1.Location = new Point(1252, 639);
 			txtCompFinalBit1.Margin = new Padding(4, 3, 4, 3);
 			txtCompFinalBit1.MaxLength = 1;
 			txtCompFinalBit1.Multiline = true;
@@ -2015,7 +2034,7 @@
 			textBox103.BackColor = SystemColors.ButtonFace;
 			textBox103.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox103.ForeColor = Color.Blue;
-			textBox103.Location = new Point(521, 590);
+			textBox103.Location = new Point(523, 664);
 			textBox103.Margin = new Padding(4, 3, 4, 3);
 			textBox103.MaxLength = 1;
 			textBox103.Multiline = true;
@@ -2029,7 +2048,7 @@
 			textBox104.BackColor = SystemColors.ButtonFace;
 			textBox104.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox104.ForeColor = Color.Blue;
-			textBox104.Location = new Point(560, 590);
+			textBox104.Location = new Point(562, 664);
 			textBox104.Margin = new Padding(4, 3, 4, 3);
 			textBox104.MaxLength = 1;
 			textBox104.Multiline = true;
@@ -2041,7 +2060,7 @@
 			// label27
 			// 
 			label27.AutoSize = true;
-			label27.Location = new Point(230, 705);
+			label27.Location = new Point(232, 779);
 			label27.Name = "label27";
 			label27.Size = new Size(362, 15);
 			label27.TabIndex = 203;
@@ -2052,7 +2071,7 @@
 			txtCompBit7.BackColor = SystemColors.ButtonFace;
 			txtCompBit7.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtCompBit7.ForeColor = Color.Blue;
-			txtCompBit7.Location = new Point(569, 723);
+			txtCompBit7.Location = new Point(561, 796);
 			txtCompBit7.Margin = new Padding(4, 3, 4, 3);
 			txtCompBit7.MaxLength = 1;
 			txtCompBit7.Multiline = true;
@@ -2067,7 +2086,7 @@
 			txtCompBit6.BackColor = SystemColors.ButtonFace;
 			txtCompBit6.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtCompBit6.ForeColor = Color.Blue;
-			txtCompBit6.Location = new Point(530, 723);
+			txtCompBit6.Location = new Point(522, 796);
 			txtCompBit6.Margin = new Padding(4, 3, 4, 3);
 			txtCompBit6.MaxLength = 1;
 			txtCompBit6.Multiline = true;
@@ -2082,7 +2101,7 @@
 			txtCompBit5.BackColor = SystemColors.ButtonFace;
 			txtCompBit5.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtCompBit5.ForeColor = Color.Blue;
-			txtCompBit5.Location = new Point(490, 723);
+			txtCompBit5.Location = new Point(482, 796);
 			txtCompBit5.Margin = new Padding(4, 3, 4, 3);
 			txtCompBit5.MaxLength = 1;
 			txtCompBit5.Multiline = true;
@@ -2097,7 +2116,7 @@
 			txtCompBit4.BackColor = SystemColors.ButtonFace;
 			txtCompBit4.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtCompBit4.ForeColor = Color.Blue;
-			txtCompBit4.Location = new Point(451, 723);
+			txtCompBit4.Location = new Point(443, 796);
 			txtCompBit4.Margin = new Padding(4, 3, 4, 3);
 			txtCompBit4.MaxLength = 1;
 			txtCompBit4.Multiline = true;
@@ -2112,7 +2131,7 @@
 			txtCompBit3.BackColor = SystemColors.ButtonFace;
 			txtCompBit3.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtCompBit3.ForeColor = Color.Blue;
-			txtCompBit3.Location = new Point(412, 723);
+			txtCompBit3.Location = new Point(404, 796);
 			txtCompBit3.Margin = new Padding(4, 3, 4, 3);
 			txtCompBit3.MaxLength = 1;
 			txtCompBit3.Multiline = true;
@@ -2127,7 +2146,7 @@
 			txtCompBit2.BackColor = SystemColors.ButtonFace;
 			txtCompBit2.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtCompBit2.ForeColor = Color.Blue;
-			txtCompBit2.Location = new Point(372, 723);
+			txtCompBit2.Location = new Point(364, 796);
 			txtCompBit2.Margin = new Padding(4, 3, 4, 3);
 			txtCompBit2.MaxLength = 1;
 			txtCompBit2.Multiline = true;
@@ -2142,7 +2161,7 @@
 			txtCompBit1.BackColor = SystemColors.ButtonFace;
 			txtCompBit1.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtCompBit1.ForeColor = Color.Blue;
-			txtCompBit1.Location = new Point(333, 723);
+			txtCompBit1.Location = new Point(325, 796);
 			txtCompBit1.Margin = new Padding(4, 3, 4, 3);
 			txtCompBit1.MaxLength = 1;
 			txtCompBit1.Multiline = true;
@@ -2157,7 +2176,7 @@
 			txtCompBit0.BackColor = SystemColors.ButtonFace;
 			txtCompBit0.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtCompBit0.ForeColor = Color.Blue;
-			txtCompBit0.Location = new Point(293, 723);
+			txtCompBit0.Location = new Point(285, 796);
 			txtCompBit0.Margin = new Padding(4, 3, 4, 3);
 			txtCompBit0.MaxLength = 1;
 			txtCompBit0.Multiline = true;
@@ -2172,7 +2191,7 @@
 			textBox115.BackColor = SystemColors.ButtonFace;
 			textBox115.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox115.ForeColor = Color.Blue;
-			textBox115.Location = new Point(1432, 634);
+			textBox115.Location = new Point(1528, 677);
 			textBox115.Margin = new Padding(4, 3, 4, 3);
 			textBox115.MaxLength = 1;
 			textBox115.Multiline = true;
@@ -2186,7 +2205,7 @@
 			textBox116.BackColor = SystemColors.ButtonFace;
 			textBox116.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox116.ForeColor = Color.Blue;
-			textBox116.Location = new Point(1471, 634);
+			textBox116.Location = new Point(1567, 677);
 			textBox116.Margin = new Padding(4, 3, 4, 3);
 			textBox116.MaxLength = 1;
 			textBox116.Multiline = true;
@@ -2200,7 +2219,7 @@
 			txtReedSolomonResultBox7.BackColor = SystemColors.ButtonFace;
 			txtReedSolomonResultBox7.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtReedSolomonResultBox7.ForeColor = Color.Blue;
-			txtReedSolomonResultBox7.Location = new Point(1471, 699);
+			txtReedSolomonResultBox7.Location = new Point(1567, 742);
 			txtReedSolomonResultBox7.Margin = new Padding(4, 3, 4, 3);
 			txtReedSolomonResultBox7.MaxLength = 1;
 			txtReedSolomonResultBox7.Multiline = true;
@@ -2215,7 +2234,7 @@
 			txtReedSolomonResultBox6.BackColor = SystemColors.ButtonFace;
 			txtReedSolomonResultBox6.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtReedSolomonResultBox6.ForeColor = Color.Blue;
-			txtReedSolomonResultBox6.Location = new Point(1432, 699);
+			txtReedSolomonResultBox6.Location = new Point(1528, 742);
 			txtReedSolomonResultBox6.Margin = new Padding(4, 3, 4, 3);
 			txtReedSolomonResultBox6.MaxLength = 1;
 			txtReedSolomonResultBox6.Multiline = true;
@@ -2230,7 +2249,7 @@
 			txtReedSolomonResultBox5.BackColor = SystemColors.ButtonFace;
 			txtReedSolomonResultBox5.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtReedSolomonResultBox5.ForeColor = Color.Blue;
-			txtReedSolomonResultBox5.Location = new Point(1392, 699);
+			txtReedSolomonResultBox5.Location = new Point(1488, 742);
 			txtReedSolomonResultBox5.Margin = new Padding(4, 3, 4, 3);
 			txtReedSolomonResultBox5.MaxLength = 1;
 			txtReedSolomonResultBox5.Multiline = true;
@@ -2245,7 +2264,7 @@
 			txtReedSolomonResultBox4.BackColor = SystemColors.ButtonFace;
 			txtReedSolomonResultBox4.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtReedSolomonResultBox4.ForeColor = Color.Blue;
-			txtReedSolomonResultBox4.Location = new Point(1353, 699);
+			txtReedSolomonResultBox4.Location = new Point(1449, 742);
 			txtReedSolomonResultBox4.Margin = new Padding(4, 3, 4, 3);
 			txtReedSolomonResultBox4.MaxLength = 1;
 			txtReedSolomonResultBox4.Multiline = true;
@@ -2260,7 +2279,7 @@
 			txtReedSolomonResultBox3.BackColor = SystemColors.ButtonFace;
 			txtReedSolomonResultBox3.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtReedSolomonResultBox3.ForeColor = Color.Blue;
-			txtReedSolomonResultBox3.Location = new Point(1314, 699);
+			txtReedSolomonResultBox3.Location = new Point(1410, 742);
 			txtReedSolomonResultBox3.Margin = new Padding(4, 3, 4, 3);
 			txtReedSolomonResultBox3.MaxLength = 1;
 			txtReedSolomonResultBox3.Multiline = true;
@@ -2275,7 +2294,7 @@
 			txtReedSolomonResultBox2.BackColor = SystemColors.ButtonFace;
 			txtReedSolomonResultBox2.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtReedSolomonResultBox2.ForeColor = Color.Blue;
-			txtReedSolomonResultBox2.Location = new Point(1274, 699);
+			txtReedSolomonResultBox2.Location = new Point(1370, 742);
 			txtReedSolomonResultBox2.Margin = new Padding(4, 3, 4, 3);
 			txtReedSolomonResultBox2.MaxLength = 1;
 			txtReedSolomonResultBox2.Multiline = true;
@@ -2290,7 +2309,7 @@
 			txtReedSolomonResultBox1.BackColor = SystemColors.ButtonFace;
 			txtReedSolomonResultBox1.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtReedSolomonResultBox1.ForeColor = Color.Blue;
-			txtReedSolomonResultBox1.Location = new Point(1235, 699);
+			txtReedSolomonResultBox1.Location = new Point(1331, 742);
 			txtReedSolomonResultBox1.Margin = new Padding(4, 3, 4, 3);
 			txtReedSolomonResultBox1.MaxLength = 1;
 			txtReedSolomonResultBox1.Multiline = true;
@@ -2305,7 +2324,7 @@
 			txtReedSolomonResultBox0.BackColor = SystemColors.ButtonFace;
 			txtReedSolomonResultBox0.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtReedSolomonResultBox0.ForeColor = Color.Blue;
-			txtReedSolomonResultBox0.Location = new Point(1196, 699);
+			txtReedSolomonResultBox0.Location = new Point(1292, 742);
 			txtReedSolomonResultBox0.Margin = new Padding(4, 3, 4, 3);
 			txtReedSolomonResultBox0.MaxLength = 1;
 			txtReedSolomonResultBox0.Multiline = true;
@@ -2318,7 +2337,7 @@
 			// label28
 			// 
 			label28.AutoSize = true;
-			label28.Location = new Point(236, 612);
+			label28.Location = new Point(238, 686);
 			label28.Name = "label28";
 			label28.Size = new Size(15, 15);
 			label28.TabIndex = 222;
@@ -2327,7 +2346,7 @@
 			// label29
 			// 
 			label29.AutoSize = true;
-			label29.Location = new Point(1117, 656);
+			label29.Location = new Point(1213, 699);
 			label29.Name = "label29";
 			label29.Size = new Size(15, 15);
 			label29.TabIndex = 223;
@@ -2339,7 +2358,7 @@
 			panel1.Dock = DockStyle.Top;
 			panel1.Location = new Point(0, 0);
 			panel1.Name = "panel1";
-			panel1.Size = new Size(1707, 23);
+			panel1.Size = new Size(1821, 23);
 			panel1.TabIndex = 224;
 			// 
 			// panel2
@@ -2373,7 +2392,7 @@
 			panel3.Controls.Add(pictureBox1);
 			panel3.Location = new Point(1474, 12);
 			panel3.Name = "panel3";
-			panel3.Size = new Size(160, 186);
+			panel3.Size = new Size(160, 202);
 			panel3.TabIndex = 227;
 			// 
 			// pictureBox1
@@ -2381,7 +2400,7 @@
 			pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
 			pictureBox1.Location = new Point(13, 20);
 			pictureBox1.Name = "pictureBox1";
-			pictureBox1.Size = new Size(133, 147);
+			pictureBox1.Size = new Size(133, 162);
 			pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 			pictureBox1.TabIndex = 0;
 			pictureBox1.TabStop = false;
@@ -2393,7 +2412,7 @@
 			button1.ForeColor = Color.Black;
 			button1.Image = (Image)resources.GetObject("button1.Image");
 			button1.ImageAlign = ContentAlignment.MiddleLeft;
-			button1.Location = new Point(88, 178);
+			button1.Location = new Point(88, 232);
 			button1.Name = "button1";
 			button1.Size = new Size(166, 61);
 			button1.TabIndex = 228;
@@ -2409,7 +2428,7 @@
 			button5.ForeColor = Color.Black;
 			button5.Image = (Image)resources.GetObject("button5.Image");
 			button5.ImageAlign = ContentAlignment.MiddleLeft;
-			button5.Location = new Point(1181, 204);
+			button5.Location = new Point(1181, 232);
 			button5.Name = "button5";
 			button5.Size = new Size(260, 61);
 			button5.TabIndex = 230;
@@ -2424,7 +2443,7 @@
 			button2.ForeColor = Color.Black;
 			button2.Image = (Image)resources.GetObject("button2.Image");
 			button2.ImageAlign = ContentAlignment.MiddleLeft;
-			button2.Location = new Point(1474, 204);
+			button2.Location = new Point(1474, 232);
 			button2.Name = "button2";
 			button2.Size = new Size(160, 61);
 			button2.TabIndex = 229;
@@ -2433,12 +2452,45 @@
 			button2.UseVisualStyleBackColor = true;
 			button2.Click += button2_Click;
 			// 
+			// label30
+			// 
+			label30.AutoSize = true;
+			label30.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+			label30.Location = new Point(626, 605);
+			label30.Name = "label30";
+			label30.Size = new Size(330, 34);
+			label30.TabIndex = 231;
+			label30.Text = "8 bitlik verilerinizi girdikten sonra 'Hesaplama Yap' \r\nbutonu ile işleme devam edebilirsiniz.";
+			// 
+			// label31
+			// 
+			label31.AutoSize = true;
+			label31.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+			label31.Location = new Point(626, 935);
+			label31.Name = "label31";
+			label31.Size = new Size(573, 34);
+			label31.TabIndex = 232;
+			label31.Text = "Tümleyen alma işleminiz de bittikten sonra sağ tarafta bulunan kontrol kısmına geçmek \r\niçin 'Veri Kontrolüne Gönder' butonuna basabilirsiniz.";
+			// 
+			// label32
+			// 
+			label32.AutoSize = true;
+			label32.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+			label32.Location = new Point(1181, 783);
+			label32.Name = "label32";
+			label32.Size = new Size(465, 17);
+			label32.TabIndex = 233;
+			label32.Text = "Sonucumuz \"11111111\" geldiği taktirde verimiz hatasız iletilmiş demektir.";
+			// 
 			// Reed_Solomon
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = SystemColors.ControlLight;
-			ClientSize = new Size(1707, 859);
+			ClientSize = new Size(1821, 1030);
+			Controls.Add(label32);
+			Controls.Add(label31);
+			Controls.Add(label30);
 			Controls.Add(button5);
 			Controls.Add(button2);
 			Controls.Add(button1);
@@ -2776,5 +2828,8 @@
 		private Button button1;
 		private Button button5;
 		private Button button2;
+		private Label label30;
+		private Label label31;
+		private Label label32;
 	}
 }

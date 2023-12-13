@@ -283,15 +283,16 @@
 			// 
 			// button1
 			// 
+			button1.BackColor = Color.IndianRed;
 			button1.FlatStyle = FlatStyle.Flat;
-			button1.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+			button1.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
 			button1.Location = new Point(302, 312);
 			button1.Margin = new Padding(4, 3, 4, 3);
 			button1.Name = "button1";
 			button1.Size = new Size(238, 79);
 			button1.TabIndex = 1;
 			button1.Text = "Hamming Kodu Oluştur";
-			button1.UseVisualStyleBackColor = true;
+			button1.UseVisualStyleBackColor = false;
 			button1.Click += button1_Click;
 			// 
 			// groupBox2
@@ -1003,15 +1004,16 @@
 			// 
 			// button2
 			// 
+			button2.BackColor = Color.IndianRed;
 			button2.FlatStyle = FlatStyle.Flat;
-			button2.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			button2.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
 			button2.Location = new Point(128, 77);
 			button2.Margin = new Padding(4, 3, 4, 3);
 			button2.Name = "button2";
 			button2.Size = new Size(192, 35);
 			button2.TabIndex = 3;
 			button2.Text = "Veriyi Gönder";
-			button2.UseVisualStyleBackColor = true;
+			button2.UseVisualStyleBackColor = false;
 			button2.Click += button2_Click;
 			// 
 			// progressBar1
@@ -1094,7 +1096,7 @@
 			// 
 			button3.BackColor = Color.IndianRed;
 			button3.FlatStyle = FlatStyle.Flat;
-			button3.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			button3.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
 			button3.Location = new Point(491, 38);
 			button3.Margin = new Padding(4, 3, 4, 3);
 			button3.Name = "button3";
@@ -1477,7 +1479,7 @@
 			groupBox5.Controls.Add(lblP1c);
 			groupBox5.Controls.Add(label63);
 			groupBox5.Controls.Add(label64);
-			groupBox5.Font = new Font("Century", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			groupBox5.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
 			groupBox5.Location = new Point(1056, 207);
 			groupBox5.Margin = new Padding(4, 3, 4, 3);
 			groupBox5.Name = "groupBox5";
@@ -1495,7 +1497,7 @@
 			lblChf.Location = new Point(401, 65);
 			lblChf.Margin = new Padding(4, 0, 4, 0);
 			lblChf.Name = "lblChf";
-			lblChf.Size = new Size(58, 18);
+			lblChf.Size = new Size(61, 20);
 			lblChf.TabIndex = 7;
 			lblChf.Text = "label67";
 			// 
@@ -1536,7 +1538,7 @@
 			label61.Location = new Point(289, 144);
 			label61.Margin = new Padding(4, 0, 4, 0);
 			label61.Name = "label61";
-			label61.Size = new Size(150, 18);
+			label61.Size = new Size(159, 20);
 			label61.TabIndex = 11;
 			label61.Text = "decimal konumunda";
 			// 
@@ -1547,7 +1549,7 @@
 			lblDecimal.Location = new Point(210, 145);
 			lblDecimal.Margin = new Padding(4, 0, 4, 0);
 			lblDecimal.Name = "lblDecimal";
-			lblDecimal.Size = new Size(58, 18);
+			lblDecimal.Size = new Size(61, 20);
 			lblDecimal.TabIndex = 11;
 			lblDecimal.Text = "label61";
 			// 
@@ -1557,7 +1559,7 @@
 			label60.Location = new Point(79, 114);
 			label60.Margin = new Padding(4, 0, 4, 0);
 			label60.Name = "label60";
-			label60.Size = new Size(76, 18);
+			label60.Size = new Size(72, 20);
 			label60.TabIndex = 10;
 			label60.Text = "Hatalı bit";
 			// 
@@ -1567,7 +1569,7 @@
 			label59.Location = new Point(289, 113);
 			label59.Margin = new Padding(4, 0, 4, 0);
 			label59.Name = "label59";
-			label59.Size = new Size(140, 18);
+			label59.Size = new Size(145, 20);
 			label59.TabIndex = 10;
 			label59.Text = "binary konumunda";
 			// 
@@ -1633,7 +1635,7 @@
 			label58.Location = new Point(290, 54);
 			label58.Margin = new Padding(4, 0, 4, 0);
 			label58.Name = "label58";
-			label58.Size = new Size(89, 18);
+			label58.Size = new Size(82, 20);
 			label58.TabIndex = 8;
 			label58.Text = "XOR işlemi";
 			// 
@@ -1643,7 +1645,7 @@
 			label57.Location = new Point(155, 15);
 			label57.Margin = new Padding(4, 0, 4, 0);
 			label57.Name = "label57";
-			label57.Size = new Size(116, 18);
+			label57.Size = new Size(113, 20);
 			label57.TabIndex = 7;
 			label57.Text = "P4   P3   P2   P1";
 			// 
@@ -1653,7 +1655,7 @@
 			label56.Location = new Point(8, 71);
 			label56.Margin = new Padding(4, 0, 4, 0);
 			label56.Name = "label56";
-			label56.Size = new Size(141, 18);
+			label56.Size = new Size(129, 20);
 			label56.TabIndex = 6;
 			label56.Text = "Son Parity Bitleri :";
 			// 
@@ -1663,7 +1665,7 @@
 			label55.Location = new Point(11, 41);
 			label55.Margin = new Padding(4, 0, 4, 0);
 			label55.Name = "label55";
-			label55.Size = new Size(135, 18);
+			label55.Size = new Size(119, 20);
 			label55.TabIndex = 6;
 			label55.Text = "İlk Parity Bitleri :";
 			// 
@@ -1786,7 +1788,7 @@
 			label66.Location = new Point(34, 494);
 			label66.Margin = new Padding(4, 0, 4, 0);
 			label66.Name = "label66";
-			label66.Size = new Size(55, 18);
+			label66.Size = new Size(54, 20);
 			label66.TabIndex = 5;
 			label66.Text = "Alınan";
 			// 
@@ -2296,7 +2298,7 @@
 			lblP4d.Location = new Point(245, 445);
 			lblP4d.Margin = new Padding(4, 0, 4, 0);
 			lblP4d.Name = "lblP4d";
-			lblP4d.Size = new Size(17, 18);
+			lblP4d.Size = new Size(18, 20);
 			lblP4d.TabIndex = 2;
 			lblP4d.Text = "=";
 			// 
@@ -2306,7 +2308,7 @@
 			lblP3d.Location = new Point(245, 414);
 			lblP3d.Margin = new Padding(4, 0, 4, 0);
 			lblP3d.Name = "lblP3d";
-			lblP3d.Size = new Size(17, 18);
+			lblP3d.Size = new Size(18, 20);
 			lblP3d.TabIndex = 2;
 			lblP3d.Text = "=";
 			// 
@@ -2316,7 +2318,7 @@
 			lblP2d.Location = new Point(245, 384);
 			lblP2d.Margin = new Padding(4, 0, 4, 0);
 			lblP2d.Name = "lblP2d";
-			lblP2d.Size = new Size(17, 18);
+			lblP2d.Size = new Size(18, 20);
 			lblP2d.TabIndex = 2;
 			lblP2d.Text = "=";
 			// 
@@ -2326,7 +2328,7 @@
 			lblP1d.Location = new Point(245, 352);
 			lblP1d.Margin = new Padding(4, 0, 4, 0);
 			lblP1d.Name = "lblP1d";
-			lblP1d.Size = new Size(17, 18);
+			lblP1d.Size = new Size(18, 20);
 			lblP1d.TabIndex = 2;
 			lblP1d.Text = "=";
 			// 
@@ -2336,7 +2338,7 @@
 			lblP4c.Location = new Point(14, 445);
 			lblP4c.Margin = new Padding(4, 0, 4, 0);
 			lblP4c.Name = "lblP4c";
-			lblP4c.Size = new Size(178, 18);
+			lblP4c.Size = new Size(174, 20);
 			lblP4c.TabIndex = 2;
 			lblP4c.Text = "P4 =  D5 + D6 + D7 + D8";
 			// 
@@ -2346,7 +2348,7 @@
 			lblP3c.Location = new Point(14, 415);
 			lblP3c.Margin = new Padding(4, 0, 4, 0);
 			lblP3c.Name = "lblP3c";
-			lblP3c.Size = new Size(178, 18);
+			lblP3c.Size = new Size(174, 20);
 			lblP3c.TabIndex = 2;
 			lblP3c.Text = "P3 =  D2 + D3 + D4 + D8";
 			// 
@@ -2356,7 +2358,7 @@
 			lblP2c.Location = new Point(14, 384);
 			lblP2c.Margin = new Padding(4, 0, 4, 0);
 			lblP2c.Name = "lblP2c";
-			lblP2c.Size = new Size(215, 18);
+			lblP2c.Size = new Size(210, 20);
 			lblP2c.TabIndex = 2;
 			lblP2c.Text = "P2 =  D1 + D2 + D4 + D5 + D7";
 			// 
@@ -2366,7 +2368,7 @@
 			lblP1c.Location = new Point(14, 352);
 			lblP1c.Margin = new Padding(4, 0, 4, 0);
 			lblP1c.Name = "lblP1c";
-			lblP1c.Size = new Size(215, 18);
+			lblP1c.Size = new Size(210, 20);
 			lblP1c.TabIndex = 2;
 			lblP1c.Text = "P1 =  D1 + D2 + D4 + D5 + D7";
 			// 
@@ -2377,7 +2379,7 @@
 			label63.Location = new Point(15, 516);
 			label63.Margin = new Padding(4, 0, 4, 0);
 			label63.Name = "label63";
-			label63.Size = new Size(104, 18);
+			label63.Size = new Size(112, 20);
 			label63.TabIndex = 0;
 			label63.Text = "Code Word = ";
 			// 

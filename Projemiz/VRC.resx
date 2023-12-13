@@ -124,7 +124,7 @@
   <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        qQAAAKkBq7NRIgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGJSURBVEhL1dW/
+        qAAAAKgBefSzxgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGJSURBVEhL1dW/
         K0VhHMfx42d+DchgYKGUQdmkLBYGA6UrGQwUJRnkRxGDQRaTlEFSBpFFtwwIkR9hx2z0T3h/zjlX7rnn
         OZwfBp96dZ/nlud7PM/3PNf6L2lCozNMJlpsFHu4wy7OMIFYmccztPAIGpBJIVZwhGp9ESXNuMaQPfNP
         J+7RYc8ipAQf2EG5vvBJDU6waM9Cpg4H6MUtWqGoWDfWcIVTzOErXTj8wTbasAmlHlro0v1cxgxWkZNz
@@ -183,11 +183,6 @@
         eTzALX4ETcXEomHyCLfIfzZRhUSjq81WzKU3fgSF/E1jo5Mu4BwXkTPsQc++DxrBadLkSCbzA96GpxRA
         no78AAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="button7.Text" xml:space="preserve">
-    <value>Virtual Redundancy Check (VRC), veri iletiminde hata kontrolü sağlamak amacıyla kullanılan basit bir algoritmadır. Bu algoritma, iletim sırasında gönderilen veri bitlerindeki tek sayısını kontrol eder. 
-VRC, bir iletim sistemindeki hataları tespit etmek için kullanılan bir parite kontrol algoritmasıdır. Gönderici, iletilen veri paketinin içine bir parite biti ekler. Bu parite biti, iletilen veri bitlerindeki
-tek sayısını düzeltir veya kontrol eder.</value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1492,6 +1487,12 @@ tek sayısını düzeltir veya kontrol eder.</value>
         iDfmZwrxPYm5LvROop6rnMu8Mc+u/NIbumK+JxFnL8ucLXHUI4X5mrlDz+QiX9OIvwLEGUXdPxNx9JJA
         nDGoqzOJ+Yq6ww28r8s8+5rC/JFAPFHPVsy50JlloVcU9X2l/+///h8dltOIWMeoaAAAAABJRU5ErkJg
         gg==
+</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Virtual Redundancy Check (VRC), veri iletiminde hata kontrolü sağlamak amacıyla kullanılan basit bir algoritmadır. Bu algoritma, iletim sırasında gönderilen veri bitlerindeki tek sayısını kontrol eder. 
+VRC, bir iletim sistemindeki hataları tespit etmek için kullanılan bir parite kontrol algoritmasıdır. Gönderici, iletilen veri paketinin içine bir parite biti ekler. Bu parite biti, iletilen veri bitlerindeki
+tek sayısını düzeltir veya kontrol eder.
 </value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

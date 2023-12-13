@@ -30,6 +30,7 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAnaSayfa));
 			panel1 = new Panel();
+			panel13 = new Panel();
 			panel15 = new Panel();
 			panel12 = new Panel();
 			panel14 = new Panel();
@@ -58,7 +59,6 @@
 			btnGoogleForm = new Button();
 			label2 = new Label();
 			panel11 = new Panel();
-			panel13 = new Panel();
 			panel17 = new Panel();
 			panel18 = new Panel();
 			panel16 = new Panel();
@@ -98,6 +98,16 @@
 			panel1.Name = "panel1";
 			panel1.Size = new Size(381, 898);
 			panel1.TabIndex = 0;
+			// 
+			// panel13
+			// 
+			panel13.BackColor = Color.Transparent;
+			panel13.BackgroundImage = (Image)resources.GetObject("panel13.BackgroundImage");
+			panel13.BackgroundImageLayout = ImageLayout.Zoom;
+			panel13.Location = new Point(-94, 683);
+			panel13.Name = "panel13";
+			panel13.Size = new Size(240, 120);
+			panel13.TabIndex = 27;
 			// 
 			// panel15
 			// 
@@ -374,18 +384,19 @@
 			// 
 			// button10
 			// 
+			button10.BackColor = Color.Transparent;
 			button10.FlatAppearance.BorderSize = 0;
 			button10.FlatStyle = FlatStyle.Flat;
 			button10.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
 			button10.ForeColor = Color.Black;
 			button10.Image = (Image)resources.GetObject("button10.Image");
 			button10.ImageAlign = ContentAlignment.MiddleLeft;
-			button10.Location = new Point(1666, 24);
+			button10.Location = new Point(1656, 24);
 			button10.Name = "button10";
-			button10.Size = new Size(45, 51);
+			button10.Size = new Size(55, 64);
 			button10.TabIndex = 22;
 			button10.TextImageRelation = TextImageRelation.ImageBeforeText;
-			button10.UseVisualStyleBackColor = true;
+			button10.UseVisualStyleBackColor = false;
 			button10.Click += button10_Click;
 			// 
 			// button9
@@ -442,16 +453,6 @@
 			panel11.Name = "panel11";
 			panel11.Size = new Size(604, 533);
 			panel11.TabIndex = 25;
-			// 
-			// panel13
-			// 
-			panel13.BackColor = Color.Transparent;
-			panel13.BackgroundImage = (Image)resources.GetObject("panel13.BackgroundImage");
-			panel13.BackgroundImageLayout = ImageLayout.Zoom;
-			panel13.Location = new Point(-94, 683);
-			panel13.Name = "panel13";
-			panel13.Size = new Size(240, 120);
-			panel13.TabIndex = 27;
 			// 
 			// panel17
 			// 
