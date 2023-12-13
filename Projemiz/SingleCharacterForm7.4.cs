@@ -119,7 +119,7 @@ namespace Projemiz
 
 		void ClearTextBoxT()
 		{
-			txtD1t.Clear(); txtD2t.Clear(); txtD3t.Clear(); txtD4t.Clear(); 
+			txtD1t.Clear(); txtD2t.Clear(); txtD3t.Clear(); txtD4t.Clear();
 			txtP1t.Clear(); txtP2t.Clear(); txtP3t.Clear();
 			//---------------------------------------------------------------------------
 			progressBar1.Value = 0;
@@ -127,13 +127,13 @@ namespace Projemiz
 			devam = false;
 			//---------------------------------------------------------------------------
 			txtD1t.BackColor = txtD1c.BackColor; txtD2t.BackColor = txtD2c.BackColor; txtD3t.BackColor = txtD3c.BackColor; txtD4t.BackColor = txtD4c.BackColor;
-			txtP1t.BackColor = txtP1.BackColor; txtP2t.BackColor = txtP2.BackColor; txtP3t.BackColor = txtP3.BackColor; 
+			txtP1t.BackColor = txtP1.BackColor; txtP2t.BackColor = txtP2.BackColor; txtP3t.BackColor = txtP3.BackColor;
 			//----------------------------------------------------------------------------
 			txtD1r.Clear(); txtD2r.Clear(); txtD3r.Clear(); txtD4r.Clear();
-			txtP1r.Clear(); txtP2r.Clear(); txtP3r.Clear(); 
+			txtP1r.Clear(); txtP2r.Clear(); txtP3r.Clear();
 			//---------------------------------------------------------------------------
-			txtD1f.Clear(); txtD2f.Clear(); txtD3f.Clear(); txtD4f.Clear(); 
-			txtD1f.BackColor = txtD1r.BackColor; txtD2f.BackColor = txtD2r.BackColor; txtD3f.BackColor = txtD3r.BackColor; txtD4f.BackColor = txtD4r.BackColor; 
+			txtD1f.Clear(); txtD2f.Clear(); txtD3f.Clear(); txtD4f.Clear();
+			txtD1f.BackColor = txtD1r.BackColor; txtD2f.BackColor = txtD2r.BackColor; txtD3f.BackColor = txtD3r.BackColor; txtD4f.BackColor = txtD4r.BackColor;
 			//---------------------------------------------------------------------------
 			UnLockT();
 		}
@@ -144,11 +144,11 @@ namespace Projemiz
 			txtD2t.Enabled = false;
 			txtD3t.Enabled = false;
 			txtD4t.Enabled = false;
-			
+
 			txtP1t.Enabled = false;
 			txtP2t.Enabled = false;
 			txtP3t.Enabled = false;
-			
+
 		}
 		void UnLockT()
 		{
@@ -156,11 +156,11 @@ namespace Projemiz
 			txtD2t.Enabled = true;
 			txtD3t.Enabled = true;
 			txtD4t.Enabled = true;
-			
+
 			txtP1t.Enabled = true;
 			txtP2t.Enabled = true;
 			txtP3t.Enabled = true;
-			
+
 		}
 		private void button1_Click(object sender, EventArgs e)
 		{
@@ -303,7 +303,7 @@ namespace Projemiz
 				txtD2t.Text = txtD2c.Text;
 				txtD3t.Text = txtD3c.Text;
 				txtD4t.Text = txtD4c.Text;
-				
+
 				groupBox4.Visible = true;
 			}
 			if (progressBar1.Value == 100)
@@ -317,20 +317,20 @@ namespace Projemiz
 				txtD2r.Text = txtD2t.Text;
 				txtD3r.Text = txtD3t.Text;
 				txtD4r.Text = txtD4t.Text;
-				
+
 				txtP1r.Text = txtP1t.Text;
 				txtP2r.Text = txtP2t.Text;
 				txtP3r.Text = txtP3t.Text;
-				
+
 				//-------------------------
 				CalculateParity2();
 				//-------------------------
-				
+
 				txtP3ilk.Text = txtP3r.Text;
 				txtP2ilk.Text = txtP2r.Text;
 				txtP1ilk.Text = txtP1r.Text;
 				//-------------------------
-				
+
 				txtP3son.Text = P3b;
 				txtP2son.Text = P2b;
 				txtP1son.Text = P1b;
@@ -338,12 +338,12 @@ namespace Projemiz
 				txtK1.Text = h.XorOperator(txtP1ilk.Text, txtP1son.Text);
 				txtK2.Text = h.XorOperator(txtP2ilk.Text, txtP2son.Text);
 				txtK3.Text = h.XorOperator(txtP3ilk.Text, txtP3son.Text);
-				
+
 				//-------------------------
-				BinaryPosition =txtK3.Text + txtK2.Text + txtK1.Text;
+				BinaryPosition = txtK3.Text + txtK2.Text + txtK1.Text;
 				lblDecimal.Text = Convert.ToString(Convert.ToInt32(BinaryPosition, 2));
 				//-------------------------
-				string ReceivedData =  txtD4r.Text + txtD3r.Text + txtD2r.Text + txtD1r.Text;
+				string ReceivedData = txtD4r.Text + txtD3r.Text + txtD2r.Text + txtD1r.Text;
 				string AddText = "";
 				if (lblDecimal.Text != "0")
 				{
@@ -351,7 +351,7 @@ namespace Projemiz
 					txtD2f.Text = ReceivedData[2].ToString();
 					txtD3f.Text = ReceivedData[1].ToString();
 					txtD4f.Text = ReceivedData[0].ToString();
-					
+
 					switch (lblDecimal.Text)
 					{
 						case "1": AddText = "P1"; break;
@@ -394,7 +394,7 @@ namespace Projemiz
 						default: break;
 					}
 
-					lblChf.Text = "(" +h.BinaryToHex(txtD4f.Text + txtD3f.Text + txtD2f.Text + txtD1f.Text) + ")hex";
+					lblChf.Text = "(" + h.BinaryToHex(txtD4f.Text + txtD3f.Text + txtD2f.Text + txtD1f.Text) + ")hex";
 				}
 				else
 				{
@@ -418,7 +418,7 @@ namespace Projemiz
 			groupBox5.Visible = false;
 		}
 
-		
+
 		private void txtD4t_Click(object sender, EventArgs e)
 		{
 			if (txtD4t.Text == "1")
@@ -509,6 +509,36 @@ namespace Projemiz
 			timer1.Start();
 		}
 
+		private void button10_Click(object sender, EventArgs e)
+		{
+			FormAnaSayfa form = new FormAnaSayfa();
+			form.Show();
+			this.Hide();
+		}
 
+		private void button6_Click(object sender, EventArgs e)
+		{
+			string pdfDosyaYolu = "C:\\Users\\talha\\Downloads\\9.10.2023 Siber - 1.pdf";
+
+			if (File.Exists(pdfDosyaYolu))
+			{
+				byte[] pdfBytes = File.ReadAllBytes(pdfDosyaYolu);
+				MemoryStream memoryStream = new MemoryStream(pdfBytes);
+
+				SaveFileDialog saveFileDialog = new SaveFileDialog();
+				saveFileDialog.Filter = "PDF Dosyaları (*.pdf)|*.pdf";
+				saveFileDialog.FileName = "YeniDosyaAdi.pdf";
+
+				if (saveFileDialog.ShowDialog() == DialogResult.OK)
+				{
+					File.WriteAllBytes(saveFileDialog.FileName, memoryStream.ToArray());
+					MessageBox.Show("PDF İndirme Başarılı!", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				}
+			}
+			else
+			{
+				MessageBox.Show("Belirtilen PDF dosyası bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+		}
 	}
 }

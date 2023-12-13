@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SingleCharacterForm7));
 			groupBox1 = new GroupBox();
 			radioButton3 = new RadioButton();
 			radioButton2 = new RadioButton();
@@ -142,25 +143,35 @@
 			lblP1c = new Label();
 			label63 = new Label();
 			label64 = new Label();
-			label67 = new Label();
-			label68 = new Label();
+			button4 = new Button();
+			button10 = new Button();
+			panel2 = new Panel();
+			label69 = new Label();
+			label10 = new Label();
+			panel1 = new Panel();
+			button5 = new Button();
+			button6 = new Button();
+			panel3 = new Panel();
+			pictureBox1 = new PictureBox();
 			groupBox1.SuspendLayout();
 			groupBox2.SuspendLayout();
 			groupBox3.SuspendLayout();
 			groupBox4.SuspendLayout();
 			groupBox5.SuspendLayout();
 			groupBox6.SuspendLayout();
+			panel3.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			SuspendLayout();
 			// 
 			// groupBox1
 			// 
-			groupBox1.BackColor = SystemColors.Control;
+			groupBox1.BackColor = Color.Silver;
 			groupBox1.Controls.Add(radioButton3);
 			groupBox1.Controls.Add(radioButton2);
 			groupBox1.Controls.Add(radioButton1);
 			groupBox1.Controls.Add(txtData);
-			groupBox1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-			groupBox1.Location = new Point(14, 25);
+			groupBox1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			groupBox1.Location = new Point(12, 211);
 			groupBox1.Margin = new Padding(4, 3, 4, 3);
 			groupBox1.Name = "groupBox1";
 			groupBox1.Padding = new Padding(4, 3, 4, 3);
@@ -175,7 +186,7 @@
 			radioButton3.Location = new Point(41, 144);
 			radioButton3.Margin = new Padding(4, 3, 4, 3);
 			radioButton3.Name = "radioButton3";
-			radioButton3.Size = new Size(158, 21);
+			radioButton3.Size = new Size(176, 24);
 			radioButton3.TabIndex = 3;
 			radioButton3.Text = "Karakter (1 karakter)";
 			radioButton3.UseVisualStyleBackColor = true;
@@ -188,7 +199,7 @@
 			radioButton2.Location = new Point(41, 114);
 			radioButton2.Margin = new Padding(4, 3, 4, 3);
 			radioButton2.Name = "radioButton2";
-			radioButton2.Size = new Size(108, 21);
+			radioButton2.Size = new Size(118, 24);
 			radioButton2.TabIndex = 2;
 			radioButton2.TabStop = true;
 			radioButton2.Text = "Hex (2 hane)";
@@ -201,7 +212,7 @@
 			radioButton1.Location = new Point(41, 83);
 			radioButton1.Margin = new Padding(4, 3, 4, 3);
 			radioButton1.Name = "radioButton1";
-			radioButton1.Size = new Size(107, 21);
+			radioButton1.Size = new Size(115, 24);
 			radioButton1.TabIndex = 1;
 			radioButton1.Text = "Binary (4 bit)";
 			radioButton1.UseVisualStyleBackColor = true;
@@ -220,19 +231,21 @@
 			// 
 			// button1
 			// 
-			button1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-			button1.Location = new Point(13, 228);
+			button1.BackColor = Color.IndianRed;
+			button1.FlatStyle = FlatStyle.Flat;
+			button1.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+			button1.Location = new Point(294, 315);
 			button1.Margin = new Padding(4, 3, 4, 3);
 			button1.Name = "button1";
-			button1.Size = new Size(265, 32);
+			button1.Size = new Size(238, 79);
 			button1.TabIndex = 1;
 			button1.Text = "Hamming Kodu Oluştur";
-			button1.UseVisualStyleBackColor = true;
+			button1.UseVisualStyleBackColor = false;
 			button1.Click += button1_Click;
 			// 
 			// groupBox2
 			// 
-			groupBox2.BackColor = SystemColors.Control;
+			groupBox2.BackColor = Color.Silver;
 			groupBox2.Controls.Add(lblCh);
 			groupBox2.Controls.Add(label65);
 			groupBox2.Controls.Add(linkLabel1);
@@ -267,8 +280,8 @@
 			groupBox2.Controls.Add(lblP1a);
 			groupBox2.Controls.Add(label14);
 			groupBox2.Controls.Add(label1);
-			groupBox2.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-			groupBox2.Location = new Point(13, 307);
+			groupBox2.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			groupBox2.Location = new Point(12, 406);
 			groupBox2.Margin = new Padding(4, 3, 4, 3);
 			groupBox2.Name = "groupBox2";
 			groupBox2.Padding = new Padding(4, 3, 4, 3);
@@ -282,10 +295,10 @@
 			// 
 			lblCh.AutoSize = true;
 			lblCh.ForeColor = Color.FromArgb(192, 64, 0);
-			lblCh.Location = new Point(267, 59);
+			lblCh.Location = new Point(303, 56);
 			lblCh.Margin = new Padding(4, 0, 4, 0);
 			lblCh.Name = "lblCh";
-			lblCh.Size = new Size(54, 17);
+			lblCh.Size = new Size(61, 20);
 			lblCh.TabIndex = 7;
 			lblCh.Text = "label67";
 			// 
@@ -296,7 +309,7 @@
 			label65.Location = new Point(9, 285);
 			label65.Margin = new Padding(4, 0, 4, 0);
 			label65.Name = "label65";
-			label65.Size = new Size(92, 17);
+			label65.Size = new Size(110, 20);
 			label65.TabIndex = 6;
 			label65.Text = "Gönderilecek";
 			// 
@@ -330,7 +343,7 @@
 			// 
 			label9.AutoSize = true;
 			label9.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-			label9.Location = new Point(127, 36);
+			label9.Location = new Point(163, 33);
 			label9.Margin = new Padding(4, 0, 4, 0);
 			label9.Name = "label9";
 			label9.Size = new Size(23, 15);
@@ -352,7 +365,7 @@
 			// 
 			label8.AutoSize = true;
 			label8.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-			label8.Location = new Point(160, 36);
+			label8.Location = new Point(196, 33);
 			label8.Margin = new Padding(4, 0, 4, 0);
 			label8.Name = "label8";
 			label8.Size = new Size(23, 15);
@@ -385,7 +398,7 @@
 			// 
 			label7.AutoSize = true;
 			label7.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-			label7.Location = new Point(192, 35);
+			label7.Location = new Point(228, 32);
 			label7.Margin = new Padding(4, 0, 4, 0);
 			label7.Name = "label7";
 			label7.Size = new Size(23, 15);
@@ -429,7 +442,7 @@
 			// 
 			label6.AutoSize = true;
 			label6.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
-			label6.Location = new Point(225, 35);
+			label6.Location = new Point(261, 32);
 			label6.Margin = new Padding(4, 0, 4, 0);
 			label6.Name = "label6";
 			label6.Size = new Size(23, 15);
@@ -469,7 +482,7 @@
 			txtD4.BackColor = SystemColors.ButtonFace;
 			txtD4.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point);
 			txtD4.ForeColor = Color.Blue;
-			txtD4.Location = new Point(125, 57);
+			txtD4.Location = new Point(161, 54);
 			txtD4.Margin = new Padding(4, 3, 4, 3);
 			txtD4.MaxLength = 1;
 			txtD4.Name = "txtD4";
@@ -511,7 +524,7 @@
 			txtD3.BackColor = SystemColors.ButtonFace;
 			txtD3.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point);
 			txtD3.ForeColor = Color.Blue;
-			txtD3.Location = new Point(158, 57);
+			txtD3.Location = new Point(194, 54);
 			txtD3.Margin = new Padding(4, 3, 4, 3);
 			txtD3.MaxLength = 1;
 			txtD3.Name = "txtD3";
@@ -567,7 +580,7 @@
 			txtD2.BackColor = SystemColors.ButtonFace;
 			txtD2.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point);
 			txtD2.ForeColor = Color.Blue;
-			txtD2.Location = new Point(190, 57);
+			txtD2.Location = new Point(226, 54);
 			txtD2.Margin = new Padding(4, 3, 4, 3);
 			txtD2.MaxLength = 1;
 			txtD2.Name = "txtD2";
@@ -581,7 +594,7 @@
 			txtD1.BackColor = SystemColors.ButtonFace;
 			txtD1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point);
 			txtD1.ForeColor = Color.Blue;
-			txtD1.Location = new Point(223, 57);
+			txtD1.Location = new Point(259, 54);
 			txtD1.Margin = new Padding(4, 3, 4, 3);
 			txtD1.MaxLength = 1;
 			txtD1.Name = "txtD1";
@@ -596,7 +609,7 @@
 			lblP3b.Location = new Point(241, 178);
 			lblP3b.Margin = new Padding(4, 0, 4, 0);
 			lblP3b.Name = "lblP3b";
-			lblP3b.Size = new Size(16, 17);
+			lblP3b.Size = new Size(18, 20);
 			lblP3b.TabIndex = 2;
 			lblP3b.Text = "=";
 			// 
@@ -606,7 +619,7 @@
 			lblP2b.Location = new Point(241, 148);
 			lblP2b.Margin = new Padding(4, 0, 4, 0);
 			lblP2b.Name = "lblP2b";
-			lblP2b.Size = new Size(16, 17);
+			lblP2b.Size = new Size(18, 20);
 			lblP2b.TabIndex = 2;
 			lblP2b.Text = "=";
 			// 
@@ -616,7 +629,7 @@
 			lblP1b.Location = new Point(241, 115);
 			lblP1b.Margin = new Padding(4, 0, 4, 0);
 			lblP1b.Name = "lblP1b";
-			lblP1b.Size = new Size(16, 17);
+			lblP1b.Size = new Size(18, 20);
 			lblP1b.TabIndex = 2;
 			lblP1b.Text = "=";
 			// 
@@ -626,7 +639,7 @@
 			lblP4a.Location = new Point(10, 209);
 			lblP4a.Margin = new Padding(4, 0, 4, 0);
 			lblP4a.Name = "lblP4a";
-			lblP4a.Size = new Size(0, 17);
+			lblP4a.Size = new Size(0, 20);
 			lblP4a.TabIndex = 2;
 			// 
 			// lblP3a
@@ -635,7 +648,7 @@
 			lblP3a.Location = new Point(10, 179);
 			lblP3a.Margin = new Padding(4, 0, 4, 0);
 			lblP3a.Name = "lblP3a";
-			lblP3a.Size = new Size(131, 17);
+			lblP3a.Size = new Size(138, 20);
 			lblP3a.TabIndex = 2;
 			lblP3a.Text = "P3 =  D2 + D3 + D4";
 			// 
@@ -645,7 +658,7 @@
 			lblP2a.Location = new Point(10, 148);
 			lblP2a.Margin = new Padding(4, 0, 4, 0);
 			lblP2a.Name = "lblP2a";
-			lblP2a.Size = new Size(131, 17);
+			lblP2a.Size = new Size(138, 20);
 			lblP2a.TabIndex = 2;
 			lblP2a.Text = "P2 =  D1 + D3 + D4";
 			// 
@@ -655,7 +668,7 @@
 			lblP1a.Location = new Point(10, 115);
 			lblP1a.Margin = new Padding(4, 0, 4, 0);
 			lblP1a.Name = "lblP1a";
-			lblP1a.Size = new Size(131, 17);
+			lblP1a.Size = new Size(138, 20);
 			lblP1a.TabIndex = 2;
 			lblP1a.Text = "P1 =  D1 + D2 + D4";
 			// 
@@ -666,31 +679,33 @@
 			label14.Location = new Point(12, 307);
 			label14.Margin = new Padding(4, 0, 4, 0);
 			label14.Name = "label14";
-			label14.Size = new Size(95, 17);
+			label14.Size = new Size(112, 20);
 			label14.TabIndex = 0;
 			label14.Text = "Code Word = ";
 			// 
 			// label1
 			// 
 			label1.AutoSize = true;
-			label1.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
-			label1.Location = new Point(5, 62);
+			label1.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+			label1.Location = new Point(13, 57);
 			label1.Margin = new Padding(4, 0, 4, 0);
 			label1.Name = "label1";
-			label1.Size = new Size(108, 13);
+			label1.Size = new Size(135, 17);
 			label1.TabIndex = 0;
 			label1.Text = "Gönderilecek Data = ";
 			// 
 			// button2
 			// 
-			button2.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
+			button2.BackColor = Color.IndianRed;
+			button2.FlatStyle = FlatStyle.Flat;
+			button2.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
 			button2.Location = new Point(128, 77);
 			button2.Margin = new Padding(4, 3, 4, 3);
 			button2.Name = "button2";
 			button2.Size = new Size(168, 35);
 			button2.TabIndex = 3;
 			button2.Text = "Veriyi Gönder";
-			button2.UseVisualStyleBackColor = true;
+			button2.UseVisualStyleBackColor = false;
 			button2.Click += button2_Click;
 			// 
 			// progressBar1
@@ -703,11 +718,12 @@
 			// 
 			// groupBox3
 			// 
+			groupBox3.BackColor = Color.Silver;
 			groupBox3.Controls.Add(groupBox4);
 			groupBox3.Controls.Add(button2);
 			groupBox3.Controls.Add(progressBar1);
-			groupBox3.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-			groupBox3.Location = new Point(13, 663);
+			groupBox3.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			groupBox3.Location = new Point(12, 777);
 			groupBox3.Margin = new Padding(4, 3, 4, 3);
 			groupBox3.Name = "groupBox3";
 			groupBox3.Padding = new Padding(4, 3, 4, 3);
@@ -759,14 +775,16 @@
 			// 
 			// button3
 			// 
-			button3.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
+			button3.BackColor = Color.IndianRed;
+			button3.FlatStyle = FlatStyle.Flat;
+			button3.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
 			button3.Location = new Point(415, 41);
 			button3.Margin = new Padding(4, 3, 4, 3);
 			button3.Name = "button3";
-			button3.Size = new Size(88, 27);
+			button3.Size = new Size(113, 27);
 			button3.TabIndex = 5;
 			button3.Text = "Devam...";
-			button3.UseVisualStyleBackColor = true;
+			button3.UseVisualStyleBackColor = false;
 			button3.Visible = false;
 			button3.Click += button3_Click;
 			// 
@@ -958,7 +976,7 @@
 			// 
 			// groupBox5
 			// 
-			groupBox5.BackColor = SystemColors.Control;
+			groupBox5.BackColor = Color.Silver;
 			groupBox5.Controls.Add(lblChf);
 			groupBox5.Controls.Add(groupBox6);
 			groupBox5.Controls.Add(label66);
@@ -992,8 +1010,8 @@
 			groupBox5.Controls.Add(lblP1c);
 			groupBox5.Controls.Add(label63);
 			groupBox5.Controls.Add(label64);
-			groupBox5.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-			groupBox5.Location = new Point(1050, 89);
+			groupBox5.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			groupBox5.Location = new Point(1050, 203);
 			groupBox5.Margin = new Padding(4, 3, 4, 3);
 			groupBox5.Name = "groupBox5";
 			groupBox5.Padding = new Padding(4, 3, 4, 3);
@@ -1010,7 +1028,7 @@
 			lblChf.Location = new Point(267, 64);
 			lblChf.Margin = new Padding(4, 0, 4, 0);
 			lblChf.Name = "lblChf";
-			lblChf.Size = new Size(54, 17);
+			lblChf.Size = new Size(61, 20);
 			lblChf.TabIndex = 7;
 			lblChf.Text = "label67";
 			// 
@@ -1048,7 +1066,7 @@
 			label61.Location = new Point(269, 145);
 			label61.Margin = new Padding(4, 0, 4, 0);
 			label61.Name = "label61";
-			label61.Size = new Size(134, 17);
+			label61.Size = new Size(159, 20);
 			label61.TabIndex = 11;
 			label61.Text = "decimal konumunda";
 			// 
@@ -1059,17 +1077,17 @@
 			lblDecimal.Location = new Point(210, 145);
 			lblDecimal.Margin = new Padding(4, 0, 4, 0);
 			lblDecimal.Name = "lblDecimal";
-			lblDecimal.Size = new Size(54, 17);
+			lblDecimal.Size = new Size(61, 20);
 			lblDecimal.TabIndex = 11;
 			lblDecimal.Text = "label61";
 			// 
 			// label60
 			// 
 			label60.AutoSize = true;
-			label60.Location = new Point(79, 114);
+			label60.Location = new Point(69, 112);
 			label60.Margin = new Padding(4, 0, 4, 0);
 			label60.Name = "label60";
-			label60.Size = new Size(63, 17);
+			label60.Size = new Size(72, 20);
 			label60.TabIndex = 10;
 			label60.Text = "Hatalı bit";
 			// 
@@ -1079,7 +1097,7 @@
 			label59.Location = new Point(269, 114);
 			label59.Margin = new Padding(4, 0, 4, 0);
 			label59.Name = "label59";
-			label59.Size = new Size(125, 17);
+			label59.Size = new Size(145, 20);
 			label59.TabIndex = 10;
 			label59.Text = "binary konumunda";
 			// 
@@ -1131,7 +1149,7 @@
 			label58.Location = new Point(270, 55);
 			label58.Margin = new Padding(4, 0, 4, 0);
 			label58.Name = "label58";
-			label58.Size = new Size(77, 17);
+			label58.Size = new Size(82, 20);
 			label58.TabIndex = 8;
 			label58.Text = "XOR işlemi";
 			// 
@@ -1141,27 +1159,27 @@
 			label57.Location = new Point(155, 15);
 			label57.Margin = new Padding(4, 0, 4, 0);
 			label57.Name = "label57";
-			label57.Size = new Size(83, 17);
+			label57.Size = new Size(84, 20);
 			label57.TabIndex = 7;
 			label57.Text = "P3   P2   P1";
 			// 
 			// label56
 			// 
 			label56.AutoSize = true;
-			label56.Location = new Point(12, 72);
+			label56.Location = new Point(8, 73);
 			label56.Margin = new Padding(4, 0, 4, 0);
 			label56.Name = "label56";
-			label56.Size = new Size(120, 17);
+			label56.Size = new Size(129, 20);
 			label56.TabIndex = 6;
 			label56.Text = "Son Parity Bitleri :";
 			// 
 			// label55
 			// 
 			label55.AutoSize = true;
-			label55.Location = new Point(27, 38);
+			label55.Location = new Point(17, 36);
 			label55.Margin = new Padding(4, 0, 4, 0);
 			label55.Name = "label55";
-			label55.Size = new Size(108, 17);
+			label55.Size = new Size(119, 20);
 			label55.TabIndex = 6;
 			label55.Text = "İlk Parity Bitleri :";
 			// 
@@ -1256,7 +1274,7 @@
 			label66.Location = new Point(34, 494);
 			label66.Margin = new Padding(4, 0, 4, 0);
 			label66.Name = "label66";
-			label66.Size = new Size(47, 17);
+			label66.Size = new Size(54, 20);
 			label66.TabIndex = 5;
 			label66.Text = "Alınan";
 			// 
@@ -1541,7 +1559,7 @@
 			lblP3d.Location = new Point(245, 414);
 			lblP3d.Margin = new Padding(4, 0, 4, 0);
 			lblP3d.Name = "lblP3d";
-			lblP3d.Size = new Size(16, 17);
+			lblP3d.Size = new Size(18, 20);
 			lblP3d.TabIndex = 2;
 			lblP3d.Text = "=";
 			// 
@@ -1551,7 +1569,7 @@
 			lblP2d.Location = new Point(245, 384);
 			lblP2d.Margin = new Padding(4, 0, 4, 0);
 			lblP2d.Name = "lblP2d";
-			lblP2d.Size = new Size(16, 17);
+			lblP2d.Size = new Size(18, 20);
 			lblP2d.TabIndex = 2;
 			lblP2d.Text = "=";
 			// 
@@ -1561,7 +1579,7 @@
 			lblP1d.Location = new Point(245, 352);
 			lblP1d.Margin = new Padding(4, 0, 4, 0);
 			lblP1d.Name = "lblP1d";
-			lblP1d.Size = new Size(16, 17);
+			lblP1d.Size = new Size(18, 20);
 			lblP1d.TabIndex = 2;
 			lblP1d.Text = "=";
 			// 
@@ -1571,7 +1589,7 @@
 			lblP3c.Location = new Point(14, 415);
 			lblP3c.Margin = new Padding(4, 0, 4, 0);
 			lblP3c.Name = "lblP3c";
-			lblP3c.Size = new Size(131, 17);
+			lblP3c.Size = new Size(138, 20);
 			lblP3c.TabIndex = 2;
 			lblP3c.Text = "P3 =  D2 + D3 + D4";
 			// 
@@ -1581,7 +1599,7 @@
 			lblP2c.Location = new Point(14, 384);
 			lblP2c.Margin = new Padding(4, 0, 4, 0);
 			lblP2c.Name = "lblP2c";
-			lblP2c.Size = new Size(135, 17);
+			lblP2c.Size = new Size(142, 20);
 			lblP2c.TabIndex = 2;
 			lblP2c.Text = "P2 =  D1 + D3 + D4 ";
 			// 
@@ -1591,7 +1609,7 @@
 			lblP1c.Location = new Point(14, 352);
 			lblP1c.Margin = new Padding(4, 0, 4, 0);
 			lblP1c.Name = "lblP1c";
-			lblP1c.Size = new Size(131, 17);
+			lblP1c.Size = new Size(138, 20);
 			lblP1c.TabIndex = 2;
 			lblP1c.Text = "P1 =  D1 + D2 + D4";
 			// 
@@ -1602,7 +1620,7 @@
 			label63.Location = new Point(15, 516);
 			label63.Margin = new Padding(4, 0, 4, 0);
 			label63.Name = "label63";
-			label63.Size = new Size(95, 17);
+			label63.Size = new Size(112, 20);
 			label63.TabIndex = 0;
 			label63.Text = "Code Word = ";
 			// 
@@ -1617,47 +1635,153 @@
 			label64.TabIndex = 0;
 			label64.Text = "Alınan Data = ";
 			// 
-			// label67
+			// button4
 			// 
-			label67.AutoSize = true;
-			label67.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Regular, GraphicsUnit.Point);
-			label67.Location = new Point(475, 15);
-			label67.Margin = new Padding(4, 0, 4, 0);
-			label67.Name = "label67";
-			label67.Size = new Size(313, 31);
-			label67.TabIndex = 7;
-			label67.Text = "Hamming (7,4) Simülatör";
+			button4.FlatStyle = FlatStyle.Flat;
+			button4.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+			button4.ForeColor = Color.Black;
+			button4.Image = (Image)resources.GetObject("button4.Image");
+			button4.ImageAlign = ContentAlignment.MiddleLeft;
+			button4.Location = new Point(24, 125);
+			button4.Name = "button4";
+			button4.Size = new Size(166, 61);
+			button4.TabIndex = 56;
+			button4.Text = " Nasıl Çalışır?";
+			button4.TextImageRelation = TextImageRelation.ImageBeforeText;
+			button4.UseVisualStyleBackColor = true;
 			// 
-			// label68
+			// button10
 			// 
-			label68.AutoSize = true;
-			label68.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			label68.Location = new Point(462, 62);
-			label68.Margin = new Padding(4, 0, 4, 0);
-			label68.Name = "label68";
-			label68.Size = new Size(348, 24);
-			label68.TabIndex = 8;
-			label68.Text = "4 bit Data + 3 bit Parity = 7 bit Code Word";
+			button10.FlatAppearance.BorderSize = 0;
+			button10.FlatStyle = FlatStyle.Flat;
+			button10.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+			button10.ForeColor = Color.Black;
+			button10.Image = (Image)resources.GetObject("button10.Image");
+			button10.ImageAlign = ContentAlignment.MiddleLeft;
+			button10.Location = new Point(20, 45);
+			button10.Name = "button10";
+			button10.Size = new Size(166, 61);
+			button10.TabIndex = 55;
+			button10.Text = " Geri Dön..";
+			button10.TextImageRelation = TextImageRelation.ImageBeforeText;
+			button10.UseVisualStyleBackColor = true;
+			button10.Click += button10_Click;
+			// 
+			// panel2
+			// 
+			panel2.BackColor = Color.CadetBlue;
+			panel2.Location = new Point(229, 45);
+			panel2.Name = "panel2";
+			panel2.Size = new Size(10, 67);
+			panel2.TabIndex = 54;
+			// 
+			// label69
+			// 
+			label69.AutoSize = true;
+			label69.Font = new Font("Century Gothic", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
+			label69.Location = new Point(253, 52);
+			label69.Name = "label69";
+			label69.Size = new Size(540, 44);
+			label69.TabIndex = 53;
+			label69.Text = "HAMMING ALGORİTMASI (7,4)";
+			// 
+			// label10
+			// 
+			label10.AutoSize = true;
+			label10.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label10.Location = new Point(253, 114);
+			label10.Margin = new Padding(4, 0, 4, 0);
+			label10.Name = "label10";
+			label10.Size = new Size(388, 22);
+			label10.TabIndex = 52;
+			label10.Text = "4 bit Data + 3 bit Parity = 7 bit Code Word";
+			// 
+			// panel1
+			// 
+			panel1.BackColor = Color.DarkCyan;
+			panel1.Dock = DockStyle.Top;
+			panel1.Location = new Point(0, 0);
+			panel1.Name = "panel1";
+			panel1.Size = new Size(1805, 21);
+			panel1.TabIndex = 57;
+			// 
+			// button5
+			// 
+			button5.FlatStyle = FlatStyle.Flat;
+			button5.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			button5.ForeColor = Color.Black;
+			button5.Image = (Image)resources.GetObject("button5.Image");
+			button5.ImageAlign = ContentAlignment.MiddleLeft;
+			button5.Location = new Point(1200, 62);
+			button5.Name = "button5";
+			button5.Size = new Size(264, 61);
+			button5.TabIndex = 60;
+			button5.Text = "Ders Videosuna Erişebilirsiniz";
+			button5.TextImageRelation = TextImageRelation.ImageBeforeText;
+			button5.UseVisualStyleBackColor = true;
+			// 
+			// button6
+			// 
+			button6.FlatStyle = FlatStyle.Flat;
+			button6.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			button6.ForeColor = Color.Black;
+			button6.Image = (Image)resources.GetObject("button6.Image");
+			button6.ImageAlign = ContentAlignment.MiddleLeft;
+			button6.Location = new Point(1304, 136);
+			button6.Name = "button6";
+			button6.Size = new Size(160, 61);
+			button6.TabIndex = 59;
+			button6.Text = "      Ders Notu       İndirebilirsiniz";
+			button6.TextImageRelation = TextImageRelation.ImageBeforeText;
+			button6.UseVisualStyleBackColor = true;
+			button6.Click += button6_Click;
+			// 
+			// panel3
+			// 
+			panel3.BackColor = Color.DarkCyan;
+			panel3.Controls.Add(pictureBox1);
+			panel3.Location = new Point(1476, 12);
+			panel3.Name = "panel3";
+			panel3.Size = new Size(160, 185);
+			panel3.TabIndex = 58;
+			// 
+			// pictureBox1
+			// 
+			pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+			pictureBox1.Location = new Point(13, 25);
+			pictureBox1.Name = "pictureBox1";
+			pictureBox1.Size = new Size(133, 147);
+			pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+			pictureBox1.TabIndex = 0;
+			pictureBox1.TabStop = false;
 			// 
 			// SingleCharacterForm7
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(1598, 865);
-			Controls.Add(label68);
-			Controls.Add(label67);
+			BackColor = SystemColors.ControlLight;
+			ClientSize = new Size(1805, 991);
+			Controls.Add(button5);
+			Controls.Add(button6);
+			Controls.Add(panel3);
+			Controls.Add(panel1);
+			Controls.Add(button4);
+			Controls.Add(button10);
+			Controls.Add(panel2);
+			Controls.Add(label69);
+			Controls.Add(label10);
 			Controls.Add(groupBox5);
 			Controls.Add(groupBox3);
 			Controls.Add(groupBox2);
 			Controls.Add(button1);
 			Controls.Add(groupBox1);
-			FormBorderStyle = FormBorderStyle.FixedSingle;
+			FormBorderStyle = FormBorderStyle.None;
 			Margin = new Padding(4, 3, 4, 3);
 			MaximizeBox = false;
 			MinimizeBox = false;
 			Name = "SingleCharacterForm7";
+			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Hamming (12,8) Simülatör";
-			WindowState = FormWindowState.Maximized;
 			Load += SingleCharacterForm7_Load;
 			groupBox1.ResumeLayout(false);
 			groupBox1.PerformLayout();
@@ -1670,6 +1794,8 @@
 			groupBox5.PerformLayout();
 			groupBox6.ResumeLayout(false);
 			groupBox6.PerformLayout();
+			panel3.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
 			ResumeLayout(false);
 			PerformLayout();
 		}
@@ -1789,7 +1915,15 @@
 		private System.Windows.Forms.Label lblDecimal;
 		private System.Windows.Forms.Label label62;
 		private System.Windows.Forms.Label lblChf;
-		private System.Windows.Forms.Label label67;
-		private System.Windows.Forms.Label label68;
+		private Button button4;
+		private Button button10;
+		private Panel panel2;
+		private Label label69;
+		private Label label10;
+		private Panel panel1;
+		private Button button5;
+		private Button button6;
+		private Panel panel3;
+		private PictureBox pictureBox1;
 	}
 }

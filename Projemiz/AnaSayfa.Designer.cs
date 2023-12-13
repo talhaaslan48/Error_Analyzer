@@ -356,9 +356,9 @@
 			button10.ForeColor = Color.Black;
 			button10.Image = (Image)resources.GetObject("button10.Image");
 			button10.ImageAlign = ContentAlignment.MiddleLeft;
-			button10.Location = new Point(1655, 24);
+			button10.Location = new Point(1666, 24);
 			button10.Name = "button10";
-			button10.Size = new Size(56, 66);
+			button10.Size = new Size(45, 51);
 			button10.TabIndex = 22;
 			button10.TextImageRelation = TextImageRelation.ImageBeforeText;
 			button10.UseVisualStyleBackColor = true;

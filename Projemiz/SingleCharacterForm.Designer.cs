@@ -1072,7 +1072,7 @@
 			groupBox4.Margin = new Padding(4, 3, 4, 3);
 			groupBox4.Name = "groupBox4";
 			groupBox4.Padding = new Padding(4, 3, 4, 3);
-			groupBox4.Size = new Size(580, 101);
+			groupBox4.Size = new Size(603, 101);
 			groupBox4.TabIndex = 6;
 			groupBox4.TabStop = false;
 			groupBox4.Text = "Üzerine tıklayarak bitleri değiştirebilirsiniz";
@@ -1092,14 +1092,16 @@
 			// 
 			// button3
 			// 
-			button3.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
-			button3.Location = new Point(476, 45);
+			button3.BackColor = Color.IndianRed;
+			button3.FlatStyle = FlatStyle.Flat;
+			button3.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			button3.Location = new Point(491, 38);
 			button3.Margin = new Padding(4, 3, 4, 3);
 			button3.Name = "button3";
-			button3.Size = new Size(88, 27);
+			button3.Size = new Size(96, 32);
 			button3.TabIndex = 5;
 			button3.Text = "Devam...";
-			button3.UseVisualStyleBackColor = true;
+			button3.UseVisualStyleBackColor = false;
 			button3.Visible = false;
 			button3.Click += button3_Click;
 			// 
