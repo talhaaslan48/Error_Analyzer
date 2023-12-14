@@ -103,7 +103,7 @@
 			label3.Name = "label3";
 			label3.Size = new Size(288, 76);
 			label3.TabIndex = 31;
-			label3.Text = "Talha Aslan\r\nGAZİ Üniversitesi - Teknoloji Fakültesi\r\nBilgisayar Mühendisliği\r\ntalhaaslan@gmail.com";
+			label3.Text = "Talha Aslan\r\nGAZİ Üniversitesi - Teknoloji Fakültesi\r\nBilgisayar Mühendisliği\r\ntalhaslann48@gmail.com";
 			// 
 			// pictureBox3
 			// 

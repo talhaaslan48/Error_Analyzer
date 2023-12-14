@@ -224,7 +224,7 @@
 			txtData.ForeColor = Color.Blue;
 			txtData.Location = new Point(36, 37);
 			txtData.Margin = new Padding(4, 3, 4, 3);
-			txtData.MaxLength = 2;
+			txtData.MaxLength = 4;
 			txtData.Name = "txtData";
 			txtData.Size = new Size(200, 29);
 			txtData.TabIndex = 0;
