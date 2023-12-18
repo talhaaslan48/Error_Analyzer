@@ -55,14 +55,14 @@
 			panel1.Dock = DockStyle.Top;
 			panel1.Location = new Point(0, 0);
 			panel1.Name = "panel1";
-			panel1.Size = new Size(1707, 22);
+			panel1.Size = new Size(1805, 22);
 			panel1.TabIndex = 0;
 			// 
 			// button10
 			// 
 			button10.FlatAppearance.BorderSize = 0;
 			button10.FlatStyle = FlatStyle.Flat;
-			button10.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+			button10.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
 			button10.ForeColor = Color.Black;
 			button10.Image = (Image)resources.GetObject("button10.Image");
 			button10.ImageAlign = ContentAlignment.MiddleLeft;
@@ -78,17 +78,17 @@
 			// label1
 			// 
 			label1.AutoSize = true;
-			label1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			label1.Location = new Point(112, 244);
+			label1.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label1.Location = new Point(112, 248);
 			label1.Name = "label1";
-			label1.Size = new Size(1121, 168);
+			label1.Size = new Size(1172, 176);
 			label1.TabIndex = 18;
 			label1.Text = resources.GetString("label1.Text");
 			// 
 			// pictureBox4
 			// 
 			pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-			pictureBox4.Location = new Point(129, 549);
+			pictureBox4.Location = new Point(116, 632);
 			pictureBox4.Name = "pictureBox4";
 			pictureBox4.Size = new Size(123, 182);
 			pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -98,17 +98,17 @@
 			// label3
 			// 
 			label3.AutoSize = true;
-			label3.Font = new Font("Century Gothic", 12F, FontStyle.Italic, GraphicsUnit.Point);
-			label3.Location = new Point(1155, 701);
+			label3.Font = new Font("Century Gothic", 14.25F, FontStyle.Italic, GraphicsUnit.Point);
+			label3.Location = new Point(1182, 784);
 			label3.Name = "label3";
-			label3.Size = new Size(288, 76);
+			label3.Size = new Size(333, 88);
 			label3.TabIndex = 31;
 			label3.Text = "Talha Aslan\r\nGAZİ Üniversitesi - Teknoloji Fakültesi\r\nBilgisayar Mühendisliği\r\ntalhaslann48@gmail.com";
 			// 
 			// pictureBox3
 			// 
 			pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-			pictureBox3.Location = new Point(907, 504);
+			pictureBox3.Location = new Point(934, 587);
 			pictureBox3.Name = "pictureBox3";
 			pictureBox3.Size = new Size(242, 291);
 			pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -118,17 +118,17 @@
 			// label2
 			// 
 			label2.AutoSize = true;
-			label2.Font = new Font("Century Gothic", 12F, FontStyle.Italic, GraphicsUnit.Point);
-			label2.Location = new Point(581, 701);
+			label2.Font = new Font("Century Gothic", 14.25F, FontStyle.Italic, GraphicsUnit.Point);
+			label2.Location = new Point(568, 784);
 			label2.Name = "label2";
-			label2.Size = new Size(288, 76);
+			label2.Size = new Size(333, 88);
 			label2.TabIndex = 29;
 			label2.Text = "Yaren Sarı\r\nGAZİ Üniversitesi - Teknoloji Fakültesi\r\nBilgisayar Mühendisliği\r\nyaren.sari02@gmail.com";
 			// 
 			// pictureBox2
 			// 
 			pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-			pictureBox2.Location = new Point(319, 504);
+			pictureBox2.Location = new Point(306, 587);
 			pictureBox2.Name = "pictureBox2";
 			pictureBox2.Size = new Size(256, 291);
 			pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -142,11 +142,11 @@
 			button2.Font = new Font("Century Gothic", 21.75F, FontStyle.Italic, GraphicsUnit.Point);
 			button2.ForeColor = Color.Black;
 			button2.ImageAlign = ContentAlignment.MiddleLeft;
-			button2.Location = new Point(108, 427);
+			button2.Location = new Point(112, 471);
 			button2.Name = "button2";
 			button2.Size = new Size(198, 55);
 			button2.TabIndex = 27;
-			button2.Text = "Geliştiriciler";
+			button2.Text = "Geliştiriciler:";
 			button2.TextImageRelation = TextImageRelation.ImageBeforeText;
 			button2.UseVisualStyleBackColor = true;
 			// 
@@ -177,9 +177,9 @@
 			// 
 			panel3.BackColor = Color.DarkCyan;
 			panel3.Controls.Add(pictureBox1);
-			panel3.Location = new Point(1333, 12);
+			panel3.Location = new Point(1488, 12);
 			panel3.Name = "panel3";
-			panel3.Size = new Size(160, 196);
+			panel3.Size = new Size(198, 223);
 			panel3.TabIndex = 35;
 			// 
 			// pictureBox1
@@ -187,7 +187,7 @@
 			pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
 			pictureBox1.Location = new Point(13, 20);
 			pictureBox1.Name = "pictureBox1";
-			pictureBox1.Size = new Size(133, 147);
+			pictureBox1.Size = new Size(166, 181);
 			pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 			pictureBox1.TabIndex = 0;
 			pictureBox1.TabStop = false;
@@ -197,7 +197,7 @@
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = SystemColors.ControlLight;
-			ClientSize = new Size(1707, 859);
+			ClientSize = new Size(1805, 991);
 			Controls.Add(panel3);
 			Controls.Add(panel2);
 			Controls.Add(button1);

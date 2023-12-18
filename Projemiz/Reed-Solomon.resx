@@ -118,8 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label1.Text" xml:space="preserve">
-    <value>Checksum, veri bütünlüğünü sağlamak amacıyla kullanılan bir hata kontrol algoritmasıdır.  Verilerin iletilirken veya depolanırken bozulup bozulmadığını kontrol etmek için kullanılır. 
-Temel amacı, bir veri kümesi üzerinde yapılan değişiklikleri tespit etmektir.</value>
+    <value>Checksum, veri bütünlüğünü doğrulamak için kullanılan basit bir hata tespit yöntemidir. Bu yöntem, veri seti üzerinden hesaplanan bir değer üreterek, verilerin iletim veya depolama 
+sırasında bozulup bozulmadığını kontrol etmeyi sağlar. 
+Gönderilen veri ile birlikte hesaplanan checksum değeri, alıcı tarafında yeniden hesaplanır ve her iki değerin uyuşması, verinin doğru olarak alındığını gösterir.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button10.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -1466,7 +1467,7 @@ Temel amacı, bir veri kümesi üzerinde yapılan değişiklikleri tespit etmekt
   <data name="button5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        qQAAAKkBq7NRIgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGJSURBVEhL1dW/
+        qAAAAKgBefSzxgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGJSURBVEhL1dW/
         K0VhHMfx42d+DchgYKGUQdmkLBYGA6UrGQwUJRnkRxGDQRaTlEFSBpFFtwwIkR9hx2z0T3h/zjlX7rnn
         OZwfBp96dZ/nlud7PM/3PNf6L2lCozNMJlpsFHu4wy7OMIFYmccztPAIGpBJIVZwhGp9ESXNuMaQPfNP
         J+7RYc8ipAQf2EG5vvBJDU6waM9Cpg4H6MUtWqGoWDfWcIVTzOErXTj8wTbasAmlHlro0v1cxgxWkZNz

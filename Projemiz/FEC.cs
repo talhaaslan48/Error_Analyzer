@@ -312,6 +312,11 @@ namespace Projemiz
 				MessageBox.Show("Belirtilen PDF dosyası bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}
+
+		private void label3_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
 

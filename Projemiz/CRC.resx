@@ -118,8 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label1.Text" xml:space="preserve">
-    <value>CRC, özellikle dijital iletişim sistemlerinde ve bilgisayar depolama sistemlerinde kullanılan etkili bir hata kontrol algoritmasıdır. Verinin bütünlüğünü sağlamak amacıyla tasarlanmıştır. 
-CRC algoritması, verinin sonuna eklenen bir kontrol değeri aracılığıyla çalışır. Bu kontrol değeri, bir polinomun veri üzerinde uygulanması sonucu elde edilen bir hata kontrol kodudur.</value>
+    <value>CRC, veri bloklarının bütünlüğünü kontrol etmek için kullanılan bir hata tespit yöntemidir. Bu yöntem, gönderilen veriler üzerinde matematiksel bir işlem gerçekleştirerek
+bir kontrol değeri (checksum) üretir. 
+Alıcıda yapılan aynı hesaplama ile üretilen kontrol değerinin karşılaştırılması, veri aktarımı sırasında hata olup olmadığının tespit edilmesini sağlar.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

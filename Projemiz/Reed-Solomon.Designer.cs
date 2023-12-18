@@ -213,10 +213,10 @@
 			// label1
 			// 
 			label1.AutoSize = true;
-			label1.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
-			label1.Location = new Point(88, 137);
+			label1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label1.Location = new Point(87, 149);
 			label1.Name = "label1";
-			label1.Size = new Size(1054, 34);
+			label1.Size = new Size(1314, 60);
 			label1.TabIndex = 7;
 			label1.Text = resources.GetString("label1.Text");
 			label1.Click += label1_Click;
@@ -224,7 +224,7 @@
 			// textBox1
 			// 
 			textBox1.ImeMode = ImeMode.NoControl;
-			textBox1.Location = new Point(162, 400);
+			textBox1.Location = new Point(161, 397);
 			textBox1.Margin = new Padding(3, 2, 3, 2);
 			textBox1.MaxLength = 8;
 			textBox1.Name = "textBox1";
@@ -235,7 +235,7 @@
 			// 
 			// textBox2
 			// 
-			textBox2.Location = new Point(296, 397);
+			textBox2.Location = new Point(294, 397);
 			textBox2.Margin = new Padding(3, 2, 3, 2);
 			textBox2.MaxLength = 8;
 			textBox2.Name = "textBox2";
@@ -246,7 +246,7 @@
 			// 
 			// textBox3
 			// 
-			textBox3.Location = new Point(429, 397);
+			textBox3.Location = new Point(426, 397);
 			textBox3.Margin = new Padding(3, 2, 3, 2);
 			textBox3.MaxLength = 8;
 			textBox3.Name = "textBox3";
@@ -257,7 +257,7 @@
 			// 
 			// textBox4
 			// 
-			textBox4.Location = new Point(562, 397);
+			textBox4.Location = new Point(558, 397);
 			textBox4.Margin = new Padding(3, 2, 3, 2);
 			textBox4.MaxLength = 8;
 			textBox4.Name = "textBox4";
@@ -749,44 +749,44 @@
 			// label3
 			// 
 			label3.AutoSize = true;
-			label3.BackColor = Color.LightCoral;
-			label3.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-			label3.Location = new Point(221, 456);
+			label3.BackColor = Color.Linen;
+			label3.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label3.Location = new Point(221, 449);
 			label3.Name = "label3";
-			label3.Size = new Size(25, 17);
+			label3.Size = new Size(28, 20);
 			label3.TabIndex = 105;
 			label3.Text = "D4";
 			// 
 			// label4
 			// 
 			label4.AutoSize = true;
-			label4.BackColor = Color.LightCoral;
-			label4.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-			label4.Location = new Point(221, 494);
+			label4.BackColor = Color.Linen;
+			label4.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label4.Location = new Point(221, 487);
 			label4.Name = "label4";
-			label4.Size = new Size(25, 17);
+			label4.Size = new Size(28, 20);
 			label4.TabIndex = 106;
 			label4.Text = "D3";
 			// 
 			// label5
 			// 
 			label5.AutoSize = true;
-			label5.BackColor = Color.LightCoral;
-			label5.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-			label5.Location = new Point(221, 537);
+			label5.BackColor = Color.Linen;
+			label5.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label5.Location = new Point(221, 530);
 			label5.Name = "label5";
-			label5.Size = new Size(25, 17);
+			label5.Size = new Size(28, 20);
 			label5.TabIndex = 107;
 			label5.Text = "D2";
 			// 
 			// label6
 			// 
 			label6.AutoSize = true;
-			label6.BackColor = Color.LightCoral;
-			label6.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-			label6.Location = new Point(221, 577);
+			label6.BackColor = Color.Linen;
+			label6.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label6.Location = new Point(221, 570);
 			label6.Name = "label6";
-			label6.Size = new Size(25, 17);
+			label6.Size = new Size(28, 20);
 			label6.TabIndex = 108;
 			label6.Text = "D1";
 			// 
@@ -1320,7 +1320,7 @@
 			// label13
 			// 
 			label13.AutoSize = true;
-			label13.BackColor = Color.LightCoral;
+			label13.BackColor = Color.Linen;
 			label13.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
 			label13.Location = new Point(1219, 546);
 			label13.Name = "label13";
@@ -1331,7 +1331,7 @@
 			// label14
 			// 
 			label14.AutoSize = true;
-			label14.BackColor = Color.LightCoral;
+			label14.BackColor = Color.Linen;
 			label14.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
 			label14.Location = new Point(1219, 503);
 			label14.Name = "label14";
@@ -1342,7 +1342,7 @@
 			// label15
 			// 
 			label15.AutoSize = true;
-			label15.BackColor = Color.LightCoral;
+			label15.BackColor = Color.Linen;
 			label15.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
 			label15.Location = new Point(1219, 458);
 			label15.Name = "label15";
@@ -1353,7 +1353,7 @@
 			// label16
 			// 
 			label16.AutoSize = true;
-			label16.BackColor = Color.LightCoral;
+			label16.BackColor = Color.Linen;
 			label16.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
 			label16.Location = new Point(1219, 412);
 			label16.Name = "label16";
@@ -1844,18 +1844,18 @@
 			// label17
 			// 
 			label17.AutoSize = true;
-			label17.BackColor = Color.LightCoral;
-			label17.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-			label17.Location = new Point(221, 805);
+			label17.BackColor = Color.Linen;
+			label17.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label17.Location = new Point(221, 802);
 			label17.Name = "label17";
-			label17.Size = new Size(23, 17);
+			label17.Size = new Size(26, 20);
 			label17.TabIndex = 183;
 			label17.Text = "P1";
 			// 
 			// label18
 			// 
 			label18.AutoSize = true;
-			label18.BackColor = Color.LightCoral;
+			label18.BackColor = Color.Linen;
 			label18.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
 			label18.Location = new Point(1221, 586);
 			label18.Name = "label18";
@@ -1880,7 +1880,7 @@
 			// label19
 			// 
 			label19.AutoSize = true;
-			label19.Location = new Point(278, 400);
+			label19.Location = new Point(277, 397);
 			label19.Name = "label19";
 			label19.Size = new Size(12, 15);
 			label19.TabIndex = 186;
@@ -1889,7 +1889,7 @@
 			// label20
 			// 
 			label20.AutoSize = true;
-			label20.Location = new Point(411, 397);
+			label20.Location = new Point(409, 397);
 			label20.Name = "label20";
 			label20.Size = new Size(12, 15);
 			label20.TabIndex = 187;
@@ -1898,7 +1898,7 @@
 			// label21
 			// 
 			label21.AutoSize = true;
-			label21.Location = new Point(544, 397);
+			label21.Location = new Point(541, 397);
 			label21.Name = "label21";
 			label21.Size = new Size(12, 15);
 			label21.TabIndex = 188;
@@ -1907,44 +1907,44 @@
 			// label22
 			// 
 			label22.AutoSize = true;
-			label22.BackColor = Color.LightCoral;
-			label22.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+			label22.BackColor = Color.Linen;
+			label22.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
 			label22.Location = new Point(602, 367);
 			label22.Name = "label22";
-			label22.Size = new Size(25, 17);
+			label22.Size = new Size(28, 20);
 			label22.TabIndex = 189;
 			label22.Text = "D4";
 			// 
 			// label23
 			// 
 			label23.AutoSize = true;
-			label23.BackColor = Color.LightCoral;
-			label23.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+			label23.BackColor = Color.Linen;
+			label23.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
 			label23.Location = new Point(470, 367);
 			label23.Name = "label23";
-			label23.Size = new Size(25, 17);
+			label23.Size = new Size(28, 20);
 			label23.TabIndex = 190;
 			label23.Text = "D3";
 			// 
 			// label24
 			// 
 			label24.AutoSize = true;
-			label24.BackColor = Color.LightCoral;
-			label24.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+			label24.BackColor = Color.Linen;
+			label24.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
 			label24.Location = new Point(341, 367);
 			label24.Name = "label24";
-			label24.Size = new Size(25, 17);
+			label24.Size = new Size(28, 20);
 			label24.TabIndex = 191;
 			label24.Text = "D2";
 			// 
 			// label25
 			// 
 			label25.AutoSize = true;
-			label25.BackColor = Color.LightCoral;
-			label25.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+			label25.BackColor = Color.Linen;
+			label25.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
 			label25.Location = new Point(210, 367);
 			label25.Name = "label25";
-			label25.Size = new Size(25, 17);
+			label25.Size = new Size(28, 20);
 			label25.TabIndex = 192;
 			label25.Text = "D1";
 			// 
@@ -2358,7 +2358,7 @@
 			panel1.Dock = DockStyle.Top;
 			panel1.Location = new Point(0, 0);
 			panel1.Name = "panel1";
-			panel1.Size = new Size(1821, 23);
+			panel1.Size = new Size(1805, 23);
 			panel1.TabIndex = 224;
 			// 
 			// panel2
@@ -2390,9 +2390,9 @@
 			// 
 			panel3.BackColor = Color.DarkCyan;
 			panel3.Controls.Add(pictureBox1);
-			panel3.Location = new Point(1474, 12);
+			panel3.Location = new Point(1510, 12);
 			panel3.Name = "panel3";
-			panel3.Size = new Size(160, 202);
+			panel3.Size = new Size(187, 219);
 			panel3.TabIndex = 227;
 			// 
 			// pictureBox1
@@ -2400,7 +2400,7 @@
 			pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
 			pictureBox1.Location = new Point(13, 20);
 			pictureBox1.Name = "pictureBox1";
-			pictureBox1.Size = new Size(133, 162);
+			pictureBox1.Size = new Size(154, 177);
 			pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 			pictureBox1.TabIndex = 0;
 			pictureBox1.TabStop = false;
@@ -2412,7 +2412,7 @@
 			button1.ForeColor = Color.Black;
 			button1.Image = (Image)resources.GetObject("button1.Image");
 			button1.ImageAlign = ContentAlignment.MiddleLeft;
-			button1.Location = new Point(88, 232);
+			button1.Location = new Point(87, 237);
 			button1.Name = "button1";
 			button1.Size = new Size(166, 61);
 			button1.TabIndex = 228;
@@ -2428,7 +2428,7 @@
 			button5.ForeColor = Color.Black;
 			button5.Image = (Image)resources.GetObject("button5.Image");
 			button5.ImageAlign = ContentAlignment.MiddleLeft;
-			button5.Location = new Point(1181, 232);
+			button5.Location = new Point(1221, 237);
 			button5.Name = "button5";
 			button5.Size = new Size(260, 61);
 			button5.TabIndex = 230;
@@ -2443,9 +2443,9 @@
 			button2.ForeColor = Color.Black;
 			button2.Image = (Image)resources.GetObject("button2.Image");
 			button2.ImageAlign = ContentAlignment.MiddleLeft;
-			button2.Location = new Point(1474, 232);
+			button2.Location = new Point(1510, 237);
 			button2.Name = "button2";
-			button2.Size = new Size(160, 61);
+			button2.Size = new Size(187, 61);
 			button2.TabIndex = 229;
 			button2.Text = "      Ders Notu       İndirebilirsiniz";
 			button2.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -2487,7 +2487,7 @@
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = SystemColors.ControlLight;
-			ClientSize = new Size(1821, 1030);
+			ClientSize = new Size(1805, 991);
 			Controls.Add(label32);
 			Controls.Add(label31);
 			Controls.Add(label30);

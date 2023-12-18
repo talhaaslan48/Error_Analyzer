@@ -118,11 +118,11 @@ namespace Projemiz
 
 			if (IsCRCValid(receivedCRCResult))
 			{
-				label13.Text = "\nHata Kontrolü: Hatasız";
+				label13.Text = "Hata Kontrolü: Hatasız";
 			}
 			else
 			{
-				label13.Text = "\nHata Kontrolü: Hatalı";
+				label13.Text = "Hata Kontrolü: Hatalı";
 			}
 		}
 
@@ -149,11 +149,11 @@ namespace Projemiz
 
 			if (IsCRCValid(receivedCRCResult))
 			{
-				label8.Text = "\nHata Kontrolü: Hatasız";
+				label8.Text = "Hata Kontrolü: Hatasız";
 			}
 			else
 			{
-				label8.Text = "\nHata Kontrolü: Hatalı";
+				label8.Text = "Hata Kontrolü: Hatalı";
 			}
 		}
 

@@ -56,6 +56,9 @@
 			button3 = new Button();
 			button10 = new Button();
 			groupBox1 = new GroupBox();
+			label11 = new Label();
+			label15 = new Label();
+			label16 = new Label();
 			panel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			groupBox1.SuspendLayout();
@@ -65,7 +68,7 @@
 			// 
 			label2.AutoSize = true;
 			label2.Font = new Font("Century Gothic", 36F, FontStyle.Regular, GraphicsUnit.Point);
-			label2.Location = new Point(277, 44);
+			label2.Location = new Point(270, 53);
 			label2.Name = "label2";
 			label2.Size = new Size(400, 58);
 			label2.TabIndex = 3;
@@ -75,16 +78,16 @@
 			// label1
 			// 
 			label1.AutoSize = true;
-			label1.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-			label1.Location = new Point(107, 136);
+			label1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label1.Location = new Point(107, 151);
 			label1.Name = "label1";
-			label1.Size = new Size(1171, 34);
+			label1.Size = new Size(1208, 60);
 			label1.TabIndex = 5;
 			label1.Text = resources.GetString("label1.Text");
 			// 
 			// dividendTextBox
 			// 
-			dividendTextBox.Location = new Point(234, 508);
+			dividendTextBox.Location = new Point(234, 518);
 			dividendTextBox.Margin = new Padding(3, 2, 3, 2);
 			dividendTextBox.Name = "dividendTextBox";
 			dividendTextBox.Size = new Size(183, 23);
@@ -92,7 +95,7 @@
 			// 
 			// divisorTextBox
 			// 
-			divisorTextBox.Location = new Point(234, 585);
+			divisorTextBox.Location = new Point(234, 595);
 			divisorTextBox.Margin = new Padding(3, 2, 3, 2);
 			divisorTextBox.Name = "divisorTextBox";
 			divisorTextBox.Size = new Size(183, 23);
@@ -101,9 +104,9 @@
 			// label3
 			// 
 			label3.AutoSize = true;
-			label3.BackColor = Color.LightCoral;
+			label3.BackColor = Color.Linen;
 			label3.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label3.Location = new Point(107, 509);
+			label3.Location = new Point(107, 519);
 			label3.Name = "label3";
 			label3.Size = new Size(98, 22);
 			label3.TabIndex = 8;
@@ -112,9 +115,9 @@
 			// label4
 			// 
 			label4.AutoSize = true;
-			label4.BackColor = Color.LightCoral;
+			label4.BackColor = Color.Linen;
 			label4.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label4.Location = new Point(107, 585);
+			label4.Location = new Point(107, 595);
 			label4.Name = "label4";
 			label4.Size = new Size(73, 22);
 			label4.TabIndex = 9;
@@ -137,7 +140,7 @@
 			// label5
 			// 
 			label5.AutoSize = true;
-			label5.BackColor = Color.LightCoral;
+			label5.BackColor = Color.Linen;
 			label5.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
 			label5.Location = new Point(1025, 513);
 			label5.Name = "label5";
@@ -175,7 +178,7 @@
 			// label9
 			// 
 			label9.AutoSize = true;
-			label9.BackColor = Color.LightCoral;
+			label9.BackColor = Color.Linen;
 			label9.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
 			label9.Location = new Point(836, 563);
 			label9.Name = "label9";
@@ -186,7 +189,7 @@
 			// label10
 			// 
 			label10.AutoSize = true;
-			label10.BackColor = Color.LightCoral;
+			label10.BackColor = Color.Linen;
 			label10.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
 			label10.Location = new Point(927, 610);
 			label10.Name = "label10";
@@ -204,7 +207,7 @@
 			// label12
 			// 
 			label12.AutoSize = true;
-			label12.BackColor = Color.LightCoral;
+			label12.BackColor = Color.Linen;
 			label12.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
 			label12.Location = new Point(47, 200);
 			label12.Name = "label12";
@@ -244,7 +247,7 @@
 			// panel2
 			// 
 			panel2.BackColor = Color.CadetBlue;
-			panel2.Location = new Point(261, 44);
+			panel2.Location = new Point(254, 53);
 			panel2.Name = "panel2";
 			panel2.Size = new Size(10, 67);
 			panel2.TabIndex = 44;
@@ -262,17 +265,17 @@
 			// 
 			panel3.BackColor = Color.DarkCyan;
 			panel3.Controls.Add(pictureBox1);
-			panel3.Location = new Point(1433, 12);
+			panel3.Location = new Point(1526, 12);
 			panel3.Name = "panel3";
-			panel3.Size = new Size(160, 222);
+			panel3.Size = new Size(195, 237);
 			panel3.TabIndex = 46;
 			// 
 			// pictureBox1
 			// 
 			pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-			pictureBox1.Location = new Point(13, 32);
+			pictureBox1.Location = new Point(15, 29);
 			pictureBox1.Name = "pictureBox1";
-			pictureBox1.Size = new Size(133, 167);
+			pictureBox1.Size = new Size(163, 185);
 			pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 			pictureBox1.TabIndex = 0;
 			pictureBox1.TabStop = false;
@@ -284,7 +287,7 @@
 			button1.ForeColor = Color.Black;
 			button1.Image = (Image)resources.GetObject("button1.Image");
 			button1.ImageAlign = ContentAlignment.MiddleLeft;
-			button1.Location = new Point(107, 254);
+			button1.Location = new Point(107, 255);
 			button1.Name = "button1";
 			button1.Size = new Size(166, 61);
 			button1.TabIndex = 47;
@@ -300,7 +303,7 @@
 			button5.ForeColor = Color.Black;
 			button5.Image = (Image)resources.GetObject("button5.Image");
 			button5.ImageAlign = ContentAlignment.MiddleLeft;
-			button5.Location = new Point(1138, 254);
+			button5.Location = new Point(1237, 255);
 			button5.Name = "button5";
 			button5.Size = new Size(264, 61);
 			button5.TabIndex = 50;
@@ -315,9 +318,9 @@
 			button3.ForeColor = Color.Black;
 			button3.Image = (Image)resources.GetObject("button3.Image");
 			button3.ImageAlign = ContentAlignment.MiddleLeft;
-			button3.Location = new Point(1433, 254);
+			button3.Location = new Point(1526, 255);
 			button3.Name = "button3";
-			button3.Size = new Size(160, 61);
+			button3.Size = new Size(195, 61);
 			button3.TabIndex = 49;
 			button3.Text = "      Ders Notu       İndirebilirsiniz";
 			button3.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -328,11 +331,11 @@
 			// 
 			button10.FlatAppearance.BorderSize = 0;
 			button10.FlatStyle = FlatStyle.Flat;
-			button10.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+			button10.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
 			button10.ForeColor = Color.Black;
 			button10.Image = (Image)resources.GetObject("button10.Image");
 			button10.ImageAlign = ContentAlignment.MiddleLeft;
-			button10.Location = new Point(34, 50);
+			button10.Location = new Point(28, 53);
 			button10.Name = "button10";
 			button10.Size = new Size(166, 61);
 			button10.TabIndex = 51;
@@ -344,18 +347,49 @@
 			// groupBox1
 			// 
 			groupBox1.BackColor = Color.Silver;
+			groupBox1.Controls.Add(label16);
 			groupBox1.Controls.Add(TestEtButton);
 			groupBox1.Controls.Add(TestTextBox);
 			groupBox1.Controls.Add(label12);
 			groupBox1.Controls.Add(label13);
 			groupBox1.Controls.Add(label14);
 			groupBox1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			groupBox1.Location = new Point(460, 685);
+			groupBox1.Location = new Point(537, 685);
 			groupBox1.Name = "groupBox1";
-			groupBox1.Size = new Size(715, 268);
+			groupBox1.Size = new Size(750, 268);
 			groupBox1.TabIndex = 52;
 			groupBox1.TabStop = false;
 			groupBox1.Text = "Kendiniz test edebilirsiniz:";
+			// 
+			// label11
+			// 
+			label11.AutoSize = true;
+			label11.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			label11.Location = new Point(107, 419);
+			label11.Name = "label11";
+			label11.Size = new Size(599, 21);
+			label11.TabIndex = 53;
+			label11.Text = "Dividend: \"CRC hesaplaması için kullanılacak veri, genellikle mesajın bit dizisi.\"";
+			// 
+			// label15
+			// 
+			label15.AutoSize = true;
+			label15.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			label15.Location = new Point(107, 458);
+			label15.Name = "label15";
+			label15.Size = new Size(563, 21);
+			label15.TabIndex = 54;
+			label15.Text = "Divisor: \"Seçilen CRC polinomunu temsil eden, sabit uzunluktaki bit dizisi.\"";
+			// 
+			// label16
+			// 
+			label16.AutoSize = true;
+			label16.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			label16.Location = new Point(47, 42);
+			label16.Name = "label16";
+			label16.Size = new Size(652, 21);
+			label16.TabIndex = 55;
+			label16.Text = "Textbox üzerinde bitleri dilediğiniz gibi değiştirerek sonucu tekrar kontrol edebilirsiniz.";
 			// 
 			// CRC
 			// 
@@ -363,6 +397,8 @@
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = SystemColors.ControlLight;
 			ClientSize = new Size(1805, 991);
+			Controls.Add(label15);
+			Controls.Add(label11);
 			Controls.Add(groupBox1);
 			Controls.Add(button10);
 			Controls.Add(button5);
@@ -426,5 +462,8 @@
 		private Button button3;
 		private Button button10;
 		private GroupBox groupBox1;
+		private Label label11;
+		private Label label15;
+		private Label label16;
 	}
 }
