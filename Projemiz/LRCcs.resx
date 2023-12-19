@@ -1476,7 +1476,7 @@
   <data name="button5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        qQAAAKkBq7NRIgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGJSURBVEhL1dW/
+        qAAAAKgBefSzxgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGJSURBVEhL1dW/
         K0VhHMfx42d+DchgYKGUQdmkLBYGA6UrGQwUJRnkRxGDQRaTlEFSBpFFtwwIkR9hx2z0T3h/zjlX7rnn
         OZwfBp96dZ/nlud7PM/3PNf6L2lCozNMJlpsFHu4wy7OMIFYmccztPAIGpBJIVZwhGp9ESXNuMaQPfNP
         J+7RYc8ipAQf2EG5vvBJDU6waM9Cpg4H6MUtWqGoWDfWcIVTzOErXTj8wTbasAmlHlro0v1cxgxWkZNz
@@ -1487,9 +1487,8 @@
 </value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>LRC (Longitudinal Redundancy Check), veri bütünlüğünü sağlamak ve hataları tespit etmek amacıyla kullanılan bir hata denetim algoritmasıdır. Bu algoritma, özellikle seri veri iletiminde sıklıkla kullanılır. 
-LRC Nedir?
-LRC, bir iletişim hattında veya depolama ortamında meydana gelen hataları algılamak ve düzeltmek için kullanılan basit ancak etkili bir hata denetim yöntemidir. Veri paketlerinin üzerine ek bir "kontrol toplamı" ekleyerek gerçekleşir.
-</value>
+    <value>LRC (Longitudinal Redundancy Check), veri iletiminde hata tespiti için kullanılan bir yöntemdir. Bu algoritma, iletilen veri bloklarının yanına, verinin doğruluğunu kontrol 
+etmeye yarayan ekstra kontrol bilgileri ekler. LRC, veri bloklarındaki her bit sütununu toplayarak bir kontrol toplamı (checksum) üretir ve bu toplam, veri ile birlikte gönderilir. 
+Alıcı tarafında, bu kontrol toplamı kullanılarak veri üzerinde oluşabilecek herhangi bir hata tespit edilebilir ve düzeltilmesi sağlanabilir</value>
   </data>
 </root>

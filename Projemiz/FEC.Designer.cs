@@ -71,9 +71,10 @@
 			// label1
 			// 
 			label1.AutoSize = true;
-			label1.Location = new Point(106, 134);
+			label1.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+			label1.Location = new Point(106, 129);
 			label1.Name = "label1";
-			label1.Size = new Size(1194, 30);
+			label1.Size = new Size(1222, 85);
 			label1.TabIndex = 6;
 			label1.Text = resources.GetString("label1.Text");
 			// 
@@ -116,7 +117,6 @@
 			label4.Size = new Size(119, 22);
 			label4.TabIndex = 22;
 			label4.Text = "Alınan Veri :";
-			label4.Click += this.label4_Click;
 			// 
 			// label5
 			// 
@@ -269,7 +269,6 @@
 			label23.Size = new Size(77, 22);
 			label23.TabIndex = 41;
 			label23.Text = "Sonuç :";
-			label23.Click += this.label23_Click;
 			// 
 			// label24
 			// 
@@ -281,15 +280,16 @@
 			// 
 			// btnCheckErrors
 			// 
+			btnCheckErrors.BackColor = Color.IndianRed;
 			btnCheckErrors.FlatStyle = FlatStyle.Flat;
-			btnCheckErrors.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-			btnCheckErrors.Location = new Point(454, 390);
+			btnCheckErrors.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+			btnCheckErrors.Location = new Point(454, 376);
 			btnCheckErrors.Margin = new Padding(3, 2, 3, 2);
 			btnCheckErrors.Name = "btnCheckErrors";
 			btnCheckErrors.Size = new Size(179, 59);
 			btnCheckErrors.TabIndex = 43;
 			btnCheckErrors.Text = "Hesapla";
-			btnCheckErrors.UseVisualStyleBackColor = true;
+			btnCheckErrors.UseVisualStyleBackColor = false;
 			btnCheckErrors.Click += btnCheckErrors_Click;
 			// 
 			// listBoxResults
@@ -340,10 +340,10 @@
 			// label2
 			// 
 			label2.AutoSize = true;
-			label2.Font = new Font("Century Gothic", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
-			label2.Location = new Point(246, 59);
+			label2.Font = new Font("Century Gothic", 36F, FontStyle.Regular, GraphicsUnit.Point);
+			label2.Location = new Point(246, 47);
 			label2.Name = "label2";
-			label2.Size = new Size(336, 44);
+			label2.Size = new Size(443, 58);
 			label2.TabIndex = 47;
 			label2.Text = "FEC ALGORİTMASI";
 			// 
@@ -354,7 +354,7 @@
 			button1.ForeColor = Color.Black;
 			button1.Image = (Image)resources.GetObject("button1.Image");
 			button1.ImageAlign = ContentAlignment.MiddleLeft;
-			button1.Location = new Point(106, 206);
+			button1.Location = new Point(106, 229);
 			button1.Name = "button1";
 			button1.Size = new Size(166, 61);
 			button1.TabIndex = 49;
@@ -478,7 +478,6 @@
 			Name = "FEC";
 			StartPosition = FormStartPosition.CenterScreen;
 			Text = "FEC";
-			Load += this.FEC_Load;
 			panel3.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
 			groupBox1.ResumeLayout(false);

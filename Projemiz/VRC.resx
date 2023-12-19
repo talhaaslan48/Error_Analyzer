@@ -1490,10 +1490,9 @@
 </value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Virtual Redundancy Check (VRC), veri iletiminde hata kontrolü sağlamak amacıyla kullanılan basit bir algoritmadır. Bu algoritma, iletim sırasında gönderilen veri bitlerindeki tek sayısını kontrol eder. 
-VRC, bir iletim sistemindeki hataları tespit etmek için kullanılan bir parite kontrol algoritmasıdır. Gönderici, iletilen veri paketinin içine bir parite biti ekler. Bu parite biti, iletilen veri bitlerindeki
-tek sayısını düzeltir veya kontrol eder.
-</value>
+    <value>VRC (Vertical Redundancy Check), veri iletiminde hata tespiti amacıyla kullanılan basit ve etkili bir yöntemdir. Bu teknik, gönderilen veriye ek olarak bir bit (genellikle 'parity bit' olarak adlandırılır) 
+ekleyerek çalışır. VRC, veri bloklarındaki bitlerin toplamını hesaplar ve bu toplamın tek veya çift olmasına göre ekstra bir bit ekler. Bu şekilde, verinin iletimi sırasında oluşabilecek tek bit hataları 
+tespit edilebilir ve alıcı tarafında kontrol edilebilir.</value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>

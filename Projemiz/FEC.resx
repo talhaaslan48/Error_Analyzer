@@ -118,8 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label1.Text" xml:space="preserve">
-    <value>Forward Error Correction (FEC), veri iletimi sırasında ortaya çıkabilecek hataları tespit etmek ve düzeltmek amacıyla kullanılan bir hata kontrolü mekanizmasıdır. İletişim kanallarındaki gürültü, parazit, veya diğer bozucu faktörler 
-nedeniyle oluşan hatalar, veri iletimini bozabilir. FEC, bu tür hataların etkilerini azaltmak veya ortadan kaldırmak için özel bir kodlama ve hata düzeltme yaklaşımı sunar.</value>
+    <value>FEC (Forward Error Correction), veri iletişiminde hata düzeltme amacıyla kullanılan bir tekniktir. Bu yöntem, veri kaynaklarından alıcıya aktarılırken oluşabilecek hataları tespit etmek 
+ve düzeltmek için tasarlanmıştır. FEC algoritması, gönderilen veriye ekstra bilgiler ekleyerek, alıcı tarafında olası hataların bağımsız olarak düzeltilmesini sağlar. Bu sayede, veri iletimi sırasında
+oluşabilecek kayıplar minimize edilir ve iletişimin güvenilirliği artırılır."FEC (Forward Error Correction), veri iletişiminde hata düzeltme amacıyla kullanılan bir tekniktir. 
+Bu yöntem, veri kaynaklarından alıcıya aktarılırken oluşabilecek hataları tespit etmek ve düzeltmek için tasarlanmıştır. FEC algoritması, gönderilen veriye ekstra bilgiler ekleyerek, 
+alıcı tarafında olası hataların bağımsız olarak düzeltilmesini sağlar. Bu sayede, veri iletimi sırasında oluşabilecek kayıplar minimize edilir ve iletişimin güvenilirliği artırılır."</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button10.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -161,7 +164,7 @@ nedeniyle oluşan hatalar, veri iletimini bozabilir. FEC, bu tür hataların etk
   <data name="button5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        qQAAAKkBq7NRIgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGJSURBVEhL1dW/
+        qAAAAKgBefSzxgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGJSURBVEhL1dW/
         K0VhHMfx42d+DchgYKGUQdmkLBYGA6UrGQwUJRnkRxGDQRaTlEFSBpFFtwwIkR9hx2z0T3h/zjlX7rnn
         OZwfBp96dZ/nlud7PM/3PNf6L2lCozNMJlpsFHu4wy7OMIFYmccztPAIGpBJIVZwhGp9ESXNuMaQPfNP
         J+7RYc8ipAQf2EG5vvBJDU6waM9Cpg4H6MUtWqGoWDfWcIVTzOErXTj8wTbasAmlHlro0v1cxgxWkZNz

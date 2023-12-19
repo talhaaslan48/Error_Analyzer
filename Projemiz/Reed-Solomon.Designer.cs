@@ -203,11 +203,11 @@
 			// 
 			label2.AutoSize = true;
 			label2.Font = new Font("Century Gothic", 36F, FontStyle.Regular, GraphicsUnit.Point);
-			label2.Location = new Point(294, 50);
+			label2.Location = new Point(252, 51);
 			label2.Name = "label2";
-			label2.Size = new Size(272, 58);
+			label2.Size = new Size(289, 58);
 			label2.TabIndex = 6;
-			label2.Text = "Checksum";
+			label2.Text = "CHECKSUM";
 			label2.TextAlign = ContentAlignment.TopCenter;
 			// 
 			// label1
@@ -2364,7 +2364,7 @@
 			// panel2
 			// 
 			panel2.BackColor = Color.CadetBlue;
-			panel2.Location = new Point(278, 50);
+			panel2.Location = new Point(231, 51);
 			panel2.Name = "panel2";
 			panel2.Size = new Size(10, 67);
 			panel2.TabIndex = 225;

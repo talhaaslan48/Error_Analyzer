@@ -166,7 +166,7 @@ namespace Projemiz
 
 		private void button3_Click(object sender, EventArgs e)
 		{
-			string pdfDosyaYolu = "C:\\Users\\talha\\Downloads\\9.10.2023 Siber - 1.pdf";
+			string pdfDosyaYolu = "C:\\Users\\90545\\Desktop\\bitirme projesi\\pdfler\\CRC_DersNotu.pdf";
 
 			if (File.Exists(pdfDosyaYolu))
 			{

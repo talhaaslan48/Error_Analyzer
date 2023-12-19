@@ -132,7 +132,7 @@
 			// label3
 			// 
 			label3.AutoSize = true;
-			label3.BackColor = Color.LightCoral;
+			label3.BackColor = Color.Linen;
 			label3.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
 			label3.Location = new Point(86, 48);
 			label3.Name = "label3";
@@ -323,7 +323,7 @@
 			// label25
 			// 
 			label25.AutoSize = true;
-			label25.BackColor = Color.LightCoral;
+			label25.BackColor = Color.Linen;
 			label25.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
 			label25.Location = new Point(53, 36);
 			label25.Name = "label25";
@@ -779,7 +779,7 @@
 			button1.ForeColor = Color.Black;
 			button1.Image = (Image)resources.GetObject("button1.Image");
 			button1.ImageAlign = ContentAlignment.MiddleLeft;
-			button1.Location = new Point(1155, 239);
+			button1.Location = new Point(1253, 240);
 			button1.Name = "button1";
 			button1.Size = new Size(264, 61);
 			button1.TabIndex = 114;
@@ -794,9 +794,9 @@
 			button3.ForeColor = Color.Black;
 			button3.Image = (Image)resources.GetObject("button3.Image");
 			button3.ImageAlign = ContentAlignment.MiddleLeft;
-			button3.Location = new Point(1449, 239);
+			button3.Location = new Point(1532, 240);
 			button3.Name = "button3";
-			button3.Size = new Size(160, 61);
+			button3.Size = new Size(183, 61);
 			button3.TabIndex = 113;
 			button3.Text = "      Ders Notu       İndirebilirsiniz";
 			button3.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -810,7 +810,7 @@
 			button6.ForeColor = Color.Black;
 			button6.Image = (Image)resources.GetObject("button6.Image");
 			button6.ImageAlign = ContentAlignment.MiddleLeft;
-			button6.Location = new Point(55, 239);
+			button6.Location = new Point(108, 239);
 			button6.Name = "button6";
 			button6.Size = new Size(166, 61);
 			button6.TabIndex = 112;
@@ -847,10 +847,10 @@
 			// label1
 			// 
 			label1.AutoSize = true;
-			label1.Font = new Font("Century Gothic", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
-			label1.Location = new Point(255, 55);
+			label1.Font = new Font("Century Gothic", 36F, FontStyle.Regular, GraphicsUnit.Point);
+			label1.Location = new Point(255, 43);
 			label1.Name = "label1";
-			label1.Size = new Size(345, 44);
+			label1.Size = new Size(458, 58);
 			label1.TabIndex = 107;
 			label1.Text = "VRC ALGORİTMASI";
 			// 
@@ -858,9 +858,9 @@
 			// 
 			panel3.BackColor = Color.DarkCyan;
 			panel3.Controls.Add(pictureBox1);
-			panel3.Location = new Point(1449, 12);
+			panel3.Location = new Point(1532, 12);
 			panel3.Name = "panel3";
-			panel3.Size = new Size(160, 207);
+			panel3.Size = new Size(183, 222);
 			panel3.TabIndex = 115;
 			// 
 			// pictureBox1
@@ -868,7 +868,7 @@
 			pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
 			pictureBox1.Location = new Point(13, 20);
 			pictureBox1.Name = "pictureBox1";
-			pictureBox1.Size = new Size(133, 171);
+			pictureBox1.Size = new Size(154, 171);
 			pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 			pictureBox1.TabIndex = 0;
 			pictureBox1.TabStop = false;
@@ -964,10 +964,10 @@
 			// label2
 			// 
 			label2.AutoSize = true;
-			label2.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
-			label2.Location = new Point(55, 138);
+			label2.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label2.Location = new Point(108, 141);
 			label2.Name = "label2";
-			label2.Size = new Size(1159, 51);
+			label2.Size = new Size(1409, 60);
 			label2.TabIndex = 119;
 			label2.Text = resources.GetString("label2.Text");
 			// 
