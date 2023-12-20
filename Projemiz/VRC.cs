@@ -337,5 +337,91 @@ namespace Projemiz
 				e.Handled = true; // Diğer karakter girişlerini engelle
 			}
 		}
+
+		private void textBox15_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			// Sadece '0', '1' ve kontrol karakterlerine (örneğin, backspace) izin ver
+			if (e.KeyChar != '0' && e.KeyChar != '1' && !char.IsControl(e.KeyChar))
+			{
+				e.Handled = true; // Diğer karakter girişlerini engelle
+			}
+		}
+
+		private void textBox14_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			// Sadece '0', '1' ve kontrol karakterlerine (örneğin, backspace) izin ver
+			if (e.KeyChar != '0' && e.KeyChar != '1' && !char.IsControl(e.KeyChar))
+			{
+				e.Handled = true; // Diğer karakter girişlerini engelle
+			}
+		}
+
+		private void textBox13_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			// Sadece '0', '1' ve kontrol karakterlerine (örneğin, backspace) izin ver
+			if (e.KeyChar != '0' && e.KeyChar != '1' && !char.IsControl(e.KeyChar))
+			{
+				e.Handled = true; // Diğer karakter girişlerini engelle
+			}
+		}
+
+		private void textBox12_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			// Sadece '0', '1' ve kontrol karakterlerine (örneğin, backspace) izin ver
+			if (e.KeyChar != '0' && e.KeyChar != '1' && !char.IsControl(e.KeyChar))
+			{
+				e.Handled = true; // Diğer karakter girişlerini engelle
+			}
+		}
+
+		private void textBox11_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			// Sadece '0', '1' ve kontrol karakterlerine (örneğin, backspace) izin ver
+			if (e.KeyChar != '0' && e.KeyChar != '1' && !char.IsControl(e.KeyChar))
+			{
+				e.Handled = true; // Diğer karakter girişlerini engelle
+			}
+		}
+
+		private void textBox10_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			// Sadece '0', '1' ve kontrol karakterlerine (örneğin, backspace) izin ver
+			if (e.KeyChar != '0' && e.KeyChar != '1' && !char.IsControl(e.KeyChar))
+			{
+				e.Handled = true; // Diğer karakter girişlerini engelle
+			}
+		}
+
+		private void textBox9_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			// Sadece '0', '1' ve kontrol karakterlerine (örneğin, backspace) izin ver
+			if (e.KeyChar != '0' && e.KeyChar != '1' && !char.IsControl(e.KeyChar))
+			{
+				e.Handled = true; // Diğer karakter girişlerini engelle
+			}
+		}
+
+		private void textBox8_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			// Sadece '0', '1' ve kontrol karakterlerine (örneğin, backspace) izin ver
+			if (e.KeyChar != '0' && e.KeyChar != '1' && !char.IsControl(e.KeyChar))
+			{
+				e.Handled = true; // Diğer karakter girişlerini engelle
+			}
+		}
+
+		private void textBox24_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void textBox24_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			// Sadece '0', '1' ve kontrol karakterlerine (örneğin, backspace) izin ver
+			if (e.KeyChar != '0' && e.KeyChar != '1' && !char.IsControl(e.KeyChar))
+			{
+				e.Handled = true; // Diğer karakter girişlerini engelle
+			}
+		}
 	}
 }

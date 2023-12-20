@@ -100,6 +100,10 @@
 			groupBox2 = new GroupBox();
 			groupBox3 = new GroupBox();
 			label2 = new Label();
+			label28 = new Label();
+			label29 = new Label();
+			label30 = new Label();
+			label31 = new Label();
 			panel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			groupBox1.SuspendLayout();
@@ -111,10 +115,10 @@
 			// 
 			buttonYenile.FlatStyle = FlatStyle.Flat;
 			buttonYenile.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			buttonYenile.Location = new Point(1449, 524);
+			buttonYenile.Location = new Point(1397, 516);
 			buttonYenile.Margin = new Padding(3, 2, 3, 2);
 			buttonYenile.Name = "buttonYenile";
-			buttonYenile.Size = new Size(219, 66);
+			buttonYenile.Size = new Size(271, 74);
 			buttonYenile.TabIndex = 33;
 			buttonYenile.Text = "Tekrar İşlem Yapmak İçin Basınız";
 			buttonYenile.UseVisualStyleBackColor = true;
@@ -144,7 +148,7 @@
 			// 
 			label6.AutoSize = true;
 			label6.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			label6.Location = new Point(309, 42);
+			label6.Location = new Point(109, 33);
 			label6.Name = "label6";
 			label6.Size = new Size(174, 21);
 			label6.TabIndex = 51;
@@ -154,7 +158,7 @@
 			// 
 			label7.AutoSize = true;
 			label7.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label7.Location = new Point(218, 81);
+			label7.Location = new Point(29, 65);
 			label7.Name = "label7";
 			label7.Size = new Size(28, 20);
 			label7.TabIndex = 52;
@@ -164,7 +168,7 @@
 			// 
 			label8.AutoSize = true;
 			label8.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label8.Location = new Point(256, 81);
+			label8.Location = new Point(67, 65);
 			label8.Name = "label8";
 			label8.Size = new Size(28, 20);
 			label8.TabIndex = 53;
@@ -174,7 +178,7 @@
 			// 
 			label9.AutoSize = true;
 			label9.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label9.Location = new Point(298, 81);
+			label9.Location = new Point(109, 65);
 			label9.Name = "label9";
 			label9.Size = new Size(28, 20);
 			label9.TabIndex = 54;
@@ -184,7 +188,7 @@
 			// 
 			label10.AutoSize = true;
 			label10.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label10.Location = new Point(338, 81);
+			label10.Location = new Point(149, 65);
 			label10.Name = "label10";
 			label10.Size = new Size(28, 20);
 			label10.TabIndex = 55;
@@ -194,7 +198,7 @@
 			// 
 			label11.AutoSize = true;
 			label11.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label11.Location = new Point(377, 81);
+			label11.Location = new Point(188, 65);
 			label11.Name = "label11";
 			label11.Size = new Size(28, 20);
 			label11.TabIndex = 56;
@@ -204,7 +208,7 @@
 			// 
 			label12.AutoSize = true;
 			label12.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label12.Location = new Point(413, 81);
+			label12.Location = new Point(224, 65);
 			label12.Name = "label12";
 			label12.Size = new Size(28, 20);
 			label12.TabIndex = 57;
@@ -214,7 +218,7 @@
 			// 
 			label13.AutoSize = true;
 			label13.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label13.Location = new Point(452, 81);
+			label13.Location = new Point(263, 65);
 			label13.Name = "label13";
 			label13.Size = new Size(28, 20);
 			label13.TabIndex = 58;
@@ -224,7 +228,7 @@
 			// 
 			label14.AutoSize = true;
 			label14.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label14.Location = new Point(491, 81);
+			label14.Location = new Point(302, 65);
 			label14.Name = "label14";
 			label14.Size = new Size(28, 20);
 			label14.TabIndex = 59;
@@ -314,7 +318,7 @@
 			// 
 			label23.AutoSize = true;
 			label23.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label23.Location = new Point(53, 197);
+			label23.Location = new Point(37, 217);
 			label23.Name = "label23";
 			label23.Size = new Size(216, 20);
 			label23.TabIndex = 68;
@@ -325,7 +329,7 @@
 			label25.AutoSize = true;
 			label25.BackColor = Color.Linen;
 			label25.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			label25.Location = new Point(53, 36);
+			label25.Location = new Point(44, 64);
 			label25.Name = "label25";
 			label25.Size = new Size(119, 21);
 			label25.TabIndex = 70;
@@ -336,7 +340,7 @@
 			txtD8.BackColor = SystemColors.ButtonHighlight;
 			txtD8.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			txtD8.ForeColor = Color.Blue;
-			txtD8.Location = new Point(192, 36);
+			txtD8.Location = new Point(183, 64);
 			txtD8.Margin = new Padding(4, 3, 4, 3);
 			txtD8.MaxLength = 1;
 			txtD8.Multiline = true;
@@ -351,7 +355,7 @@
 			textBox16.BackColor = SystemColors.ButtonHighlight;
 			textBox16.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox16.ForeColor = Color.Blue;
-			textBox16.Location = new Point(231, 36);
+			textBox16.Location = new Point(222, 64);
 			textBox16.Margin = new Padding(4, 3, 4, 3);
 			textBox16.MaxLength = 1;
 			textBox16.Multiline = true;
@@ -366,7 +370,7 @@
 			textBox17.BackColor = SystemColors.ButtonHighlight;
 			textBox17.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox17.ForeColor = Color.Blue;
-			textBox17.Location = new Point(271, 36);
+			textBox17.Location = new Point(262, 64);
 			textBox17.Margin = new Padding(4, 3, 4, 3);
 			textBox17.MaxLength = 1;
 			textBox17.Multiline = true;
@@ -381,7 +385,7 @@
 			textBox18.BackColor = SystemColors.ButtonHighlight;
 			textBox18.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox18.ForeColor = Color.Blue;
-			textBox18.Location = new Point(310, 36);
+			textBox18.Location = new Point(301, 64);
 			textBox18.Margin = new Padding(4, 3, 4, 3);
 			textBox18.MaxLength = 1;
 			textBox18.Multiline = true;
@@ -396,7 +400,7 @@
 			textBox19.BackColor = SystemColors.ButtonHighlight;
 			textBox19.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox19.ForeColor = Color.Blue;
-			textBox19.Location = new Point(349, 36);
+			textBox19.Location = new Point(340, 64);
 			textBox19.Margin = new Padding(4, 3, 4, 3);
 			textBox19.MaxLength = 1;
 			textBox19.Multiline = true;
@@ -411,7 +415,7 @@
 			textBox20.BackColor = SystemColors.ButtonHighlight;
 			textBox20.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox20.ForeColor = Color.Blue;
-			textBox20.Location = new Point(389, 36);
+			textBox20.Location = new Point(380, 64);
 			textBox20.Margin = new Padding(4, 3, 4, 3);
 			textBox20.MaxLength = 1;
 			textBox20.Multiline = true;
@@ -426,7 +430,7 @@
 			textBox21.BackColor = SystemColors.ButtonHighlight;
 			textBox21.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox21.ForeColor = Color.Blue;
-			textBox21.Location = new Point(428, 36);
+			textBox21.Location = new Point(419, 64);
 			textBox21.Margin = new Padding(4, 3, 4, 3);
 			textBox21.MaxLength = 1;
 			textBox21.Multiline = true;
@@ -441,7 +445,7 @@
 			textBox22.BackColor = SystemColors.ButtonHighlight;
 			textBox22.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox22.ForeColor = Color.Blue;
-			textBox22.Location = new Point(467, 36);
+			textBox22.Location = new Point(458, 64);
 			textBox22.Margin = new Padding(4, 3, 4, 3);
 			textBox22.MaxLength = 1;
 			textBox22.Multiline = true;
@@ -552,7 +556,7 @@
 			// textBox8
 			// 
 			textBox8.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox8.Location = new Point(491, 103);
+			textBox8.Location = new Point(302, 87);
 			textBox8.Margin = new Padding(3, 2, 3, 2);
 			textBox8.MaxLength = 1;
 			textBox8.Multiline = true;
@@ -560,11 +564,12 @@
 			textBox8.Size = new Size(31, 26);
 			textBox8.TabIndex = 94;
 			textBox8.TextAlign = HorizontalAlignment.Center;
+			textBox8.KeyPress += textBox8_KeyPress;
 			// 
 			// textBox9
 			// 
 			textBox9.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox9.Location = new Point(452, 103);
+			textBox9.Location = new Point(263, 87);
 			textBox9.Margin = new Padding(3, 2, 3, 2);
 			textBox9.MaxLength = 1;
 			textBox9.Multiline = true;
@@ -572,11 +577,12 @@
 			textBox9.Size = new Size(31, 26);
 			textBox9.TabIndex = 93;
 			textBox9.TextAlign = HorizontalAlignment.Center;
+			textBox9.KeyPress += textBox9_KeyPress;
 			// 
 			// textBox10
 			// 
 			textBox10.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox10.Location = new Point(413, 103);
+			textBox10.Location = new Point(224, 87);
 			textBox10.Margin = new Padding(3, 2, 3, 2);
 			textBox10.MaxLength = 1;
 			textBox10.Multiline = true;
@@ -584,11 +590,12 @@
 			textBox10.Size = new Size(31, 26);
 			textBox10.TabIndex = 92;
 			textBox10.TextAlign = HorizontalAlignment.Center;
+			textBox10.KeyPress += textBox10_KeyPress;
 			// 
 			// textBox11
 			// 
 			textBox11.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox11.Location = new Point(374, 103);
+			textBox11.Location = new Point(185, 87);
 			textBox11.Margin = new Padding(3, 2, 3, 2);
 			textBox11.MaxLength = 1;
 			textBox11.Multiline = true;
@@ -596,11 +603,12 @@
 			textBox11.Size = new Size(31, 26);
 			textBox11.TabIndex = 91;
 			textBox11.TextAlign = HorizontalAlignment.Center;
+			textBox11.KeyPress += textBox11_KeyPress;
 			// 
 			// textBox12
 			// 
 			textBox12.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox12.Location = new Point(335, 103);
+			textBox12.Location = new Point(146, 87);
 			textBox12.Margin = new Padding(3, 2, 3, 2);
 			textBox12.MaxLength = 1;
 			textBox12.Multiline = true;
@@ -608,11 +616,12 @@
 			textBox12.Size = new Size(31, 26);
 			textBox12.TabIndex = 90;
 			textBox12.TextAlign = HorizontalAlignment.Center;
+			textBox12.KeyPress += textBox12_KeyPress;
 			// 
 			// textBox13
 			// 
 			textBox13.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox13.Location = new Point(296, 103);
+			textBox13.Location = new Point(107, 87);
 			textBox13.Margin = new Padding(3, 2, 3, 2);
 			textBox13.MaxLength = 1;
 			textBox13.Multiline = true;
@@ -620,11 +629,12 @@
 			textBox13.Size = new Size(31, 26);
 			textBox13.TabIndex = 89;
 			textBox13.TextAlign = HorizontalAlignment.Center;
+			textBox13.KeyPress += textBox13_KeyPress;
 			// 
 			// textBox14
 			// 
 			textBox14.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox14.Location = new Point(257, 103);
+			textBox14.Location = new Point(68, 87);
 			textBox14.Margin = new Padding(3, 2, 3, 2);
 			textBox14.MaxLength = 1;
 			textBox14.Multiline = true;
@@ -632,11 +642,12 @@
 			textBox14.Size = new Size(31, 26);
 			textBox14.TabIndex = 88;
 			textBox14.TextAlign = HorizontalAlignment.Center;
+			textBox14.KeyPress += textBox14_KeyPress;
 			// 
 			// textBox15
 			// 
 			textBox15.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox15.Location = new Point(218, 103);
+			textBox15.Location = new Point(29, 87);
 			textBox15.Margin = new Padding(3, 2, 3, 2);
 			textBox15.MaxLength = 1;
 			textBox15.Multiline = true;
@@ -644,12 +655,13 @@
 			textBox15.Size = new Size(31, 26);
 			textBox15.TabIndex = 87;
 			textBox15.TextAlign = HorizontalAlignment.Center;
+			textBox15.KeyPress += textBox15_KeyPress;
 			// 
 			// label24
 			// 
 			label24.AutoSize = true;
 			label24.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label24.Location = new Point(525, 81);
+			label24.Location = new Point(336, 65);
 			label24.Name = "label24";
 			label24.Size = new Size(49, 20);
 			label24.TabIndex = 96;
@@ -660,10 +672,10 @@
 			button2.BackColor = Color.IndianRed;
 			button2.FlatStyle = FlatStyle.Flat;
 			button2.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-			button2.Location = new Point(292, 107);
+			button2.Location = new Point(86, 96);
 			button2.Margin = new Padding(3, 2, 3, 2);
 			button2.Name = "button2";
-			button2.Size = new Size(200, 52);
+			button2.Size = new Size(237, 63);
 			button2.TabIndex = 97;
 			button2.Text = "HESAPLA";
 			button2.UseVisualStyleBackColor = false;
@@ -673,7 +685,7 @@
 			// 
 			label4.AutoSize = true;
 			label4.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label4.Location = new Point(53, 253);
+			label4.Location = new Point(37, 273);
 			label4.Name = "label4";
 			label4.Size = new Size(167, 20);
 			label4.TabIndex = 98;
@@ -683,7 +695,7 @@
 			// 
 			label26.AutoSize = true;
 			label26.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label26.Location = new Point(292, 197);
+			label26.Location = new Point(276, 217);
 			label26.Name = "label26";
 			label26.Size = new Size(0, 20);
 			label26.TabIndex = 99;
@@ -691,7 +703,7 @@
 			// textBox24
 			// 
 			textBox24.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox24.Location = new Point(530, 103);
+			textBox24.Location = new Point(341, 87);
 			textBox24.Margin = new Padding(3, 2, 3, 2);
 			textBox24.MaxLength = 1;
 			textBox24.Multiline = true;
@@ -699,16 +711,18 @@
 			textBox24.Size = new Size(31, 26);
 			textBox24.TabIndex = 100;
 			textBox24.TextAlign = HorizontalAlignment.Center;
+			textBox24.TextChanged += textBox24_TextChanged;
+			textBox24.KeyPress += textBox24_KeyPress;
 			// 
 			// button4
 			// 
 			button4.BackColor = Color.IndianRed;
 			button4.FlatStyle = FlatStyle.Flat;
 			button4.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-			button4.Location = new Point(267, 167);
+			button4.Location = new Point(421, 65);
 			button4.Margin = new Padding(3, 2, 3, 2);
 			button4.Name = "button4";
-			button4.Size = new Size(241, 35);
+			button4.Size = new Size(297, 62);
 			button4.TabIndex = 101;
 			button4.Text = "VERİYİ GÖNDER";
 			button4.UseVisualStyleBackColor = false;
@@ -717,7 +731,7 @@
 			// progressBar1
 			// 
 			progressBar1.BackColor = SystemColors.ControlLight;
-			progressBar1.Location = new Point(25, 228);
+			progressBar1.Location = new Point(20, 241);
 			progressBar1.Margin = new Padding(3, 2, 3, 2);
 			progressBar1.Name = "progressBar1";
 			progressBar1.Size = new Size(730, 22);
@@ -728,7 +742,7 @@
 			textBox25.BackColor = SystemColors.ButtonHighlight;
 			textBox25.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
 			textBox25.ForeColor = Color.Blue;
-			textBox25.Location = new Point(507, 36);
+			textBox25.Location = new Point(498, 64);
 			textBox25.Margin = new Padding(4, 3, 4, 3);
 			textBox25.MaxLength = 1;
 			textBox25.Multiline = true;
@@ -746,7 +760,7 @@
 			// 
 			label27.AutoSize = true;
 			label27.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label27.Location = new Point(230, 253);
+			label27.Location = new Point(214, 273);
 			label27.Name = "label27";
 			label27.Size = new Size(0, 20);
 			label27.TabIndex = 104;
@@ -756,10 +770,10 @@
 			button5.BackColor = Color.IndianRed;
 			button5.FlatStyle = FlatStyle.Flat;
 			button5.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-			button5.Location = new Point(239, 89);
+			button5.Location = new Point(44, 120);
 			button5.Margin = new Padding(3, 2, 3, 2);
 			button5.Name = "button5";
-			button5.Size = new Size(161, 63);
+			button5.Size = new Size(209, 63);
 			button5.TabIndex = 105;
 			button5.Text = "SONUCU GÖRÜNTÜLE";
 			button5.UseVisualStyleBackColor = false;
@@ -878,6 +892,7 @@
 			// groupBox1
 			// 
 			groupBox1.BackColor = Color.Silver;
+			groupBox1.Controls.Add(label29);
 			groupBox1.Controls.Add(textBox3);
 			groupBox1.Controls.Add(label5);
 			groupBox1.Controls.Add(label3);
@@ -898,9 +913,9 @@
 			groupBox1.Controls.Add(textBox7);
 			groupBox1.Controls.Add(button2);
 			groupBox1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			groupBox1.Location = new Point(568, 392);
+			groupBox1.Location = new Point(119, 394);
 			groupBox1.Name = "groupBox1";
-			groupBox1.Size = new Size(691, 185);
+			groupBox1.Size = new Size(1005, 185);
 			groupBox1.TabIndex = 116;
 			groupBox1.TabStop = false;
 			groupBox1.Text = "1- Girdi alınması";
@@ -908,6 +923,7 @@
 			// groupBox2
 			// 
 			groupBox2.BackColor = Color.Silver;
+			groupBox2.Controls.Add(label30);
 			groupBox2.Controls.Add(label6);
 			groupBox2.Controls.Add(label7);
 			groupBox2.Controls.Add(label8);
@@ -930,9 +946,9 @@
 			groupBox2.Controls.Add(textBox8);
 			groupBox2.Controls.Add(label24);
 			groupBox2.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			groupBox2.Location = new Point(55, 619);
+			groupBox2.Location = new Point(119, 601);
 			groupBox2.Name = "groupBox2";
-			groupBox2.Size = new Size(775, 314);
+			groupBox2.Size = new Size(775, 332);
 			groupBox2.TabIndex = 117;
 			groupBox2.TabStop = false;
 			groupBox2.Text = "2-Verinin iletilmesi";
@@ -940,6 +956,7 @@
 			// groupBox3
 			// 
 			groupBox3.BackColor = Color.Silver;
+			groupBox3.Controls.Add(label31);
 			groupBox3.Controls.Add(label25);
 			groupBox3.Controls.Add(txtD8);
 			groupBox3.Controls.Add(textBox16);
@@ -956,9 +973,9 @@
 			groupBox3.Controls.Add(label4);
 			groupBox3.Controls.Add(label26);
 			groupBox3.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			groupBox3.Location = new Point(1039, 619);
+			groupBox3.Location = new Point(930, 601);
 			groupBox3.Name = "groupBox3";
-			groupBox3.Size = new Size(629, 314);
+			groupBox3.Size = new Size(738, 332);
 			groupBox3.TabIndex = 118;
 			groupBox3.TabStop = false;
 			groupBox3.Text = "3- Durum kontrolü";
@@ -973,12 +990,53 @@
 			label2.TabIndex = 119;
 			label2.Text = resources.GetString("label2.Text");
 			// 
+			// label28
+			// 
+			label28.AutoSize = true;
+			label28.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label28.Location = new Point(119, 341);
+			label28.Name = "label28";
+			label28.Size = new Size(569, 40);
+			label28.TabIndex = 120;
+			label28.Text = "\"Lütfen gönderilecek 8 bitlik verinizi buraya giriniz. \r\nHer kutucuk, bir biti temsil eder ve yalnızca '0' veya '1' değerlerini kabul eder.\"";
+			// 
+			// label29
+			// 
+			label29.AutoSize = true;
+			label29.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label29.Location = new Point(340, 108);
+			label29.Name = "label29";
+			label29.Size = new Size(531, 40);
+			label29.TabIndex = 121;
+			label29.Text = "\"Verinizin parite bitini hesaplamak için 'Hesapla' butonuna tıklayınız. \r\nBu işlem, verinizin doğruluğunu kontrol etmek için ek bir bit ekleyecektir.\"";
+			// 
+			// label30
+			// 
+			label30.AutoSize = true;
+			label30.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label30.Location = new Point(29, 154);
+			label30.Name = "label30";
+			label30.Size = new Size(660, 40);
+			label30.TabIndex = 122;
+			label30.Text = "\"Hesaplanan parite biti ile birlikte verinizi göndermek için 'Veriyi Gönder' butonuna basınız. \r\nBu, verinizin alıcıya iletilmesini sağlayacaktır.\"";
+			// 
+			// label31
+			// 
+			label31.AutoSize = true;
+			label31.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label31.Location = new Point(262, 123);
+			label31.Name = "label31";
+			label31.Size = new Size(433, 60);
+			label31.TabIndex = 123;
+			label31.Text = "\"Alıcı tarafından alınan veriyi ve parite bitinin doğruluğunu \r\nburada kontrol edebilirsiniz. \r\nHata tespit edilirse, bu kısımda belirtilecektir.\"";
+			// 
 			// VRC
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = SystemColors.ControlLight;
 			ClientSize = new Size(1805, 991);
+			Controls.Add(label28);
 			Controls.Add(label2);
 			Controls.Add(groupBox3);
 			Controls.Add(groupBox2);
@@ -1081,5 +1139,9 @@
 		private GroupBox groupBox2;
 		private GroupBox groupBox3;
 		private Label label2;
+		private Label label29;
+		private Label label30;
+		private Label label28;
+		private Label label31;
 	}
 }
