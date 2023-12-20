@@ -205,10 +205,12 @@ namespace Projemiz
 
         private void button1_Click(object sender, EventArgs e)
         {
-            LRC_NasılÇalışır_Form form = new LRC_NasılÇalışır_Form();
-            form.ShowDialog();
-            this.Hide();
-        }
+			LRC_NasılÇalışır_Form form = new LRC_NasılÇalışır_Form();
+			form.TopMost = true;  // Pencereyi en üstte tutar
+			form.Owner = this; // Bu satırı ekleyin
+			form.ShowDialog();
+			this.Hide();
+		}
 
         private void button10_Click(object sender, EventArgs e)
         {

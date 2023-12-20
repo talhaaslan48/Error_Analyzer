@@ -32,14 +32,12 @@
 			panel1 = new Panel();
 			panel3 = new Panel();
 			pictureBox1 = new PictureBox();
-			pictureBox2 = new PictureBox();
 			label1 = new Label();
 			label2 = new Label();
 			button10 = new Button();
 			label3 = new Label();
 			panel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-			((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
 			SuspendLayout();
 			// 
 			// panel1
@@ -69,17 +67,6 @@
 			pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 			pictureBox1.TabIndex = 0;
 			pictureBox1.TabStop = false;
-			// 
-			// pictureBox2
-			// 
-			pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-			pictureBox2.Location = new Point(826, 304);
-			pictureBox2.Name = "pictureBox2";
-			pictureBox2.Size = new Size(574, 287);
-			pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-			pictureBox2.TabIndex = 27;
-			pictureBox2.TabStop = false;
-			pictureBox2.Click += pictureBox2_Click;
 			// 
 			// label1
 			// 
@@ -137,7 +124,6 @@
 			Controls.Add(button10);
 			Controls.Add(label2);
 			Controls.Add(label1);
-			Controls.Add(pictureBox2);
 			Controls.Add(panel3);
 			Controls.Add(panel1);
 			FormBorderStyle = FormBorderStyle.None;
@@ -146,7 +132,6 @@
 			Text = "LRC_NasılÇalışır_Form";
 			panel3.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-			((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
 			ResumeLayout(false);
 			PerformLayout();
 		}
@@ -156,7 +141,6 @@
 		private Panel panel1;
 		private Panel panel3;
 		private PictureBox pictureBox1;
-		private PictureBox pictureBox2;
 		private Label label1;
 		private Label label2;
 		private Button button10;

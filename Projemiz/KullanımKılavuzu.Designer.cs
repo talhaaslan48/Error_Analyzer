@@ -34,6 +34,7 @@
 			pictureBox1 = new PictureBox();
 			button1 = new Button();
 			button10 = new Button();
+			panel2 = new Panel();
 			panel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			SuspendLayout();
@@ -98,11 +99,20 @@
 			button10.UseVisualStyleBackColor = true;
 			button10.Click += button10_Click;
 			// 
+			// panel2
+			// 
+			panel2.AutoScroll = true;
+			panel2.Location = new Point(273, 127);
+			panel2.Name = "panel2";
+			panel2.Size = new Size(1067, 720);
+			panel2.TabIndex = 27;
+			// 
 			// KullanımKılavuzu
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(1707, 859);
+			Controls.Add(panel2);
 			Controls.Add(button10);
 			Controls.Add(button1);
 			Controls.Add(panel3);
@@ -111,6 +121,7 @@
 			Name = "KullanımKılavuzu";
 			StartPosition = FormStartPosition.CenterScreen;
 			Text = "KullanımKılavuzu";
+			Load += KullanımKılavuzu_Load;
 			panel3.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
 			ResumeLayout(false);
@@ -123,5 +134,6 @@
 		private PictureBox pictureBox1;
 		private Button button1;
 		private Button button10;
+		private Panel panel2;
 	}
 }
