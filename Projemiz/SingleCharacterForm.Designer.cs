@@ -300,7 +300,6 @@
 			groupBox2.BackColor = Color.Silver;
 			groupBox2.Controls.Add(lblCh);
 			groupBox2.Controls.Add(label65);
-			groupBox2.Controls.Add(linkLabel1);
 			groupBox2.Controls.Add(label18);
 			groupBox2.Controls.Add(label13);
 			groupBox2.Controls.Add(label17);
@@ -387,12 +386,12 @@
 			// linkLabel1
 			// 
 			linkLabel1.AutoSize = true;
-			linkLabel1.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
+			linkLabel1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
 			linkLabel1.LinkColor = Color.Teal;
-			linkLabel1.Location = new Point(252, 248);
+			linkLabel1.Location = new Point(254, 162);
 			linkLabel1.Margin = new Padding(4, 0, 4, 0);
 			linkLabel1.Name = "linkLabel1";
-			linkLabel1.Size = new Size(153, 13);
+			linkLabel1.Size = new Size(230, 20);
 			linkLabel1.TabIndex = 5;
 			linkLabel1.TabStop = true;
 			linkLabel1.Text = "Parity Bitlleri nasıl hesaplandı !?";
@@ -2523,6 +2522,7 @@
 			ClientSize = new Size(1821, 1030);
 			Controls.Add(button5);
 			Controls.Add(button6);
+			Controls.Add(linkLabel1);
 			Controls.Add(panel3);
 			Controls.Add(panel1);
 			Controls.Add(button4);

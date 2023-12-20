@@ -176,7 +176,7 @@ namespace Projemiz
 						{
 							//8 bit binary data
 							BinaryData = txtData.Text;
-							lblCh.Text = "(" + h.BinaryToHex(BinaryData.Substring(0, 4)) + ")hex";
+							lblCh.Text = "(" + h.BinaryToHexChar(BinaryData.Substring(0, 4)) + ")hex";
 							groupBox2.Visible = true;
 							groupBox3.Visible = true;
 							SetBinaryDataToTextBox(BinaryData);
@@ -193,12 +193,12 @@ namespace Projemiz
 				if (radioButton2.Checked)
 				{
 					//Hex control
-					if (h.IsTwoDigit(txtData.Text))
+					if (h.IsOneDigit(txtData.Text))
 					{
 						if (h.IsHex(txtData.Text.ToUpper()))
 						{
-							//2 digit Hex data
-							BinaryData = h.HexStringToBinary(txtData.Text[0].ToString()) + h.HexStringToBinary(txtData.Text[1].ToString());
+							//1 digit Hex data
+							BinaryData = h.HexStringToBinary(txtData.Text[0].ToString());
 							lblCh.Text = "(" + txtData.Text.ToUpper() + ")hex";
 							groupBox2.Visible = true;
 							groupBox3.Visible = true;
@@ -209,26 +209,10 @@ namespace Projemiz
 						{ MessageBox.Show("Geçersiz Hex formatı!"); }
 					}
 					else
-					{ MessageBox.Show("Hex hane sayısı 2 tane olmalıdır!"); }
+					{ MessageBox.Show("Hex hane sayısı 1 tane olmalıdır!"); }
 				}
 				//radioButton2.Checked End .......................................
 
-				if (radioButton3.Checked)
-				{
-
-					char k;
-					string tmp;
-					k = Convert.ToChar(txtData.Text);
-					tmp = Convert.ToByte(k).ToString("x2"); //Convert char to hexadecimal
-					lblCh.Text = "(" + tmp.ToUpper() + ")hex";
-					BinaryData = h.HexStringToBinary(tmp);
-					groupBox2.Visible = true;
-					groupBox3.Visible = true;
-					SetBinaryDataToTextBox(BinaryData);
-					CalculateParity1();
-
-				}
-				//radioButton3.Checked End .......................................
 			}
 			else
 			{
@@ -270,18 +254,6 @@ namespace Projemiz
 			{ txtData.MaxLength = 1; }
 		}
 
-		private void radioButton3_CheckedChanged(object sender, EventArgs e)
-		{
-			Reset();
-			txtData.Clear();
-			txtData.Focus();
-			if (radioButton3.Checked)
-			{ txtData.MaxLength = 1; }
-			else if (radioButton2.Checked)
-			{ txtData.MaxLength = 2; }
-			else
-			{ txtData.MaxLength = 8; }
-		}
 
 		private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 		{
@@ -394,7 +366,7 @@ namespace Projemiz
 						default: break;
 					}
 
-					lblChf.Text = "(" + h.BinaryToHex(txtD4f.Text + txtD3f.Text + txtD2f.Text + txtD1f.Text) + ")hex";
+					lblChf.Text = "(" + h.BinaryToHexChar(txtD4f.Text + txtD3f.Text + txtD2f.Text + txtD1f.Text) + ")hex";
 				}
 				else
 				{
@@ -402,7 +374,7 @@ namespace Projemiz
 					txtD2f.Text = ReceivedData[2].ToString();
 					txtD3f.Text = ReceivedData[1].ToString();
 					txtD4f.Text = ReceivedData[0].ToString();
-					lblChf.Text = "(" + h.BinaryToHex(ReceivedData.Substring(0, 4)) + ")hex";
+					lblChf.Text = "(" + h.BinaryToHexChar(ReceivedData.Substring(0, 4)) + ")hex";
 					MessageBox.Show("Hatalı Bit yoktur.");
 				}
 			}

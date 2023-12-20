@@ -139,9 +139,6 @@ namespace Projemiz
 
 
 
-
-
-
 		}
 
 		private void VRC_Load(object sender, EventArgs e)

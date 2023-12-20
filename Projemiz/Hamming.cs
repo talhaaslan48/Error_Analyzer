@@ -29,6 +29,20 @@ namespace Projemiz
 		  { 'f', "1111" }
 		};
 
+		char[] hexChar = new char[10] { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+
+		private static readonly Dictionary<char, string> hexCharacterToBinaryChar = new Dictionary<char, string> {
+		  { '0', "0000" },
+		  { '1', "0001" },
+		  { '2', "0010" },
+		  { '3', "0011" },
+		  { '4', "0100" },
+		  { '5', "0101" },
+		  { '6', "0110" },
+		  { '7', "0111" },
+		  { '8', "1000" },
+		  { '9', "1001" },
+		};
 		public string HexStringToBinary(string hex)
 		{
 			StringBuilder result = new StringBuilder();
@@ -44,6 +58,22 @@ namespace Projemiz
 			string result;
 			result = Convert.ToInt32(BinaryTxt, 2).ToString("X");
 			return result;
+		}
+
+		public string HexCharToBinary(char hexChar)
+		{
+			// Sadece tek bir hexadecimal karakteri al ve ikiliye dönüştür --
+			return hexCharacterToBinary[char.ToLower(hexChar)];
+		}
+
+		public string BinaryToHexChar(string binaryStr)
+		{
+			// Sadece 4 bitlik bir ikili sayıyı al ve hexadecimal karaktere dönüştür
+			if (binaryStr.Length != 4)
+				throw new ArgumentException("Binary string must be exactly 4 digits long.");
+
+			int decimalValue = Convert.ToInt32(binaryStr, 2);
+			return decimalValue.ToString("X");
 		}
 
 		public bool IsBinary(string t)
@@ -78,7 +108,7 @@ namespace Projemiz
 			bool control = true;
 			for (int i = 0; i < 16; i++)
 			{
-				if (Array.IndexOf(hex, t[0]) == -1 || Array.IndexOf(hex, t[1]) == -1)
+				if (Array.IndexOf(hex, t[0]) == -1 )
 				{
 					control = false;
 					break;
@@ -90,6 +120,14 @@ namespace Projemiz
 		public bool IsTwoDigit(string t)
 		{
 			if (t.Length == 2)
+				return true;
+			else
+				return false;
+		}
+
+		public bool IsOneDigit(string t)
+		{
+			if (t.Length == 1)
 				return true;
 			else
 				return false;

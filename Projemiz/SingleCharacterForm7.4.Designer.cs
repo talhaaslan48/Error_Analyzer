@@ -31,7 +31,6 @@
 			components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SingleCharacterForm7));
 			groupBox1 = new GroupBox();
-			radioButton3 = new RadioButton();
 			radioButton2 = new RadioButton();
 			radioButton1 = new RadioButton();
 			txtData = new TextBox();
@@ -166,31 +165,18 @@
 			// groupBox1
 			// 
 			groupBox1.BackColor = Color.Silver;
-			groupBox1.Controls.Add(radioButton3);
 			groupBox1.Controls.Add(radioButton2);
 			groupBox1.Controls.Add(radioButton1);
 			groupBox1.Controls.Add(txtData);
 			groupBox1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			groupBox1.Location = new Point(12, 211);
+			groupBox1.Location = new Point(12, 244);
 			groupBox1.Margin = new Padding(4, 3, 4, 3);
 			groupBox1.Name = "groupBox1";
 			groupBox1.Padding = new Padding(4, 3, 4, 3);
-			groupBox1.Size = new Size(264, 183);
+			groupBox1.Size = new Size(264, 150);
 			groupBox1.TabIndex = 0;
 			groupBox1.TabStop = false;
 			groupBox1.Text = "1- Veri Giriniz (1 karakter)";
-			// 
-			// radioButton3
-			// 
-			radioButton3.AutoSize = true;
-			radioButton3.Location = new Point(41, 144);
-			radioButton3.Margin = new Padding(4, 3, 4, 3);
-			radioButton3.Name = "radioButton3";
-			radioButton3.Size = new Size(176, 24);
-			radioButton3.TabIndex = 3;
-			radioButton3.Text = "Karakter (1 karakter)";
-			radioButton3.UseVisualStyleBackColor = true;
-			radioButton3.CheckedChanged += radioButton3_CheckedChanged;
 			// 
 			// radioButton2
 			// 
@@ -202,7 +188,7 @@
 			radioButton2.Size = new Size(118, 24);
 			radioButton2.TabIndex = 2;
 			radioButton2.TabStop = true;
-			radioButton2.Text = "Hex (2 hane)";
+			radioButton2.Text = "Hex (1 hane)";
 			radioButton2.UseVisualStyleBackColor = true;
 			radioButton2.CheckedChanged += radioButton2_CheckedChanged;
 			// 
@@ -248,7 +234,6 @@
 			groupBox2.BackColor = Color.Silver;
 			groupBox2.Controls.Add(lblCh);
 			groupBox2.Controls.Add(label65);
-			groupBox2.Controls.Add(linkLabel1);
 			groupBox2.Controls.Add(label5);
 			groupBox2.Controls.Add(label9);
 			groupBox2.Controls.Add(label4);
@@ -316,15 +301,15 @@
 			// linkLabel1
 			// 
 			linkLabel1.AutoSize = true;
-			linkLabel1.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
+			linkLabel1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
 			linkLabel1.LinkColor = Color.Teal;
-			linkLabel1.Location = new Point(252, 248);
+			linkLabel1.Location = new Point(253, 146);
 			linkLabel1.Margin = new Padding(4, 0, 4, 0);
 			linkLabel1.Name = "linkLabel1";
-			linkLabel1.Size = new Size(153, 13);
+			linkLabel1.Size = new Size(220, 20);
 			linkLabel1.TabIndex = 5;
 			linkLabel1.TabStop = true;
-			linkLabel1.Text = "Parity Bitlleri nasıl hesaplandı !?";
+			linkLabel1.Text = "Parity Bitlleri Nasıl Hesaplanır?";
 			linkLabel1.VisitedLinkColor = Color.Teal;
 			linkLabel1.LinkClicked += linkLabel1_LinkClicked;
 			// 
@@ -1764,6 +1749,7 @@
 			ClientSize = new Size(1805, 991);
 			Controls.Add(button5);
 			Controls.Add(button6);
+			Controls.Add(linkLabel1);
 			Controls.Add(panel3);
 			Controls.Add(panel1);
 			Controls.Add(button4);
@@ -1808,7 +1794,6 @@
 		private System.Windows.Forms.RadioButton radioButton1;
 		private System.Windows.Forms.TextBox txtData;
 		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.RadioButton radioButton3;
 		private System.Windows.Forms.GroupBox groupBox2;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label lblP1a;
