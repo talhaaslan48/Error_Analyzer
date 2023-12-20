@@ -60,7 +60,7 @@
 			textBox20 = new TextBox();
 			textBox21 = new TextBox();
 			textBox22 = new TextBox();
-			textBox23 = new TextBox();
+			textBox0 = new TextBox();
 			textBox1 = new TextBox();
 			textBox2 = new TextBox();
 			textBox3 = new TextBox();
@@ -451,17 +451,18 @@
 			textBox22.TabIndex = 78;
 			textBox22.TextAlign = HorizontalAlignment.Center;
 			// 
-			// textBox23
+			// textBox0
 			// 
-			textBox23.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
-			textBox23.Location = new Point(253, 48);
-			textBox23.Margin = new Padding(3, 2, 3, 2);
-			textBox23.MaxLength = 1;
-			textBox23.Multiline = true;
-			textBox23.Name = "textBox23";
-			textBox23.Size = new Size(31, 26);
-			textBox23.TabIndex = 79;
-			textBox23.TextAlign = HorizontalAlignment.Center;
+			textBox0.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
+			textBox0.Location = new Point(253, 48);
+			textBox0.Margin = new Padding(3, 2, 3, 2);
+			textBox0.MaxLength = 1;
+			textBox0.Multiline = true;
+			textBox0.Name = "textBox0";
+			textBox0.Size = new Size(31, 26);
+			textBox0.TabIndex = 0;
+			textBox0.TextAlign = HorizontalAlignment.Center;
+			textBox0.KeyPress += textBox0_KeyPress;
 			// 
 			// textBox1
 			// 
@@ -472,8 +473,9 @@
 			textBox1.Multiline = true;
 			textBox1.Name = "textBox1";
 			textBox1.Size = new Size(31, 26);
-			textBox1.TabIndex = 80;
+			textBox1.TabIndex = 1;
 			textBox1.TextAlign = HorizontalAlignment.Center;
+			textBox1.KeyPress += textBox1_KeyPress;
 			// 
 			// textBox2
 			// 
@@ -484,7 +486,7 @@
 			textBox2.Multiline = true;
 			textBox2.Name = "textBox2";
 			textBox2.Size = new Size(31, 26);
-			textBox2.TabIndex = 81;
+			textBox2.TabIndex = 2;
 			textBox2.TextAlign = HorizontalAlignment.Center;
 			// 
 			// textBox3
@@ -496,7 +498,7 @@
 			textBox3.Multiline = true;
 			textBox3.Name = "textBox3";
 			textBox3.Size = new Size(31, 26);
-			textBox3.TabIndex = 82;
+			textBox3.TabIndex = 3;
 			textBox3.TextAlign = HorizontalAlignment.Center;
 			// 
 			// textBox4
@@ -508,7 +510,7 @@
 			textBox4.Multiline = true;
 			textBox4.Name = "textBox4";
 			textBox4.Size = new Size(31, 26);
-			textBox4.TabIndex = 83;
+			textBox4.TabIndex = 4;
 			textBox4.TextAlign = HorizontalAlignment.Center;
 			// 
 			// textBox5
@@ -520,7 +522,7 @@
 			textBox5.Multiline = true;
 			textBox5.Name = "textBox5";
 			textBox5.Size = new Size(31, 26);
-			textBox5.TabIndex = 84;
+			textBox5.TabIndex = 5;
 			textBox5.TextAlign = HorizontalAlignment.Center;
 			// 
 			// textBox6
@@ -532,7 +534,7 @@
 			textBox6.Multiline = true;
 			textBox6.Name = "textBox6";
 			textBox6.Size = new Size(31, 26);
-			textBox6.TabIndex = 85;
+			textBox6.TabIndex = 6;
 			textBox6.TextAlign = HorizontalAlignment.Center;
 			// 
 			// textBox7
@@ -544,7 +546,7 @@
 			textBox7.Multiline = true;
 			textBox7.Name = "textBox7";
 			textBox7.Size = new Size(31, 26);
-			textBox7.TabIndex = 86;
+			textBox7.TabIndex = 7;
 			textBox7.TextAlign = HorizontalAlignment.Center;
 			// 
 			// textBox8
@@ -887,7 +889,7 @@
 			groupBox1.Controls.Add(label17);
 			groupBox1.Controls.Add(label16);
 			groupBox1.Controls.Add(label15);
-			groupBox1.Controls.Add(textBox23);
+			groupBox1.Controls.Add(textBox0);
 			groupBox1.Controls.Add(textBox1);
 			groupBox1.Controls.Add(textBox2);
 			groupBox1.Controls.Add(textBox4);
@@ -1046,7 +1048,7 @@
         private TextBox textBox20;
         private TextBox textBox21;
         private TextBox textBox22;
-        private TextBox textBox23;
+        private TextBox textBox0;
         private TextBox textBox8;
         private TextBox textBox9;
         private TextBox textBox10;

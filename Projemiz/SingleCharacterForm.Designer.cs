@@ -1088,9 +1088,9 @@
 			label62.Location = new Point(16, 73);
 			label62.Margin = new Padding(4, 0, 4, 0);
 			label62.Name = "label62";
-			label62.Size = new Size(376, 13);
+			label62.Size = new Size(436, 13);
 			label62.TabIndex = 6;
-			label62.Text = "Konum:    12      11     10       9       8       7        6       5        4       3        2       1";
+			label62.Text = "Konum:        12        11      10        9         8        7          6         5         4        3         2         1";
 			// 
 			// button3
 			// 
@@ -2419,6 +2419,7 @@
 			button4.Text = " Nasıl Çalışır?";
 			button4.TextImageRelation = TextImageRelation.ImageBeforeText;
 			button4.UseVisualStyleBackColor = true;
+			button4.Click += button4_Click;
 			// 
 			// button10
 			// 

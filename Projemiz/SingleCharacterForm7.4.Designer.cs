@@ -1649,6 +1649,7 @@
 			button4.Text = " Nasıl Çalışır?";
 			button4.TextImageRelation = TextImageRelation.ImageBeforeText;
 			button4.UseVisualStyleBackColor = true;
+			button4.Click += button4_Click;
 			// 
 			// button10
 			// 

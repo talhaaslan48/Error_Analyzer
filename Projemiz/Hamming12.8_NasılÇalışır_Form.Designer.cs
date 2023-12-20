@@ -1,6 +1,6 @@
 ﻿namespace Projemiz
 {
-	partial class Checksum_NasılÇalışır_Form
+	partial class Hamming12
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -28,14 +28,14 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Checksum_NasılÇalışır_Form));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Hamming12));
 			panel1 = new Panel();
 			panel3 = new Panel();
 			pictureBox1 = new PictureBox();
-			label2 = new Label();
-			label1 = new Label();
-			button10 = new Button();
 			label3 = new Label();
+			label1 = new Label();
+			label2 = new Label();
+			button10 = new Button();
 			panel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			SuspendLayout();
@@ -46,17 +46,17 @@
 			panel1.Dock = DockStyle.Top;
 			panel1.Location = new Point(0, 0);
 			panel1.Name = "panel1";
-			panel1.Size = new Size(1432, 27);
-			panel1.TabIndex = 0;
+			panel1.Size = new Size(1432, 31);
+			panel1.TabIndex = 46;
 			// 
 			// panel3
 			// 
 			panel3.BackColor = Color.DarkCyan;
 			panel3.Controls.Add(pictureBox1);
-			panel3.Location = new Point(1240, 12);
+			panel3.Location = new Point(1220, 28);
 			panel3.Name = "panel3";
-			panel3.Size = new Size(160, 192);
-			panel3.TabIndex = 24;
+			panel3.Size = new Size(160, 186);
+			panel3.TabIndex = 47;
 			// 
 			// pictureBox1
 			// 
@@ -68,25 +68,35 @@
 			pictureBox1.TabIndex = 0;
 			pictureBox1.TabStop = false;
 			// 
-			// label2
+			// label3
 			// 
-			label2.AutoSize = true;
-			label2.Font = new Font("Century Gothic", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label2.Location = new Point(228, 88);
-			label2.Name = "label2";
-			label2.Size = new Size(410, 42);
-			label2.TabIndex = 30;
-			label2.Text = "Checksum Nasıl Çalışır?";
+			label3.AutoSize = true;
+			label3.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+			label3.Location = new Point(26, 48);
+			label3.Name = "label3";
+			label3.Size = new Size(334, 17);
+			label3.TabIndex = 54;
+			label3.Text = "Formu boş noktalarından tutarak hareket ettirebilirsiniz..\r\n";
 			// 
 			// label1
 			// 
 			label1.AutoSize = true;
-			label1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label1.Location = new Point(12, 170);
+			label1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			label1.Location = new Point(44, 208);
 			label1.Name = "label1";
-			label1.Size = new Size(1222, 560);
-			label1.TabIndex = 31;
+			label1.Size = new Size(726, 462);
+			label1.TabIndex = 53;
 			label1.Text = resources.GetString("label1.Text");
+			// 
+			// label2
+			// 
+			label2.AutoSize = true;
+			label2.Font = new Font("Century Gothic", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
+			label2.Location = new Point(232, 84);
+			label2.Name = "label2";
+			label2.Size = new Size(732, 44);
+			label2.TabIndex = 52;
+			label2.Text = "Hamming (12,8) Algoritması Nasıl Çalışır?";
 			// 
 			// button10
 			// 
@@ -96,40 +106,30 @@
 			button10.ForeColor = Color.Black;
 			button10.Image = (Image)resources.GetObject("button10.Image");
 			button10.ImageAlign = ContentAlignment.MiddleLeft;
-			button10.Location = new Point(25, 85);
+			button10.Location = new Point(26, 83);
 			button10.Name = "button10";
 			button10.Size = new Size(166, 61);
-			button10.TabIndex = 32;
+			button10.TabIndex = 51;
 			button10.Text = " Geri Dön..";
 			button10.TextImageRelation = TextImageRelation.ImageBeforeText;
 			button10.UseVisualStyleBackColor = true;
 			button10.Click += button10_Click;
 			// 
-			// label3
-			// 
-			label3.AutoSize = true;
-			label3.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
-			label3.Location = new Point(25, 44);
-			label3.Name = "label3";
-			label3.Size = new Size(334, 17);
-			label3.TabIndex = 46;
-			label3.Text = "Formu boş noktalarından tutarak hareket ettirebilirsiniz..";
-			// 
-			// Checksum_NasılÇalışır_Form
+			// Hamming12
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(1432, 756);
 			Controls.Add(label3);
-			Controls.Add(button10);
 			Controls.Add(label1);
 			Controls.Add(label2);
+			Controls.Add(button10);
 			Controls.Add(panel3);
 			Controls.Add(panel1);
 			FormBorderStyle = FormBorderStyle.None;
-			Name = "Checksum_NasılÇalışır_Form";
+			Name = "Hamming12";
 			StartPosition = FormStartPosition.CenterScreen;
-			Text = "Checksum_NasılÇalışır_Form";
+			Text = "Hamming12";
 			panel3.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
 			ResumeLayout(false);
@@ -141,9 +141,9 @@
 		private Panel panel1;
 		private Panel panel3;
 		private PictureBox pictureBox1;
-		private Label label2;
-		private Label label1;
-		private Button button10;
 		private Label label3;
+		private Label label1;
+		private Label label2;
+		private Button button10;
 	}
 }

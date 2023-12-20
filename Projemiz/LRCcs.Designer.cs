@@ -67,7 +67,7 @@
 			textBox1.MaxLength = 8;
 			textBox1.Name = "textBox1";
 			textBox1.Size = new Size(141, 23);
-			textBox1.TabIndex = 4;
+			textBox1.TabIndex = 2;
 			textBox1.TextChanged += textBox1_TextChanged;
 			textBox1.KeyPress += LRCcs_KeyPress;
 			// 
@@ -78,7 +78,7 @@
 			textBox2.MaxLength = 8;
 			textBox2.Name = "textBox2";
 			textBox2.Size = new Size(141, 23);
-			textBox2.TabIndex = 5;
+			textBox2.TabIndex = 0;
 			textBox2.TextChanged += textBox2_TextChanged;
 			textBox2.KeyPress += LRCcs_KeyPress;
 			// 
@@ -89,7 +89,7 @@
 			textBox3.MaxLength = 8;
 			textBox3.Name = "textBox3";
 			textBox3.Size = new Size(141, 23);
-			textBox3.TabIndex = 6;
+			textBox3.TabIndex = 1;
 			textBox3.TextChanged += textBox3_TextChanged;
 			textBox3.KeyPress += LRCcs_KeyPress;
 			// 
@@ -100,7 +100,7 @@
 			textBox4.MaxLength = 8;
 			textBox4.Name = "textBox4";
 			textBox4.Size = new Size(141, 23);
-			textBox4.TabIndex = 7;
+			textBox4.TabIndex = 3;
 			textBox4.TextChanged += textBox4_TextChanged;
 			textBox4.KeyPress += LRCcs_KeyPress;
 			// 
@@ -350,7 +350,7 @@
 			// 
 			// textBox5
 			// 
-			textBox5.Location = new Point(1123, 536);
+			textBox5.Location = new Point(1406, 540);
 			textBox5.Margin = new Padding(3, 2, 3, 2);
 			textBox5.MaxLength = 8;
 			textBox5.Multiline = true;
@@ -363,7 +363,7 @@
 			label10.AutoSize = true;
 			label10.BackColor = Color.Linen;
 			label10.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label10.Location = new Point(1126, 501);
+			label10.Location = new Point(1409, 505);
 			label10.Name = "label10";
 			label10.Size = new Size(201, 22);
 			label10.TabIndex = 52;
@@ -374,7 +374,7 @@
 			button4.BackColor = Color.IndianRed;
 			button4.FlatStyle = FlatStyle.Flat;
 			button4.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-			button4.Location = new Point(1123, 590);
+			button4.Location = new Point(1406, 594);
 			button4.Margin = new Padding(3, 2, 3, 2);
 			button4.Name = "button4";
 			button4.Size = new Size(204, 93);

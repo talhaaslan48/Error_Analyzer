@@ -192,8 +192,26 @@ namespace Projemiz
 		private void button1_Click_1(object sender, EventArgs e)
 		{
 			CRC_NasılÇalışır_Form form = new CRC_NasılÇalışır_Form();
-			form.Show();
+			form.ShowDialog();
 			this.Hide();
+		}
+
+		private void dividendTextBox_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			// Sadece '0', '1' ve kontrol karakterlerine (örneğin, backspace) izin ver
+			if (e.KeyChar != '0' && e.KeyChar != '1' && !char.IsControl(e.KeyChar))
+			{
+				e.Handled = true; // Diğer karakter girişlerini engelle
+			}
+		}
+
+		private void divisorTextBox_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			// Sadece '0', '1' ve kontrol karakterlerine (örneğin, backspace) izin ver
+			if (e.KeyChar != '0' && e.KeyChar != '1' && !char.IsControl(e.KeyChar))
+			{
+				e.Handled = true; // Diğer karakter girişlerini engelle
+			}
 		}
 	}
 }

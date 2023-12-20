@@ -15,8 +15,34 @@ namespace Projemiz
 		public VRC()
 		{
 			InitializeComponent();
-		}
 
+			textBox0.TextChanged += TextBox_TextChanged;
+			textBox1.TextChanged += TextBox_TextChanged;
+			textBox2.TextChanged += TextBox_TextChanged;
+			textBox3.TextChanged += TextBox_TextChanged;
+			textBox4.TextChanged += TextBox_TextChanged;
+			textBox5.TextChanged += TextBox_TextChanged;
+			textBox6.TextChanged += TextBox_TextChanged;
+			textBox7.TextChanged += TextBox_TextChanged;
+
+		}
+		private void TextBox_TextChanged(object sender, EventArgs e)
+		{
+			TextBox currentTextBox = sender as TextBox;
+			if (currentTextBox != null && currentTextBox.Text.Length == 1)
+			{
+				SelectNextTextBox(currentTextBox);
+			}
+		}
+		private void SelectNextTextBox(TextBox currentTextBox)
+		{
+			// Enter tuşuyla veya diğer yollarla TextBox'a girilen veriyi kontrol edin
+			Control nextControl = GetNextControl(currentTextBox, true);
+			if (nextControl != null)
+			{
+				nextControl.Focus();
+			}
+		}
 		private void button1_Click(object sender, EventArgs e)
 		{
 			// PDF dosyasının yolunu belirtin
@@ -79,7 +105,7 @@ namespace Projemiz
 			// Label'a sonucu yazdır
 			label26.Text = toplamBirSayisi % 2 == 1 ? "1" : "0";
 
-			textBox15.Text = textBox23.Text;
+			textBox15.Text = textBox0.Text;
 			textBox14.Text = textBox1.Text;
 			textBox13.Text = textBox2.Text;
 			textBox12.Text = textBox3.Text;
@@ -237,7 +263,7 @@ namespace Projemiz
 		private void button6_Click(object sender, EventArgs e)
 		{
 			VRC_NasılÇalışır_Form form = new VRC_NasılÇalışır_Form();
-			form.Show();
+			form.ShowDialog();
 			this.Hide();
 		}
 
@@ -246,6 +272,73 @@ namespace Projemiz
 			FormAnaSayfa form = new FormAnaSayfa();
 			form.Show();
 			this.Hide();
+		}
+
+		private void textBox0_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			// Sadece '0', '1' ve kontrol karakterlerine (örneğin, backspace) izin ver
+			if (e.KeyChar != '0' && e.KeyChar != '1' && !char.IsControl(e.KeyChar))
+			{
+				e.Handled = true; // Diğer karakter girişlerini engelle
+			}
+		}
+
+		private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			// Sadece '0', '1' ve kontrol karakterlerine (örneğin, backspace) izin ver
+			if (e.KeyChar != '0' && e.KeyChar != '1' && !char.IsControl(e.KeyChar))
+			{
+				e.Handled = true; // Diğer karakter girişlerini engelle
+			}
+		}
+
+		private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			// Sadece '0', '1' ve kontrol karakterlerine (örneğin, backspace) izin ver
+			if (e.KeyChar != '0' && e.KeyChar != '1' && !char.IsControl(e.KeyChar))
+			{
+				e.Handled = true; // Diğer karakter girişlerini engelle
+			}
+		}
+		private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			// Sadece '0', '1' ve kontrol karakterlerine (örneğin, backspace) izin ver
+			if (e.KeyChar != '0' && e.KeyChar != '1' && !char.IsControl(e.KeyChar))
+			{
+				e.Handled = true; // Diğer karakter girişlerini engelle
+			}
+		}
+		private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			// Sadece '0', '1' ve kontrol karakterlerine (örneğin, backspace) izin ver
+			if (e.KeyChar != '0' && e.KeyChar != '1' && !char.IsControl(e.KeyChar))
+			{
+				e.Handled = true; // Diğer karakter girişlerini engelle
+			}
+		}
+		private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			// Sadece '0', '1' ve kontrol karakterlerine (örneğin, backspace) izin ver
+			if (e.KeyChar != '0' && e.KeyChar != '1' && !char.IsControl(e.KeyChar))
+			{
+				e.Handled = true; // Diğer karakter girişlerini engelle
+			}
+		}
+		private void textBox6_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			// Sadece '0', '1' ve kontrol karakterlerine (örneğin, backspace) izin ver
+			if (e.KeyChar != '0' && e.KeyChar != '1' && !char.IsControl(e.KeyChar))
+			{
+				e.Handled = true; // Diğer karakter girişlerini engelle
+			}
+		}
+		private void textBox7_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			// Sadece '0', '1' ve kontrol karakterlerine (örneğin, backspace) izin ver
+			if (e.KeyChar != '0' && e.KeyChar != '1' && !char.IsControl(e.KeyChar))
+			{
+				e.Handled = true; // Diğer karakter girişlerini engelle
+			}
 		}
 	}
 }

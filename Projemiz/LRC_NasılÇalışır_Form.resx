@@ -1757,11 +1757,12 @@ Depolama medyasında.
 LRC algoritmasını daha iyi anlamak için küçük bir örnek yapalım.
 Veri Paketi: 0101 1100 0011 1010
 Kontrol Toplamı (LRC): 1010
-Gönderilen veri paketi üzerine eklenen kontrol toplamı, alıcı tarafında aynı şekilde hesaplanarak kontrol edilir.
+Gönderilen veri paketi üzerine eklenen kontrol toplamı, alıcı tarafında aynı şekilde 
+hesaplanarak kontrol edilir.
 Sonuç:
-LRC algoritması, basit ve etkili bir hata denetim yöntemi olup, iletişim ve depolama sistemlerinde yaygın olarak kullanılmaktadır.
-
-Başarılar dileriz!</value>
+LRC algoritması, basit ve etkili bir hata denetim yöntemi olup, iletişim ve depolama sistemlerinde 
+yaygın olarak kullanılmaktadır.
+</value>
   </data>
   <data name="button10.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

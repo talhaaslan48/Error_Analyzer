@@ -56,9 +56,9 @@
 			button3 = new Button();
 			button10 = new Button();
 			groupBox1 = new GroupBox();
+			label16 = new Label();
 			label11 = new Label();
 			label15 = new Label();
-			label16 = new Label();
 			panel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			groupBox1.SuspendLayout();
@@ -92,6 +92,7 @@
 			dividendTextBox.Name = "dividendTextBox";
 			dividendTextBox.Size = new Size(183, 23);
 			dividendTextBox.TabIndex = 6;
+			dividendTextBox.KeyPress += dividendTextBox_KeyPress;
 			// 
 			// divisorTextBox
 			// 
@@ -100,6 +101,7 @@
 			divisorTextBox.Name = "divisorTextBox";
 			divisorTextBox.Size = new Size(183, 23);
 			divisorTextBox.TabIndex = 7;
+			divisorTextBox.KeyPress += divisorTextBox_KeyPress;
 			// 
 			// label3
 			// 
@@ -361,6 +363,16 @@
 			groupBox1.TabStop = false;
 			groupBox1.Text = "Kendiniz test edebilirsiniz:";
 			// 
+			// label16
+			// 
+			label16.AutoSize = true;
+			label16.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			label16.Location = new Point(47, 42);
+			label16.Name = "label16";
+			label16.Size = new Size(652, 21);
+			label16.TabIndex = 55;
+			label16.Text = "Textbox üzerinde bitleri dilediğiniz gibi değiştirerek sonucu tekrar kontrol edebilirsiniz.";
+			// 
 			// label11
 			// 
 			label11.AutoSize = true;
@@ -380,16 +392,6 @@
 			label15.Size = new Size(563, 21);
 			label15.TabIndex = 54;
 			label15.Text = "Divisor: \"Seçilen CRC polinomunu temsil eden, sabit uzunluktaki bit dizisi.\"";
-			// 
-			// label16
-			// 
-			label16.AutoSize = true;
-			label16.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-			label16.Location = new Point(47, 42);
-			label16.Name = "label16";
-			label16.Size = new Size(652, 21);
-			label16.TabIndex = 55;
-			label16.Text = "Textbox üzerinde bitleri dilediğiniz gibi değiştirerek sonucu tekrar kontrol edebilirsiniz.";
 			// 
 			// CRC
 			// 

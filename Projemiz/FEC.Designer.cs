@@ -31,7 +31,6 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FEC));
 			label1 = new Label();
 			txtInputData = new TextBox();
-			txtRandomBits = new TextBox();
 			label3 = new Label();
 			label4 = new Label();
 			label5 = new Label();
@@ -49,7 +48,6 @@
 			label17 = new Label();
 			label18 = new Label();
 			label23 = new Label();
-			label24 = new Label();
 			btnCheckErrors = new Button();
 			listBoxResults = new ListBox();
 			panel1 = new Panel();
@@ -63,9 +61,14 @@
 			pictureBox1 = new PictureBox();
 			label19 = new Label();
 			groupBox1 = new GroupBox();
+			pictureBox2 = new PictureBox();
+			label20 = new Label();
+			label21 = new Label();
+			label22 = new Label();
 			panel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			groupBox1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
 			SuspendLayout();
 			// 
 			// label1
@@ -80,19 +83,13 @@
 			// 
 			// txtInputData
 			// 
-			txtInputData.Location = new Point(215, 391);
+			txtInputData.Location = new Point(281, 636);
 			txtInputData.Margin = new Padding(3, 2, 3, 2);
 			txtInputData.Name = "txtInputData";
-			txtInputData.Size = new Size(206, 23);
+			txtInputData.Size = new Size(240, 23);
 			txtInputData.TabIndex = 19;
-			// 
-			// txtRandomBits
-			// 
-			txtRandomBits.Location = new Point(819, 394);
-			txtRandomBits.Margin = new Padding(3, 2, 3, 2);
-			txtRandomBits.Name = "txtRandomBits";
-			txtRandomBits.Size = new Size(351, 23);
-			txtRandomBits.TabIndex = 20;
+			txtInputData.TextChanged += txtInputData_TextChanged;
+			txtInputData.KeyPress += txtInputData_KeyPress;
 			// 
 			// label3
 			// 
@@ -100,7 +97,7 @@
 			label3.BackColor = Color.Linen;
 			label3.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
 			label3.ForeColor = SystemColors.ControlText;
-			label3.Location = new Point(46, 391);
+			label3.Location = new Point(112, 636);
 			label3.Name = "label3";
 			label3.Size = new Size(163, 22);
 			label3.TabIndex = 21;
@@ -112,7 +109,7 @@
 			label4.AutoSize = true;
 			label4.BackColor = Color.Linen;
 			label4.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label4.Location = new Point(669, 391);
+			label4.Location = new Point(106, 877);
 			label4.Name = "label4";
 			label4.Size = new Size(119, 22);
 			label4.TabIndex = 22;
@@ -264,29 +261,21 @@
 			label23.AutoSize = true;
 			label23.BackColor = Color.Linen;
 			label23.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label23.Location = new Point(669, 493);
+			label23.Location = new Point(745, 597);
 			label23.Name = "label23";
 			label23.Size = new Size(77, 22);
 			label23.TabIndex = 41;
 			label23.Text = "Sonuç :";
-			// 
-			// label24
-			// 
-			label24.AutoSize = true;
-			label24.Location = new Point(738, 376);
-			label24.Name = "label24";
-			label24.Size = new Size(0, 15);
-			label24.TabIndex = 42;
 			// 
 			// btnCheckErrors
 			// 
 			btnCheckErrors.BackColor = Color.IndianRed;
 			btnCheckErrors.FlatStyle = FlatStyle.Flat;
 			btnCheckErrors.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-			btnCheckErrors.Location = new Point(454, 376);
+			btnCheckErrors.Location = new Point(109, 716);
 			btnCheckErrors.Margin = new Padding(3, 2, 3, 2);
 			btnCheckErrors.Name = "btnCheckErrors";
-			btnCheckErrors.Size = new Size(179, 59);
+			btnCheckErrors.Size = new Size(269, 59);
 			btnCheckErrors.TabIndex = 43;
 			btnCheckErrors.Text = "Hesapla";
 			btnCheckErrors.UseVisualStyleBackColor = false;
@@ -297,10 +286,10 @@
 			listBoxResults.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
 			listBoxResults.FormattingEnabled = true;
 			listBoxResults.ItemHeight = 17;
-			listBoxResults.Location = new Point(766, 493);
+			listBoxResults.Location = new Point(847, 597);
 			listBoxResults.Margin = new Padding(3, 2, 3, 2);
 			listBoxResults.Name = "listBoxResults";
-			listBoxResults.Size = new Size(872, 293);
+			listBoxResults.Size = new Size(872, 327);
 			listBoxResults.TabIndex = 44;
 			// 
 			// panel1
@@ -354,7 +343,7 @@
 			button1.ForeColor = Color.Black;
 			button1.Image = (Image)resources.GetObject("button1.Image");
 			button1.ImageAlign = ContentAlignment.MiddleLeft;
-			button1.Location = new Point(106, 229);
+			button1.Location = new Point(109, 229);
 			button1.Name = "button1";
 			button1.Size = new Size(166, 61);
 			button1.TabIndex = 49;
@@ -370,7 +359,7 @@
 			button5.ForeColor = Color.Black;
 			button5.Image = (Image)resources.GetObject("button5.Image");
 			button5.ImageAlign = ContentAlignment.MiddleLeft;
-			button5.Location = new Point(1188, 206);
+			button5.Location = new Point(1187, 229);
 			button5.Name = "button5";
 			button5.Size = new Size(264, 61);
 			button5.TabIndex = 52;
@@ -385,9 +374,9 @@
 			button3.ForeColor = Color.Black;
 			button3.Image = (Image)resources.GetObject("button3.Image");
 			button3.ImageAlign = ContentAlignment.MiddleLeft;
-			button3.Location = new Point(1478, 206);
+			button3.Location = new Point(1478, 229);
 			button3.Name = "button3";
-			button3.Size = new Size(160, 61);
+			button3.Size = new Size(183, 61);
 			button3.TabIndex = 51;
 			button3.Text = "      Ders Notu       İndirebilirsiniz";
 			button3.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -400,7 +389,7 @@
 			panel3.Controls.Add(pictureBox1);
 			panel3.Location = new Point(1478, 12);
 			panel3.Name = "panel3";
-			panel3.Size = new Size(160, 188);
+			panel3.Size = new Size(183, 202);
 			panel3.TabIndex = 50;
 			// 
 			// pictureBox1
@@ -408,7 +397,7 @@
 			pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
 			pictureBox1.Location = new Point(13, 18);
 			pictureBox1.Name = "pictureBox1";
-			pictureBox1.Size = new Size(133, 147);
+			pictureBox1.Size = new Size(155, 165);
 			pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
 			pictureBox1.TabIndex = 0;
 			pictureBox1.TabStop = false;
@@ -417,7 +406,7 @@
 			// 
 			label19.AutoSize = true;
 			label19.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label19.Location = new Point(819, 365);
+			label19.Location = new Point(106, 844);
 			label19.Name = "label19";
 			label19.Size = new Size(629, 20);
 			label19.TabIndex = 53;
@@ -426,6 +415,7 @@
 			// groupBox1
 			// 
 			groupBox1.BackColor = SystemColors.ControlDark;
+			groupBox1.Controls.Add(pictureBox2);
 			groupBox1.Controls.Add(label12);
 			groupBox1.Controls.Add(label5);
 			groupBox1.Controls.Add(label6);
@@ -441,12 +431,51 @@
 			groupBox1.Controls.Add(label17);
 			groupBox1.Controls.Add(label18);
 			groupBox1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			groupBox1.Location = new Point(46, 525);
+			groupBox1.Location = new Point(106, 315);
 			groupBox1.Name = "groupBox1";
-			groupBox1.Size = new Size(567, 281);
+			groupBox1.Size = new Size(1613, 250);
 			groupBox1.TabIndex = 54;
 			groupBox1.TabStop = false;
 			groupBox1.Text = "Codeword Kavramı";
+			// 
+			// pictureBox2
+			// 
+			pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+			pictureBox2.Location = new Point(566, 16);
+			pictureBox2.Name = "pictureBox2";
+			pictureBox2.Size = new Size(1023, 228);
+			pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+			pictureBox2.TabIndex = 37;
+			pictureBox2.TabStop = false;
+			// 
+			// label20
+			// 
+			label20.AutoSize = true;
+			label20.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label20.Location = new Point(112, 599);
+			label20.Name = "label20";
+			label20.Size = new Size(363, 20);
+			label20.TabIndex = 55;
+			label20.Text = "Gönderilen veri kısmına çift haneli bit girebilirsiniz.";
+			// 
+			// label21
+			// 
+			label21.AutoSize = true;
+			label21.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label21.Location = new Point(278, 879);
+			label21.Name = "label21";
+			label21.Size = new Size(0, 22);
+			label21.TabIndex = 56;
+			// 
+			// label22
+			// 
+			label22.AutoSize = true;
+			label22.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label22.Location = new Point(106, 786);
+			label22.Name = "label22";
+			label22.Size = new Size(579, 20);
+			label22.TabIndex = 57;
+			label22.Text = "Hesapla butonuna her tıkladığınızda rastgele veri üretmeye devam edilecektir.";
 			// 
 			// FEC
 			// 
@@ -454,6 +483,9 @@
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = SystemColors.ControlLight;
 			ClientSize = new Size(1805, 991);
+			Controls.Add(label22);
+			Controls.Add(label21);
+			Controls.Add(label20);
 			Controls.Add(groupBox1);
 			Controls.Add(label19);
 			Controls.Add(button5);
@@ -466,11 +498,9 @@
 			Controls.Add(panel1);
 			Controls.Add(listBoxResults);
 			Controls.Add(btnCheckErrors);
-			Controls.Add(label24);
 			Controls.Add(label23);
 			Controls.Add(label4);
 			Controls.Add(label3);
-			Controls.Add(txtRandomBits);
 			Controls.Add(txtInputData);
 			Controls.Add(label1);
 			FormBorderStyle = FormBorderStyle.None;
@@ -482,6 +512,7 @@
 			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
 			groupBox1.ResumeLayout(false);
 			groupBox1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
 			ResumeLayout(false);
 			PerformLayout();
 		}
@@ -489,7 +520,6 @@
 		#endregion
 		private Label label1;
         private TextBox txtInputData;
-        private TextBox txtRandomBits;
         private Label label3;
         private Label label4;
         private Label label5;
@@ -507,7 +537,6 @@
         private Label label17;
         private Label label18;
         private Label label23;
-        private Label label24;
         private Button btnCheckErrors;
         private ListBox listBoxResults;
 		private Panel panel1;
@@ -521,5 +550,9 @@
 		private PictureBox pictureBox1;
 		private Label label19;
 		private GroupBox groupBox1;
+		private Label label20;
+		private Label label21;
+		private PictureBox pictureBox2;
+		private Label label22;
 	}
 }

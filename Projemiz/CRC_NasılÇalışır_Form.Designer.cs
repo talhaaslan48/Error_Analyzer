@@ -36,6 +36,7 @@
 			label2 = new Label();
 			label1 = new Label();
 			pictureBox2 = new PictureBox();
+			label3 = new Label();
 			panel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -49,7 +50,7 @@
 			button10.ForeColor = Color.Black;
 			button10.Image = (Image)resources.GetObject("button10.Image");
 			button10.ImageAlign = ContentAlignment.MiddleLeft;
-			button10.Location = new Point(12, 37);
+			button10.Location = new Point(25, 103);
 			button10.Name = "button10";
 			button10.Size = new Size(166, 61);
 			button10.TabIndex = 33;
@@ -64,16 +65,16 @@
 			panel1.Dock = DockStyle.Top;
 			panel1.Location = new Point(0, 0);
 			panel1.Name = "panel1";
-			panel1.Size = new Size(1297, 31);
+			panel1.Size = new Size(1432, 31);
 			panel1.TabIndex = 34;
 			// 
 			// panel3
 			// 
 			panel3.BackColor = Color.DarkCyan;
 			panel3.Controls.Add(pictureBox1);
-			panel3.Location = new Point(1073, 25);
+			panel3.Location = new Point(1191, 22);
 			panel3.Name = "panel3";
-			panel3.Size = new Size(160, 188);
+			panel3.Size = new Size(160, 186);
 			panel3.TabIndex = 35;
 			// 
 			// pictureBox1
@@ -89,38 +90,49 @@
 			// label2
 			// 
 			label2.AutoSize = true;
-			label2.Font = new Font("Century Gothic", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label2.Location = new Point(243, 56);
+			label2.Font = new Font("Century Gothic", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
+			label2.Location = new Point(252, 106);
 			label2.Name = "label2";
-			label2.Size = new Size(501, 42);
+			label2.Size = new Size(532, 44);
 			label2.TabIndex = 36;
 			label2.Text = "CRC Algoritması Nasıl Çalışır?";
 			// 
 			// label1
 			// 
 			label1.AutoSize = true;
-			label1.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
-			label1.Location = new Point(26, 124);
+			label1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label1.Location = new Point(25, 196);
 			label1.Name = "label1";
-			label1.Size = new Size(780, 340);
+			label1.Size = new Size(962, 400);
 			label1.TabIndex = 37;
 			label1.Text = resources.GetString("label1.Text");
 			// 
 			// pictureBox2
 			// 
 			pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-			pictureBox2.Location = new Point(812, 219);
+			pictureBox2.Location = new Point(803, 447);
 			pictureBox2.Name = "pictureBox2";
-			pictureBox2.Size = new Size(457, 399);
+			pictureBox2.Size = new Size(596, 262);
 			pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
 			pictureBox2.TabIndex = 38;
 			pictureBox2.TabStop = false;
+			// 
+			// label3
+			// 
+			label3.AutoSize = true;
+			label3.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+			label3.Location = new Point(25, 52);
+			label3.Name = "label3";
+			label3.Size = new Size(334, 17);
+			label3.TabIndex = 46;
+			label3.Text = "Formu boş noktalarından tutarak hareket ettirebilirsiniz..\r\n";
 			// 
 			// CRC_NasılÇalışır_Form
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(1297, 667);
+			ClientSize = new Size(1432, 756);
+			Controls.Add(label3);
 			Controls.Add(pictureBox2);
 			Controls.Add(label1);
 			Controls.Add(label2);
@@ -147,5 +159,6 @@
 		private Label label2;
 		private Label label1;
 		private PictureBox pictureBox2;
+		private Label label3;
 	}
 }

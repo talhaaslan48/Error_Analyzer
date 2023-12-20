@@ -510,6 +510,7 @@
 Gönderici, gönderilecek veri paketine bir parite biti ekler.
 Eklenen parite biti, iletilen veri bitlerindeki tek sayısını çift yapacak şekilde belirlenir. Örneğin, verideki 1'lerin sayısı zaten çiftse, 
 parite biti 0 olarak belirlenir; eğer tekse, parite biti 1 olarak belirlenir.
+
 Örnek:
 Gönderilecek veri: 1010101
 Parite biti: 1 (çünkü 1'lerin sayısı tek)
@@ -523,8 +524,8 @@ Eğer kontrol sonucu hatalı bir iletimi işaret ediyorsa, alıcı bunu gönderi
 Alınan veri: 10101011
 Kontrol sonucu: Doğru (1'lerin sayısı çift, parite biti de doğru)
 VRC, basit bir hata kontrol mekanizmasıdır ve tek sayıdaki bit hatalarını tespit edebilir. 
-Ancak, çift sayıdaki bit hatalarını tespit edemez. Bu nedenle, daha karmaşık hata kontrol algoritmaları tercih edilebilir, ancak VRC, 
-basit uygulamalarda hızlı ve etkili bir çözüm sunar.
+Ancak, çift sayıdaki bit hatalarını tespit edemez. Bu nedenle, daha karmaşık hata kontrol algoritmaları tercih edilebilir,
+ancak VRC, basit uygulamalarda hızlı ve etkili bir çözüm sunar.
 </value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

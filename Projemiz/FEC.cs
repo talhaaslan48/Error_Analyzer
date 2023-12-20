@@ -24,63 +24,78 @@ namespace Projemiz
 		public FEC()
 		{
 			InitializeComponent();
+
+			// Olayları metotlara bağla
+			txtInputData.KeyPress += txtInputData_KeyPress;
+
 		}
 
 
 
 		private void btnCheckErrors_Click(object sender, EventArgs e)
 		{
-			listBoxResults.Items.Clear(); // ListBox'ı temizle
-
-			string inputData = txtInputData.Text;
-			List<string> dividedData = DivideData(inputData); // Giriş verisini 2'şer bitlere bölen fonksiyon
-			List<string> randomData = GenerateRandomData(dividedData); // Rastgele veri üreten fonksiyon
-			List<bool> control = Control(randomData);
-			for (int i = 0; i < dividedData.Count; i++)
+			// TextBox'taki veriyi kontrol et
+			if (txtInputData.Text.Length % 2 != 0)
 			{
-				string expectedCodeword = fecTable[dividedData[i]];
-				string randomCodeword = randomData[i]; // Her bir 2'lik bit için 5 katı kadar rastgele veri üretildiğinden, doğru indeksi seçiyoruz
+				// Veri 2'nin katları değilse, hata mesajı göster
+				MessageBox.Show("Girilen veri 2'nin katları olmalıdır.", "Hata", MessageBoxButtons.OK);
+			}
+			else
+			{
+				listBoxResults.Items.Clear(); // ListBox'ı temizle
 
-				// XOR sonucunun uzunluğunu kontrol et
-				if (control[i])
+				string inputData = txtInputData.Text;
+				List<string> dividedData = DivideData(inputData); // Giriş verisini 2'şer bitlere bölen fonksiyon
+				List<string> randomData = GenerateRandomData(dividedData); // Rastgele veri üreten fonksiyon
+				List<bool> control = Control(randomData);
+				for (int i = 0; i < dividedData.Count; i++)
 				{
-					listBoxResults.Items.Add($"Input: {dividedData[i]}, Expected Codeword: {expectedCodeword}, Random Codeword: {randomCodeword}, Burada Hata yoktur,Çıktı ={dividedData[i]}");
-				}
-				else
-				{
-					var xorResults = XOR(randomCodeword);
-					var cevap = EnKucukToplamSayiyiBul(xorResults.Select(x => x.Response).ToList());
-					var enkucukSayilar = EnKucukSayiKontrol(xorResults.Select(x => x.Response).ToList(), cevap);
-					if (enkucukSayilar.Count > 1)
+					string expectedCodeword = fecTable[dividedData[i]];
+					string randomCodeword = randomData[i]; // Her bir 2'lik bit için 5 katı kadar rastgele veri üretildiğinden, doğru indeksi seçiyoruz
+
+					// XOR sonucunun uzunluğunu kontrol et
+					if (control[i])
 					{
-						var st = string.Join(",", enkucukSayilar);
-						MessageBox.Show($"XOR lanmış datalardaki {st} sayılarının 1 toplamları aynı olduğu için lütfen tekrar gönderin", "Hata", MessageBoxButtons.OK);
-
-						listBoxResults.Items.Add($"Input: {dividedData[i]}, Expected Codeword: {expectedCodeword}, Random Codeword: {randomCodeword}, RESEND");
+						listBoxResults.Items.Add($"Input: {dividedData[i]}, Expected Codeword: {expectedCodeword}, Random Codeword: {randomCodeword}, Burada Hata yoktur,Çıktı ={dividedData[i]}");
 					}
 					else
 					{
-
-						foreach (var xorResult in xorResults)
+						var xorResults = XOR(randomCodeword);
+						var cevap = EnKucukToplamSayiyiBul(xorResults.Select(x => x.Response).ToList());
+						var enkucukSayilar = EnKucukSayiKontrol(xorResults.Select(x => x.Response).ToList(), cevap);
+						if (enkucukSayilar.Count > 1)
 						{
-							if (xorResult.Response.Length != expectedCodeword.Length)
+							var st = string.Join(",", enkucukSayilar);
+							MessageBox.Show($"XOR lanmış datalardaki {st} sayılarının 1 toplamları aynı olduğu için lütfen tekrar gönderin", "Hata", MessageBoxButtons.OK);
+
+							listBoxResults.Items.Add($"Input: {dividedData[i]}, Expected Codeword: {expectedCodeword}, Random Codeword: {randomCodeword}, RESEND");
+						}
+						else
+						{
+
+							foreach (var xorResult in xorResults)
 							{
-								MessageBox.Show($"Hata: XOR sonucu beklenenden farklı uzunluktadır. Beklenen Uzunluk: {expectedCodeword.Length}, Gerçek Uzunluk: {xorResult.Response.Length}");
-								return;
-							}
-							if (xorResult.Response == cevap)
-							{
-								listBoxResults.Items.Add($"Input: {dividedData[i]}, Expected Codeword: {expectedCodeword}, Random Codeword: {randomCodeword}, XORed Data:{xorResult.XoredData}, XOR Result: {xorResult.Response},Hatalıdır, Doğru Data:{dividedData[i]}");
-							}
-							else
-							{
-								listBoxResults.Items.Add($"Input: {dividedData[i]}, Expected Codeword: {expectedCodeword}, Random Codeword: {randomCodeword}, XORed Data:{xorResult.XoredData}, XOR Result: {xorResult.Response}");
+								if (xorResult.Response.Length != expectedCodeword.Length)
+								{
+									MessageBox.Show($"Hata: XOR sonucu beklenenden farklı uzunluktadır. Beklenen Uzunluk: {expectedCodeword.Length}, Gerçek Uzunluk: {xorResult.Response.Length}");
+									return;
+								}
+								if (xorResult.Response == cevap)
+								{
+									listBoxResults.Items.Add($"Input: {dividedData[i]}, Expected Codeword: {expectedCodeword}, Random Codeword: {randomCodeword}, XORed Data:{xorResult.XoredData}, XOR Result: {xorResult.Response},Hatalıdır, Doğru Data:{dividedData[i]}");
+								}
+								else
+								{
+									listBoxResults.Items.Add($"Input: {dividedData[i]}, Expected Codeword: {expectedCodeword}, Random Codeword: {randomCodeword}, XORed Data:{xorResult.XoredData}, XOR Result: {xorResult.Response}");
+								}
 							}
 						}
 					}
+					listBoxResults.Items.Add("--------------------------------------------------------");
 				}
-				listBoxResults.Items.Add("--------------------------------------------------------");
 			}
+
+			
 		}
 
 		private List<string> EnKucukSayiKontrol(List<string> sayilar, string enKucukSayi)
@@ -219,7 +234,7 @@ namespace Projemiz
 
 			randomData = Deneme(randomData);
 
-			txtRandomBits.Text = string.Join("", randomData); // Rastgele üretilen bitleri TextBox'ta göster
+			label21.Text = string.Join("", randomData); // Rastgele üretilen bitleri TextBox'ta göster
 			return randomData;
 		}
 
@@ -284,7 +299,7 @@ namespace Projemiz
 		private void button1_Click(object sender, EventArgs e)
 		{
 			FEC_NasılÇalışır_Form form = new FEC_NasılÇalışır_Form();
-			form.Show();
+			form.ShowDialog();
 			this.Hide();
 		}
 
@@ -316,6 +331,20 @@ namespace Projemiz
 		private void label3_Click(object sender, EventArgs e)
 		{
 
+		}
+
+		private void txtInputData_KeyPress(object sender, KeyPressEventArgs e)
+		{
+			// Sadece '0', '1' ve kontrol karakterlerine (örneğin, backspace) izin ver
+			if (e.KeyChar != '0' && e.KeyChar != '1' && !char.IsControl(e.KeyChar))
+			{
+				e.Handled = true; // Diğer karakter girişlerini engelle
+			}
+		}
+
+		private void txtInputData_TextChanged(object sender, EventArgs e)
+		{
+			
 		}
 	}
 }

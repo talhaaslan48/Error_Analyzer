@@ -671,5 +671,12 @@ namespace Projemiz
 				MessageBox.Show("Belirtilen PDF dosyası bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}
+
+		private void button4_Click(object sender, EventArgs e)
+		{
+			Hamming12 form = new Hamming12();
+			form.ShowDialog();
+			this.Hide();
+		}
 	}
 }

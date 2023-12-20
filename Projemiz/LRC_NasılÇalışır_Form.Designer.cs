@@ -36,6 +36,7 @@
 			label1 = new Label();
 			label2 = new Label();
 			button10 = new Button();
+			label3 = new Label();
 			panel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -47,7 +48,7 @@
 			panel1.Dock = DockStyle.Top;
 			panel1.Location = new Point(0, 0);
 			panel1.Name = "panel1";
-			panel1.Size = new Size(1313, 24);
+			panel1.Size = new Size(1432, 24);
 			panel1.TabIndex = 0;
 			// 
 			// panel3
@@ -72,20 +73,21 @@
 			// pictureBox2
 			// 
 			pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-			pictureBox2.Location = new Point(785, 289);
+			pictureBox2.Location = new Point(826, 304);
 			pictureBox2.Name = "pictureBox2";
-			pictureBox2.Size = new Size(516, 250);
+			pictureBox2.Size = new Size(574, 287);
 			pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
 			pictureBox2.TabIndex = 27;
 			pictureBox2.TabStop = false;
+			pictureBox2.Click += pictureBox2_Click;
 			// 
 			// label1
 			// 
 			label1.AutoSize = true;
-			label1.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
-			label1.Location = new Point(21, 154);
+			label1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label1.Location = new Point(21, 133);
 			label1.Name = "label1";
-			label1.Size = new Size(758, 510);
+			label1.Size = new Size(776, 600);
 			label1.TabIndex = 28;
 			label1.Text = resources.GetString("label1.Text");
 			// 
@@ -93,7 +95,7 @@
 			// 
 			label2.AutoSize = true;
 			label2.Font = new Font("Century Gothic", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label2.Location = new Point(225, 63);
+			label2.Location = new Point(220, 79);
 			label2.Name = "label2";
 			label2.Size = new Size(489, 42);
 			label2.TabIndex = 29;
@@ -107,7 +109,7 @@
 			button10.ForeColor = Color.Black;
 			button10.Image = (Image)resources.GetObject("button10.Image");
 			button10.ImageAlign = ContentAlignment.MiddleLeft;
-			button10.Location = new Point(21, 60);
+			button10.Location = new Point(21, 69);
 			button10.Name = "button10";
 			button10.Size = new Size(166, 61);
 			button10.TabIndex = 30;
@@ -116,11 +118,22 @@
 			button10.UseVisualStyleBackColor = true;
 			button10.Click += button10_Click;
 			// 
+			// label3
+			// 
+			label3.AutoSize = true;
+			label3.Font = new Font("Century Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point);
+			label3.Location = new Point(21, 32);
+			label3.Name = "label3";
+			label3.Size = new Size(334, 17);
+			label3.TabIndex = 46;
+			label3.Text = "Formu boş noktalarından tutarak hareket ettirebilirsiniz..\r\n";
+			// 
 			// LRC_NasılÇalışır_Form
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(1313, 706);
+			ClientSize = new Size(1432, 756);
+			Controls.Add(label3);
 			Controls.Add(button10);
 			Controls.Add(label2);
 			Controls.Add(label1);
@@ -147,5 +160,6 @@
 		private Label label1;
 		private Label label2;
 		private Button button10;
+		private Label label3;
 	}
 }

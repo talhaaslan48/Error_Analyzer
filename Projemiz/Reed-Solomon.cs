@@ -22,8 +22,29 @@ namespace Projemiz
 		public Reed_Solomon()
 		{
 			InitializeComponent();
-		}
 
+			textBox1.TextChanged += TextBox_TextChanged;
+			textBox2.TextChanged += TextBox_TextChanged;
+			textBox3.TextChanged += TextBox_TextChanged;
+			textBox4.TextChanged += TextBox_TextChanged;
+		}
+		private void TextBox_TextChanged(object sender, EventArgs e)
+		{
+			TextBox currentTextBox = sender as TextBox;
+			if (currentTextBox != null && currentTextBox.Text.Length == 8)
+			{
+				SelectNextTextBox(currentTextBox);
+			}
+		}
+		private void SelectNextTextBox(TextBox currentTextBox)
+		{
+			// Enter tuşuyla veya diğer yollarla TextBox'a girilen veriyi kontrol edin
+			Control nextControl = GetNextControl(currentTextBox, true);
+			if (nextControl != null)
+			{
+				nextControl.Focus();
+			}
+		}
 
 
 		private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -404,7 +425,7 @@ namespace Projemiz
 		private void button1_Click(object sender, EventArgs e)
 		{
 			Checksum_NasılÇalışır_Form form = new Checksum_NasılÇalışır_Form();
-			form.Show();
+			form.ShowDialog();
 			this.Hide();
 		}
 	}

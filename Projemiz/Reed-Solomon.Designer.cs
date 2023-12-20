@@ -229,7 +229,7 @@
 			textBox1.MaxLength = 8;
 			textBox1.Name = "textBox1";
 			textBox1.Size = new Size(110, 23);
-			textBox1.TabIndex = 20;
+			textBox1.TabIndex = 0;
 			textBox1.TextChanged += textBox1_TextChanged;
 			textBox1.KeyPress += textBox1_KeyPress;
 			// 
@@ -240,7 +240,7 @@
 			textBox2.MaxLength = 8;
 			textBox2.Name = "textBox2";
 			textBox2.Size = new Size(110, 23);
-			textBox2.TabIndex = 21;
+			textBox2.TabIndex = 1;
 			textBox2.TextChanged += textBox2_TextChanged;
 			textBox2.KeyPress += textBox2_KeyPress;
 			// 
@@ -251,7 +251,7 @@
 			textBox3.MaxLength = 8;
 			textBox3.Name = "textBox3";
 			textBox3.Size = new Size(110, 23);
-			textBox3.TabIndex = 22;
+			textBox3.TabIndex = 2;
 			textBox3.TextChanged += textBox3_TextChanged;
 			textBox3.KeyPress += textBox3_KeyPress;
 			// 
@@ -262,7 +262,7 @@
 			textBox4.MaxLength = 8;
 			textBox4.Name = "textBox4";
 			textBox4.Size = new Size(110, 23);
-			textBox4.TabIndex = 23;
+			textBox4.TabIndex = 3;
 			textBox4.TextChanged += textBox4_TextChanged;
 			textBox4.KeyPress += textBox4_KeyPress;
 			// 
