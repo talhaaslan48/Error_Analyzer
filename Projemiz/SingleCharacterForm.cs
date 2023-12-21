@@ -678,5 +678,25 @@ namespace Projemiz
 			form.ShowDialog();
 			this.Hide();
 		}
+
+		private void button5_Click(object sender, EventArgs e)
+		{
+			try
+			{
+				// YouTube video URL'si
+				string url = "https://youtu.be/I2Y_prNJJkY";
+
+				// Varsayılan web tarayıcısını belirterek URL'yi aç
+				System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+				{
+					FileName = url,
+					UseShellExecute = true
+				});
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Hata: " + ex.Message);
+			}
+		}
 	}
 }

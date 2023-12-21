@@ -39,7 +39,6 @@
 			groupBox2 = new GroupBox();
 			lblCh = new Label();
 			label65 = new Label();
-			linkLabel1 = new LinkLabel();
 			label18 = new Label();
 			label13 = new Label();
 			label17 = new Label();
@@ -90,6 +89,7 @@
 			lblP1a = new Label();
 			label14 = new Label();
 			label1 = new Label();
+			linkLabel1 = new LinkLabel();
 			button2 = new Button();
 			progressBar1 = new ProgressBar();
 			groupBox3 = new GroupBox();
@@ -382,21 +382,6 @@
 			label65.Size = new Size(110, 20);
 			label65.TabIndex = 6;
 			label65.Text = "Gönderilecek";
-			// 
-			// linkLabel1
-			// 
-			linkLabel1.AutoSize = true;
-			linkLabel1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			linkLabel1.LinkColor = Color.Teal;
-			linkLabel1.Location = new Point(254, 162);
-			linkLabel1.Margin = new Padding(4, 0, 4, 0);
-			linkLabel1.Name = "linkLabel1";
-			linkLabel1.Size = new Size(230, 20);
-			linkLabel1.TabIndex = 5;
-			linkLabel1.TabStop = true;
-			linkLabel1.Text = "Parity Bitlleri nasıl hesaplandı !?";
-			linkLabel1.VisitedLinkColor = Color.Teal;
-			linkLabel1.LinkClicked += linkLabel1_LinkClicked;
 			// 
 			// label18
 			// 
@@ -1000,6 +985,21 @@
 			label1.TabIndex = 0;
 			label1.Text = "Gönderilecek Data = ";
 			label1.Click += label1_Click;
+			// 
+			// linkLabel1
+			// 
+			linkLabel1.AutoSize = true;
+			linkLabel1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			linkLabel1.LinkColor = Color.Teal;
+			linkLabel1.Location = new Point(254, 162);
+			linkLabel1.Margin = new Padding(4, 0, 4, 0);
+			linkLabel1.Name = "linkLabel1";
+			linkLabel1.Size = new Size(230, 20);
+			linkLabel1.TabIndex = 5;
+			linkLabel1.TabStop = true;
+			linkLabel1.Text = "Parity Bitlleri nasıl hesaplandı !?";
+			linkLabel1.VisitedLinkColor = Color.Teal;
+			linkLabel1.LinkClicked += linkLabel1_LinkClicked;
 			// 
 			// button2
 			// 
@@ -2478,6 +2478,7 @@
 			button5.Text = "Ders Videosuna Erişebilirsiniz";
 			button5.TextImageRelation = TextImageRelation.ImageBeforeText;
 			button5.UseVisualStyleBackColor = true;
+			button5.Click += button5_Click;
 			// 
 			// button6
 			// 
