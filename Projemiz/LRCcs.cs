@@ -258,7 +258,14 @@ namespace Projemiz
 
         private void button4_Click(object sender, EventArgs e)
         {
-            IkilikSayilariKarsilastir();
+			// textBox5'in boş olup olmadığını kontrol ediyoruz.
+			if (string.IsNullOrWhiteSpace(textBox5.Text))
+			{
+				MessageBox.Show("Lütfen gerekli veriyi giriniz.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				return; // Eğer metin kutusu boşsa, burada fonksiyonu sonlandırıyoruz.
+			}
+
+			IkilikSayilariKarsilastir();
             string kullaniciGirisi = textBox5.Text;
             string olusturulanIkilik = string.Join("", list);
 
