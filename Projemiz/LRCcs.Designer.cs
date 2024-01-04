@@ -357,6 +357,7 @@
 			textBox5.Name = "textBox5";
 			textBox5.Size = new Size(204, 29);
 			textBox5.TabIndex = 51;
+			textBox5.KeyPress += textBox5_KeyPress;
 			// 
 			// label10
 			// 
@@ -382,6 +383,7 @@
 			button4.Text = "Parity Doğruluğunu Kontrol Et";
 			button4.UseVisualStyleBackColor = false;
 			button4.Click += button4_Click;
+			button4.KeyPress += button4_KeyPress;
 			// 
 			// LRCcs
 			// 
