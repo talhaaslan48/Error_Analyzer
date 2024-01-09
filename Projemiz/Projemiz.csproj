@@ -9,6 +9,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Checksum_DersNotu.pdf" />
+    <None Remove="CRC_DersNotu.pdf" />
+    <None Remove="FEC_DersNotu.pdf" />
+    <None Remove="Hamming12,8_DersNotu.pdf" />
+    <None Remove="Hamming7,4_DersNotu.pdf" />
+    <None Remove="LRC_DersNotu.pdf" />
+    <None Remove="VRC_DersNotu.pdf" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
     <PackageReference Include="PDFium.x64" Version="4648.0.0" />
     <PackageReference Include="PdfiumViewer" Version="2.13.0" />
@@ -19,6 +29,18 @@
 
   <ItemGroup>
     <Folder Include="Recources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Checksum_DersNotu.pdf" />
+    <EmbeddedResource Include="CRC_DersNotu.pdf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEC_DersNotu.pdf" />
+    <EmbeddedResource Include="Hamming12,8_DersNotu.pdf" />
+    <EmbeddedResource Include="Hamming7,4_DersNotu.pdf" />
+    <EmbeddedResource Include="LRC_DersNotu.pdf" />
+    <EmbeddedResource Include="VRC_DersNotu.pdf" />
   </ItemGroup>
 
   <ItemGroup>

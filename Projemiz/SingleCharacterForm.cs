@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Xml.Linq;
+using System.Reflection;
 
 namespace Projemiz
 {
@@ -649,26 +650,26 @@ namespace Projemiz
 
 		private void button6_Click(object sender, EventArgs e)
 		{
-			string pdfDosyaYolu = "C:\\Users\\90545\\Desktop\\bitirme projesi\\pdfler\\Hamming12,8_DersNotu.pdf";
+			var assembly = Assembly.GetExecutingAssembly();
+			var kaynakAdi = "Projemiz.Hamming12,8_DersNotu.pdf";
 
-			if (File.Exists(pdfDosyaYolu))
+			using (Stream stream = assembly.GetManifestResourceStream(kaynakAdi))
+			using (MemoryStream memoryStream = new MemoryStream())
 			{
-				byte[] pdfBytes = File.ReadAllBytes(pdfDosyaYolu);
-				MemoryStream memoryStream = new MemoryStream(pdfBytes);
+				stream.CopyTo(memoryStream);
+				byte[] pdfBytes = memoryStream.ToArray();
 
-				SaveFileDialog saveFileDialog = new SaveFileDialog();
-				saveFileDialog.Filter = "PDF Dosyaları (*.pdf)|*.pdf";
-				saveFileDialog.FileName = "YeniDosyaAdi.pdf";
+				SaveFileDialog saveFileDialog = new SaveFileDialog
+				{
+					Filter = "PDF Dosyaları (*.pdf)|*.pdf",
+					FileName = "YeniDosyaAdi.pdf"
+				};
 
 				if (saveFileDialog.ShowDialog() == DialogResult.OK)
 				{
-					File.WriteAllBytes(saveFileDialog.FileName, memoryStream.ToArray());
+					File.WriteAllBytes(saveFileDialog.FileName, pdfBytes);
 					MessageBox.Show("PDF İndirme Başarılı!", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				}
-			}
-			else
-			{
-				MessageBox.Show("Belirtilen PDF dosyası bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}
 
