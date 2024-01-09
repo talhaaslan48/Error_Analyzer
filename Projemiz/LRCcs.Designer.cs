@@ -168,10 +168,10 @@
 			// label5
 			// 
 			label5.AutoSize = true;
-			label5.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+			label5.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
 			label5.Location = new Point(451, 782);
 			label5.Name = "label5";
-			label5.Size = new Size(0, 21);
+			label5.Size = new Size(0, 22);
 			label5.TabIndex = 13;
 			// 
 			// buttonYenile
@@ -192,7 +192,7 @@
 			label6.AutoSize = true;
 			label6.BackColor = Color.Linen;
 			label6.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label6.Location = new Point(328, 594);
+			label6.Location = new Point(328, 727);
 			label6.Name = "label6";
 			label6.Size = new Size(109, 22);
 			label6.TabIndex = 15;

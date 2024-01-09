@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MathNet.Numerics.Distributions;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -89,21 +90,51 @@ namespace Projemiz
 			// Toplam 1 sayısı
 			int toplamBirSayisi = 0;
 
-			// Her bir TextBox'ten 1'leri say
-			foreach (Control control in Controls)
-			{
-				if (control is TextBox textBox)
-				{
-					// TextBox'ten 1'leri say
-					int sayiBirSayisi = textBox.Text.Count(c => c == '1');
+			// İlk GroupBox'ın ismini bilmiyorsanız, uygun isimle değiştirin.
+			GroupBox inputGroupBox = this.groupBox1; // Örnek GroupBox ismi
+			GroupBox parityGroupBox = this.groupBox2; // Parity TextBox'ın içinde olduğu GroupBox ismi
 
+			for (int i = 0; i < 8; i++)
+			{
+				// İlk GroupBox içindeki TextBox'ları bul
+				var textBoxName = "textBox" + i;
+				var textBox = inputGroupBox.Controls[textBoxName] as TextBox;
+
+				if (textBox != null)
+				{
+					// Boş değer kontrolü
+					if (string.IsNullOrWhiteSpace(textBox.Text))
+					{
+						MessageBox.Show("Lütfen tüm alanları doldurunuz.");
+						return; // Boş alan varsa işlemi durdur
+					}
+
+					// TextBox'taki 1'leri say
+					int birSayisi = textBox.Text.Count(c => c == '1');
 					// Toplam 1 sayısını güncelle
-					toplamBirSayisi += sayiBirSayisi;
+					toplamBirSayisi += birSayisi;
+				}
+				else
+				{
+					// TextBox bulunamadı, hata mesajı göster
+					MessageBox.Show(textBoxName + " bulunamadı.");
 				}
 			}
 
-			// Label'a sonucu yazdır
-			label26.Text = toplamBirSayisi % 2 == 1 ? "1" : "0";
+			// Parity için GroupBox içindeki TextBox'ı bul
+			var parityTextBoxName = "textBox24";
+			var parityTextBox = parityGroupBox.Controls[parityTextBoxName] as TextBox;
+
+			if (parityTextBox != null)
+			{
+				// Toplam 1 sayısına göre Parity TextBox'ı güncelle
+				parityTextBox.Text = toplamBirSayisi % 2 == 0 ? "0" : "1";
+			}
+			else
+			{
+				// Parity TextBox bulunamadı, hata mesajı göster
+				MessageBox.Show(parityTextBoxName + " bulunamadı.");
+			}
 
 			textBox15.Text = textBox0.Text;
 			textBox14.Text = textBox1.Text;
@@ -114,10 +145,12 @@ namespace Projemiz
 			textBox9.Text = textBox6.Text;
 			textBox8.Text = textBox7.Text;
 
+
 			// Eğer labelSonuc'un Text özelliği null değilse ve boş değilse
 			if (!string.IsNullOrEmpty(label26.Text))
 			{
 				// labelSonuc'un Text'ini textBoxSonuc'a kopyala
+
 				textBox24.Text = label26.Text;
 			}
 
@@ -136,8 +169,6 @@ namespace Projemiz
 
 			// Timer'ı başlat
 			timerProgress.Start();
-
-
 
 		}
 
@@ -184,7 +215,7 @@ namespace Projemiz
 			label27.Text = string.Empty;
 
 			// Belirli TextBox'ların isimlerini ayarla
-			string[] textBoxIsimleri = { "textBox1", "textBox2", "textBox3", "textBox4", "textBox5", "textBox6", "textBox7", "textBox8", "textBox9", "textBox10", "textBox11", "textBox12", "textBox13", "textBox14", "textBox15", "textBox16", "textBox17", "textBox18", "textBox19", "textBox20", "textBox21", "textBox22", "textBox23", "textBox24", "textBox25", "txtD8", }; // Örnek isimler, senin uygulamandaki isimlere uygun şekilde güncelle
+			string[] textBoxIsimleri = { "textBox0", "textBox1", "textBox2", "textBox3", "textBox4", "textBox5", "textBox6", "textBox7", "textBox8", "textBox9", "textBox10", "textBox11", "textBox12", "textBox13", "textBox14", "textBox15", "textBox16", "textBox17", "textBox18", "textBox19", "textBox20", "textBox21", "textBox22", "textBox23", "textBox24", "textBox25", "txtD8", }; // Örnek isimler, senin uygulamandaki isimlere uygun şekilde güncelle
 
 			foreach (string textBoxIsim in textBoxIsimleri)
 			{
@@ -200,10 +231,11 @@ namespace Projemiz
 
 		private void button5_Click(object sender, EventArgs e)
 		{
+			label26.Text = textBox24.Text;
 			int toplamBirSayisi = 0;
 
 			// Belirli TextBox'ların isimlerini ve sayılarını ayarla
-			string[] textBoxIsimleri = { "textBox15", "textBox14", "textBox13", "textBox12", "textBox11", "textBox10", "textBox9", "textBox8", "textBox24" }; // Örnek isimler, senin uygulamandaki isimlere uygun şekilde güncelle
+			string[] textBoxIsimleri = { "textBox15", "textBox14", "textBox13", "textBox12", "textBox11", "textBox10", "textBox9", "textBox8", "textBox24" };
 
 			foreach (string textBoxIsim in textBoxIsimleri)
 			{
@@ -421,6 +453,15 @@ namespace Projemiz
 			if (e.KeyChar != '0' && e.KeyChar != '1' && !char.IsControl(e.KeyChar))
 			{
 				e.Handled = true; // Diğer karakter girişlerini engelle
+			}
+		}
+
+		private void textBox0_KeyPress_1(object sender, KeyPressEventArgs e)
+		{
+			// Sadece '0' veya '1' kabul et
+			if (e.KeyChar != '0' && e.KeyChar != '1' && e.KeyChar != (char)Keys.Back)
+			{
+				e.Handled = true; // Diğer tüm tuş vuruşlarını engelle
 			}
 		}
 	}

@@ -177,7 +177,12 @@ namespace Projemiz
 		private void button4_Click(object sender, EventArgs e)
 		{
 
-
+			// TextBox'lar boş mu kontrol et
+			if (string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox2.Text) || string.IsNullOrWhiteSpace(textBox3.Text) || string.IsNullOrWhiteSpace(textBox4.Text))
+			{
+				MessageBox.Show("Lütfen tüm alanları doldurunuz.");
+				return; // Boş alan varsa işlemi durdur
+			}
 
 			textBox104.Text = txtResultBit1.Text;
 			textBox103.Text = txtResultBit0.Text;

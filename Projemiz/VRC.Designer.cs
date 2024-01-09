@@ -97,13 +97,13 @@
 			panel3 = new Panel();
 			pictureBox1 = new PictureBox();
 			groupBox1 = new GroupBox();
+			label29 = new Label();
 			groupBox2 = new GroupBox();
+			label30 = new Label();
 			groupBox3 = new GroupBox();
+			label31 = new Label();
 			label2 = new Label();
 			label28 = new Label();
-			label29 = new Label();
-			label30 = new Label();
-			label31 = new Label();
 			panel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			groupBox1.SuspendLayout();
@@ -466,7 +466,7 @@
 			textBox0.Size = new Size(31, 26);
 			textBox0.TabIndex = 0;
 			textBox0.TextAlign = HorizontalAlignment.Center;
-			textBox0.KeyPress += textBox0_KeyPress;
+			textBox0.KeyPress += textBox0_KeyPress_1;
 			// 
 			// textBox1
 			// 
@@ -479,7 +479,7 @@
 			textBox1.Size = new Size(31, 26);
 			textBox1.TabIndex = 1;
 			textBox1.TextAlign = HorizontalAlignment.Center;
-			textBox1.KeyPress += textBox1_KeyPress;
+			textBox1.KeyPress += textBox0_KeyPress_1;
 			// 
 			// textBox2
 			// 
@@ -492,6 +492,7 @@
 			textBox2.Size = new Size(31, 26);
 			textBox2.TabIndex = 2;
 			textBox2.TextAlign = HorizontalAlignment.Center;
+			textBox2.KeyPress += textBox0_KeyPress_1;
 			// 
 			// textBox3
 			// 
@@ -504,6 +505,7 @@
 			textBox3.Size = new Size(31, 26);
 			textBox3.TabIndex = 3;
 			textBox3.TextAlign = HorizontalAlignment.Center;
+			textBox3.KeyPress += textBox0_KeyPress_1;
 			// 
 			// textBox4
 			// 
@@ -516,6 +518,7 @@
 			textBox4.Size = new Size(31, 26);
 			textBox4.TabIndex = 4;
 			textBox4.TextAlign = HorizontalAlignment.Center;
+			textBox4.KeyPress += textBox0_KeyPress_1;
 			// 
 			// textBox5
 			// 
@@ -528,6 +531,7 @@
 			textBox5.Size = new Size(31, 26);
 			textBox5.TabIndex = 5;
 			textBox5.TextAlign = HorizontalAlignment.Center;
+			textBox5.KeyPress += textBox0_KeyPress_1;
 			// 
 			// textBox6
 			// 
@@ -540,6 +544,7 @@
 			textBox6.Size = new Size(31, 26);
 			textBox6.TabIndex = 6;
 			textBox6.TextAlign = HorizontalAlignment.Center;
+			textBox6.KeyPress += textBox0_KeyPress_1;
 			// 
 			// textBox7
 			// 
@@ -552,6 +557,7 @@
 			textBox7.Size = new Size(31, 26);
 			textBox7.TabIndex = 7;
 			textBox7.TextAlign = HorizontalAlignment.Center;
+			textBox7.KeyPress += textBox0_KeyPress_1;
 			// 
 			// textBox8
 			// 
@@ -920,6 +926,16 @@
 			groupBox1.TabStop = false;
 			groupBox1.Text = "1- Girdi alınması";
 			// 
+			// label29
+			// 
+			label29.AutoSize = true;
+			label29.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label29.Location = new Point(340, 108);
+			label29.Name = "label29";
+			label29.Size = new Size(531, 40);
+			label29.TabIndex = 121;
+			label29.Text = "\"Verinizin parite bitini hesaplamak için 'Hesapla' butonuna tıklayınız. \r\nBu işlem, verinizin doğruluğunu kontrol etmek için ek bir bit ekleyecektir.\"";
+			// 
 			// groupBox2
 			// 
 			groupBox2.BackColor = Color.Silver;
@@ -953,6 +969,16 @@
 			groupBox2.TabStop = false;
 			groupBox2.Text = "2-Verinin iletilmesi";
 			// 
+			// label30
+			// 
+			label30.AutoSize = true;
+			label30.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label30.Location = new Point(29, 154);
+			label30.Name = "label30";
+			label30.Size = new Size(660, 40);
+			label30.TabIndex = 122;
+			label30.Text = "\"Hesaplanan parite biti ile birlikte verinizi göndermek için 'Veriyi Gönder' butonuna basınız. \r\nBu, verinizin alıcıya iletilmesini sağlayacaktır.\"";
+			// 
 			// groupBox3
 			// 
 			groupBox3.BackColor = Color.Silver;
@@ -980,6 +1006,16 @@
 			groupBox3.TabStop = false;
 			groupBox3.Text = "3- Durum kontrolü";
 			// 
+			// label31
+			// 
+			label31.AutoSize = true;
+			label31.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			label31.Location = new Point(262, 123);
+			label31.Name = "label31";
+			label31.Size = new Size(433, 60);
+			label31.TabIndex = 123;
+			label31.Text = "\"Alıcı tarafından alınan veriyi ve parite bitinin doğruluğunu \r\nburada kontrol edebilirsiniz. \r\nHata tespit edilirse, bu kısımda belirtilecektir.\"";
+			// 
 			// label2
 			// 
 			label2.AutoSize = true;
@@ -999,36 +1035,6 @@
 			label28.Size = new Size(569, 40);
 			label28.TabIndex = 120;
 			label28.Text = "\"Lütfen gönderilecek 8 bitlik verinizi buraya giriniz. \r\nHer kutucuk, bir biti temsil eder ve yalnızca '0' veya '1' değerlerini kabul eder.\"";
-			// 
-			// label29
-			// 
-			label29.AutoSize = true;
-			label29.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label29.Location = new Point(340, 108);
-			label29.Name = "label29";
-			label29.Size = new Size(531, 40);
-			label29.TabIndex = 121;
-			label29.Text = "\"Verinizin parite bitini hesaplamak için 'Hesapla' butonuna tıklayınız. \r\nBu işlem, verinizin doğruluğunu kontrol etmek için ek bir bit ekleyecektir.\"";
-			// 
-			// label30
-			// 
-			label30.AutoSize = true;
-			label30.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label30.Location = new Point(29, 154);
-			label30.Name = "label30";
-			label30.Size = new Size(660, 40);
-			label30.TabIndex = 122;
-			label30.Text = "\"Hesaplanan parite biti ile birlikte verinizi göndermek için 'Veriyi Gönder' butonuna basınız. \r\nBu, verinizin alıcıya iletilmesini sağlayacaktır.\"";
-			// 
-			// label31
-			// 
-			label31.AutoSize = true;
-			label31.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			label31.Location = new Point(262, 123);
-			label31.Name = "label31";
-			label31.Size = new Size(433, 60);
-			label31.TabIndex = 123;
-			label31.Text = "\"Alıcı tarafından alınan veriyi ve parite bitinin doğruluğunu \r\nburada kontrol edebilirsiniz. \r\nHata tespit edilirse, bu kısımda belirtilecektir.\"";
 			// 
 			// VRC
 			// 

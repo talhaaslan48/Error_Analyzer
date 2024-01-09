@@ -131,6 +131,13 @@ namespace Projemiz
 			string data = dividendTextBox.Text;
 			string divisor = divisorTextBox.Text;
 
+			// TextBox'lar boş mu kontrol et
+			if (string.IsNullOrWhiteSpace(data) || string.IsNullOrWhiteSpace(divisor))
+			{
+				MessageBox.Show("Lütfen tüm alanları doldurunuz.");
+				return; // Boş alan varsa işlemi durdur
+			}
+
 			// CRC işlemi
 			string crcResult = CalculateCRC(data, divisor);
 

@@ -34,6 +34,14 @@ namespace Projemiz
 
 		private void btnCheckErrors_Click(object sender, EventArgs e)
 		{
+
+			// TextBox'lar boş mu kontrol et
+			if (string.IsNullOrWhiteSpace(txtInputData.Text))
+			{
+				MessageBox.Show("Lütfen tüm alanları doldurunuz.");
+				return; // Boş alan varsa işlemi durdur
+			}
+
 			// TextBox'taki veriyi kontrol et
 			if (txtInputData.Text.Length % 2 != 0)
 			{
