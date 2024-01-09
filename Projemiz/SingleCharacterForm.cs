@@ -17,7 +17,7 @@ namespace Projemiz
 {
 	public partial class SingleCharacterForm : Form
 	{
-		Hamming h; 
+		Hamming h;
 
 		string P1a, P2a, P3a, P4a, P1b, P2b, P3b, P4b;
 
