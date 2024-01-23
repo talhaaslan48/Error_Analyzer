@@ -1651,7 +1651,7 @@
 			// label56
 			// 
 			label56.AutoSize = true;
-			label56.Location = new Point(8, 71);
+			label56.Location = new Point(10, 39);
 			label56.Margin = new Padding(4, 0, 4, 0);
 			label56.Name = "label56";
 			label56.Size = new Size(129, 20);
@@ -1661,7 +1661,7 @@
 			// label55
 			// 
 			label55.AutoSize = true;
-			label55.Location = new Point(11, 41);
+			label55.Location = new Point(16, 73);
 			label55.Margin = new Padding(4, 0, 4, 0);
 			label55.Name = "label55";
 			label55.Size = new Size(119, 20);

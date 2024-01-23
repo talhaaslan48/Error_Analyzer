@@ -38,7 +38,6 @@
 			groupBox2 = new GroupBox();
 			lblCh = new Label();
 			label65 = new Label();
-			linkLabel1 = new LinkLabel();
 			label5 = new Label();
 			label9 = new Label();
 			label4 = new Label();
@@ -70,6 +69,7 @@
 			lblP1a = new Label();
 			label14 = new Label();
 			label1 = new Label();
+			linkLabel1 = new LinkLabel();
 			button2 = new Button();
 			progressBar1 = new ProgressBar();
 			groupBox3 = new GroupBox();
@@ -297,21 +297,6 @@
 			label65.Size = new Size(110, 20);
 			label65.TabIndex = 6;
 			label65.Text = "Gönderilecek";
-			// 
-			// linkLabel1
-			// 
-			linkLabel1.AutoSize = true;
-			linkLabel1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-			linkLabel1.LinkColor = Color.Teal;
-			linkLabel1.Location = new Point(253, 146);
-			linkLabel1.Margin = new Padding(4, 0, 4, 0);
-			linkLabel1.Name = "linkLabel1";
-			linkLabel1.Size = new Size(220, 20);
-			linkLabel1.TabIndex = 5;
-			linkLabel1.TabStop = true;
-			linkLabel1.Text = "Parity Bitlleri Nasıl Hesaplanır?";
-			linkLabel1.VisitedLinkColor = Color.Teal;
-			linkLabel1.LinkClicked += linkLabel1_LinkClicked;
 			// 
 			// label5
 			// 
@@ -678,6 +663,21 @@
 			label1.Size = new Size(135, 17);
 			label1.TabIndex = 0;
 			label1.Text = "Gönderilecek Data = ";
+			// 
+			// linkLabel1
+			// 
+			linkLabel1.AutoSize = true;
+			linkLabel1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+			linkLabel1.LinkColor = Color.Teal;
+			linkLabel1.Location = new Point(253, 146);
+			linkLabel1.Margin = new Padding(4, 0, 4, 0);
+			linkLabel1.Name = "linkLabel1";
+			linkLabel1.Size = new Size(220, 20);
+			linkLabel1.TabIndex = 5;
+			linkLabel1.TabStop = true;
+			linkLabel1.Text = "Parity Bitlleri Nasıl Hesaplanır?";
+			linkLabel1.VisitedLinkColor = Color.Teal;
+			linkLabel1.LinkClicked += linkLabel1_LinkClicked;
 			// 
 			// button2
 			// 
@@ -1151,7 +1151,7 @@
 			// label56
 			// 
 			label56.AutoSize = true;
-			label56.Location = new Point(8, 73);
+			label56.Location = new Point(7, 39);
 			label56.Margin = new Padding(4, 0, 4, 0);
 			label56.Name = "label56";
 			label56.Size = new Size(129, 20);
@@ -1161,7 +1161,7 @@
 			// label55
 			// 
 			label55.AutoSize = true;
-			label55.Location = new Point(17, 36);
+			label55.Location = new Point(11, 73);
 			label55.Margin = new Padding(4, 0, 4, 0);
 			label55.Name = "label55";
 			label55.Size = new Size(119, 20);
@@ -1612,11 +1612,11 @@
 			// label64
 			// 
 			label64.AutoSize = true;
-			label64.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point);
-			label64.Location = new Point(44, 67);
+			label64.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+			label64.Location = new Point(19, 64);
 			label64.Margin = new Padding(4, 0, 4, 0);
 			label64.Name = "label64";
-			label64.Size = new Size(74, 13);
+			label64.Size = new Size(101, 17);
 			label64.TabIndex = 0;
 			label64.Text = "Alınan Data = ";
 			// 
